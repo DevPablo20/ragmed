@@ -1,0 +1,159 @@
+{
+ "note": "Aulas que nunca estiveram na vitrine. Registrado aqui para que o banco seja reconstruivel sem a pasta raw/.",
+ "courses": [
+  {
+   "course_uid": "crs_loc_452bf4f5",
+   "course_title": "Imersão em Fisiologia do Metabolismo Humano | 2024",
+   "raw_folder": "16-imersao-fisiologia-2024"
+  }
+ ],
+ "lessons": [
+  {
+   "lesson_uid": "lsn_loc_92df9ffa",
+   "course_uid": "crs_627762",
+   "raw_folder": "03-avancado-peptideos",
+   "lesson_title": "Aula 013 Aula Posicionamento Marina",
+   "source_path": "raw/03-avancado-peptideos/Aula_013_-_Aula_Posicionamento_Marina.txt"
+  },
+  {
+   "lesson_uid": "lsn_loc_04f00b83",
+   "course_uid": "crs_627762",
+   "raw_folder": "03-avancado-peptideos",
+   "lesson_title": "Aula 014 Aula Código da Audiencia Elias",
+   "source_path": "raw/03-avancado-peptideos/Aula_014_-_Aula_Código_da_Audiencia_Elias.txt"
+  },
+  {
+   "lesson_uid": "lsn_loc_2e8cf822",
+   "course_uid": "crs_252706",
+   "raw_folder": "13-cardiologia",
+   "lesson_title": "masterclass cardiologia aula 06",
+   "source_path": "raw/13-cardiologia/masterclass_cardiologia_aula_06.txt"
+  },
+  {
+   "lesson_uid": "lsn_loc_ffeb249c",
+   "course_uid": "crs_loc_452bf4f5",
+   "raw_folder": "16-imersao-fisiologia-2024",
+   "lesson_title": "Aula 01 Introdução Dr Alexandre Duarte",
+   "source_path": "raw/16-imersao-fisiologia-2024/Aula_01_-_Introdução_-_Dr_Alexandre_Duarte.txt"
+  },
+  {
+   "lesson_uid": "lsn_loc_3bf03b58",
+   "course_uid": "crs_loc_452bf4f5",
+   "raw_folder": "16-imersao-fisiologia-2024",
+   "lesson_title": "Aula 02 Dieta Dr. Alexandre Duarte",
+   "source_path": "raw/16-imersao-fisiologia-2024/Aula_02_-_Dieta_-_Dr._Alexandre_Duarte.txt"
+  },
+  {
+   "lesson_uid": "lsn_loc_deeb8e5c",
+   "course_uid": "crs_loc_452bf4f5",
+   "raw_folder": "16-imersao-fisiologia-2024",
+   "lesson_title": "Aula 03 Saúde Digestiva",
+   "source_path": "raw/16-imersao-fisiologia-2024/Aula_03_-_Saúde_Digestiva.txt"
+  },
+  {
+   "lesson_uid": "lsn_loc_34f76a98",
+   "course_uid": "crs_loc_452bf4f5",
+   "raw_folder": "16-imersao-fisiologia-2024",
+   "lesson_title": "Aula 04 INMito Gen Dr. Alexandre Duarte",
+   "source_path": "raw/16-imersao-fisiologia-2024/Aula_04_-_INMito-Gen_-_Dr._Alexandre_Duarte.txt"
+  },
+  {
+   "lesson_uid": "lsn_loc_d575e7f4",
+   "course_uid": "crs_loc_452bf4f5",
+   "raw_folder": "16-imersao-fisiologia-2024",
+   "lesson_title": "Aula 05 Micronutrientes Pt 01 Dr. Alexandre Duarte",
+   "source_path": "raw/16-imersao-fisiologia-2024/Aula_05_-_Micronutrientes_Pt_01_-_Dr._Alexandre_Duarte.txt"
+  },
+  {
+   "lesson_uid": "lsn_loc_e6355907",
+   "course_uid": "crs_loc_452bf4f5",
+   "raw_folder": "16-imersao-fisiologia-2024",
+   "lesson_title": "Aula 06 Progesterona Dr. Alexandre Duarte",
+   "source_path": "raw/16-imersao-fisiologia-2024/Aula_06_-_Progesterona_-_Dr._Alexandre_Duarte.txt"
+  },
+  {
+   "lesson_uid": "lsn_loc_d51c4391",
+   "course_uid": "crs_loc_452bf4f5",
+   "raw_folder": "16-imersao-fisiologia-2024",
+   "lesson_title": "Aula 07 DHEA Dr. Alexandre Duarte",
+   "source_path": "raw/16-imersao-fisiologia-2024/Aula_07_-_DHEA_-_Dr._Alexandre_Duarte.txt"
+  },
+  {
+   "lesson_uid": "lsn_loc_7fcde673",
+   "course_uid": "crs_loc_452bf4f5",
+   "raw_folder": "16-imersao-fisiologia-2024",
+   "lesson_title": "Aula 08 Adrenal Dr. Alexandre Duarte",
+   "source_path": "raw/16-imersao-fisiologia-2024/Aula_08_-_Adrenal_-_Dr._Alexandre_Duarte.txt"
+  },
+  {
+   "lesson_uid": "lsn_loc_16d3315b",
+   "course_uid": "crs_loc_452bf4f5",
+   "raw_folder": "16-imersao-fisiologia-2024",
+   "lesson_title": "Aula 09 Tecnologia na Prática Médica Samuel Silva",
+   "source_path": "raw/16-imersao-fisiologia-2024/Aula_09_-_Tecnologia_na_Prática_Médica_-_Samuel_Silva.txt"
+  },
+  {
+   "lesson_uid": "lsn_loc_a0289bac",
+   "course_uid": "crs_loc_452bf4f5",
+   "raw_folder": "16-imersao-fisiologia-2024",
+   "lesson_title": "Aula 10 Tireoide Dr. Alexandre Duarte",
+   "source_path": "raw/16-imersao-fisiologia-2024/Aula_10_-_Tireoide_-_Dr._Alexandre_Duarte.txt"
+  },
+  {
+   "lesson_uid": "lsn_loc_2e58f257",
+   "course_uid": "crs_loc_452bf4f5",
+   "raw_folder": "16-imersao-fisiologia-2024",
+   "lesson_title": "Aula 11 Aldosterona Dr. Alexandre Duarte",
+   "source_path": "raw/16-imersao-fisiologia-2024/Aula_11_-_Aldosterona_-_Dr._Alexandre_Duarte.txt"
+  },
+  {
+   "lesson_uid": "lsn_loc_8d8a6090",
+   "course_uid": "crs_loc_452bf4f5",
+   "raw_folder": "16-imersao-fisiologia-2024",
+   "lesson_title": "Aula 12 Vendas Luiz Pacheco",
+   "source_path": "raw/16-imersao-fisiologia-2024/Aula_12_-_Vendas_-_Luiz_Pacheco.txt"
+  },
+  {
+   "lesson_uid": "lsn_loc_6fa482b9",
+   "course_uid": "crs_loc_452bf4f5",
+   "raw_folder": "16-imersao-fisiologia-2024",
+   "lesson_title": "Aula 13 Estrogênios Dr. Alexandre Duarte",
+   "source_path": "raw/16-imersao-fisiologia-2024/Aula_13_-_Estrogênios_-_Dr._Alexandre_Duarte.txt"
+  },
+  {
+   "lesson_uid": "lsn_loc_0f7a7ed7",
+   "course_uid": "crs_loc_452bf4f5",
+   "raw_folder": "16-imersao-fisiologia-2024",
+   "lesson_title": "Aula 14 Micronutrientes Pt 02 Dr. Alexandre Duarte",
+   "source_path": "raw/16-imersao-fisiologia-2024/Aula_14_-_Micronutrientes_Pt_02_-_Dr._Alexandre_Duarte.txt"
+  },
+  {
+   "lesson_uid": "lsn_loc_ded4f7cb",
+   "course_uid": "crs_loc_452bf4f5",
+   "raw_folder": "16-imersao-fisiologia-2024",
+   "lesson_title": "Aula 15 Contabilidade Matheus Gabrich",
+   "source_path": "raw/16-imersao-fisiologia-2024/Aula_15_-_Contabilidade_-_Matheus_Gabrich.txt"
+  },
+  {
+   "lesson_uid": "lsn_loc_eb26fca9",
+   "course_uid": "crs_252836",
+   "raw_folder": "29-saude-do-homem-implantes",
+   "lesson_title": "masterclass saude do homem 17",
+   "source_path": "raw/29-saude-do-homem-implantes/masterclass_saude_do_homem_17.txt"
+  },
+  {
+   "lesson_uid": "lsn_loc_d63788ea",
+   "course_uid": "crs_252847",
+   "raw_folder": "31-saude-da-mulher",
+   "lesson_title": "aula pratica implantes hormonais",
+   "source_path": "raw/31-saude-da-mulher/aula_pratica_implantes_hormonais.txt"
+  },
+  {
+   "lesson_uid": "lsn_loc_a77b2dff",
+   "course_uid": "crs_252838",
+   "raw_folder": "32-vitaminas-minerais-evs",
+   "lesson_title": "resumo vitaminas e minerais",
+   "source_path": "raw/32-vitaminas-minerais-evs/resumo_vitaminas_e_minerais_extraido.txt"
+  }
+ ]
+}

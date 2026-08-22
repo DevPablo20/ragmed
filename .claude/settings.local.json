@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(~/.pyenv/versions/medrag/bin/python -m pip install duckdb)",
+      "Bash(~/.pyenv/versions/medrag/bin/python -c \"import duckdb; print\\('duckdb', duckdb.__version__\\)\")",
+      "Bash(~/.pyenv/versions/medrag/bin/python scripts/db.py)",
+      "Bash(~/.pyenv/versions/medrag/bin/python scripts/bootstrap_run1.py)",
+      "Bash(~/.pyenv/versions/medrag/bin/python -c ' *)",
+      "Bash(cp new_raw/manifest.csv /tmp/claude-1000/-var-www-rag-hugo-ragmed/0bcbbe37-0569-4376-bcdf-c9a57187c05b/scratchpad/manifest_prev.csv)",
+      "Bash(cp -r new_raw/_reports /tmp/claude-1000/-var-www-rag-hugo-ragmed/0bcbbe37-0569-4376-bcdf-c9a57187c05b/scratchpad/reports_prev)",
+      "Bash(~/.pyenv/versions/medrag/bin/python scripts/build_new_raw.py)",
+      "Bash(git -C . status)",
+      "Bash(mv ragmed.duckdb /tmp/claude-1000/-var-www-rag-hugo-ragmed/0bcbbe37-0569-4376-bcdf-c9a57187c05b/scratchpad/ragmed.duckdb.bak)",
+      "Bash(~/.pyenv/versions/medrag/bin/python scripts/load_snapshot.py data/snapshots/20260822T000000.json)",
+      "Bash(~/.pyenv/versions/medrag/bin/python scripts/migrate_to_ids.py)",
+      "Bash(~/.pyenv/versions/medrag/bin/python scripts/sync_transcripts.py)",
+      "Bash(ls -lat ~/Downloads/snapshot_*.json /tmp/snapshot_*.json 2>/dev/null | head -5 || echo \"nao encontrado em ~/Downloads nem /tmp\"; find ~ -maxdepth 3 -name 'snapshot_2026*.json' -newermt '-10 minutes' 2>/dev/null | head)"
+    ]
+  }
+}

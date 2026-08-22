@@ -1,0 +1,1944 @@
+{
+ "scraped_at": "2026-08-22T00:00:00",
+ "source": "https://ead.avantgardecollege.com.br/area/vitrine/home",
+ "note": "convertido de new_raw/_site/{vitrine,lessons}_raw.json pela raspagem inicial",
+ "courses": [
+  {
+   "site_course_id": "9073011",
+   "course_title": "ORIGEM — Boas-vindas",
+   "course_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/9073011",
+   "course_kind": "aula",
+   "position_in_vitrine": 1,
+   "groups": [
+    {
+     "site_group_id": "1783525",
+     "group_title": "Aulas",
+     "group_index": 1,
+     "lessons": [
+      {
+       "site_lesson_id": "9073011",
+       "lesson_title": "ORIGEM — Boas-vindas",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/9073011",
+       "position_in_group": 1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "site_course_id": "624923",
+   "course_title": "ORIGEM - Fisiologia Hormonal Avançada",
+   "course_url": "https://ead.avantgardecollege.com.br/area/conteudo/produto/624923",
+   "course_kind": "produto",
+   "position_in_vitrine": 2,
+   "groups": [
+    {
+     "site_group_id": "1758907",
+     "group_title": "Aulas",
+     "group_index": 1,
+     "lessons": [
+      {
+       "site_lesson_id": "8875732",
+       "lesson_title": "Aula 01 - Introdução Cadeia Esteroidal",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/8875732",
+       "position_in_group": 1
+      },
+      {
+       "site_lesson_id": "8875733",
+       "lesson_title": "Aula 02 - Progesterona",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/8875733",
+       "position_in_group": 2
+      },
+      {
+       "site_lesson_id": "8875734",
+       "lesson_title": "Aula 03 - Estrogenios",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/8875734",
+       "position_in_group": 3
+      },
+      {
+       "site_lesson_id": "8875735",
+       "lesson_title": "Aula 04 - Androgenios",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/8875735",
+       "position_in_group": 4
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "site_course_id": "643069",
+   "course_title": "Pré-Imersão 2026",
+   "course_url": "https://ead.avantgardecollege.com.br/area/conteudo/produto/643069",
+   "course_kind": "produto",
+   "position_in_vitrine": 3,
+   "groups": [
+    {
+     "site_group_id": "1817900",
+     "group_title": "Aulas",
+     "group_index": 1,
+     "lessons": [
+      {
+       "site_lesson_id": "9354505",
+       "lesson_title": "Tríade Energética - Cortisol | Dr. Alexandre Duarte",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/9354505",
+       "position_in_group": 1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "site_course_id": "606763",
+   "course_title": "Imersão em Fisiologia do Metabolismo Humano | 2026 | 20º Edição",
+   "course_url": "https://ead.avantgardecollege.com.br/area/conteudo/produto/606763",
+   "course_kind": "produto",
+   "position_in_vitrine": 4,
+   "groups": [
+    {
+     "site_group_id": "1719761",
+     "group_title": "Aulas",
+     "group_index": 1,
+     "lessons": [
+      {
+       "site_lesson_id": "8653259",
+       "lesson_title": "Aula 01: Introdução | Dr. Alexandre Duarte",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/8653259",
+       "position_in_group": 1
+      },
+      {
+       "site_lesson_id": "8653260",
+       "lesson_title": "Aula 02: Dieta | Dr. Alexandre Duarte",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/8653260",
+       "position_in_group": 2
+      },
+      {
+       "site_lesson_id": "8653261",
+       "lesson_title": "Aula 03: Saúde Digestiva | Dra. Ana Martha",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/8653261",
+       "position_in_group": 3
+      },
+      {
+       "site_lesson_id": "8653262",
+       "lesson_title": "Aula 04: Direito Médico | Ricardo Palova",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/8653262",
+       "position_in_group": 4
+      },
+      {
+       "site_lesson_id": "8653263",
+       "lesson_title": "Aula 05: Ozonio | Leticia Philippi",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/8653263",
+       "position_in_group": 5
+      },
+      {
+       "site_lesson_id": "8653264",
+       "lesson_title": "Aula 06: Micronutrientes - VO e Injetáveis | Dr. Alexandre Duarte",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/8653264",
+       "position_in_group": 6
+      },
+      {
+       "site_lesson_id": "8653266",
+       "lesson_title": "Aula 07: Progesterona e DHEA | Dr. Alexandre Duarte -",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/8653266",
+       "position_in_group": 7
+      },
+      {
+       "site_lesson_id": "8653267",
+       "lesson_title": "Aula 08: Tríade Energética - Cortisol | Dr. Alexandre Duarte Part 01",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/8653267",
+       "position_in_group": 8
+      },
+      {
+       "site_lesson_id": "8653268",
+       "lesson_title": "Aula 09: Exames Genéticos e de DNA | Pier Paoli e Dr. Alexandre Duarte",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/8653268",
+       "position_in_group": 9
+      },
+      {
+       "site_lesson_id": "8653269",
+       "lesson_title": "Aula 10: Tríade Energética - Tireóide e Insulina | Dr. Alexandre Duarte Part 02",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/8653269",
+       "position_in_group": 10
+      },
+      {
+       "site_lesson_id": "8653271",
+       "lesson_title": "Aula 11: A Guerra de Percepções | William Celso",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/8653271",
+       "position_in_group": 11
+      },
+      {
+       "site_lesson_id": "8653272",
+       "lesson_title": "Aula 12: Consulta ao vivo 01",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/8653272",
+       "position_in_group": 12
+      },
+      {
+       "site_lesson_id": "8653274",
+       "lesson_title": "Aula 13: Androgênios e HCG | Dr. Alexandre Duarte",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/8653274",
+       "position_in_group": 13
+      },
+      {
+       "site_lesson_id": "8653275",
+       "lesson_title": "Aula 14: Sucesso em Gestão e Vendas | Luiz Pacheco",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/8653275",
+       "position_in_group": 14
+      },
+      {
+       "site_lesson_id": "8653277",
+       "lesson_title": "Aula 15: O Novo Paradigma da Medicina | Dr. Ivan Ramos",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/8653277",
+       "position_in_group": 15
+      },
+      {
+       "site_lesson_id": "8653278",
+       "lesson_title": "Aula 16: Disfunção Mitocondrial | Dr. Alexandre Duarte",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/8653278",
+       "position_in_group": 16
+      },
+      {
+       "site_lesson_id": "8653279",
+       "lesson_title": "Aula 17: Estrogênios e Lipedema | Dr. Alexandre Duarte",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/8653279",
+       "position_in_group": 17
+      },
+      {
+       "site_lesson_id": "8653280",
+       "lesson_title": "Aula 18: GH e Peptideos | Dr. Alexandre Duarte",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/8653280",
+       "position_in_group": 18
+      },
+      {
+       "site_lesson_id": "8653282",
+       "lesson_title": "Aula 19: Consulta ao vivo 02",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/8653282",
+       "position_in_group": 19
+      },
+      {
+       "site_lesson_id": "8653284",
+       "lesson_title": "Aula 20: Tecnologias em Medicina | Fernando Tera",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/8653284",
+       "position_in_group": 20
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "site_course_id": "627762",
+   "course_title": "Avançado de Peptídeos",
+   "course_url": "https://ead.avantgardecollege.com.br/area/conteudo/produto/627762",
+   "course_kind": "produto",
+   "position_in_vitrine": 5,
+   "groups": [
+    {
+     "site_group_id": "1769545",
+     "group_title": "Avançado de Peptídeos",
+     "group_index": 1,
+     "lessons": [
+      {
+       "site_lesson_id": "8975534",
+       "lesson_title": "Aula 01 - Peptideos",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/8975534",
+       "position_in_group": 1
+      },
+      {
+       "site_lesson_id": "8975535",
+       "lesson_title": "Aula 02 - Pulsatilidade e GPCRs",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/8975535",
+       "position_in_group": 2
+      },
+      {
+       "site_lesson_id": "8975536",
+       "lesson_title": "Aula 03 - Peptideos Classicos",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/8975536",
+       "position_in_group": 3
+      },
+      {
+       "site_lesson_id": "8975537",
+       "lesson_title": "Aula 04 - Eixo Somatotrofico l",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/8975537",
+       "position_in_group": 4
+      },
+      {
+       "site_lesson_id": "8975538",
+       "lesson_title": "Aula 05 - Eixo Somatotrofico ll",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/8975538",
+       "position_in_group": 5
+      },
+      {
+       "site_lesson_id": "8975539",
+       "lesson_title": "Aula 06 - Mitocondria e Longevidade",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/8975539",
+       "position_in_group": 6
+      },
+      {
+       "site_lesson_id": "8975540",
+       "lesson_title": "Aula 07 - Reparo e Imunomodulação",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/8975540",
+       "position_in_group": 7
+      },
+      {
+       "site_lesson_id": "8975541",
+       "lesson_title": "Aula 08 - Enteroendócrino e Regulação Metabólica",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/8975541",
+       "position_in_group": 8
+      },
+      {
+       "site_lesson_id": "8975542",
+       "lesson_title": "Aula 09 - Mitocondrial e Energia",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/8975542",
+       "position_in_group": 9
+      },
+      {
+       "site_lesson_id": "8975543",
+       "lesson_title": "Aula 10 - SNC Cogniçao e Sono",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/8975543",
+       "position_in_group": 10
+      },
+      {
+       "site_lesson_id": "8975544",
+       "lesson_title": "Aula 11 - Emagrecimento Metabolico",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/8975544",
+       "position_in_group": 11
+      },
+      {
+       "site_lesson_id": "8975545",
+       "lesson_title": "Aula 12 - Fisiologia Regeneração",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/8975545",
+       "position_in_group": 12
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "site_course_id": "596740",
+   "course_title": "Intensivo de Terapias Injetáveis",
+   "course_url": "https://ead.avantgardecollege.com.br/area/conteudo/produto/596740",
+   "course_kind": "produto",
+   "position_in_vitrine": 6,
+   "groups": [
+    {
+     "site_group_id": "1693927",
+     "group_title": "Aulas",
+     "group_index": 1,
+     "lessons": [
+      {
+       "site_lesson_id": "8477345",
+       "lesson_title": "Terapias Injetáveis - Parte 01",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/8477345",
+       "position_in_group": 1
+      },
+      {
+       "site_lesson_id": "8477346",
+       "lesson_title": "Terapias Injetáveis - Parte 02",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/8477346",
+       "position_in_group": 2
+      },
+      {
+       "site_lesson_id": "8477347",
+       "lesson_title": "Terapias Injetáveis - Parte 03",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/8477347",
+       "position_in_group": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "site_course_id": "573125",
+   "course_title": "Onboarding Pós Graduação 2026",
+   "course_url": "https://ead.avantgardecollege.com.br/area/conteudo/produto/573125",
+   "course_kind": "produto",
+   "position_in_vitrine": 7,
+   "groups": [
+    {
+     "site_group_id": "1548146",
+     "group_title": "Aulas",
+     "group_index": 1,
+     "lessons": [
+      {
+       "site_lesson_id": "8013865",
+       "lesson_title": "Aula 01 - Onboarding | Informações gerais",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/8013865",
+       "position_in_group": 1
+      },
+      {
+       "site_lesson_id": "8050982",
+       "lesson_title": "Aula 02 - Onboarding | Método In-MitoGen",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/8050982",
+       "position_in_group": 2
+      },
+      {
+       "site_lesson_id": "8050984",
+       "lesson_title": "Aula 03 - Onboarding | Luiz Pacheco",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/8050984",
+       "position_in_group": 3
+      },
+      {
+       "site_lesson_id": "8050987",
+       "lesson_title": "Aula 04 - Onboarding | Marina",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/8050987",
+       "position_in_group": 4
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "site_course_id": "538902",
+   "course_title": "Intensivo de Terapia de Reposição Hormonal",
+   "course_url": "https://ead.avantgardecollege.com.br/area/conteudo/produto/538902",
+   "course_kind": "produto",
+   "position_in_vitrine": 8,
+   "groups": [
+    {
+     "site_group_id": "1504628",
+     "group_title": "Aulas",
+     "group_index": 1,
+     "lessons": [
+      {
+       "site_lesson_id": "7784279",
+       "lesson_title": "Introdução: Terapia de Reposição Hormonal",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/7784279",
+       "position_in_group": 1
+      },
+      {
+       "site_lesson_id": "7784275",
+       "lesson_title": "Aula 01: Os Hormonios Esteroidais | Dr. Alexandre Duarte",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/7784275",
+       "position_in_group": 2
+      },
+      {
+       "site_lesson_id": "7784276",
+       "lesson_title": "Aula 02: Progesterona | Dr. Alexandre Duarte",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/7784276",
+       "position_in_group": 3
+      },
+      {
+       "site_lesson_id": "7784277",
+       "lesson_title": "Aula 03: Estrogênios | Dr. Alexandre Duarte",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/7784277",
+       "position_in_group": 4
+      },
+      {
+       "site_lesson_id": "7784278",
+       "lesson_title": "Aula 04: Androgênios | Dr. Alexandre Duarte",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/7784278",
+       "position_in_group": 5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "site_course_id": "252718",
+   "course_title": "Avançado de Infertilidade e Tratamento Pré Gestação",
+   "course_url": "https://ead.avantgardecollege.com.br/area/conteudo/produto/252718",
+   "course_kind": "produto",
+   "position_in_vitrine": 9,
+   "groups": [
+    {
+     "site_group_id": "714013",
+     "group_title": "Aulas",
+     "group_index": 1,
+     "lessons": [
+      {
+       "site_lesson_id": "7769566",
+       "lesson_title": "Aula 01 - Fisiologia Causas Tratamento | Dr Alexandre Duarte",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/7769566",
+       "position_in_group": 1
+      },
+      {
+       "site_lesson_id": "7769576",
+       "lesson_title": "Aula 02 - Fertilidade Feminina | Dr Alexandre Duarte",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/7769576",
+       "position_in_group": 2
+      },
+      {
+       "site_lesson_id": "7769588",
+       "lesson_title": "Aula 03 - Obstrução Tubaria | Dr Alexandre Duarte",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/7769588",
+       "position_in_group": 3
+      },
+      {
+       "site_lesson_id": "7769609",
+       "lesson_title": "Aula 04 - Hiperprolactinemia | Dr Alexandre Duarte",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/7769609",
+       "position_in_group": 4
+      },
+      {
+       "site_lesson_id": "7769613",
+       "lesson_title": "Aula 05 - Espermatogenese | Dr Alexandre Duarte",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/7769613",
+       "position_in_group": 5
+      },
+      {
+       "site_lesson_id": "7769614",
+       "lesson_title": "Aula 06 - Morfologia | Dr Alexandre Duarte",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/7769614",
+       "position_in_group": 6
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "site_course_id": "407371",
+   "course_title": "Fellowship em Medicina Metabólica",
+   "course_url": "https://ead.avantgardecollege.com.br/area/conteudo/produto/407371",
+   "course_kind": "produto",
+   "position_in_vitrine": 10,
+   "groups": [
+    {
+     "site_group_id": "1158171",
+     "group_title": "Aulas",
+     "group_index": 1,
+     "lessons": [
+      {
+       "site_lesson_id": "5869203",
+       "lesson_title": "AULA 01 - Onboarding | Luiz Pacheco",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/5869203",
+       "position_in_group": 1
+      },
+      {
+       "site_lesson_id": "5869204",
+       "lesson_title": "AULA 02 - Marketing e Posicionamento | Marina Soares",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/5869204",
+       "position_in_group": 2
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "site_course_id": "532987",
+   "course_title": "Pós-Graduação Medicina Metabólica - Super Módulo 3",
+   "course_url": "https://ead.avantgardecollege.com.br/area/conteudo/produto/532987",
+   "course_kind": "produto",
+   "position_in_vitrine": 11,
+   "groups": [
+    {
+     "site_group_id": "1488231",
+     "group_title": "Aulas",
+     "group_index": 1,
+     "lessons": [
+      {
+       "site_lesson_id": "7704857",
+       "lesson_title": "AULA 01 - Karen e Leticia Ozonio",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/7704857",
+       "position_in_group": 1
+      },
+      {
+       "site_lesson_id": "7704858",
+       "lesson_title": "AULA 02 - Luiz Pacheco",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/7704858",
+       "position_in_group": 2
+      },
+      {
+       "site_lesson_id": "7704859",
+       "lesson_title": "AULA 03 - Anabolizantes",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/7704859",
+       "position_in_group": 3
+      },
+      {
+       "site_lesson_id": "7704860",
+       "lesson_title": "AULA 04 - Exercicio e Suplementação",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/7704860",
+       "position_in_group": 4
+      },
+      {
+       "site_lesson_id": "7704861",
+       "lesson_title": "AULA 05 - Luiz Pacheco Part 02",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/7704861",
+       "position_in_group": 5
+      },
+      {
+       "site_lesson_id": "7704862",
+       "lesson_title": "AULA 06 - Anabolismo Saudável",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/7704862",
+       "position_in_group": 6
+      },
+      {
+       "site_lesson_id": "7704863",
+       "lesson_title": "AULA 07 - Revisão Baixo Desempenho",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/7704863",
+       "position_in_group": 7
+      },
+      {
+       "site_lesson_id": "7704869",
+       "lesson_title": "AULA 08 - Exames",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/7704869",
+       "position_in_group": 8
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "site_course_id": "491682",
+   "course_title": "Pós-Graduação Medicina Metabólica - Super Módulo 2",
+   "course_url": "https://ead.avantgardecollege.com.br/area/conteudo/produto/491682",
+   "course_kind": "produto",
+   "position_in_vitrine": 12,
+   "groups": [
+    {
+     "site_group_id": "1384694",
+     "group_title": "Aulas",
+     "group_index": 1,
+     "lessons": [
+      {
+       "site_lesson_id": "7147318",
+       "lesson_title": "01 - Aula Aromatase",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/7147318",
+       "position_in_group": 1
+      },
+      {
+       "site_lesson_id": "7147319",
+       "lesson_title": "02 - Aula Implantes",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/7147319",
+       "position_in_group": 2
+      },
+      {
+       "site_lesson_id": "7147321",
+       "lesson_title": "03 - Aula SOP",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/7147321",
+       "position_in_group": 3
+      },
+      {
+       "site_lesson_id": "7147322",
+       "lesson_title": "04 - Aula Testo saude masculina",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/7147322",
+       "position_in_group": 4
+      },
+      {
+       "site_lesson_id": "7147323",
+       "lesson_title": "05 - Aula Análise de exame",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/7147323",
+       "position_in_group": 5
+      },
+      {
+       "site_lesson_id": "7147324",
+       "lesson_title": "06 - Aula Carlos Nivel Cognitivo",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/7147324",
+       "position_in_group": 6
+      },
+      {
+       "site_lesson_id": "7147326",
+       "lesson_title": "07 - Aula Will Posicionamento",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/7147326",
+       "position_in_group": 7
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "site_course_id": "385170",
+   "course_title": "Pós-Graduação Medicina Metabólica - Super Módulo 1",
+   "course_url": "https://ead.avantgardecollege.com.br/area/conteudo/produto/385170",
+   "course_kind": "produto",
+   "position_in_vitrine": 13,
+   "groups": [
+    {
+     "site_group_id": "1760111",
+     "group_title": "Super Módulo 1 | 2026",
+     "group_index": 1,
+     "lessons": [
+      {
+       "site_lesson_id": "8881617",
+       "lesson_title": "Aula 01 Marketing",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/8881617",
+       "position_in_group": 1
+      },
+      {
+       "site_lesson_id": "8881619",
+       "lesson_title": "Aula 02 Vendas",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/8881619",
+       "position_in_group": 2
+      },
+      {
+       "site_lesson_id": "8881620",
+       "lesson_title": "Aula 03 Revisão Cortisol",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/8881620",
+       "position_in_group": 3
+      },
+      {
+       "site_lesson_id": "8881621",
+       "lesson_title": "Aula 04 Revisão Insulina",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/8881621",
+       "position_in_group": 4
+      },
+      {
+       "site_lesson_id": "8881622",
+       "lesson_title": "Aula 05 Revisão Tireoide",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/8881622",
+       "position_in_group": 5
+      },
+      {
+       "site_lesson_id": "8881623",
+       "lesson_title": "Aula 06 Revisão Micronutrientes",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/8881623",
+       "position_in_group": 6
+      },
+      {
+       "site_lesson_id": "8881624",
+       "lesson_title": "Aula 07 Termografia",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/8881624",
+       "position_in_group": 7
+      }
+     ]
+    },
+    {
+     "site_group_id": "1096445",
+     "group_title": "Super Módulo 1 | 2025",
+     "group_index": 2,
+     "lessons": [
+      {
+       "site_lesson_id": "5491247",
+       "lesson_title": "AULA 01 - Onboarding | Luiz Pacheco",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/5491247",
+       "position_in_group": 1
+      },
+      {
+       "site_lesson_id": "5491253",
+       "lesson_title": "AULA 02 - Marketing e Posicionamento | Marina Soares",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/5491253",
+       "position_in_group": 2
+      },
+      {
+       "site_lesson_id": "5491257",
+       "lesson_title": "AULA 03 - Dieta e Alimentação | Dr. Alexandre Duarte",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/5491257",
+       "position_in_group": 3
+      },
+      {
+       "site_lesson_id": "5491265",
+       "lesson_title": "AULA 04 - Jejum | Dr. Alexandre Duarte",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/5491265",
+       "position_in_group": 4
+      },
+      {
+       "site_lesson_id": "5491322",
+       "lesson_title": "AULA 05 - Cortisol | Dr. Alexandre Duarte",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/5491322",
+       "position_in_group": 5
+      },
+      {
+       "site_lesson_id": "5491323",
+       "lesson_title": "AULA 06 - Metabolismo | Dr. Alexandre Duarte",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/5491323",
+       "position_in_group": 6
+      },
+      {
+       "site_lesson_id": "5491325",
+       "lesson_title": "AULA 07 - Micronutrientes | Dr. Alexandre Duarte",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/5491325",
+       "position_in_group": 7
+      },
+      {
+       "site_lesson_id": "5491327",
+       "lesson_title": "AULA 08 - Tireóide | Dr. Alexandre Duarte",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/5491327",
+       "position_in_group": 8
+      },
+      {
+       "site_lesson_id": "5491329",
+       "lesson_title": "AULA 09 - Termografia | Dr. Alexandre Aldred",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/5491329",
+       "position_in_group": 9
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "site_course_id": "625039",
+   "course_title": "Avançado Pediatria Metabólica",
+   "course_url": "https://ead.avantgardecollege.com.br/area/conteudo/produto/625039",
+   "course_kind": "produto",
+   "position_in_vitrine": 14,
+   "groups": [
+    {
+     "site_group_id": "1759415",
+     "group_title": "Aulas",
+     "group_index": 1,
+     "lessons": [
+      {
+       "site_lesson_id": "8878382",
+       "lesson_title": "Aula 1 - Curso_Avançado_PediatriaMetabolica_DraAdrielle",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/8878382",
+       "position_in_group": 1
+      },
+      {
+       "site_lesson_id": "8878383",
+       "lesson_title": "Aula 2 - Curso_Avançado_PediatriaMetabolica_DraAdrielle",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/8878383",
+       "position_in_group": 2
+      },
+      {
+       "site_lesson_id": "8878385",
+       "lesson_title": "Aula 3 - Curso_Avançado_PediatriaMetabolica_DraAdrielle",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/8878385",
+       "position_in_group": 3
+      },
+      {
+       "site_lesson_id": "8878389",
+       "lesson_title": "Aula 4 - Curso_Avançado_PediatriaMetabolica_DraAdrielle",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/8878389",
+       "position_in_group": 4
+      },
+      {
+       "site_lesson_id": "8878390",
+       "lesson_title": "Aula 5 - Curso_Avançado_PediatriaMetabolica_DraAdrielle",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/8878390",
+       "position_in_group": 5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "site_course_id": "252706",
+   "course_title": "Avançado de Cardiologia",
+   "course_url": "https://ead.avantgardecollege.com.br/area/conteudo/produto/252706",
+   "course_kind": "produto",
+   "position_in_vitrine": 15,
+   "groups": [
+    {
+     "site_group_id": "710984",
+     "group_title": "Aulas",
+     "group_index": 1,
+     "lessons": [
+      {
+       "site_lesson_id": "3521424",
+       "lesson_title": "Aula 01: Gestao Integrada da Doença Cardiovascular - Parte I",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/3521424",
+       "position_in_group": 1
+      },
+      {
+       "site_lesson_id": "3521429",
+       "lesson_title": "Aula 02: Gestao Integrada da Doença Cardiovascular - Parte II",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/3521429",
+       "position_in_group": 2
+      },
+      {
+       "site_lesson_id": "3521430",
+       "lesson_title": "Aula 03: Gestao Integrada da Doença Cardiovascular - Parte III",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/3521430",
+       "position_in_group": 3
+      },
+      {
+       "site_lesson_id": "3521431",
+       "lesson_title": "Aula 04: Fatores de Risco Genético Para Estatina Miopatia e Mialgias",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/3521431",
+       "position_in_group": 4
+      },
+      {
+       "site_lesson_id": "3521432",
+       "lesson_title": "Aula 05: Terapia de Reposição do GH",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/3521432",
+       "position_in_group": 5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "site_course_id": "252702",
+   "course_title": "Introdutório de Fisiologia do Metabolismo Humano",
+   "course_url": "https://ead.avantgardecollege.com.br/area/conteudo/produto/252702",
+   "course_kind": "produto",
+   "position_in_vitrine": 16,
+   "groups": [
+    {
+     "site_group_id": "709938",
+     "group_title": "Aulas",
+     "group_index": 1,
+     "lessons": [
+      {
+       "site_lesson_id": "4303288",
+       "lesson_title": "Aula 01: Introdução",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/4303288",
+       "position_in_group": 1
+      },
+      {
+       "site_lesson_id": "4303289",
+       "lesson_title": "Aula 02: Disbiose e Digestão",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/4303289",
+       "position_in_group": 2
+      },
+      {
+       "site_lesson_id": "4303290",
+       "lesson_title": "Aula 03: Dieta e Alimentação",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/4303290",
+       "position_in_group": 3
+      },
+      {
+       "site_lesson_id": "4303291",
+       "lesson_title": "Aula 04: Tríade Energética I",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/4303291",
+       "position_in_group": 4
+      },
+      {
+       "site_lesson_id": "4303292",
+       "lesson_title": "Aula 05: Tríade Energética II",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/4303292",
+       "position_in_group": 5
+      },
+      {
+       "site_lesson_id": "4303293",
+       "lesson_title": "Aula 06: Androgênios, Estrogênios e Progesterona",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/4303293",
+       "position_in_group": 6
+      },
+      {
+       "site_lesson_id": "4303563",
+       "lesson_title": "Aula 07: Dúvidas",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/4303563",
+       "position_in_group": 7
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "site_course_id": "385190",
+   "course_title": "Imersão em Fisiologia do Metabolismo Humano | 2025",
+   "course_url": "https://ead.avantgardecollege.com.br/area/conteudo/produto/385190",
+   "course_kind": "produto",
+   "position_in_vitrine": 17,
+   "groups": [
+    {
+     "site_group_id": "1096601",
+     "group_title": "Imersão 2025",
+     "group_index": 1,
+     "lessons": [
+      {
+       "site_lesson_id": "7692931",
+       "lesson_title": "Aula 01 - Introdução | Dr Alexandre Duarte",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/7692931",
+       "position_in_group": 1
+      },
+      {
+       "site_lesson_id": "7692933",
+       "lesson_title": "Aula 02 - Dieta | Dr. Alexandre Duarte",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/7692933",
+       "position_in_group": 2
+      },
+      {
+       "site_lesson_id": "7692934",
+       "lesson_title": "Aula 03 - Micronutrientes | Dr. Alexandre Duarte",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/7692934",
+       "position_in_group": 3
+      },
+      {
+       "site_lesson_id": "7692935",
+       "lesson_title": "Aula 04 - Gastroimersão | Dra. Ana marta",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/7692935",
+       "position_in_group": 4
+      },
+      {
+       "site_lesson_id": "7692936",
+       "lesson_title": "Aula 05 - DHEA e Progesterona | Dr. Alexandre Duarte",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/7692936",
+       "position_in_group": 5
+      },
+      {
+       "site_lesson_id": "7692937",
+       "lesson_title": "Aula 06 - Exame de Composição Corporal | Tera Science",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/7692937",
+       "position_in_group": 6
+      },
+      {
+       "site_lesson_id": "7692938",
+       "lesson_title": "Aula 07 - Direito Medico | Ricardo Palovva",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/7692938",
+       "position_in_group": 7
+      },
+      {
+       "site_lesson_id": "7692939",
+       "lesson_title": "Aula 08 - Gestão e Vendas | Luiz Pacheco",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/7692939",
+       "position_in_group": 8
+      },
+      {
+       "site_lesson_id": "7692940",
+       "lesson_title": "Aula 09 - Mitocondria e in-MitoGen | Dr. Alexandre Duarte",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/7692940",
+       "position_in_group": 9
+      },
+      {
+       "site_lesson_id": "7692941",
+       "lesson_title": "Aula 10 - Tathi Dehandela",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/7692941",
+       "position_in_group": 10
+      },
+      {
+       "site_lesson_id": "7692942",
+       "lesson_title": "Aula 11 - Tireoide e Mitocondria | Dr. Alexandre Duarte",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/7692942",
+       "position_in_group": 11
+      },
+      {
+       "site_lesson_id": "7692943",
+       "lesson_title": "Aula 12 - Marketing de Conteúddo | Allan Lima",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/7692943",
+       "position_in_group": 12
+      },
+      {
+       "site_lesson_id": "7692945",
+       "lesson_title": "Aula 13 - Androgênios | Dr. Alexandre Duarte",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/7692945",
+       "position_in_group": 13
+      },
+      {
+       "site_lesson_id": "7692944",
+       "lesson_title": "Aula 14 - Estrogenios | Dr. Alexandre Duarte",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/7692944",
+       "position_in_group": 14
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "site_course_id": "537742",
+   "course_title": "Avançado de Doenças Autoimunes",
+   "course_url": "https://ead.avantgardecollege.com.br/area/conteudo/produto/537742",
+   "course_kind": "produto",
+   "position_in_vitrine": 18,
+   "groups": [
+    {
+     "site_group_id": "1501449",
+     "group_title": "Módulo 1",
+     "group_index": 1,
+     "lessons": [
+      {
+       "site_lesson_id": "7769231",
+       "lesson_title": "Aula 01 - As Bases da Imunidade",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/7769231",
+       "position_in_group": 1
+      },
+      {
+       "site_lesson_id": "7769233",
+       "lesson_title": "Aula 02 - Imunidade e vit D",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/7769233",
+       "position_in_group": 2
+      }
+     ]
+    },
+    {
+     "site_group_id": "1502985",
+     "group_title": "Módulo 2",
+     "group_index": 2,
+     "lessons": [
+      {
+       "site_lesson_id": "7773600",
+       "lesson_title": "Aula 01 - Dra Fernanda Ota",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/7773600",
+       "position_in_group": 1
+      },
+      {
+       "site_lesson_id": "7773602",
+       "lesson_title": "Aula 02 - Dra Fernanda Ota",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/7773602",
+       "position_in_group": 2
+      },
+      {
+       "site_lesson_id": "7773603",
+       "lesson_title": "Aula 03 - Dra Fernanda Ota",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/7773603",
+       "position_in_group": 3
+      },
+      {
+       "site_lesson_id": "7773604",
+       "lesson_title": "Aula 04 - Dra Vivian Campos",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/7773604",
+       "position_in_group": 4
+      },
+      {
+       "site_lesson_id": "7773605",
+       "lesson_title": "Aula 05 - Dra Vivian Campos",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/7773605",
+       "position_in_group": 5
+      },
+      {
+       "site_lesson_id": "7773606",
+       "lesson_title": "Aula 06 - Dra Vivian Campos",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/7773606",
+       "position_in_group": 6
+      },
+      {
+       "site_lesson_id": "7773607",
+       "lesson_title": "Aula 07 - Dra Vivian Campos",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/7773607",
+       "position_in_group": 7
+      },
+      {
+       "site_lesson_id": "7773608",
+       "lesson_title": "Aula 08 - Dra Vivian Campos",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/7773608",
+       "position_in_group": 8
+      },
+      {
+       "site_lesson_id": "7773612",
+       "lesson_title": "Aula 09 - Dra Vivian Campos",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/7773612",
+       "position_in_group": 9
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "site_course_id": "357778",
+   "course_title": "Review Congresso Internacional de Metabologia (MMI) 2025",
+   "course_url": "https://ead.avantgardecollege.com.br/area/conteudo/produto/357778",
+   "course_kind": "produto",
+   "position_in_vitrine": 19,
+   "groups": [
+    {
+     "site_group_id": "1021879",
+     "group_title": "Aulas",
+     "group_index": 1,
+     "lessons": [
+      {
+       "site_lesson_id": "5127789",
+       "lesson_title": "Aula 01: Peptídeos Hormonais",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/5127789",
+       "position_in_group": 1
+      },
+      {
+       "site_lesson_id": "5127790",
+       "lesson_title": "Aula 02: NAD, A Chave Para A Longevidade",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/5127790",
+       "position_in_group": 2
+      },
+      {
+       "site_lesson_id": "5127791",
+       "lesson_title": "Aula 03: Progesterona, Uma Chave Para a Saúde",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/5127791",
+       "position_in_group": 3
+      },
+      {
+       "site_lesson_id": "5127792",
+       "lesson_title": "Aula 04: Neurobiologia e Imortalidade",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/5127792",
+       "position_in_group": 4
+      },
+      {
+       "site_lesson_id": "5127794",
+       "lesson_title": "Aula 05: GH em Adultos",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/5127794",
+       "position_in_group": 5
+      },
+      {
+       "site_lesson_id": "5127795",
+       "lesson_title": "Aula 06: Câncer de Mama",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/5127795",
+       "position_in_group": 6
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "site_course_id": "538759",
+   "course_title": "Review Congresso Internacional de Metabologia (MMI) 2024",
+   "course_url": "https://ead.avantgardecollege.com.br/area/conteudo/produto/538759",
+   "course_kind": "produto",
+   "position_in_vitrine": 20,
+   "groups": [
+    {
+     "site_group_id": "1504173",
+     "group_title": "Aulas",
+     "group_index": 1,
+     "lessons": [
+      {
+       "site_lesson_id": "7780464",
+       "lesson_title": "Introdução",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/7780464",
+       "position_in_group": 1
+      },
+      {
+       "site_lesson_id": "7780460",
+       "lesson_title": "Aula 01 - Plasmaferese",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/7780460",
+       "position_in_group": 2
+      },
+      {
+       "site_lesson_id": "7780462",
+       "lesson_title": "Aula 02 - Blue Zones",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/7780462",
+       "position_in_group": 3
+      },
+      {
+       "site_lesson_id": "7780466",
+       "lesson_title": "Aula 03 - Estrogênios e Câncer de Mama",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/7780466",
+       "position_in_group": 4
+      },
+      {
+       "site_lesson_id": "7780471",
+       "lesson_title": "Aula 04 - Eixo Timo-Pineal",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/7780471",
+       "position_in_group": 5
+      },
+      {
+       "site_lesson_id": "7780467",
+       "lesson_title": "Aula 05 - Esteatose e Obesidade",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/7780467",
+       "position_in_group": 6
+      },
+      {
+       "site_lesson_id": "7780468",
+       "lesson_title": "Aula 06 - Emagrecimento",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/7780468",
+       "position_in_group": 7
+      },
+      {
+       "site_lesson_id": "7780469",
+       "lesson_title": "Aula 07 - Oxitocina",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/7780469",
+       "position_in_group": 8
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "site_course_id": "460749",
+   "course_title": "Masterclass de Fisiologia do Metabolismo Humano",
+   "course_url": "https://ead.avantgardecollege.com.br/area/conteudo/produto/460749",
+   "course_kind": "produto",
+   "position_in_vitrine": 21,
+   "groups": [
+    {
+     "site_group_id": "1306268",
+     "group_title": "Aulas",
+     "group_index": 1,
+     "lessons": [
+      {
+       "site_lesson_id": "6729438",
+       "lesson_title": "Aula 1 - Principios da Reposição Hormonal",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/6729438",
+       "position_in_group": 1
+      },
+      {
+       "site_lesson_id": "6729440",
+       "lesson_title": "Aula 2 - O metabolismo da tireoide",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/6729440",
+       "position_in_group": 2
+      },
+      {
+       "site_lesson_id": "6729442",
+       "lesson_title": "Aula 3 - Ácido úrico",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/6729442",
+       "position_in_group": 3
+      },
+      {
+       "site_lesson_id": "6729443",
+       "lesson_title": "Aula 4 - Desmistificando o colesterol",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/6729443",
+       "position_in_group": 4
+      },
+      {
+       "site_lesson_id": "6729444",
+       "lesson_title": "Aula 5 - Metabolismo da Aterosclerose",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/6729444",
+       "position_in_group": 5
+      },
+      {
+       "site_lesson_id": "6729446",
+       "lesson_title": "Perguntas finais",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/6729446",
+       "position_in_group": 6
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "site_course_id": "252703",
+   "course_title": "Avançado de Anabolismo Saudável",
+   "course_url": "https://ead.avantgardecollege.com.br/area/conteudo/produto/252703",
+   "course_kind": "produto",
+   "position_in_vitrine": 22,
+   "groups": [
+    {
+     "site_group_id": "710367",
+     "group_title": "Aulas",
+     "group_index": 1,
+     "lessons": [
+      {
+       "site_lesson_id": "3517825",
+       "lesson_title": "Masterclass Anabolismo Saudável",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/3517825",
+       "position_in_group": 1
+      },
+      {
+       "site_lesson_id": "3517826",
+       "lesson_title": "Masterclass Anabolismo Saudável",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/3517826",
+       "position_in_group": 2
+      },
+      {
+       "site_lesson_id": "3517827",
+       "lesson_title": "Masterclass Anabolismo Saudável",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/3517827",
+       "position_in_group": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "site_course_id": "252805",
+   "course_title": "Avançado de Nutrição Metabólica",
+   "course_url": "https://ead.avantgardecollege.com.br/area/conteudo/produto/252805",
+   "course_kind": "produto",
+   "position_in_vitrine": 23,
+   "groups": [
+    {
+     "site_group_id": "710897",
+     "group_title": "Aulas",
+     "group_index": 1,
+     "lessons": [
+      {
+       "site_lesson_id": "3520778",
+       "lesson_title": "Bem-vindo(a)!",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/3520778",
+       "position_in_group": 1
+      },
+      {
+       "site_lesson_id": "3520786",
+       "lesson_title": "Aula 01: Panorama Histórico da Alimentação Humana",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/3520786",
+       "position_in_group": 2
+      },
+      {
+       "site_lesson_id": "3520791",
+       "lesson_title": "Aula 02: Tríade Energética Dr. Alexandre Duarte",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/3520791",
+       "position_in_group": 3
+      },
+      {
+       "site_lesson_id": "3520847",
+       "lesson_title": "Aula 03: Otimizando a Saúde Através do Metabolismo",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/3520847",
+       "position_in_group": 4
+      },
+      {
+       "site_lesson_id": "3521091",
+       "lesson_title": "Aula 04: A Ciência por Trás da Restrição dos Carboidratos",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/3521091",
+       "position_in_group": 5
+      },
+      {
+       "site_lesson_id": "3521302",
+       "lesson_title": "Aula 05: O Papel Crucial das Proteínas e Gorduras",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/3521302",
+       "position_in_group": 6
+      },
+      {
+       "site_lesson_id": "3521314",
+       "lesson_title": "Aula 06: Decifrando Alimentos Ultra-processados",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/3521314",
+       "position_in_group": 7
+      },
+      {
+       "site_lesson_id": "3521325",
+       "lesson_title": "Aula 07: Qualidade Versus Quantidade - O Grande Debate",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/3521325",
+       "position_in_group": 8
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "site_course_id": "252704",
+   "course_title": "Avançado de Análise de Exames Laboratoriais e DNA",
+   "course_url": "https://ead.avantgardecollege.com.br/area/conteudo/produto/252704",
+   "course_kind": "produto",
+   "position_in_vitrine": 24,
+   "groups": [
+    {
+     "site_group_id": "710974",
+     "group_title": "Aulas",
+     "group_index": 1,
+     "lessons": [
+      {
+       "site_lesson_id": "3521375",
+       "lesson_title": "Aula 1: Interpretação de Exames Laboratoriais I",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/3521375",
+       "position_in_group": 1
+      },
+      {
+       "site_lesson_id": "3521377",
+       "lesson_title": "Aula 2: Interpretação de Exames Laboratoriais II",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/3521377",
+       "position_in_group": 2
+      },
+      {
+       "site_lesson_id": "3521378",
+       "lesson_title": "Aula 3: Interpretação de Exames Laboratoriais III",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/3521378",
+       "position_in_group": 3
+      },
+      {
+       "site_lesson_id": "3521381",
+       "lesson_title": "Aula 4: Interpretação de Exames Laboratoriais IV",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/3521381",
+       "position_in_group": 4
+      },
+      {
+       "site_lesson_id": "3521383",
+       "lesson_title": "Aula 5: Polimorfismos Genéticos I",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/3521383",
+       "position_in_group": 5
+      },
+      {
+       "site_lesson_id": "5791317",
+       "lesson_title": "Aula 6: Polimorfismos Genéticos I",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/5791317",
+       "position_in_group": 6
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "site_course_id": "252705",
+   "course_title": "Avançado de Oncologia + OmicScreen",
+   "course_url": "https://ead.avantgardecollege.com.br/area/conteudo/produto/252705",
+   "course_kind": "produto",
+   "position_in_vitrine": 25,
+   "groups": [
+    {
+     "site_group_id": "710983",
+     "group_title": "Oncologia",
+     "group_index": 1,
+     "lessons": [
+      {
+       "site_lesson_id": "3521413",
+       "lesson_title": "Aula 01 | Tratamento Adjuvante Funcional",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/3521413",
+       "position_in_group": 1
+      },
+      {
+       "site_lesson_id": "3521416",
+       "lesson_title": "Aula 02 | Alimentação",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/3521416",
+       "position_in_group": 2
+      },
+      {
+       "site_lesson_id": "3521417",
+       "lesson_title": "Aula 03 | Interpretação do Onconomics",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/3521417",
+       "position_in_group": 3
+      },
+      {
+       "site_lesson_id": "3521418",
+       "lesson_title": "Aula 04 | O Exame de Biopsia Líquida",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/3521418",
+       "position_in_group": 4
+      },
+      {
+       "site_lesson_id": "3521419",
+       "lesson_title": "Aula 05 | O Exame de Termografia",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/3521419",
+       "position_in_group": 5
+      }
+     ]
+    },
+    {
+     "site_group_id": "1767738",
+     "group_title": "OmicScreen",
+     "group_index": 2,
+     "lessons": [
+      {
+       "site_lesson_id": "8965507",
+       "lesson_title": "Aula 01 - OmicScreen Part 1",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/8965507",
+       "position_in_group": 1
+      },
+      {
+       "site_lesson_id": "8965510",
+       "lesson_title": "Aula 02 - OmicScreen Part 2",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/8965510",
+       "position_in_group": 2
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "site_course_id": "252709",
+   "course_title": "Avançado de Emagrecimento Saudável",
+   "course_url": "https://ead.avantgardecollege.com.br/area/conteudo/produto/252709",
+   "course_kind": "produto",
+   "position_in_vitrine": 26,
+   "groups": [
+    {
+     "site_group_id": "713999",
+     "group_title": "Aulas",
+     "group_index": 1,
+     "lessons": [
+      {
+       "site_lesson_id": "4435673",
+       "lesson_title": "Dia 1 - Parte 1",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/4435673",
+       "position_in_group": 1
+      },
+      {
+       "site_lesson_id": "4435674",
+       "lesson_title": "Dia 1 - Parte 2",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/4435674",
+       "position_in_group": 2
+      },
+      {
+       "site_lesson_id": "4435675",
+       "lesson_title": "Dia 1 - Parte 3",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/4435675",
+       "position_in_group": 3
+      },
+      {
+       "site_lesson_id": "4435676",
+       "lesson_title": "Dia 1 - Parte 4",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/4435676",
+       "position_in_group": 4
+      },
+      {
+       "site_lesson_id": "4435677",
+       "lesson_title": "Dia 2 - Parte 1",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/4435677",
+       "position_in_group": 5
+      },
+      {
+       "site_lesson_id": "4435678",
+       "lesson_title": "Dia 2 - Parte 2",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/4435678",
+       "position_in_group": 6
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "site_course_id": "252711",
+   "course_title": "Avançado de Exercício Endurance",
+   "course_url": "https://ead.avantgardecollege.com.br/area/conteudo/produto/252711",
+   "course_kind": "produto",
+   "position_in_vitrine": 27,
+   "groups": [
+    {
+     "site_group_id": "714011",
+     "group_title": "Aulas",
+     "group_index": 1,
+     "lessons": [
+      {
+       "site_lesson_id": "3534880",
+       "lesson_title": "Aula 1 - Bioimpedância e Base Alimentar",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/3534880",
+       "position_in_group": 1
+      },
+      {
+       "site_lesson_id": "3534881",
+       "lesson_title": "Aula 2 - Suplementação Performance e Exercício",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/3534881",
+       "position_in_group": 2
+      },
+      {
+       "site_lesson_id": "3534882",
+       "lesson_title": "Aula 3 - HGH Ganho de Massa",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/3534882",
+       "position_in_group": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "site_course_id": "252757",
+   "course_title": "Avançado de Neurotransmissores",
+   "course_url": "https://ead.avantgardecollege.com.br/area/conteudo/produto/252757",
+   "course_kind": "produto",
+   "position_in_vitrine": 28,
+   "groups": [
+    {
+     "site_group_id": "714023",
+     "group_title": "Aulas",
+     "group_index": 1,
+     "lessons": [
+      {
+       "site_lesson_id": "3534934",
+       "lesson_title": "Aula 01 | Abordagens Terapeuticas",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/3534934",
+       "position_in_group": 1
+      },
+      {
+       "site_lesson_id": "3534937",
+       "lesson_title": "Aula 02 | Azul de Metileno",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/3534937",
+       "position_in_group": 2
+      },
+      {
+       "site_lesson_id": "3534938",
+       "lesson_title": "Aula 03 | Vasopressina",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/3534938",
+       "position_in_group": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "site_course_id": "252835",
+   "course_title": "Avançado de Saúde Digestiva e Disbiose",
+   "course_url": "https://ead.avantgardecollege.com.br/area/conteudo/produto/252835",
+   "course_kind": "produto",
+   "position_in_vitrine": 29,
+   "groups": [
+    {
+     "site_group_id": "715731",
+     "group_title": "Aulas",
+     "group_index": 1,
+     "lessons": [
+      {
+       "site_lesson_id": "3545135",
+       "lesson_title": "Aula 01: Avançado Saúde Digestiva e Disbiose",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/3545135",
+       "position_in_group": 1
+      },
+      {
+       "site_lesson_id": "3545136",
+       "lesson_title": "Aula 02: Avançado Saúde Digestiva e Disbiose",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/3545136",
+       "position_in_group": 2
+      },
+      {
+       "site_lesson_id": "3545140",
+       "lesson_title": "Aula 03: Avançado Saúde Digestiva e Disbiose",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/3545140",
+       "position_in_group": 3
+      },
+      {
+       "site_lesson_id": "3545142",
+       "lesson_title": "Aula 04: Avançado Saúde Digestiva e Disbiose",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/3545142",
+       "position_in_group": 4
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "site_course_id": "252836",
+   "course_title": "Avançado de Saúde do homem",
+   "course_url": "https://ead.avantgardecollege.com.br/area/conteudo/produto/252836",
+   "course_kind": "produto",
+   "position_in_vitrine": 30,
+   "groups": [
+    {
+     "site_group_id": "715758",
+     "group_title": "Teoria",
+     "group_index": 1,
+     "lessons": [
+      {
+       "site_lesson_id": "3545256",
+       "lesson_title": "Aula 01: Intestino, Cérebro e Testosterona - Dr. Alexandre Duarte",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/3545256",
+       "position_in_group": 1
+      },
+      {
+       "site_lesson_id": "3545306",
+       "lesson_title": "Aula 02: Estresse x Desequilíbrio Hormonal - Dr. Alexandre Duarte",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/3545306",
+       "position_in_group": 2
+      },
+      {
+       "site_lesson_id": "3545308",
+       "lesson_title": "Aula 03: Disfunção Erétil - Dr. Fernando Muniz",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/3545308",
+       "position_in_group": 3
+      },
+      {
+       "site_lesson_id": "3545310",
+       "lesson_title": "Aula 04: Ejaculação Precoce - Dr. Fernando Muniz",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/3545310",
+       "position_in_group": 4
+      },
+      {
+       "site_lesson_id": "3545311",
+       "lesson_title": "Aula 05: O Metabolismo da Testosterona - Dr. Alexandre Duarte",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/3545311",
+       "position_in_group": 5
+      },
+      {
+       "site_lesson_id": "3545312",
+       "lesson_title": "Aula 06: TRH Testosterona - Dr. Alexandre Duarte",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/3545312",
+       "position_in_group": 6
+      },
+      {
+       "site_lesson_id": "3545313",
+       "lesson_title": "Aula 07: Fórmulas e Prescrições - Dr. Alexandre Duarte",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/3545313",
+       "position_in_group": 7
+      },
+      {
+       "site_lesson_id": "3545315",
+       "lesson_title": "Aula 08: Fórmulas e Prescrições II - Dr. Alexandre Duarte",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/3545315",
+       "position_in_group": 8
+      },
+      {
+       "site_lesson_id": "3545316",
+       "lesson_title": "Aula 09: Fórmulas e Prescrições Emagrecimento - Dr. Alexandre Duarte",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/3545316",
+       "position_in_group": 9
+      },
+      {
+       "site_lesson_id": "3545317",
+       "lesson_title": "Aula 10: Doenças Prostáticas I - Dr. Fernando Muniz",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/3545317",
+       "position_in_group": 10
+      },
+      {
+       "site_lesson_id": "3545318",
+       "lesson_title": "Aula 11: Doenças Prostáticas II - Dr. Fernando Muniz",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/3545318",
+       "position_in_group": 11
+      },
+      {
+       "site_lesson_id": "3545319",
+       "lesson_title": "Aula 12: Andropausa I - Dr. Fernando Muniz",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/3545319",
+       "position_in_group": 12
+      },
+      {
+       "site_lesson_id": "3545320",
+       "lesson_title": "Aula 13: Andropausa II - Dr. Fernando Muniz",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/3545320",
+       "position_in_group": 13
+      },
+      {
+       "site_lesson_id": "3545326",
+       "lesson_title": "Aula 14: Andropausa III - Dr. Fernando Muniz",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/3545326",
+       "position_in_group": 14
+      },
+      {
+       "site_lesson_id": "3545327",
+       "lesson_title": "Aula 15: Implantes Hormonais I - Dr. Alexandre Duarte",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/3545327",
+       "position_in_group": 15
+      },
+      {
+       "site_lesson_id": "3657234",
+       "lesson_title": "Aula 16: Implantes Hormonais II - Dr. Alexandre Duarte",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/3657234",
+       "position_in_group": 16
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "site_course_id": "252837",
+   "course_title": "Avançado de Termografia",
+   "course_url": "https://ead.avantgardecollege.com.br/area/conteudo/produto/252837",
+   "course_kind": "produto",
+   "position_in_vitrine": 31,
+   "groups": [
+    {
+     "site_group_id": "715813",
+     "group_title": "Aulas",
+     "group_index": 1,
+     "lessons": [
+      {
+       "site_lesson_id": "4243247",
+       "lesson_title": "Dia 1 - Parte 1",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/4243247",
+       "position_in_group": 1
+      },
+      {
+       "site_lesson_id": "4243248",
+       "lesson_title": "Dia 1 - Parte 2",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/4243248",
+       "position_in_group": 2
+      },
+      {
+       "site_lesson_id": "4243250",
+       "lesson_title": "Dia 1 - Parte 3",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/4243250",
+       "position_in_group": 3
+      },
+      {
+       "site_lesson_id": "4243252",
+       "lesson_title": "Dia 1 - Parte 4",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/4243252",
+       "position_in_group": 4
+      },
+      {
+       "site_lesson_id": "4243254",
+       "lesson_title": "Dia 2 - Parte 1",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/4243254",
+       "position_in_group": 5
+      },
+      {
+       "site_lesson_id": "4243257",
+       "lesson_title": "Dia 2 - Parte 2",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/4243257",
+       "position_in_group": 6
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "site_course_id": "252847",
+   "course_title": "Avançado de Saúde da Mulher",
+   "course_url": "https://ead.avantgardecollege.com.br/area/conteudo/produto/252847",
+   "course_kind": "produto",
+   "position_in_vitrine": 32,
+   "groups": [
+    {
+     "site_group_id": "715825",
+     "group_title": "Teoria",
+     "group_index": 1,
+     "lessons": [
+      {
+       "site_lesson_id": "3545563",
+       "lesson_title": "Aula 1: Avançado de Saúde da Mulher",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/3545563",
+       "position_in_group": 1
+      },
+      {
+       "site_lesson_id": "3545564",
+       "lesson_title": "Aula 2: Avançado de Saúde da Mulher",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/3545564",
+       "position_in_group": 2
+      },
+      {
+       "site_lesson_id": "3545567",
+       "lesson_title": "Aula 3: Avançado de Saúde da Mulher",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/3545567",
+       "position_in_group": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "site_course_id": "252838",
+   "course_title": "Avançado de Vitaminas, Minerais e Terapias Endovenosas",
+   "course_url": "https://ead.avantgardecollege.com.br/area/conteudo/produto/252838",
+   "course_kind": "produto",
+   "position_in_vitrine": 33,
+   "groups": [
+    {
+     "site_group_id": "715832",
+     "group_title": "Aulas",
+     "group_index": 1,
+     "lessons": [
+      {
+       "site_lesson_id": "3545577",
+       "lesson_title": "Aula 01: Avançado de Vitaminas, Minerais e Terapias Endovenosas",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/3545577",
+       "position_in_group": 1
+      },
+      {
+       "site_lesson_id": "3545581",
+       "lesson_title": "Aula 02: Avançado de Vitaminas, Minerais e Terapias Endovenosas",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/3545581",
+       "position_in_group": 2
+      },
+      {
+       "site_lesson_id": "3545582",
+       "lesson_title": "Aula 03: Avançado de Vitaminas, Minerais e Terapias Endovenosas",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/3545582",
+       "position_in_group": 3
+      },
+      {
+       "site_lesson_id": "3545583",
+       "lesson_title": "Aula 04: Avançado de Vitaminas, Minerais e Terapias Endovenosas",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/3545583",
+       "position_in_group": 4
+      },
+      {
+       "site_lesson_id": "3545587",
+       "lesson_title": "Aula 05: Avançado de Vitaminas, Minerais e Terapias Endovenosas",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/3545587",
+       "position_in_group": 5
+      },
+      {
+       "site_lesson_id": "3545592",
+       "lesson_title": "Aula 06: Avançado de Vitaminas, Minerais e Terapias Endovenosas",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/3545592",
+       "position_in_group": 6
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "site_course_id": "252839",
+   "course_title": "Avançado de Tríade Energética",
+   "course_url": "https://ead.avantgardecollege.com.br/area/conteudo/produto/252839",
+   "course_kind": "produto",
+   "position_in_vitrine": 34,
+   "groups": [
+    {
+     "site_group_id": "738203",
+     "group_title": "Aulas",
+     "group_index": 1,
+     "lessons": [
+      {
+       "site_lesson_id": "3659233",
+       "lesson_title": "Aula 1 | Cortisol",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/3659233",
+       "position_in_group": 1
+      },
+      {
+       "site_lesson_id": "3659237",
+       "lesson_title": "Aula 2 | Tireóide",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/3659237",
+       "position_in_group": 2
+      },
+      {
+       "site_lesson_id": "3659246",
+       "lesson_title": "Aula 3 | Insulina",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/3659246",
+       "position_in_group": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "site_course_id": "252842",
+   "course_title": "Tratamento Metabólico da Hipercalcemia",
+   "course_url": "https://ead.avantgardecollege.com.br/area/conteudo/produto/252842",
+   "course_kind": "produto",
+   "position_in_vitrine": 35,
+   "groups": [
+    {
+     "site_group_id": "738228",
+     "group_title": "Aula",
+     "group_index": 1,
+     "lessons": [
+      {
+       "site_lesson_id": "3659356",
+       "lesson_title": "Tratando Complicações e Orientações de Conduta",
+       "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/3659356",
+       "position_in_group": 1
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1343 @@
+{
+ "note": "lesson_uid -> arquivo de origem em raw/, resultado do casamento difuso feito antes da migracao para ids. Guardado para que a migracao seja reproduzivel.",
+ "matches": [
+  {
+   "lesson_uid": "lsn_3517825",
+   "source_path": "raw/21-anabolismo-saudavel/Aula_01_Masterclass_Anabolismo_Saudavel.txt",
+   "match_confidence": "medium",
+   "match_signals": "titulo=0.93;posicao"
+  },
+  {
+   "lesson_uid": "lsn_3517826",
+   "source_path": "raw/21-anabolismo-saudavel/Aula_02_Masterclass_Anabolismo_Saudavel.txt",
+   "match_confidence": "medium",
+   "match_signals": "titulo=0.93;posicao"
+  },
+  {
+   "lesson_uid": "lsn_3517827",
+   "source_path": "raw/21-anabolismo-saudavel/aula_03_masterclass_anabolismo_saudavel.txt",
+   "match_confidence": "medium",
+   "match_signals": "titulo=0.93;posicao"
+  },
+  {
+   "lesson_uid": "lsn_3520778",
+   "source_path": "raw/22-nutricao-metabolica/01_bem_vindo.txt",
+   "match_confidence": "medium",
+   "match_signals": "titulo=0.78;posicao"
+  },
+  {
+   "lesson_uid": "lsn_3520786",
+   "source_path": "raw/22-nutricao-metabolica/02_panorama_historico_da_alimentacao_humana.txt",
+   "match_confidence": "medium",
+   "match_signals": "titulo=0.98;posicao"
+  },
+  {
+   "lesson_uid": "lsn_3520791",
+   "source_path": "raw/22-nutricao-metabolica/03_triade_energetica_dr_alexandre_duarte.txt",
+   "match_confidence": "medium",
+   "match_signals": "titulo=0.97;posicao"
+  },
+  {
+   "lesson_uid": "lsn_3520847",
+   "source_path": "raw/22-nutricao-metabolica/04_otimizando_a_saude_atraves_do_metabolismo.txt",
+   "match_confidence": "medium",
+   "match_signals": "titulo=0.98;posicao"
+  },
+  {
+   "lesson_uid": "lsn_3521091",
+   "source_path": "raw/22-nutricao-metabolica/05_A_Ciencia_por_Tras_da_Restricao_dos_Carboidratos_extraido.txt",
+   "match_confidence": "medium",
+   "match_signals": "titulo=0.98;posicao"
+  },
+  {
+   "lesson_uid": "lsn_3521302",
+   "source_path": "raw/22-nutricao-metabolica/06_o_papel_crucial_das_proteinas_e_gorduras.txt",
+   "match_confidence": "medium",
+   "match_signals": "titulo=0.98;posicao"
+  },
+  {
+   "lesson_uid": "lsn_3521314",
+   "source_path": "raw/22-nutricao-metabolica/07_decifrando_alimentos_ultra_processados.txt",
+   "match_confidence": "medium",
+   "match_signals": "titulo=0.98;posicao"
+  },
+  {
+   "lesson_uid": "lsn_3521325",
+   "source_path": "raw/22-nutricao-metabolica/08_qualidade_versus_quantidade_o_grande_debate.txt",
+   "match_confidence": "medium",
+   "match_signals": "titulo=0.98;posicao"
+  },
+  {
+   "lesson_uid": "lsn_3521375",
+   "source_path": "raw/23-analises-exames-dna/Aula 01- Masterclass exames laboratoriais.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=1;titulo=0.69;posicao"
+  },
+  {
+   "lesson_uid": "lsn_3521377",
+   "source_path": "raw/23-analises-exames-dna/aula_02_masterclass_exames_laboratoriais_e_dna_2.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=2;titulo=0.63;posicao"
+  },
+  {
+   "lesson_uid": "lsn_3521378",
+   "source_path": "raw/23-analises-exames-dna/aula_03_masterclass_exames_laboratoriais_e_dna_3.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=3;titulo=0.62;posicao"
+  },
+  {
+   "lesson_uid": "lsn_3521381",
+   "source_path": "raw/23-analises-exames-dna/aula_04_masterclass_exames_laboratoriais_e_dna_4.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=4;titulo=0.63;posicao"
+  },
+  {
+   "lesson_uid": "lsn_3521383",
+   "source_path": "raw/23-analises-exames-dna/aula_05_polimorfismo_genetico_1.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=5;titulo=0.91;posicao"
+  },
+  {
+   "lesson_uid": "lsn_3521413",
+   "source_path": "raw/24-oncologia-omicscreen/oncologia/Aula_01_-_Tratamento_Adjuvante_Funcional_-_Avantgarde_College.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=1;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_3521416",
+   "source_path": "raw/24-oncologia-omicscreen/oncologia/Aula_02_-_Alimentação_-_Avantgarde_College.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=2;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_3521417",
+   "source_path": "raw/24-oncologia-omicscreen/oncologia/Aula_03_-_Interpretação_do_Onconomics_-_Avantgarde_College.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=3;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_3521418",
+   "source_path": "raw/24-oncologia-omicscreen/oncologia/Aula_04_-_O_Exame_de_Biopsia_Líquida_-_Avantgarde_College.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=4;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_3521419",
+   "source_path": "raw/24-oncologia-omicscreen/oncologia/Aula_05_-_O_Exame_de_Termografia_-_Avantgarde_College.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=5;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_3521424",
+   "source_path": "raw/13-cardiologia/masterclass_cardiologia_aula_01.txt",
+   "match_confidence": "medium",
+   "match_signals": "numero=1;posicao"
+  },
+  {
+   "lesson_uid": "lsn_3521429",
+   "source_path": "raw/13-cardiologia/masterclass_cardiologia_aula_02.txt",
+   "match_confidence": "medium",
+   "match_signals": "numero=2;posicao"
+  },
+  {
+   "lesson_uid": "lsn_3521430",
+   "source_path": "raw/13-cardiologia/masterclass_cardiologia_aula_03.txt",
+   "match_confidence": "medium",
+   "match_signals": "numero=3;posicao"
+  },
+  {
+   "lesson_uid": "lsn_3521431",
+   "source_path": "raw/13-cardiologia/masterclass_cardiologia_aula_04.txt",
+   "match_confidence": "medium",
+   "match_signals": "numero=4;posicao"
+  },
+  {
+   "lesson_uid": "lsn_3521432",
+   "source_path": "raw/13-cardiologia/masterclass_cardiologia_aula_05.txt",
+   "match_confidence": "medium",
+   "match_signals": "numero=5;posicao"
+  },
+  {
+   "lesson_uid": "lsn_3534880",
+   "source_path": "raw/26-endurance/Aula_1_-_Bioimpedância_e_Base_Alimentar_-_Avantgarde_Collegets.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=1;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_3534881",
+   "source_path": "raw/26-endurance/Aula_2_-_Suplementação_Performance_e_Exercício_-_Avantgarde_College.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=2;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_3534882",
+   "source_path": "raw/26-endurance/Aula_3_-_HGH_Ganho_de_Massa_-_Avantgarde_College.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=3;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_3534934",
+   "source_path": "raw/27-neurotransmissores/Masterclass Neurotransmissores - Aula 01.docx.txt",
+   "match_confidence": "medium",
+   "match_signals": "numero=1;posicao"
+  },
+  {
+   "lesson_uid": "lsn_3534937",
+   "source_path": "raw/27-neurotransmissores/Masterclass_Neurotransmissores_-_Aula_02.docx.txt",
+   "match_confidence": "medium",
+   "match_signals": "numero=2;posicao"
+  },
+  {
+   "lesson_uid": "lsn_3534938",
+   "source_path": "raw/27-neurotransmissores/Masterclass_Neurotransmissores_-_Aula_03.txt",
+   "match_confidence": "medium",
+   "match_signals": "numero=3;posicao"
+  },
+  {
+   "lesson_uid": "lsn_3545135",
+   "source_path": "raw/28-saude-digestiva-disbiose/Aula 01 - masterclass saúde digestiva.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=1;titulo=0.77;posicao"
+  },
+  {
+   "lesson_uid": "lsn_3545136",
+   "source_path": "raw/28-saude-digestiva-disbiose/Aula 02- masterclass saude digestiva.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=2;titulo=0.77;posicao"
+  },
+  {
+   "lesson_uid": "lsn_3545140",
+   "source_path": "raw/28-saude-digestiva-disbiose/Aula 03- masterclass saude digestiva.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=3;titulo=0.77;posicao"
+  },
+  {
+   "lesson_uid": "lsn_3545142",
+   "source_path": "raw/28-saude-digestiva-disbiose/Aula_04_Avançado_Saúde_Digestiva_e_Disbiose.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=4;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_3545256",
+   "source_path": "raw/29-saude-do-homem-implantes/masterclass_saude_do_homem_1.txt",
+   "match_confidence": "medium",
+   "match_signals": "numero=1;posicao"
+  },
+  {
+   "lesson_uid": "lsn_3545306",
+   "source_path": "raw/29-saude-do-homem-implantes/masterclass_saude_do_homem_2.txt",
+   "match_confidence": "medium",
+   "match_signals": "numero=2;posicao"
+  },
+  {
+   "lesson_uid": "lsn_3545308",
+   "source_path": "raw/29-saude-do-homem-implantes/masterclass_saude_do_homem_3.txt",
+   "match_confidence": "medium",
+   "match_signals": "numero=3;posicao"
+  },
+  {
+   "lesson_uid": "lsn_3545310",
+   "source_path": "raw/29-saude-do-homem-implantes/masterclass_saude_do_homem_4.txt",
+   "match_confidence": "medium",
+   "match_signals": "numero=4;posicao"
+  },
+  {
+   "lesson_uid": "lsn_3545311",
+   "source_path": "raw/29-saude-do-homem-implantes/masterclass_saude_do_homem_5.txt",
+   "match_confidence": "medium",
+   "match_signals": "numero=5;posicao"
+  },
+  {
+   "lesson_uid": "lsn_3545312",
+   "source_path": "raw/29-saude-do-homem-implantes/masterclass_saude_do_homem_6.txt",
+   "match_confidence": "medium",
+   "match_signals": "numero=6;posicao"
+  },
+  {
+   "lesson_uid": "lsn_3545313",
+   "source_path": "raw/29-saude-do-homem-implantes/masterclass_saude_do_homem_7.txt",
+   "match_confidence": "medium",
+   "match_signals": "numero=7;posicao"
+  },
+  {
+   "lesson_uid": "lsn_3545315",
+   "source_path": "raw/29-saude-do-homem-implantes/masterclass_saude_do_homem_8.txt",
+   "match_confidence": "medium",
+   "match_signals": "numero=8;posicao"
+  },
+  {
+   "lesson_uid": "lsn_3545316",
+   "source_path": "raw/29-saude-do-homem-implantes/masterclass_saude_do_homem_9.txt",
+   "match_confidence": "medium",
+   "match_signals": "numero=9;posicao"
+  },
+  {
+   "lesson_uid": "lsn_3545317",
+   "source_path": "raw/29-saude-do-homem-implantes/masterclass_saude_do_homem_10.txt",
+   "match_confidence": "medium",
+   "match_signals": "numero=10;posicao"
+  },
+  {
+   "lesson_uid": "lsn_3545318",
+   "source_path": "raw/29-saude-do-homem-implantes/masterclass_saude_do_homem_11.txt",
+   "match_confidence": "medium",
+   "match_signals": "numero=11;posicao"
+  },
+  {
+   "lesson_uid": "lsn_3545319",
+   "source_path": "raw/29-saude-do-homem-implantes/masterclass_saude_do_homem_12.txt",
+   "match_confidence": "medium",
+   "match_signals": "numero=12;posicao"
+  },
+  {
+   "lesson_uid": "lsn_3545320",
+   "source_path": "raw/29-saude-do-homem-implantes/masterclass_saude_do_homem_13.txt",
+   "match_confidence": "medium",
+   "match_signals": "numero=13;posicao"
+  },
+  {
+   "lesson_uid": "lsn_3545326",
+   "source_path": "raw/29-saude-do-homem-implantes/masterclass_saude_do_homem_14.txt",
+   "match_confidence": "medium",
+   "match_signals": "numero=14;posicao"
+  },
+  {
+   "lesson_uid": "lsn_3545327",
+   "source_path": "raw/29-saude-do-homem-implantes/masterclass_saude_do_homem_15.txt",
+   "match_confidence": "medium",
+   "match_signals": "numero=15;posicao"
+  },
+  {
+   "lesson_uid": "lsn_3545563",
+   "source_path": "raw/31-saude-da-mulher/aula_1_masterclass_saude_da_mulher_2023.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=1;titulo=0.81;posicao"
+  },
+  {
+   "lesson_uid": "lsn_3545564",
+   "source_path": "raw/31-saude-da-mulher/Aula_2_Avançado_de_Saúde_da_Mulher_-_Avantgarde_College.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=2;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_3545567",
+   "source_path": "raw/31-saude-da-mulher/Aula_3_Avançado_de_Saúde_da_Mulher_-_Avantgarde_College.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=3;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_3545577",
+   "source_path": "raw/32-vitaminas-minerais-evs/aula_01_avancado_de_vitaminas_minerais_e_terapias_endovenosas.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=1;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_3545581",
+   "source_path": "raw/32-vitaminas-minerais-evs/aula_02_avancado_de_vitaminas_minerais_e_terapias_endovenosas.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=2;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_3545582",
+   "source_path": "raw/32-vitaminas-minerais-evs/aula_03_avancado_de_vitaminas_minerais_e_terapias_endovenosas.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=3;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_3545583",
+   "source_path": "raw/32-vitaminas-minerais-evs/aula_04_avancado_de_vitaminas_minerais_e_terapias_endovenosas.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=4;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_3545587",
+   "source_path": "raw/32-vitaminas-minerais-evs/aula_05_avancado_de_vitaminas_minerais_e_terapias_endovenosas.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=5;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_3545592",
+   "source_path": "raw/32-vitaminas-minerais-evs/aula_06_avancado_de_vitaminas_minerais_e_terapias_endovenosas.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=6;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_3657234",
+   "source_path": "raw/29-saude-do-homem-implantes/masterclass_saude_do_homem_16.txt",
+   "match_confidence": "medium",
+   "match_signals": "numero=16;posicao"
+  },
+  {
+   "lesson_uid": "lsn_3659233",
+   "source_path": "raw/33-triade-energetica/Aula_1_-_Cortisol_-_Avantgarde_College[2].txt",
+   "match_confidence": "high",
+   "match_signals": "numero=1;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_3659237",
+   "source_path": "raw/33-triade-energetica/Aula_2_-_Tireóide_-_Avantgarde_College.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=2;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_3659246",
+   "source_path": "raw/33-triade-energetica/Aula_3_-_Insulina_-_Avantgarde_College.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=3;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_3659356",
+   "source_path": "raw/34-hipercalcemia/Tratando_Complicações_e_Orientações_de_Conduta.txt",
+   "match_confidence": "medium",
+   "match_signals": "titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_4243247",
+   "source_path": "raw/30-termografia/dia_1_parte_1.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=1;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_4243248",
+   "source_path": "raw/30-termografia/dia_1_parte_2.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=1;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_4243250",
+   "source_path": "raw/30-termografia/dia_1_parte_3.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=1;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_4243252",
+   "source_path": "raw/30-termografia/dia_1_parte_4.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=1;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_4243254",
+   "source_path": "raw/30-termografia/dia_2_parte_1.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=2;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_4243257",
+   "source_path": "raw/30-termografia/dia_2_parte_2.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=2;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_4303288",
+   "source_path": "raw/14-introdutorio-fisiologia-metabolismo/Aula_01_Introdução.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=1;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_4303289",
+   "source_path": "raw/14-introdutorio-fisiologia-metabolismo/Aula_02_Disbiose_e_Digestão.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=2;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_4303290",
+   "source_path": "raw/14-introdutorio-fisiologia-metabolismo/Aula_03_Dieta_e_Alimentação.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=3;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_4303291",
+   "source_path": "raw/14-introdutorio-fisiologia-metabolismo/Aula_04_Tríade_Energética_I.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=4;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_4303292",
+   "source_path": "raw/14-introdutorio-fisiologia-metabolismo/Aula_05_Tríade_Energética_II_-_Avantgarde_College.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=5;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_4303293",
+   "source_path": "raw/14-introdutorio-fisiologia-metabolismo/Aula_06_Androgênios,_Estrogênios_e_Progesterona.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=6;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_4303563",
+   "source_path": "raw/14-introdutorio-fisiologia-metabolismo/Aula_07_Dúvidas.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=7;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_4435673",
+   "source_path": "raw/25-emagrecimento-saudavel/dia_1_parte_1_v2.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=1;titulo=0.82;posicao"
+  },
+  {
+   "lesson_uid": "lsn_4435674",
+   "source_path": "raw/25-emagrecimento-saudavel/dia_1_parte_2_v2.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=1;titulo=0.82;posicao"
+  },
+  {
+   "lesson_uid": "lsn_4435675",
+   "source_path": "raw/25-emagrecimento-saudavel/dia_1_parte_3_v2.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=1;titulo=0.82;posicao"
+  },
+  {
+   "lesson_uid": "lsn_4435676",
+   "source_path": "raw/25-emagrecimento-saudavel/dia_1_parte_4_v2.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=1;titulo=0.82;posicao"
+  },
+  {
+   "lesson_uid": "lsn_4435677",
+   "source_path": "raw/25-emagrecimento-saudavel/dia_2_parte_1_v2.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=2;titulo=0.82;posicao"
+  },
+  {
+   "lesson_uid": "lsn_4435678",
+   "source_path": "raw/25-emagrecimento-saudavel/dia_2_parte_2_v2.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=2;titulo=0.82;posicao"
+  },
+  {
+   "lesson_uid": "lsn_5127789",
+   "source_path": "raw/18-review-mmi-2025/Aula_01_Peptídeos_Hormonais.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=1;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_5127790",
+   "source_path": "raw/18-review-mmi-2025/Aula_02_NAD,_A_Chave_Para_A_Longevidade.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=2;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_5127791",
+   "source_path": "raw/18-review-mmi-2025/Aula_03_Progesterona,_Uma_Chave_Para_a_Saúde.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=3;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_5127792",
+   "source_path": "raw/18-review-mmi-2025/Aula_04_Neurobiologia_e_Imortalidade.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=4;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_5127794",
+   "source_path": "raw/18-review-mmi-2025/Aula_05_GH_em_Adultos.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=5;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_5127795",
+   "source_path": "raw/18-review-mmi-2025/Aula_06_Câncer_de_Mama.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=6;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_5491247",
+   "source_path": "raw/11-super-modulo-1/super-modulo-2-2025/AULA_01_-_Onboarding_-_Luiz_Pacheco.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=1;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_5491253",
+   "source_path": "raw/11-super-modulo-1/super-modulo-2-2025/AULA_02_-_Marketing_e_Posicionamento_-_Marina_Soares.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=2;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_5491257",
+   "source_path": "raw/11-super-modulo-1/super-modulo-2-2025/AULA_03_-_Dieta_e_Alimentação_-_Dr._Alexandre_Duarte.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=3;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_5491265",
+   "source_path": "raw/11-super-modulo-1/super-modulo-2-2025/AULA_04_-_Jejum_-_Dr._Alexandre_Duarte.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=4;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_5491322",
+   "source_path": "raw/11-super-modulo-1/super-modulo-2-2025/AULA_05_-_Cortisol_-_Dr._Alexandre_Duarte.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=5;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_5491323",
+   "source_path": "raw/11-super-modulo-1/super-modulo-2-2025/AULA_06_-_Metabolismo_-_Dr._Alexandre_Duarte.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=6;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_5491325",
+   "source_path": "raw/11-super-modulo-1/super-modulo-2-2025/AULA_07_-_Micronutrientes_-_Dr._Alexandre_Duarte.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=7;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_5491327",
+   "source_path": "raw/11-super-modulo-1/super-modulo-2-2025/AULA_08_-_Tireóide_-_Dr._Alexandre_Duarte.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=8;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_5491329",
+   "source_path": "raw/11-super-modulo-1/super-modulo-2-2025/AULA_09_-_Termografia_-_Dr._Alexandre_Aldred.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=9;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_5791317",
+   "source_path": "raw/23-analises-exames-dna/aula_05_polimorfismo_genetico_2.txt",
+   "match_confidence": "medium",
+   "match_signals": "titulo=0.87;posicao"
+  },
+  {
+   "lesson_uid": "lsn_5869203",
+   "source_path": "raw/08-fellowship-medicina-metabolica/AULA_01_-_Onboarding_-_Luiz_Pacheco.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=1;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_5869204",
+   "source_path": "raw/08-fellowship-medicina-metabolica/AULA_02_-_Marketing_e_Posicionamento_-_Marina_Soares.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=2;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_6729438",
+   "source_path": "raw/20-masterclass-fisiologia-metabolismo/Aula_1_-_Principios_da_Reposição_Hormonal.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=1;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_6729440",
+   "source_path": "raw/20-masterclass-fisiologia-metabolismo/Aula_2_-_O_metabolismo_da_tireoide.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=2;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_6729442",
+   "source_path": "raw/20-masterclass-fisiologia-metabolismo/Aula_3_-_Ácido_úrico.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=3;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_6729443",
+   "source_path": "raw/20-masterclass-fisiologia-metabolismo/Aula_4_-_Desmistificando_o_colesterol.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=4;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_6729444",
+   "source_path": "raw/20-masterclass-fisiologia-metabolismo/Aula_5_-_Metabolismo_da_Aterosclerose.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=5;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_6729446",
+   "source_path": "raw/20-masterclass-fisiologia-metabolismo/Perguntas_finais_.txt",
+   "match_confidence": "medium",
+   "match_signals": "titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_7147318",
+   "source_path": "raw/10-super-modulo-2/01_-_Aula_Aromatase.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=1;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_7147319",
+   "source_path": "raw/10-super-modulo-2/02_-_Aula_Implantes.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=2;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_7147321",
+   "source_path": "raw/10-super-modulo-2/03_-_Aula_SOP.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=3;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_7147322",
+   "source_path": "raw/10-super-modulo-2/04_-_Aula_Testo_saude_masculina.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=4;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_7147323",
+   "source_path": "raw/10-super-modulo-2/05_-_Aula_Análise_de_exame.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=5;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_7147324",
+   "source_path": "raw/10-super-modulo-2/06_-_Aula_Carlos_Nivel_Cognitivo.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=6;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_7147326",
+   "source_path": "raw/10-super-modulo-2/07_-_Aula_Will_Posicionamento.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=7;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_7692931",
+   "source_path": "raw/15-imersao-fisiologia-2025/Aula 01- Introdução.txt",
+   "match_confidence": "medium",
+   "match_signals": "numero=1;posicao"
+  },
+  {
+   "lesson_uid": "lsn_7692933",
+   "source_path": "raw/15-imersao-fisiologia-2025/Aula_02_-_Dieta_-_Dr._Alexandre_Duarte.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=2;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_7692934",
+   "source_path": "raw/15-imersao-fisiologia-2025/Aula_03_-_Micronutrientes_-_Dr._Alexandre_Duarte.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=3;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_7692935",
+   "source_path": "raw/15-imersao-fisiologia-2025/Aula_04_-_Gastroimersão_-_Dra._Ana_marta.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=4;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_7692936",
+   "source_path": "raw/15-imersao-fisiologia-2025/Aula_05_-_DHEA_e_Progesterona_-_Dr._Alexandre_Duarte.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=5;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_7692937",
+   "source_path": "raw/15-imersao-fisiologia-2025/Aula_06_-_Exame_de_Composição_Corporal_-_Tera_Science.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=6;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_7692938",
+   "source_path": "raw/15-imersao-fisiologia-2025/Aula_07_-_Direito_Medico_-_Ricardo_Palovva.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=7;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_7692939",
+   "source_path": "raw/15-imersao-fisiologia-2025/Aula_08_-_Gestão_e_Vendas_-_Luiz_Pacheco.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=8;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_7692940",
+   "source_path": "raw/15-imersao-fisiologia-2025/Aula_09_-_Mitocondria_e_in-MitoGen_-_Dr._Alexandre_Duarte.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=9;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_7692941",
+   "source_path": "raw/15-imersao-fisiologia-2025/Aula_10_-_Tathi_Dehandela.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=10;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_7692942",
+   "source_path": "raw/15-imersao-fisiologia-2025/Aula_11_-_Tireoide_e_Mitocondria_-_Dr._Alexandre_Duarte.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=11;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_7692943",
+   "source_path": "raw/15-imersao-fisiologia-2025/Aula_12_-_Marketing_de_Conteúddo_-_Allan_Lima.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=12;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_7692944",
+   "source_path": "raw/15-imersao-fisiologia-2025/Aula_14_-_Estrogenios_-_Dr._Alexandre_Duarte.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=14;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_7692945",
+   "source_path": "raw/15-imersao-fisiologia-2025/Aula_13_-_Androgênios_-_Dr._Alexandre_Duarte.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=13;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_7704857",
+   "source_path": "raw/09-super-modulo-3/AULA_01_-_Karen_e_Leticia_Ozonio.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=1;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_7704858",
+   "source_path": "raw/09-super-modulo-3/AULA_02_-_Luiz_Pacheco.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=2;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_7704859",
+   "source_path": "raw/09-super-modulo-3/AULA_03_-_Anabolizantes.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=3;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_7704860",
+   "source_path": "raw/09-super-modulo-3/AULA_04_-_Exercicio_e_Suplementação.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=4;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_7704861",
+   "source_path": "raw/09-super-modulo-3/AULA_05_-_Luiz_Pacheco_Part_02.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=5;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_7704862",
+   "source_path": "raw/09-super-modulo-3/AULA_06_-_Anabolismo_Saudável.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=6;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_7704863",
+   "source_path": "raw/09-super-modulo-3/AULA_07_-_Revisão_Baixo_Desempenho.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=7;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_7704869",
+   "source_path": "raw/09-super-modulo-3/AULA_08_-_Exames.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=8;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_7769231",
+   "source_path": "raw/17-doencas-autoimunes/modulo-1/Aula_01_-_As_Bases_da_Imunidade_-_Avantgarde_College~_-_640x360_985K.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=1;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_7769233",
+   "source_path": "raw/17-doencas-autoimunes/modulo-1/Aula_02_-_Imunidade_e_vit_D_-_Avantgarde_College~_-_640x360_985K.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=2;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_7769566",
+   "source_path": "raw/07-infertilidade-pre-gestacao/Aula_01_-_Fisiologia_Causas_Tratamento_-_Dr_Alexandre_Duarte.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=1;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_7769576",
+   "source_path": "raw/07-infertilidade-pre-gestacao/Aula_02_-_Fertilidade_Feminina_-_Dr_Alexandre_Duarte.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=2;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_7769588",
+   "source_path": "raw/07-infertilidade-pre-gestacao/Aula_03_-_Obstrução_Tubaria_-_Dr_Alexandre_Duarte.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=3;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_7769609",
+   "source_path": "raw/07-infertilidade-pre-gestacao/Aula_04_-_Hiperprolactinemia_-_Dr_Alexandre_Duarte.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=4;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_7769613",
+   "source_path": "raw/07-infertilidade-pre-gestacao/Aula_05_-_Espermatogenese_-_Dr_Alexandre_Duarte.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=5;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_7769614",
+   "source_path": "raw/07-infertilidade-pre-gestacao/Aula_06_-_Morfologia_-_Dr_Alexandre_Duarte.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=6;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_7773600",
+   "source_path": "raw/17-doencas-autoimunes/modulo-2/Doenças_Auto_Imunes_-_Aula_01.txt",
+   "match_confidence": "medium",
+   "match_signals": "numero=1"
+  },
+  {
+   "lesson_uid": "lsn_7773602",
+   "source_path": "raw/17-doencas-autoimunes/modulo-2/doencas_auto_imunes_aula_02.txt",
+   "match_confidence": "medium",
+   "match_signals": "numero=2"
+  },
+  {
+   "lesson_uid": "lsn_7773603",
+   "source_path": "raw/17-doencas-autoimunes/modulo-2/doencas_auto_imunes_aula_03.txt",
+   "match_confidence": "medium",
+   "match_signals": "numero=3"
+  },
+  {
+   "lesson_uid": "lsn_7773604",
+   "source_path": "raw/17-doencas-autoimunes/modulo-2/doencas_auto_imunes_aula_04.txt",
+   "match_confidence": "medium",
+   "match_signals": "numero=4"
+  },
+  {
+   "lesson_uid": "lsn_7773606",
+   "source_path": "raw/17-doencas-autoimunes/modulo-2/doencas_auto_imunes_aula_06.txt",
+   "match_confidence": "medium",
+   "match_signals": "numero=6"
+  },
+  {
+   "lesson_uid": "lsn_7773607",
+   "source_path": "raw/17-doencas-autoimunes/modulo-2/doencas_auto_imunes_aula_07.txt",
+   "match_confidence": "medium",
+   "match_signals": "numero=7"
+  },
+  {
+   "lesson_uid": "lsn_7773608",
+   "source_path": "raw/17-doencas-autoimunes/modulo-2/doencas_auto_imunes_aula_08.txt",
+   "match_confidence": "medium",
+   "match_signals": "numero=8"
+  },
+  {
+   "lesson_uid": "lsn_7773612",
+   "source_path": "raw/17-doencas-autoimunes/modulo-2/doencas_auto_imunes_aula_09.txt",
+   "match_confidence": "medium",
+   "match_signals": "numero=9"
+  },
+  {
+   "lesson_uid": "lsn_7780460",
+   "source_path": "raw/19-review-mmi-2024/Aula_01_-_Plasmaferese.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=1;titulo=1.00"
+  },
+  {
+   "lesson_uid": "lsn_7780462",
+   "source_path": "raw/19-review-mmi-2024/Aula_02_-_Blue_Zones.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=2;titulo=1.00"
+  },
+  {
+   "lesson_uid": "lsn_7780464",
+   "source_path": "raw/19-review-mmi-2024/Introdução_-_Avantgarde_College.txt",
+   "match_confidence": "medium",
+   "match_signals": "titulo=1.00"
+  },
+  {
+   "lesson_uid": "lsn_7780466",
+   "source_path": "raw/19-review-mmi-2024/Aula_03_-_Estrogênios_e_Câncer_de_Mama.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=3;titulo=1.00"
+  },
+  {
+   "lesson_uid": "lsn_7780467",
+   "source_path": "raw/19-review-mmi-2024/Aula_05_-_Esteatose_e_Obesidade.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=5;titulo=1.00"
+  },
+  {
+   "lesson_uid": "lsn_7780468",
+   "source_path": "raw/19-review-mmi-2024/Aula_06_-_Emagrecimento.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=6;titulo=1.00"
+  },
+  {
+   "lesson_uid": "lsn_7780469",
+   "source_path": "raw/19-review-mmi-2024/Aula_07_-_Oxitocina.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=7;titulo=1.00"
+  },
+  {
+   "lesson_uid": "lsn_7780471",
+   "source_path": "raw/19-review-mmi-2024/Aula_04_-_Eixo_Timo-Pineal.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=4;titulo=1.00"
+  },
+  {
+   "lesson_uid": "lsn_7784275",
+   "source_path": "raw/06-terapia-reposicao-hormonal/Aula_01_Os_Hormonios_Esteroidais_-_Dr._Alexandre_Duarte_-_Avantgarde_College.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=1;titulo=1.00"
+  },
+  {
+   "lesson_uid": "lsn_7784276",
+   "source_path": "raw/06-terapia-reposicao-hormonal/Aula_02_Progesterona_-_Dr._Alexandre_Duarte_-_Avantgarde_College.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=2;titulo=1.00"
+  },
+  {
+   "lesson_uid": "lsn_7784277",
+   "source_path": "raw/06-terapia-reposicao-hormonal/Aula_03_Estrogênios_-_Dr._Alexandre_Duarte_-_Avantgarde_College.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=3;titulo=1.00"
+  },
+  {
+   "lesson_uid": "lsn_7784278",
+   "source_path": "raw/06-terapia-reposicao-hormonal/Aula_04_Androgênios_-_Dr._Alexandre_Duarte_-_Avantgarde_College.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=4;titulo=1.00"
+  },
+  {
+   "lesson_uid": "lsn_7784279",
+   "source_path": "raw/06-terapia-reposicao-hormonal/Introdução_Terapia_de_Reposição_Hormonal_-_Avantgarde_College.txt",
+   "match_confidence": "medium",
+   "match_signals": "titulo=1.00"
+  },
+  {
+   "lesson_uid": "lsn_8013865",
+   "source_path": "raw/05-onboarding-pos-graduacao-2026/Aula_01_-_Onboarding_-_Informações_gerais_-_Avantgarde_College.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=1;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_8050982",
+   "source_path": "raw/05-onboarding-pos-graduacao-2026/Aula_02_-_Onboarding_-_Método_In-MitoGen_-_Avantgarde_College.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=2;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_8050984",
+   "source_path": "raw/05-onboarding-pos-graduacao-2026/Aula_03_-_Onboarding_-_Luiz_Pacheco_-_Avantgarde_College.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=3;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_8050987",
+   "source_path": "raw/05-onboarding-pos-graduacao-2026/Aula_04_-_Onboarding_-_Marina_-_Avantgarde_College.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=4;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_8477345",
+   "source_path": "raw/04-terapias-injetaveis/Terapias_Injetáveis_-_Parte_01.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=1;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_8477346",
+   "source_path": "raw/04-terapias-injetaveis/Terapias_Injetáveis_-_Parte_02.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=2;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_8477347",
+   "source_path": "raw/04-terapias-injetaveis/Terapias_Injetáveis_-_Parte_03.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=3;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_8653259",
+   "source_path": "raw/02-fisiologia-do-metabolismo/Aula_01_Introdução.txt",
+   "match_confidence": "medium",
+   "match_signals": "numero=1;posicao"
+  },
+  {
+   "lesson_uid": "lsn_8653260",
+   "source_path": "raw/02-fisiologia-do-metabolismo/Aula_02_Dieta.txt",
+   "match_confidence": "medium",
+   "match_signals": "numero=2;posicao"
+  },
+  {
+   "lesson_uid": "lsn_8653261",
+   "source_path": "raw/02-fisiologia-do-metabolismo/Aula_03_Saúde_Digestiva.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=3;titulo=0.71;posicao"
+  },
+  {
+   "lesson_uid": "lsn_8653262",
+   "source_path": "raw/02-fisiologia-do-metabolismo/Aula_04_Direito_Médico.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=4;titulo=0.69;posicao"
+  },
+  {
+   "lesson_uid": "lsn_8653263",
+   "source_path": "raw/02-fisiologia-do-metabolismo/Aula_05_Ozonio.txt",
+   "match_confidence": "medium",
+   "match_signals": "numero=5;posicao"
+  },
+  {
+   "lesson_uid": "lsn_8653264",
+   "source_path": "raw/02-fisiologia-do-metabolismo/Aula_06_Micronutrientes_-_VO_e_Injetáveis.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=6;titulo=0.77;posicao"
+  },
+  {
+   "lesson_uid": "lsn_8653266",
+   "source_path": "raw/02-fisiologia-do-metabolismo/Aula_07_Progesterona_e_DHEA.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=7;titulo=0.69;posicao"
+  },
+  {
+   "lesson_uid": "lsn_8653267",
+   "source_path": "raw/02-fisiologia-do-metabolismo/Aula_08_Tríade_Energética_-_Cortisol.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=8;titulo=0.72;posicao"
+  },
+  {
+   "lesson_uid": "lsn_8653268",
+   "source_path": "raw/02-fisiologia-do-metabolismo/Aula_09_Exames_Genéticos_e_de_DNA.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=9;titulo=0.63;posicao"
+  },
+  {
+   "lesson_uid": "lsn_8653269",
+   "source_path": "raw/02-fisiologia-do-metabolismo/Aula_10_Tríade_Energética_-_Tireóide_e_Insulina.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=10;titulo=0.78;posicao"
+  },
+  {
+   "lesson_uid": "lsn_8653271",
+   "source_path": "raw/02-fisiologia-do-metabolismo/Aula_11_A_Guerra_de_Percepções.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=11;titulo=0.78;posicao"
+  },
+  {
+   "lesson_uid": "lsn_8653272",
+   "source_path": "raw/02-fisiologia-do-metabolismo/Aula_12_Consulta_ao_vivo_01.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=12;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_8653274",
+   "source_path": "raw/02-fisiologia-do-metabolismo/Aula_13_Androgênios_e_HCG.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=13;titulo=0.67;posicao"
+  },
+  {
+   "lesson_uid": "lsn_8653275",
+   "source_path": "raw/02-fisiologia-do-metabolismo/Aula_14_Sucesso_em_Gestão_e_Vendas.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=14;titulo=0.82;posicao"
+  },
+  {
+   "lesson_uid": "lsn_8653277",
+   "source_path": "raw/02-fisiologia-do-metabolismo/Aula_15_O_Novo_Paradigma_da_Medicina.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=15;titulo=0.82;posicao"
+  },
+  {
+   "lesson_uid": "lsn_8653278",
+   "source_path": "raw/02-fisiologia-do-metabolismo/Aula_16_Disfunção_Mitocondrial.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=16;titulo=0.71;posicao"
+  },
+  {
+   "lesson_uid": "lsn_8653279",
+   "source_path": "raw/02-fisiologia-do-metabolismo/Aula_17_Estrogênios_e_Lipedema.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=17;titulo=0.71;posicao"
+  },
+  {
+   "lesson_uid": "lsn_8653280",
+   "source_path": "raw/02-fisiologia-do-metabolismo/Aula_18_GH_e_Peptideos.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=18;titulo=0.63;posicao"
+  },
+  {
+   "lesson_uid": "lsn_8653282",
+   "source_path": "raw/02-fisiologia-do-metabolismo/Aula_19_Consulta_ao_vivo_02.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=19;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_8653284",
+   "source_path": "raw/02-fisiologia-do-metabolismo/Aula_20_Tecnologias_em_Medicina.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=20;titulo=0.79;posicao"
+  },
+  {
+   "lesson_uid": "lsn_8875732",
+   "source_path": "raw/01-origem-fisiologia-hormonal/Aula 01 - Introdução Cadeia Esteroidal.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=1;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_8875733",
+   "source_path": "raw/01-origem-fisiologia-hormonal/Aula_02_-_Progesterona.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=2;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_8875734",
+   "source_path": "raw/01-origem-fisiologia-hormonal/Aula_03_-_Estrogenios.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=3;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_8875735",
+   "source_path": "raw/01-origem-fisiologia-hormonal/Aula_04_-_Androgenios.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=4;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_8878382",
+   "source_path": "raw/12-pediatria-metabolica/Aula_1_-_Curso_Avançado_PediatriaMetabolica_DraAdrielle.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=1;titulo=0.81;posicao"
+  },
+  {
+   "lesson_uid": "lsn_8878383",
+   "source_path": "raw/12-pediatria-metabolica/Aula_2_-_Curso_Avançado_PediatriaMetabolica_DraAdrielle.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=2;titulo=0.81;posicao"
+  },
+  {
+   "lesson_uid": "lsn_8878385",
+   "source_path": "raw/12-pediatria-metabolica/Aula_3_-_Curso_Avançado_PediatriaMetabolica_DraAdrielle.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=3;titulo=0.81;posicao"
+  },
+  {
+   "lesson_uid": "lsn_8878389",
+   "source_path": "raw/12-pediatria-metabolica/Aula_4_-_Curso_Avançado_PediatriaMetabolica_DraAdrielle.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=4;titulo=0.81;posicao"
+  },
+  {
+   "lesson_uid": "lsn_8878390",
+   "source_path": "raw/12-pediatria-metabolica/Aula_5_-_Curso_Avançado_PediatriaMetabolica_DraAdrielle.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=5;titulo=0.81;posicao"
+  },
+  {
+   "lesson_uid": "lsn_8881617",
+   "source_path": "raw/11-super-modulo-1/super-modulo-1-2026/Aula_01_Marketing.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=1;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_8881619",
+   "source_path": "raw/11-super-modulo-1/super-modulo-1-2026/Aula_02_Vendas.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=2;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_8881620",
+   "source_path": "raw/11-super-modulo-1/super-modulo-1-2026/Aula_03_Revisão_Cortisol.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=3;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_8881621",
+   "source_path": "raw/11-super-modulo-1/super-modulo-1-2026/Aula_04_Revisão_Insulina.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=4;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_8881622",
+   "source_path": "raw/11-super-modulo-1/super-modulo-1-2026/Aula_05_Revisão_Tireoide.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=5;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_8881623",
+   "source_path": "raw/11-super-modulo-1/super-modulo-1-2026/Aula_06_Revisão_Micronutrientes.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=6;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_8881624",
+   "source_path": "raw/11-super-modulo-1/super-modulo-1-2026/Aula_07_Termografia.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=7;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_8965507",
+   "source_path": "raw/24-oncologia-omicscreen/omicscreen/Aula_01_-_OmicScreen_Part_1.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=1;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_8965510",
+   "source_path": "raw/24-oncologia-omicscreen/omicscreen/Aula_02_-_OmicScreen_Part_2_-_Avantgarde_College_-_640x360_985K_2.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=2;titulo=0.94;posicao"
+  },
+  {
+   "lesson_uid": "lsn_8975534",
+   "source_path": "raw/03-avancado-peptideos/Aula_01_-_Peptideos.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=1;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_8975535",
+   "source_path": "raw/03-avancado-peptideos/Aula_02_-_Pulsatilidade_e_GPCRs.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=2;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_8975536",
+   "source_path": "raw/03-avancado-peptideos/Aula_03_-_Peptideos_Classicos.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=3;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_8975537",
+   "source_path": "raw/03-avancado-peptideos/Aula_04_-_Eixo_Somatotrofico_l.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=4;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_8975538",
+   "source_path": "raw/03-avancado-peptideos/Aula_05_-_Eixo_Somatotrofico_ll.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=5;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_8975539",
+   "source_path": "raw/03-avancado-peptideos/Aula_06_-_Mitocondria_e_Longevidade.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=6;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_8975540",
+   "source_path": "raw/03-avancado-peptideos/Aula_07_-_Reparo_e_Imunomodulação.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=7;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_8975541",
+   "source_path": "raw/03-avancado-peptideos/Aula_08_-_Enteroendócrino_e_Regulação_Metabólica.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=8;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_8975542",
+   "source_path": "raw/03-avancado-peptideos/Aula_09_-_Mitocondrial_e_Energia.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=9;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_8975543",
+   "source_path": "raw/03-avancado-peptideos/Aula_10_-_SNC_Cogniçao_e_Sono.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=10;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_8975544",
+   "source_path": "raw/03-avancado-peptideos/Aula_11_-_Emagrecimento_Metabolico.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=11;titulo=1.00;posicao"
+  },
+  {
+   "lesson_uid": "lsn_8975545",
+   "source_path": "raw/03-avancado-peptideos/Aula_12_-_Fisiologia_Regeneração.txt",
+   "match_confidence": "high",
+   "match_signals": "numero=12;titulo=1.00;posicao"
+  }
+ ]
+}
