@@ -113,6 +113,9 @@ CREATE TABLE IF NOT EXISTS lessons (
     summary             VARCHAR,
     enrichment_source   VARCHAR,
     enriched_at         TIMESTAMP,
+    -- Julgamento humano sobre o dominio, gravado a parte da heuristica
+    -- lesson_quality.domain para que reprocessar o perfil nao o apague.
+    domain_reviewed     VARCHAR,   -- 'clinical' | 'business'
     first_seen_at       TIMESTAMP NOT NULL,
     first_seen_run_id   BIGINT,                -- nulo para origin = 'local'
     last_seen_at        TIMESTAMP NOT NULL,
@@ -134,7 +137,68 @@ CREATE TABLE IF NOT EXISTS transcripts (
     lang                VARCHAR,
     match_confidence    VARCHAR,               -- 'high' | 'medium'
     match_signals       VARCHAR,
+    -- Aponta para a copia canonica quando duas aulas tem o mesmo conteudo.
+    -- NULL = e a propria canonica. Serve para o chunker indexar so uma vez
+    -- sem que a outra aula perca a transcricao nem vire pendencia.
+    duplicate_of        VARCHAR,
     updated_at          TIMESTAMP NOT NULL
+);
+
+-- Perfil de cada transcricao. Separa medida de julgamento: as colunas de
+-- contagem sao fato; as duas ultimas sao heuristicas com regra documentada em
+-- scripts/profile_corpus.py, feitas para serem revisadas, nao obedecidas.
+CREATE TABLE IF NOT EXISTS lesson_quality (
+    lesson_uid            VARCHAR PRIMARY KEY,
+    -- medidas
+    word_count            BIGINT,
+    sentence_count        BIGINT,
+    sentence_median_words DOUBLE,   -- fala fica ~7, texto escrito ~15-20
+    question_count        BIGINT,
+    questions_per_1k      DOUBLE,   -- proxy de Q&A embutido
+    filler_pct            DOUBLE,   -- muletas de fala sobre o total de palavras
+    type_token_ratio      DOUBLE,   -- riqueza lexical; baixo = repetitivo
+    course_median_words   DOUBLE,
+    length_ratio          DOUBLE,   -- word_count / mediana do proprio curso
+    clinical_score        DOUBLE,   -- 0 = so negocios, 1 = so clinico
+    -- julgamentos (heuristicos)
+    truncation_suspect    BOOLEAN,
+    domain                VARCHAR,  -- 'clinical' | 'business' | 'mixed'
+    computed_at           TIMESTAMP NOT NULL
+);
+
+-- A unidade que o RAG recupera. Uma aula vira muitos chunks.
+--
+-- chunk_uid = <lesson_uid>::<estrategia>::<indice>, ex. lsn_3521413::fixed::0007.
+-- A estrategia entra no id porque o mesmo trecho cortado de duas formas sao dois
+-- chunks distintos, e as tres convivem na tabela durante a comparacao. Estavel
+-- enquanto a estrategia e seus parametros nao mudarem, e sempre rastreavel ate a
+-- aula e ate o trecho exato do arquivo por char_start/char_end.
+--
+-- text e context_prefix ficam em colunas separadas de proposito: o prefixo situa
+-- o trecho na aula ("de que curso, que aula, que assunto isto veio") e melhora a
+-- recuperacao, mas guardar os dois juntos impediria medir o ganho dele.
+CREATE TABLE IF NOT EXISTS chunks (
+    chunk_uid       VARCHAR PRIMARY KEY,
+    lesson_uid      VARCHAR NOT NULL,
+    chunk_index     INTEGER NOT NULL,
+    text            VARCHAR NOT NULL,
+    context_prefix  VARCHAR,           -- derivado dos metadados, sem chamada de LLM
+    char_start      BIGINT NOT NULL,   -- offset no arquivo de origem
+    char_end        BIGINT NOT NULL,
+    word_count      INTEGER,
+    token_estimate  INTEGER,
+    strategy        VARCHAR NOT NULL,  -- 'fixed' | 'semantic' | 'qa_turn'
+    created_at      TIMESTAMP NOT NULL
+);
+
+-- Vetores densos, um por chunk. Guardados aqui mesmo em vez de num vector store
+-- separado: com ~6 mil chunks, forca bruta com array_cosine_similarity responde
+-- em milissegundos e evita mais uma peca movel no sistema.
+CREATE TABLE IF NOT EXISTS chunk_embeddings (
+    chunk_uid       VARCHAR PRIMARY KEY,
+    embedding       FLOAT[1024] NOT NULL,   -- BAAI/bge-m3, normalizado
+    model           VARCHAR NOT NULL,
+    created_at      TIMESTAMP NOT NULL
 );
 
 -- Append-only: o estado de cada curso/aula em cada execucao. E o que permite
@@ -269,6 +333,114 @@ FROM lessons l
 JOIN courses c USING (course_uid)
 LEFT JOIN transcripts t USING (lesson_uid)
 ORDER BY c.position_in_vitrine, l.position_global;
+
+-- O CORPUS DO RAG. Esta view e a definicao unica do que entra no indice;
+-- nenhum script deve reimplementar o criterio por conta propria.
+--
+-- Uma aula entra se, e so se:
+--   1. origin = 'site'      material local fica de fora POR ORA - ver a nota
+--                           em data/curation.json. Sao extras e um curso
+--                           retirado da vitrine, sem URL nem posicao no site,
+--                           entao nao da para citar a fonte numa resposta.
+--   2. duplicate_of IS NULL so a copia canonica de cada conteudo repetido, para
+--                           o RAG nao devolver a mesma explicacao duas vezes.
+--   3. dominio clinico      o veredito humano (domain_reviewed) tem precedencia
+--                           sobre a heuristica (lesson_quality.domain).
+--   4. tem transcricao
+CREATE OR REPLACE VIEW v_rag_corpus AS
+SELECT
+    l.lesson_uid,
+    c.course_uid,
+    c.course_title,
+    l.group_title,
+    l.lesson_title,
+    l.lesson_url,
+    l.instructor,
+    l.year,
+    l.subject,
+    l.topics,
+    l.summary,
+    l.position_global,
+    t.path,
+    t.md5,
+    t.word_count,
+    t.est_tokens
+FROM lessons l
+JOIN courses c USING (course_uid)
+JOIN transcripts t USING (lesson_uid)
+LEFT JOIN lesson_quality q USING (lesson_uid)
+WHERE l.origin = 'site'
+  AND t.duplicate_of IS NULL
+  AND COALESCE(l.domain_reviewed, q.domain) = 'clinical'
+ORDER BY c.position_in_vitrine, l.position_global;
+
+-- O complemento: tudo que ficou de fora, e por que. Nada some em silencio.
+CREATE OR REPLACE VIEW v_rag_excluded AS
+SELECT
+    l.lesson_uid,
+    c.course_title,
+    l.lesson_title,
+    t.word_count,
+    CASE
+        WHEN t.lesson_uid IS NULL        THEN 'sem transcricao'
+        WHEN l.origin = 'local'          THEN 'origem local (fora por ora)'
+        WHEN t.duplicate_of IS NOT NULL  THEN 'copia de ' || t.duplicate_of
+        WHEN q.lesson_uid IS NULL        THEN 'sem perfil - rode profile_corpus.py'
+        ELSE 'dominio ' || COALESCE(l.domain_reviewed, q.domain)
+    END AS motivo
+FROM lessons l
+JOIN courses c USING (course_uid)
+LEFT JOIN transcripts t USING (lesson_uid)
+LEFT JOIN lesson_quality q USING (lesson_uid)
+WHERE l.lesson_uid NOT IN (SELECT lesson_uid FROM v_rag_corpus)
+ORDER BY motivo, c.position_in_vitrine, l.position_global;
+
+-- O que o indice realmente contem: chunk + a identidade da aula de origem.
+-- E a superficie que search.py consulta e que a geracao usa para citar a fonte.
+CREATE OR REPLACE VIEW v_chunk_corpus AS
+SELECT
+    ch.chunk_uid,
+    ch.lesson_uid,
+    ch.chunk_index,
+    ch.strategy,
+    ch.text,
+    ch.context_prefix,
+    ch.context_prefix || ch.text AS text_with_context,
+    ch.word_count,
+    ch.token_estimate,
+    l.lesson_title,
+    l.lesson_url,
+    l.instructor,
+    l.subject,
+    l.topics,
+    c.course_uid,
+    c.course_title,
+    c.position_in_vitrine,
+    l.position_global
+FROM chunks ch
+JOIN lessons l USING (lesson_uid)
+JOIN courses c USING (course_uid)
+ORDER BY c.position_in_vitrine, l.position_global, ch.chunk_index;
+
+-- Aulas que merecem um olhar antes de entrarem no indice do RAG.
+CREATE OR REPLACE VIEW v_quality_review AS
+SELECT
+    q.lesson_uid,
+    c.course_title,
+    l.lesson_title,
+    q.word_count,
+    q.course_median_words,
+    round(q.length_ratio, 2)   AS length_ratio,
+    round(q.clinical_score, 2) AS clinical_score,
+    q.domain,
+    q.truncation_suspect,
+    t.path
+FROM lesson_quality q
+JOIN lessons l USING (lesson_uid)
+JOIN courses c USING (course_uid)
+JOIN transcripts t USING (lesson_uid)
+WHERE q.truncation_suspect OR q.domain <> 'clinical'
+ORDER BY q.truncation_suspect DESC, q.length_ratio;
 
 -- Historico de execucoes, com o delta de cada uma.
 CREATE OR REPLACE VIEW v_run_history AS

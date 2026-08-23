@@ -1,0 +1,86 @@
+{
+  "note": "Decisoes humanas de curadoria. Ficam aqui, e nao so no banco, para que uma reconstrucao do ragmed.duckdb nao apague o julgamento. Aplicado por scripts/load_curation.py.",
+  "reviewed_at": "2026-08-22",
+  "rag_policy": {
+    "_note": "Regras de inclusao no indice do RAG. Implementadas na view v_rag_corpus (scripts/db.py); o que fica de fora aparece em v_rag_excluded com o motivo.",
+    "exclude_local_origin": {
+      "value": true,
+      "since": "2026-08-22",
+      "reason": "Aulas origin='local' ficam fora do indice POR ORA. Sao extras e o curso Imersao 2024, retirado da vitrine: nao tem lesson_url nem posicao no site, entao o RAG nao consegue citar a fonte de forma verificavel. Continuam no banco e em transcripts/, e voltam ao indice trocando este valor para false."
+    },
+    "exclude_duplicates": {
+      "value": true,
+      "reason": "Indexa so a copia canonica de cada conteudo repetido."
+    },
+    "clinical_only": {
+      "value": true,
+      "reason": "Aulas de marketing, vendas e contabilidade saem da busca clinica por filtro, sem serem apagadas."
+    }
+  },
+  "domain": {
+    "_note": "Criterio: se alguem fizer uma pergunta clinica ao RAG, esta aula deveria poder aparecer como fonte? Grava em lessons.domain_reviewed, separado da heuristica lesson_quality.domain. Aulas nao listadas usam a heuristica.",
+    "lsn_loc_d63788ea": "clinical",
+    "lsn_8653268": "clinical",
+    "lsn_8050982": "clinical",
+    "lsn_6729446": "clinical",
+    "lsn_8653262": "business",
+    "lsn_7692939": "business",
+    "lsn_5491253": "business",
+    "lsn_5869204": "business",
+    "lsn_loc_92df9ffa": "business",
+    "lsn_loc_16d3315b": "business",
+    "lsn_loc_ded4f7cb": "business"
+  },
+  "duplicates": [
+    {
+      "canonical": "lsn_5869203",
+      "duplicate": "lsn_5491247",
+      "jaccard": 1.0,
+      "note": "AULA 01 Onboarding Luiz Pacheco, identica em Fellowship e Super Modulo 1. Canonica = Fellowship, curso que aparece antes na vitrine."
+    },
+    {
+      "canonical": "lsn_5869204",
+      "duplicate": "lsn_5491253",
+      "jaccard": 1.0,
+      "note": "AULA 02 Marketing e Posicionamento, Marina Soares. Mesmo caso."
+    },
+    {
+      "canonical": "lsn_8653267",
+      "duplicate": "lsn_9354505",
+      "jaccard": 0.902,
+      "note": "Triade Energetica - Cortisol. Canonica = Aula 08 da Imersao 2026, o curso onde a aula nasce; a Pre-Imersao 2026 reusa a gravacao como amostra."
+    },
+    {
+      "canonical": "lsn_3545592",
+      "duplicate": "lsn_3545587",
+      "jaccard": 0.577,
+      "note": "Vitaminas: a Aula 05 nao e aula distinta, e a Aula 06 truncada. 97,6% dela esta dentro da 06 palavra por palavra (LCS), com desvio de alinhamento de +-11 ao longo de 8.800 palavras; a 06 continua por mais ~3.100 palavras exclusivas (protocolo de ferro, protocolo imunologico, caso oncologico) e tem encerramento real. UNICA das tres pendencias que afeta o indice: sem isso cada chunk das primeiras 8.800 palavras apareceria duas vezes na recuperacao."
+    },
+    {
+      "canonical": "lsn_7692931",
+      "duplicate": "lsn_loc_ffeb249c",
+      "jaccard": 0.927,
+      "note": "Aula 01 Introducao: a copia local veio da pasta Imersao 2024 e e 93% identica a Aula 01 da Imersao 2025 do site. Canonica = a do site, que tem lesson_url e posicao. Ja estava fora do indice por ser origin='local'; marcar torna a relacao explicita."
+    },
+    {
+      "canonical": "lsn_7692933",
+      "duplicate": "lsn_loc_3bf03b58",
+      "jaccard": 0.81,
+      "note": "Aula 02 Dieta: mesmo caso. As outras 13 aulas da Imersao 2024 nao tem par na de 2025, entao o overlap se restringe a essas duas."
+    }
+  ],
+  "removed": [
+    {
+      "lesson_uid": "lsn_loc_eb26fca9",
+      "kept_instead": "lsn_loc_d63788ea",
+      "jaccard": 0.733,
+      "source_path": "raw/29-saude-do-homem-implantes/masterclass_saude_do_homem_17.txt",
+      "reason": "Mesma gravacao de tecnica de implante hormonal transcrita duas vezes, com pequenas divergencias de ASR. Ambas eram origin='local' (extras sem aula no site), entao remover uma nao deixa nenhuma aula do site orfa. Mantida a de titulo mais descritivo e ligeiramente mais longa."
+    }
+  ],
+  "open_questions": [],
+  "resolved_notes": [
+    "Detector de truncamento por 'fim sem pontuacao final': testado e descartado. Zero das 246 transcricoes termina sem pontuacao — inclusive a Aula 05 de Vitaminas, que termina com ponto no meio do assunto. O sinal nao existe neste corpus.",
+    "Problema sistematico de captura no curso de Vitaminas: investigado e nao confirmado. Comparados todos os pares das 6 aulas; so o 05/06 se sobrepoe. Caso isolado."
+  ]
+}
