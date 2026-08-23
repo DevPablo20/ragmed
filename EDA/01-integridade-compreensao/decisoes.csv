@@ -1,0 +1,248 @@
+lesson_uid,course_title,lesson_title,word_count,med_curso,pct,veredito,status,decidido_por,data,nota
+lsn_8878382,Avançado Pediatria Metabólica,Aula 1 - Curso_Avançado_PediatriaMetabolica_DraAdrielle,17393,17533.0,99.2,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_8878383,Avançado Pediatria Metabólica,Aula 2 - Curso_Avançado_PediatriaMetabolica_DraAdrielle,18519,17533.0,105.6,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_8878385,Avançado Pediatria Metabólica,Aula 3 - Curso_Avançado_PediatriaMetabolica_DraAdrielle,18137,17533.0,103.4,asr_ruidosa_util,agente,agente,2026-08-23,termo ASR degradado; forma utilizável
+lsn_8878389,Avançado Pediatria Metabólica,Aula 4 - Curso_Avançado_PediatriaMetabolica_DraAdrielle,16565,17533.0,94.5,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_8878390,Avançado Pediatria Metabólica,Aula 5 - Curso_Avançado_PediatriaMetabolica_DraAdrielle,17533,17533.0,100.0,asr_ruidosa_util,agente,agente,2026-08-23,termo ASR degradado; forma utilizável
+lsn_3517825,Avançado de Anabolismo Saudável,Masterclass Anabolismo Saudável,13821,10461.0,132.1,inteira_clinica,agente,agente,2026-08-23,abertura e desfecho reconhecíveis
+lsn_3517826,Avançado de Anabolismo Saudável,Masterclass Anabolismo Saudável,7350,10461.0,70.3,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_3517827,Avançado de Anabolismo Saudável,Masterclass Anabolismo Saudável,10461,10461.0,100.0,inteira_clinica,agente,agente,2026-08-23,abertura e desfecho reconhecíveis
+lsn_3521375,Avançado de Análise de Exames Laboratoriais e DNA,Aula 1: Interpretação de Exames Laboratoriais I,13736,11587.0,118.6,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_3521377,Avançado de Análise de Exames Laboratoriais e DNA,Aula 2: Interpretação de Exames Laboratoriais II,11432,11587.0,98.7,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_3521378,Avançado de Análise de Exames Laboratoriais e DNA,Aula 3: Interpretação de Exames Laboratoriais III,7030,11587.0,60.7,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_3521381,Avançado de Análise de Exames Laboratoriais e DNA,Aula 4: Interpretação de Exames Laboratoriais IV,13613,11587.0,117.5,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_3521383,Avançado de Análise de Exames Laboratoriais e DNA,Aula 5: Polimorfismos Genéticos I,11741,11587.0,101.3,inteira_clinica,agente,agente,2026-08-23,abertura e desfecho reconhecíveis
+lsn_5791317,Avançado de Análise de Exames Laboratoriais e DNA,Aula 6: Polimorfismos Genéticos I,7841,11587.0,67.7,inteira_clinica,agente,agente,2026-08-23,desfecho didático; % não é prova de corte
+lsn_3521424,Avançado de Cardiologia,Aula 01: Gestao Integrada da Doença Cardiovascular - Parte I,8680,8155.0,106.4,inteira_clinica,agente,agente,2026-08-23,abertura e desfecho reconhecíveis
+lsn_3521429,Avançado de Cardiologia,Aula 02: Gestao Integrada da Doença Cardiovascular - Parte II,7057,8155.0,86.5,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_3521430,Avançado de Cardiologia,Aula 03: Gestao Integrada da Doença Cardiovascular - Parte III,13321,8155.0,163.4,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_loc_2e8cf822,Avançado de Cardiologia,masterclass cardiologia aula 06,6860,8155.0,84.1,inteira_clinica,agente,agente,2026-08-23,desfecho didático; % não é prova de corte
+lsn_3521431,Avançado de Cardiologia,Aula 04: Fatores de Risco Genético Para Estatina Miopatia e Mialgias,7629,8155.0,93.6,inteira_clinica,agente,agente,2026-08-23,abertura e desfecho reconhecíveis
+lsn_3521432,Avançado de Cardiologia,Aula 05: Terapia de Reposição do GH,9254,8155.0,113.5,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_7769231,Avançado de Doenças Autoimunes,Aula 01 - As Bases da Imunidade,9379,7822.0,119.9,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_7769233,Avançado de Doenças Autoimunes,Aula 02 - Imunidade e vit D,7822,7822.0,100.0,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_7773600,Avançado de Doenças Autoimunes,Aula 01 - Dra Fernanda Ota,9066,7822.0,115.9,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_7773602,Avançado de Doenças Autoimunes,Aula 02 - Dra Fernanda Ota,6619,7822.0,84.6,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_7773603,Avançado de Doenças Autoimunes,Aula 03 - Dra Fernanda Ota,4415,7822.0,56.4,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_7773604,Avançado de Doenças Autoimunes,Aula 04 - Dra Vivian Campos,7716,7822.0,98.6,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_7773605,Avançado de Doenças Autoimunes,Aula 05 - Dra Vivian Campos,8932,7822.0,114.2,asr_ruidosa_util,confirmado,humano,2026-08-23,calibração humana 2026-08-23; termo ASR degradado; forma utilizável
+lsn_7773606,Avançado de Doenças Autoimunes,Aula 06 - Dra Vivian Campos,5215,7822.0,66.7,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_7773607,Avançado de Doenças Autoimunes,Aula 07 - Dra Vivian Campos,12629,7822.0,161.5,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_7773608,Avançado de Doenças Autoimunes,Aula 08 - Dra Vivian Campos,8179,7822.0,104.6,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_7773612,Avançado de Doenças Autoimunes,Aula 09 - Dra Vivian Campos,6146,7822.0,78.6,inteira_clinica,agente,agente,2026-08-23,desfecho didático; % não é prova de corte
+lsn_4435673,Avançado de Emagrecimento Saudável,Dia 1 - Parte 1,5999,7879.0,76.1,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_4435674,Avançado de Emagrecimento Saudável,Dia 1 - Parte 2,13932,7879.0,176.8,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_4435675,Avançado de Emagrecimento Saudável,Dia 1 - Parte 3,7920,7879.0,100.5,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_4435676,Avançado de Emagrecimento Saudável,Dia 1 - Parte 4,4219,7879.0,53.5,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_4435677,Avançado de Emagrecimento Saudável,Dia 2 - Parte 1,7838,7879.0,99.5,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_4435678,Avançado de Emagrecimento Saudável,Dia 2 - Parte 2,10704,7879.0,135.9,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_3534880,Avançado de Exercício Endurance,Aula 1 - Bioimpedância e Base Alimentar,23162,13345.0,173.6,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_3534881,Avançado de Exercício Endurance,Aula 2 - Suplementação Performance e Exercício,13345,13345.0,100.0,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_3534882,Avançado de Exercício Endurance,Aula 3 - HGH Ganho de Massa,6738,13345.0,50.5,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_7769566,Avançado de Infertilidade e Tratamento Pré Gestação,Aula 01 - Fisiologia Causas Tratamento | Dr Alexandre Duarte,5958,7789.0,76.5,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_7769576,Avançado de Infertilidade e Tratamento Pré Gestação,Aula 02 - Fertilidade Feminina | Dr Alexandre Duarte,11721,7789.0,150.5,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_7769588,Avançado de Infertilidade e Tratamento Pré Gestação,Aula 03 - Obstrução Tubaria | Dr Alexandre Duarte,3267,7789.0,41.9,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_7769609,Avançado de Infertilidade e Tratamento Pré Gestação,Aula 04 - Hiperprolactinemia | Dr Alexandre Duarte,10408,7789.0,133.6,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_7769613,Avançado de Infertilidade e Tratamento Pré Gestação,Aula 05 - Espermatogenese | Dr Alexandre Duarte,6309,7789.0,81.0,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_7769614,Avançado de Infertilidade e Tratamento Pré Gestação,Aula 06 - Morfologia | Dr Alexandre Duarte,9268,7789.0,119.0,inteira_clinica,agente,agente,2026-08-23,desfecho didático; % não é prova de corte
+lsn_3534934,Avançado de Neurotransmissores,Aula 01 | Abordagens Terapeuticas,15674,18094.0,86.6,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_3534937,Avançado de Neurotransmissores,Aula 02 | Azul de Metileno,18094,18094.0,100.0,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_3534938,Avançado de Neurotransmissores,Aula 03 | Vasopressina,18293,18094.0,101.1,asr_ruidosa_util,agente,agente,2026-08-23,termo ASR degradado; forma utilizável
+lsn_3520778,Avançado de Nutrição Metabólica,Bem-vindo(a)!,157,6525.0,2.4,inteira_curta,confirmado,humano,2026-08-23,calibração humana 2026-08-23; welcome/introdução curta com forma reconhecível
+lsn_3520786,Avançado de Nutrição Metabólica,Aula 01: Panorama Histórico da Alimentação Humana,6572,6525.0,100.7,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_3520791,Avançado de Nutrição Metabólica,Aula 02: Tríade Energética Dr. Alexandre Duarte,5487,6525.0,84.1,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_3520847,Avançado de Nutrição Metabólica,Aula 03: Otimizando a Saúde Através do Metabolismo,6478,6525.0,99.3,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_3521091,Avançado de Nutrição Metabólica,Aula 04: A Ciência por Trás da Restrição dos Carboidratos,11186,6525.0,171.4,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_3521302,Avançado de Nutrição Metabólica,Aula 05: O Papel Crucial das Proteínas e Gorduras,10485,6525.0,160.7,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_3521314,Avançado de Nutrição Metabólica,Aula 06: Decifrando Alimentos Ultra-processados,4647,6525.0,71.2,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_3521325,Avançado de Nutrição Metabólica,Aula 07: Qualidade Versus Quantidade - O Grande Debate,16909,6525.0,259.1,inteira_clinica,agente,agente,2026-08-23,desfecho didático; % não é prova de corte
+lsn_3521413,Avançado de Oncologia + OmicScreen,Aula 01 | Tratamento Adjuvante Funcional,23500,13153.0,178.7,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_3521416,Avançado de Oncologia + OmicScreen,Aula 02 | Alimentação,2926,13153.0,22.2,inteira_clinica,agente,agente,2026-08-23,abertura e desfecho reconhecíveis
+lsn_3521417,Avançado de Oncologia + OmicScreen,Aula 03 | Interpretação do Onconomics,13153,13153.0,100.0,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_3521418,Avançado de Oncologia + OmicScreen,Aula 04 | O Exame de Biopsia Líquida,8307,13153.0,63.2,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_3521419,Avançado de Oncologia + OmicScreen,Aula 05 | O Exame de Termografia,9958,13153.0,75.7,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_8965507,Avançado de Oncologia + OmicScreen,Aula 01 - OmicScreen Part 1,17515,13153.0,133.2,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_8965510,Avançado de Oncologia + OmicScreen,Aula 02 - OmicScreen Part 2,22601,13153.0,171.8,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_8975534,Avançado de Peptídeos,Aula 01 - Peptideos,3435,4198.0,81.8,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_loc_92df9ffa,Avançado de Peptídeos,Aula 013 Aula Posicionamento Marina,27591,4198.0,657.3,inteira_clinica,agente,agente,2026-08-23,abertura e desfecho reconhecíveis
+lsn_8975535,Avançado de Peptídeos,Aula 02 - Pulsatilidade e GPCRs,2711,4198.0,64.6,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_loc_04f00b83,Avançado de Peptídeos,Aula 014 Aula Código da Audiencia Elias,26608,4198.0,633.9,inteira_clinica,agente,agente,2026-08-23,desfecho didático; % não é prova de corte
+lsn_8975536,Avançado de Peptídeos,Aula 03 - Peptideos Classicos,11215,4198.0,267.2,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_8975537,Avançado de Peptídeos,Aula 04 - Eixo Somatotrofico l,3603,4198.0,85.8,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_8975538,Avançado de Peptídeos,Aula 05 - Eixo Somatotrofico ll,3210,4198.0,76.5,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_8975539,Avançado de Peptídeos,Aula 06 - Mitocondria e Longevidade,6445,4198.0,153.5,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_8975540,Avançado de Peptídeos,Aula 07 - Reparo e Imunomodulação,4522,4198.0,107.7,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_8975541,Avançado de Peptídeos,Aula 08 - Enteroendócrino e Regulação Metabólica,2758,4198.0,65.7,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_8975542,Avançado de Peptídeos,Aula 09 - Mitocondrial e Energia,8411,4198.0,200.4,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_8975543,Avançado de Peptídeos,Aula 10 - SNC Cogniçao e Sono,4216,4198.0,100.4,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_8975544,Avançado de Peptídeos,Aula 11 - Emagrecimento Metabolico,2308,4198.0,55.0,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_8975545,Avançado de Peptídeos,Aula 12 - Fisiologia Regeneração,4179,4198.0,99.6,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_3545135,Avançado de Saúde Digestiva e Disbiose,Aula 01: Avançado Saúde Digestiva e Disbiose,20784,13569.0,153.2,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_3545136,Avançado de Saúde Digestiva e Disbiose,Aula 02: Avançado Saúde Digestiva e Disbiose,17545,13569.0,129.3,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_3545140,Avançado de Saúde Digestiva e Disbiose,Aula 03: Avançado Saúde Digestiva e Disbiose,9593,13569.0,70.7,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_3545142,Avançado de Saúde Digestiva e Disbiose,Aula 04: Avançado Saúde Digestiva e Disbiose,8896,13569.0,65.6,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_3545563,Avançado de Saúde da Mulher,Aula 1: Avançado de Saúde da Mulher,21477,16600.0,129.4,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_3545564,Avançado de Saúde da Mulher,Aula 2: Avançado de Saúde da Mulher,17977,16600.0,108.3,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_3545567,Avançado de Saúde da Mulher,Aula 3: Avançado de Saúde da Mulher,15223,16600.0,91.7,inteira_clinica,agente,agente,2026-08-23,abertura e desfecho reconhecíveis
+lsn_loc_d63788ea,Avançado de Saúde da Mulher,aula pratica implantes hormonais,5360,16600.0,32.3,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_3545256,Avançado de Saúde do homem,"Aula 01: Intestino, Cérebro e Testosterona - Dr. Alexandre Duarte",5446,4510.0,120.8,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_3545306,Avançado de Saúde do homem,Aula 02: Estresse x Desequilíbrio Hormonal - Dr. Alexandre Duarte,3375,4510.0,74.8,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_3545308,Avançado de Saúde do homem,Aula 03: Disfunção Erétil - Dr. Fernando Muniz,5968,4510.0,132.3,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_3545310,Avançado de Saúde do homem,Aula 04: Ejaculação Precoce - Dr. Fernando Muniz,4822,4510.0,106.9,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_3545311,Avançado de Saúde do homem,Aula 05: O Metabolismo da Testosterona - Dr. Alexandre Duarte,3836,4510.0,85.1,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_3545312,Avançado de Saúde do homem,Aula 06: TRH Testosterona - Dr. Alexandre Duarte,4510,4510.0,100.0,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_3545313,Avançado de Saúde do homem,Aula 07: Fórmulas e Prescrições - Dr. Alexandre Duarte,3317,4510.0,73.5,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_3545315,Avançado de Saúde do homem,Aula 08: Fórmulas e Prescrições II - Dr. Alexandre Duarte,3061,4510.0,67.9,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_3545316,Avançado de Saúde do homem,Aula 09: Fórmulas e Prescrições Emagrecimento - Dr. Alexandre Duarte,3493,4510.0,77.5,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_3545317,Avançado de Saúde do homem,Aula 10: Doenças Prostáticas I - Dr. Fernando Muniz,4562,4510.0,101.2,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_3545318,Avançado de Saúde do homem,Aula 11: Doenças Prostáticas II - Dr. Fernando Muniz,4433,4510.0,98.3,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_3545319,Avançado de Saúde do homem,Aula 12: Andropausa I - Dr. Fernando Muniz,4008,4510.0,88.9,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_3545320,Avançado de Saúde do homem,Aula 13: Andropausa II - Dr. Fernando Muniz,6025,4510.0,133.6,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_3545326,Avançado de Saúde do homem,Aula 14: Andropausa III - Dr. Fernando Muniz,6183,4510.0,137.1,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_3545327,Avançado de Saúde do homem,Aula 15: Implantes Hormonais I - Dr. Alexandre Duarte,4643,4510.0,102.9,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_3657234,Avançado de Saúde do homem,Aula 16: Implantes Hormonais II - Dr. Alexandre Duarte,2865,4510.0,63.5,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_loc_eb26fca9,Avançado de Saúde do homem,masterclass saude do homem 17,5323,4510.0,118.0,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_4243247,Avançado de Termografia,Dia 1 - Parte 1,10281,10431.0,98.6,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_4243248,Avançado de Termografia,Dia 1 - Parte 2,11987,10431.0,114.9,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_4243250,Avançado de Termografia,Dia 1 - Parte 3,9570,10431.0,91.7,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_4243252,Avançado de Termografia,Dia 1 - Parte 4,7407,10431.0,71.0,asr_ruidosa_util,agente,agente,2026-08-23,termo ASR degradado; forma utilizável
+lsn_4243254,Avançado de Termografia,Dia 2 - Parte 1,10581,10431.0,101.4,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_4243257,Avançado de Termografia,Dia 2 - Parte 2,15654,10431.0,150.1,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_3659233,Avançado de Tríade Energética,Aula 1 | Cortisol,18263,11106.0,164.4,inteira_clinica,agente,agente,2026-08-23,abertura e desfecho reconhecíveis
+lsn_3659237,Avançado de Tríade Energética,Aula 2 | Tireóide,10705,11106.0,96.4,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_3659246,Avançado de Tríade Energética,Aula 3 | Insulina,11106,11106.0,100.0,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_3545577,"Avançado de Vitaminas, Minerais e Terapias Endovenosas","Aula 01: Avançado de Vitaminas, Minerais e Terapias Endovenosas",9321,9020.0,103.3,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_3545581,"Avançado de Vitaminas, Minerais e Terapias Endovenosas","Aula 02: Avançado de Vitaminas, Minerais e Terapias Endovenosas",9020,9020.0,100.0,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_3545582,"Avançado de Vitaminas, Minerais e Terapias Endovenosas","Aula 03: Avançado de Vitaminas, Minerais e Terapias Endovenosas",17491,9020.0,193.9,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_3545583,"Avançado de Vitaminas, Minerais e Terapias Endovenosas","Aula 04: Avançado de Vitaminas, Minerais e Terapias Endovenosas",8535,9020.0,94.6,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_3545587,"Avançado de Vitaminas, Minerais e Terapias Endovenosas","Aula 05: Avançado de Vitaminas, Minerais e Terapias Endovenosas",8791,9020.0,97.5,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_3545592,"Avançado de Vitaminas, Minerais e Terapias Endovenosas","Aula 06: Avançado de Vitaminas, Minerais e Terapias Endovenosas",11890,9020.0,131.8,inteira_clinica,agente,agente,2026-08-23,abertura e desfecho reconhecíveis
+lsn_loc_a77b2dff,"Avançado de Vitaminas, Minerais e Terapias Endovenosas",resumo vitaminas e minerais,928,9020.0,10.3,resumo_notas,confirmado,humano,2026-08-23,"calibração humana 2026-08-23; documento de tópicos/doses, não fala"
+lsn_5869203,Fellowship em Medicina Metabólica,AULA 01 - Onboarding | Luiz Pacheco,1768,4283.0,41.3,truncada,agente,agente,2026-08-23,falta abertura (começo no meio da fala)
+lsn_5869204,Fellowship em Medicina Metabólica,AULA 02 - Marketing e Posicionamento | Marina Soares,6798,4283.0,158.7,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_loc_ffeb249c,Imersão em Fisiologia do Metabolismo Humano | 2024,Aula 01 Introdução Dr Alexandre Duarte,5321,7597.0,70.0,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_loc_3bf03b58,Imersão em Fisiologia do Metabolismo Humano | 2024,Aula 02 Dieta Dr. Alexandre Duarte,18071,7597.0,237.9,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_loc_deeb8e5c,Imersão em Fisiologia do Metabolismo Humano | 2024,Aula 03 Saúde Digestiva,7073,7597.0,93.1,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_loc_34f76a98,Imersão em Fisiologia do Metabolismo Humano | 2024,Aula 04 INMito Gen Dr. Alexandre Duarte,11369,7597.0,149.7,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_loc_d575e7f4,Imersão em Fisiologia do Metabolismo Humano | 2024,Aula 05 Micronutrientes Pt 01 Dr. Alexandre Duarte,17168,7597.0,226.0,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_loc_e6355907,Imersão em Fisiologia do Metabolismo Humano | 2024,Aula 06 Progesterona Dr. Alexandre Duarte,8485,7597.0,111.7,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_loc_d51c4391,Imersão em Fisiologia do Metabolismo Humano | 2024,Aula 07 DHEA Dr. Alexandre Duarte,2607,7597.0,34.3,truncada,agente,agente,2026-08-23,sem abertura nem desfecho; % baixo vs. mediana do curso
+lsn_loc_7fcde673,Imersão em Fisiologia do Metabolismo Humano | 2024,Aula 08 Adrenal Dr. Alexandre Duarte,6616,7597.0,87.1,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_loc_16d3315b,Imersão em Fisiologia do Metabolismo Humano | 2024,Aula 09 Tecnologia na Prática Médica Samuel Silva,6919,7597.0,91.1,inteira_clinica,agente,agente,2026-08-23,desfecho didático; % não é prova de corte
+lsn_loc_a0289bac,Imersão em Fisiologia do Metabolismo Humano | 2024,Aula 10 Tireoide Dr. Alexandre Duarte,10668,7597.0,140.4,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_loc_2e58f257,Imersão em Fisiologia do Metabolismo Humano | 2024,Aula 11 Aldosterona Dr. Alexandre Duarte,3733,7597.0,49.1,inteira_clinica,agente,agente,2026-08-23,desfecho didático; % não é prova de corte
+lsn_loc_8d8a6090,Imersão em Fisiologia do Metabolismo Humano | 2024,Aula 12 Vendas Luiz Pacheco,10228,7597.0,134.6,inteira_clinica,agente,agente,2026-08-23,desfecho didático; % não é prova de corte
+lsn_loc_6fa482b9,Imersão em Fisiologia do Metabolismo Humano | 2024,Aula 13 Estrogênios Dr. Alexandre Duarte,18091,7597.0,238.1,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_loc_0f7a7ed7,Imersão em Fisiologia do Metabolismo Humano | 2024,Aula 14 Micronutrientes Pt 02 Dr. Alexandre Duarte,7597,7597.0,100.0,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_loc_ded4f7cb,Imersão em Fisiologia do Metabolismo Humano | 2024,Aula 15 Contabilidade Matheus Gabrich,5346,7597.0,70.4,inteira_clinica,agente,agente,2026-08-23,abertura e desfecho reconhecíveis
+lsn_7692931,Imersão em Fisiologia do Metabolismo Humano | 2025,Aula 01 - Introdução | Dr Alexandre Duarte,5330,12035.0,44.3,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_7692933,Imersão em Fisiologia do Metabolismo Humano | 2025,Aula 02 - Dieta | Dr. Alexandre Duarte,18120,12035.0,150.6,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_7692934,Imersão em Fisiologia do Metabolismo Humano | 2025,Aula 03 - Micronutrientes | Dr. Alexandre Duarte,14151,12035.0,117.6,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_7692935,Imersão em Fisiologia do Metabolismo Humano | 2025,Aula 04 - Gastroimersão | Dra. Ana marta,8590,12035.0,71.4,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_7692936,Imersão em Fisiologia do Metabolismo Humano | 2025,Aula 05 - DHEA e Progesterona | Dr. Alexandre Duarte,14406,12035.0,119.7,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_7692937,Imersão em Fisiologia do Metabolismo Humano | 2025,Aula 06 - Exame de Composição Corporal | Tera Science,7408,12035.0,61.6,inteira_clinica,agente,agente,2026-08-23,desfecho didático; % não é prova de corte
+lsn_7692938,Imersão em Fisiologia do Metabolismo Humano | 2025,Aula 07 - Direito Medico | Ricardo Palovva,6979,12035.0,58.0,inteira_clinica,agente,agente,2026-08-23,abertura e desfecho reconhecíveis
+lsn_7692939,Imersão em Fisiologia do Metabolismo Humano | 2025,Aula 08 - Gestão e Vendas | Luiz Pacheco,9880,12035.0,82.1,inteira_clinica,agente,agente,2026-08-23,desfecho didático; % não é prova de corte
+lsn_7692940,Imersão em Fisiologia do Metabolismo Humano | 2025,Aula 09 - Mitocondria e in-MitoGen | Dr. Alexandre Duarte,15350,12035.0,127.5,inteira_clinica,agente,agente,2026-08-23,desfecho didático; % não é prova de corte
+lsn_7692941,Imersão em Fisiologia do Metabolismo Humano | 2025,Aula 10 - Tathi Dehandela,11182,12035.0,92.9,inteira_clinica,agente,agente,2026-08-23,desfecho didático; % não é prova de corte
+lsn_7692942,Imersão em Fisiologia do Metabolismo Humano | 2025,Aula 11 - Tireoide e Mitocondria | Dr. Alexandre Duarte,14366,12035.0,119.4,inteira_clinica,agente,agente,2026-08-23,desfecho didático; % não é prova de corte
+lsn_7692943,Imersão em Fisiologia do Metabolismo Humano | 2025,Aula 12 - Marketing de Conteúddo | Allan Lima,15591,12035.0,129.5,inteira_clinica,agente,agente,2026-08-23,abertura e desfecho reconhecíveis
+lsn_7692945,Imersão em Fisiologia do Metabolismo Humano | 2025,Aula 13 - Androgênios | Dr. Alexandre Duarte,3884,12035.0,32.3,truncada,agente,agente,2026-08-23,sem abertura nem desfecho; % baixo vs. mediana do curso
+lsn_7692944,Imersão em Fisiologia do Metabolismo Humano | 2025,Aula 14 - Estrogenios | Dr. Alexandre Duarte,12888,12035.0,107.1,inteira_clinica,agente,agente,2026-08-23,desfecho didático; % não é prova de corte
+lsn_8653259,Imersão em Fisiologia do Metabolismo Humano | 2026 | 20º Edição,Aula 01: Introdução | Dr. Alexandre Duarte,7377,10045.0,73.4,inteira_clinica,agente,agente,2026-08-23,abertura e desfecho reconhecíveis
+lsn_8653260,Imersão em Fisiologia do Metabolismo Humano | 2026 | 20º Edição,Aula 02: Dieta | Dr. Alexandre Duarte,12262,10045.0,122.1,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_8653261,Imersão em Fisiologia do Metabolismo Humano | 2026 | 20º Edição,Aula 03: Saúde Digestiva | Dra. Ana Martha,7245,10045.0,72.1,inteira_clinica,agente,agente,2026-08-23,abertura e desfecho reconhecíveis
+lsn_8653262,Imersão em Fisiologia do Metabolismo Humano | 2026 | 20º Edição,Aula 04: Direito Médico | Ricardo Palova,10552,10045.0,105.1,inteira_clinica,agente,agente,2026-08-23,desfecho didático; % não é prova de corte
+lsn_8653263,Imersão em Fisiologia do Metabolismo Humano | 2026 | 20º Edição,Aula 05: Ozonio | Leticia Philippi,9832,10045.0,97.9,asr_ruidosa_util,agente,agente,2026-08-23,termo ASR degradado; forma utilizável
+lsn_8653264,Imersão em Fisiologia do Metabolismo Humano | 2026 | 20º Edição,Aula 06: Micronutrientes - VO e Injetáveis | Dr. Alexandre Duarte,18661,10045.0,185.8,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_8653266,Imersão em Fisiologia do Metabolismo Humano | 2026 | 20º Edição,Aula 07: Progesterona e DHEA | Dr. Alexandre Duarte -,10980,10045.0,109.3,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_8653267,Imersão em Fisiologia do Metabolismo Humano | 2026 | 20º Edição,Aula 08: Tríade Energética - Cortisol | Dr. Alexandre Duarte Part 01,8380,10045.0,83.4,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_8653268,Imersão em Fisiologia do Metabolismo Humano | 2026 | 20º Edição,Aula 09: Exames Genéticos e de DNA | Pier Paoli e Dr. Alexandre Duarte,7524,10045.0,74.9,inteira_clinica,agente,agente,2026-08-23,abertura e desfecho reconhecíveis
+lsn_8653269,Imersão em Fisiologia do Metabolismo Humano | 2026 | 20º Edição,Aula 10: Tríade Energética - Tireóide e Insulina | Dr. Alexandre Duarte Part 02,13368,10045.0,133.1,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_8653271,Imersão em Fisiologia do Metabolismo Humano | 2026 | 20º Edição,Aula 11: A Guerra de Percepções | William Celso,20303,10045.0,202.1,inteira_clinica,agente,agente,2026-08-23,desfecho didático; % não é prova de corte
+lsn_8653272,Imersão em Fisiologia do Metabolismo Humano | 2026 | 20º Edição,Aula 12: Consulta ao vivo 01,16389,10045.0,163.2,inteira_clinica,agente,agente,2026-08-23,abertura e desfecho reconhecíveis
+lsn_8653274,Imersão em Fisiologia do Metabolismo Humano | 2026 | 20º Edição,Aula 13: Androgênios e HCG | Dr. Alexandre Duarte,13053,10045.0,130.0,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_8653275,Imersão em Fisiologia do Metabolismo Humano | 2026 | 20º Edição,Aula 14: Sucesso em Gestão e Vendas | Luiz Pacheco,10257,10045.0,102.1,inteira_clinica,agente,agente,2026-08-23,desfecho didático; % não é prova de corte
+lsn_8653277,Imersão em Fisiologia do Metabolismo Humano | 2026 | 20º Edição,Aula 15: O Novo Paradigma da Medicina | Dr. Ivan Ramos,7830,10045.0,78.0,inteira_clinica,agente,agente,2026-08-23,abertura e desfecho reconhecíveis
+lsn_8653278,Imersão em Fisiologia do Metabolismo Humano | 2026 | 20º Edição,Aula 16: Disfunção Mitocondrial | Dr. Alexandre Duarte,7035,10045.0,70.0,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_8653279,Imersão em Fisiologia do Metabolismo Humano | 2026 | 20º Edição,Aula 17: Estrogênios e Lipedema | Dr. Alexandre Duarte,12223,10045.0,121.7,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_8653280,Imersão em Fisiologia do Metabolismo Humano | 2026 | 20º Edição,Aula 18: GH e Peptideos | Dr. Alexandre Duarte,6710,10045.0,66.8,inteira_clinica,agente,agente,2026-08-23,abertura e desfecho reconhecíveis
+lsn_8653282,Imersão em Fisiologia do Metabolismo Humano | 2026 | 20º Edição,Aula 19: Consulta ao vivo 02,8467,10045.0,84.3,inteira_clinica,agente,agente,2026-08-23,abertura e desfecho reconhecíveis
+lsn_8653284,Imersão em Fisiologia do Metabolismo Humano | 2026 | 20º Edição,Aula 20: Tecnologias em Medicina | Fernando Tera,5857,10045.0,58.3,inteira_clinica,agente,agente,2026-08-23,abertura e desfecho reconhecíveis
+lsn_7784279,Intensivo de Terapia de Reposição Hormonal,Introdução: Terapia de Reposição Hormonal,782,10829.0,7.2,inteira_curta,confirmado,humano,2026-08-23,calibração humana 2026-08-23; welcome/introdução curta com forma reconhecível
+lsn_7784275,Intensivo de Terapia de Reposição Hormonal,Aula 01: Os Hormonios Esteroidais | Dr. Alexandre Duarte,2305,10829.0,21.3,inteira_clinica,confirmado,humano,2026-08-23,calibração humana 2026-08-23; abertura e desfecho reconhecíveis
+lsn_7784276,Intensivo de Terapia de Reposição Hormonal,Aula 02: Progesterona | Dr. Alexandre Duarte,16425,10829.0,151.7,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_7784277,Intensivo de Terapia de Reposição Hormonal,Aula 03: Estrogênios | Dr. Alexandre Duarte,13987,10829.0,129.2,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_7784278,Intensivo de Terapia de Reposição Hormonal,Aula 04: Androgênios | Dr. Alexandre Duarte,10829,10829.0,100.0,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_8477345,Intensivo de Terapias Injetáveis,Terapias Injetáveis - Parte 01,15364,13759.0,111.7,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_8477346,Intensivo de Terapias Injetáveis,Terapias Injetáveis - Parte 02,13759,13759.0,100.0,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_8477347,Intensivo de Terapias Injetáveis,Terapias Injetáveis - Parte 03,9954,13759.0,72.3,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_4303288,Introdutório de Fisiologia do Metabolismo Humano,Aula 01: Introdução,5395,5395.0,100.0,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_4303289,Introdutório de Fisiologia do Metabolismo Humano,Aula 02: Disbiose e Digestão,5227,5395.0,96.9,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_4303290,Introdutório de Fisiologia do Metabolismo Humano,Aula 03: Dieta e Alimentação,10599,5395.0,196.5,inteira_clinica,agente,agente,2026-08-23,desfecho didático; % não é prova de corte
+lsn_4303291,Introdutório de Fisiologia do Metabolismo Humano,Aula 04: Tríade Energética I,9822,5395.0,182.1,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_4303292,Introdutório de Fisiologia do Metabolismo Humano,Aula 05: Tríade Energética II,354,5395.0,6.6,truncada,confirmado,humano,2026-08-23,calibração humana 2026-08-23; falta desfecho
+lsn_4303293,Introdutório de Fisiologia do Metabolismo Humano,"Aula 06: Androgênios, Estrogênios e Progesterona",4947,5395.0,91.7,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_4303563,Introdutório de Fisiologia do Metabolismo Humano,Aula 07: Dúvidas,5861,5395.0,108.6,inteira_clinica,agente,agente,2026-08-23,abertura e desfecho reconhecíveis
+lsn_6729438,Masterclass de Fisiologia do Metabolismo Humano,Aula 1 - Principios da Reposição Hormonal,5565,2154.0,258.4,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_6729440,Masterclass de Fisiologia do Metabolismo Humano,Aula 2 - O metabolismo da tireoide,1658,2154.0,77.0,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_6729442,Masterclass de Fisiologia do Metabolismo Humano,Aula 3 - Ácido úrico,430,2154.0,20.0,inteira_clinica,confirmado,humano,2026-08-23,calibração humana 2026-08-23; desfecho didático; % não é prova de corte
+lsn_6729443,Masterclass de Fisiologia do Metabolismo Humano,Aula 4 - Desmistificando o colesterol,327,2154.0,15.2,truncada,confirmado,humano,2026-08-23,calibração humana 2026-08-23; falta abertura (começo no meio da fala)
+lsn_6729444,Masterclass de Fisiologia do Metabolismo Humano,Aula 5 - Metabolismo da Aterosclerose,2650,2154.0,123.0,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_6729446,Masterclass de Fisiologia do Metabolismo Humano,Perguntas finais,6639,2154.0,308.2,inteira_clinica,agente,agente,2026-08-23,abertura e desfecho reconhecíveis
+lsn_8875732,ORIGEM - Fisiologia Hormonal Avançada,Aula 01 - Introdução Cadeia Esteroidal,1949,8031.0,24.3,truncada,incerto,humano,2026-08-23,calibração: forma truncada no fim; miolo útil. truncada não significa inútil
+lsn_8875733,ORIGEM - Fisiologia Hormonal Avançada,Aula 02 - Progesterona,8162,8031.0,101.6,inteira_clinica,confirmado,humano,2026-08-23,calibração humana 2026-08-23; abertura e desfecho reconhecíveis
+lsn_8875734,ORIGEM - Fisiologia Hormonal Avançada,Aula 03 - Estrogenios,7899,8031.0,98.4,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_8875735,ORIGEM - Fisiologia Hormonal Avançada,Aula 04 - Androgenios,13813,8031.0,172.0,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_9073011,ORIGEM — Boas-vindas,ORIGEM — Boas-vindas,367,367.0,100.0,inteira_curta,confirmado,humano,2026-08-23,calibração humana 2026-08-23; welcome/introdução curta com forma reconhecível
+lsn_8013865,Onboarding Pós Graduação 2026,Aula 01 - Onboarding | Informações gerais,11960,11692.0,102.3,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_8050982,Onboarding Pós Graduação 2026,Aula 02 - Onboarding | Método In-MitoGen,6398,11692.0,54.7,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_8050984,Onboarding Pós Graduação 2026,Aula 03 - Onboarding | Luiz Pacheco,12607,11692.0,107.8,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_8050987,Onboarding Pós Graduação 2026,Aula 04 - Onboarding | Marina,11424,11692.0,97.7,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_9354505,Pré-Imersão 2026,Tríade Energética - Cortisol | Dr. Alexandre Duarte,8385,8385.0,100.0,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_8881617,Pós-Graduação Medicina Metabólica - Super Módulo 1,Aula 01 Marketing,24112,15999.0,150.7,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_8881619,Pós-Graduação Medicina Metabólica - Super Módulo 1,Aula 02 Vendas,30460,15999.0,190.4,asr_ruidosa_util,confirmado,humano,2026-08-23,calibração humana 2026-08-23; termo ASR degradado; forma utilizável
+lsn_8881620,Pós-Graduação Medicina Metabólica - Super Módulo 1,Aula 03 Revisão Cortisol,17058,15999.0,106.6,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_8881621,Pós-Graduação Medicina Metabólica - Super Módulo 1,Aula 04 Revisão Insulina,12095,15999.0,75.6,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_8881622,Pós-Graduação Medicina Metabólica - Super Módulo 1,Aula 05 Revisão Tireoide,9302,15999.0,58.1,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_8881623,Pós-Graduação Medicina Metabólica - Super Módulo 1,Aula 06 Revisão Micronutrientes,28347,15999.0,177.2,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_8881624,Pós-Graduação Medicina Metabólica - Super Módulo 1,Aula 07 Termografia,21832,15999.0,136.5,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_5491247,Pós-Graduação Medicina Metabólica - Super Módulo 1,AULA 01 - Onboarding | Luiz Pacheco,1768,15999.0,11.1,truncada,confirmado,humano,2026-08-23,calibração humana 2026-08-23; falta abertura (começo no meio da fala)
+lsn_5491253,Pós-Graduação Medicina Metabólica - Super Módulo 1,AULA 02 - Marketing e Posicionamento | Marina Soares,6798,15999.0,42.5,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_5491257,Pós-Graduação Medicina Metabólica - Super Módulo 1,AULA 03 - Dieta e Alimentação | Dr. Alexandre Duarte,20423,15999.0,127.7,inteira_clinica,agente,agente,2026-08-23,abertura e desfecho reconhecíveis
+lsn_5491265,Pós-Graduação Medicina Metabólica - Super Módulo 1,AULA 04 - Jejum | Dr. Alexandre Duarte,2414,15999.0,15.1,truncada,confirmado,humano,2026-08-23,calibração humana 2026-08-23; falta abertura (começo no meio da fala)
+lsn_5491322,Pós-Graduação Medicina Metabólica - Super Módulo 1,AULA 05 - Cortisol | Dr. Alexandre Duarte,17387,15999.0,108.7,inteira_clinica,agente,agente,2026-08-23,abertura e desfecho reconhecíveis
+lsn_5491323,Pós-Graduação Medicina Metabólica - Super Módulo 1,AULA 06 - Metabolismo | Dr. Alexandre Duarte,11947,15999.0,74.7,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_5491325,Pós-Graduação Medicina Metabólica - Super Módulo 1,AULA 07 - Micronutrientes | Dr. Alexandre Duarte,17755,15999.0,111.0,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_5491327,Pós-Graduação Medicina Metabólica - Super Módulo 1,AULA 08 - Tireóide | Dr. Alexandre Duarte,9050,15999.0,56.6,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_5491329,Pós-Graduação Medicina Metabólica - Super Módulo 1,AULA 09 - Termografia | Dr. Alexandre Aldred,14940,15999.0,93.4,inteira_clinica,agente,agente,2026-08-23,desfecho didático; % não é prova de corte
+lsn_7147318,Pós-Graduação Medicina Metabólica - Super Módulo 2,01 - Aula Aromatase,8863,8863.0,100.0,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_7147319,Pós-Graduação Medicina Metabólica - Super Módulo 2,02 - Aula Implantes,3405,8863.0,38.4,truncada,agente,agente,2026-08-23,sem abertura nem desfecho; % baixo vs. mediana do curso
+lsn_7147321,Pós-Graduação Medicina Metabólica - Super Módulo 2,03 - Aula SOP,8449,8863.0,95.3,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_7147322,Pós-Graduação Medicina Metabólica - Super Módulo 2,04 - Aula Testo saude masculina,12321,8863.0,139.0,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_7147323,Pós-Graduação Medicina Metabólica - Super Módulo 2,05 - Aula Análise de exame,7635,8863.0,86.1,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_7147324,Pós-Graduação Medicina Metabólica - Super Módulo 2,06 - Aula Carlos Nivel Cognitivo,24522,8863.0,276.7,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_7147326,Pós-Graduação Medicina Metabólica - Super Módulo 2,07 - Aula Will Posicionamento,21316,8863.0,240.5,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_7704857,Pós-Graduação Medicina Metabólica - Super Módulo 3,AULA 01 - Karen e Leticia Ozonio,15118,14601.0,103.5,asr_ruidosa_util,agente,agente,2026-08-23,termo ASR degradado; forma utilizável
+lsn_7704858,Pós-Graduação Medicina Metabólica - Super Módulo 3,AULA 02 - Luiz Pacheco,7163,14601.0,49.1,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_7704859,Pós-Graduação Medicina Metabólica - Super Módulo 3,AULA 03 - Anabolizantes,22917,14601.0,157.0,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_7704860,Pós-Graduação Medicina Metabólica - Super Módulo 3,AULA 04 - Exercicio e Suplementação,19383,14601.0,132.8,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_7704861,Pós-Graduação Medicina Metabólica - Super Módulo 3,AULA 05 - Luiz Pacheco Part 02,12393,14601.0,84.9,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_7704862,Pós-Graduação Medicina Metabólica - Super Módulo 3,AULA 06 - Anabolismo Saudável,14083,14601.0,96.5,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_7704863,Pós-Graduação Medicina Metabólica - Super Módulo 3,AULA 07 - Revisão Baixo Desempenho,5385,14601.0,36.9,truncada,agente,agente,2026-08-23,sem abertura nem desfecho; % baixo vs. mediana do curso
+lsn_7704869,Pós-Graduação Medicina Metabólica - Super Módulo 3,AULA 08 - Exames,24027,14601.0,164.6,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_7780464,Review Congresso Internacional de Metabologia (MMI) 2024,Introdução,208,5275.0,3.9,inteira_curta,confirmado,humano,2026-08-23,calibração humana 2026-08-23; welcome/introdução curta com forma reconhecível
+lsn_7780460,Review Congresso Internacional de Metabologia (MMI) 2024,Aula 01 - Plasmaferese,5213,5275.0,98.8,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_7780462,Review Congresso Internacional de Metabologia (MMI) 2024,Aula 02 - Blue Zones,5758,5275.0,109.2,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_7780466,Review Congresso Internacional de Metabologia (MMI) 2024,Aula 03 - Estrogênios e Câncer de Mama,8982,5275.0,170.3,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_7780471,Review Congresso Internacional de Metabologia (MMI) 2024,Aula 04 - Eixo Timo-Pineal,11132,5275.0,211.1,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_7780467,Review Congresso Internacional de Metabologia (MMI) 2024,Aula 05 - Esteatose e Obesidade,3961,5275.0,75.1,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_7780468,Review Congresso Internacional de Metabologia (MMI) 2024,Aula 06 - Emagrecimento,5336,5275.0,101.2,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_7780469,Review Congresso Internacional de Metabologia (MMI) 2024,Aula 07 - Oxitocina,4968,5275.0,94.2,inteira_clinica,agente,agente,2026-08-23,desfecho didático; % não é prova de corte
+lsn_5127789,Review Congresso Internacional de Metabologia (MMI) 2025,Aula 01: Peptídeos Hormonais,7874,7631.0,103.2,inteira_clinica,agente,agente,2026-08-23,abertura ok; aula longa o bastante para o curso
+lsn_5127790,Review Congresso Internacional de Metabologia (MMI) 2025,"Aula 02: NAD, A Chave Para A Longevidade",8785,7631.0,115.1,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_5127791,Review Congresso Internacional de Metabologia (MMI) 2025,"Aula 03: Progesterona, Uma Chave Para a Saúde",5740,7631.0,75.2,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_5127792,Review Congresso Internacional de Metabologia (MMI) 2025,Aula 04: Neurobiologia e Imortalidade,6793,7631.0,89.0,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_5127794,Review Congresso Internacional de Metabologia (MMI) 2025,Aula 05: GH em Adultos,7387,7631.0,96.8,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_5127795,Review Congresso Internacional de Metabologia (MMI) 2025,Aula 06: Câncer de Mama,8013,7631.0,105.0,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
+lsn_3659356,Tratamento Metabólico da Hipercalcemia,Tratando Complicações e Orientações de Conduta,15107,15107.0,100.0,inteira_clinica,agente,agente,2026-08-23,forma utilizável (série/continuação)
