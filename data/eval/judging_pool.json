@@ -1,0 +1,368 @@
+[
+ {
+  "qid": "q01",
+  "numero": 1,
+  "pergunta": "Qual comorbidade está mais associada à disfunção erétil, e por que a disfunção erétil progressiva deve levar a uma investigação cardiovascular?",
+  "trechos": [
+   {
+    "rep_chunk_uid": "lsn_3545308::fixed::0019",
+    "member_chunk_uids": [
+     "lsn_3545308::fixed::0019",
+     "lsn_3545308::semantic::0017",
+     "lsn_3545308::qa_turn::0027"
+    ],
+    "excerpt_id": "P01-T01"
+   },
+   {
+    "rep_chunk_uid": "lsn_3545308::fixed::0006",
+    "member_chunk_uids": [
+     "lsn_3545308::fixed::0006"
+    ],
+    "excerpt_id": "P01-T02"
+   },
+   {
+    "rep_chunk_uid": "lsn_3545308::fixed::0001",
+    "member_chunk_uids": [
+     "lsn_3545308::fixed::0001",
+     "lsn_3545308::semantic::0001"
+    ],
+    "excerpt_id": "P01-T03"
+   },
+   {
+    "rep_chunk_uid": "lsn_3545308::fixed::0007",
+    "member_chunk_uids": [
+     "lsn_3545308::fixed::0007",
+     "lsn_3545308::semantic::0007",
+     "lsn_3545308::qa_turn::0011",
+     "lsn_3545308::qa_turn::0010"
+    ],
+    "excerpt_id": "P01-T04"
+   }
+  ]
+ },
+ {
+  "qid": "q03",
+  "numero": 2,
+  "pergunta": "Quais nutracêuticos, e em que doses, podem ser usados no tratamento da ejaculação precoce?",
+  "trechos": [
+   {
+    "rep_chunk_uid": "lsn_3545320::fixed::0006",
+    "member_chunk_uids": [
+     "lsn_3545320::fixed::0006"
+    ],
+    "excerpt_id": "P02-T01"
+   },
+   {
+    "rep_chunk_uid": "lsn_3545310::fixed::0001",
+    "member_chunk_uids": [
+     "lsn_3545310::fixed::0001",
+     "lsn_3545310::qa_turn::0002"
+    ],
+    "excerpt_id": "P02-T02"
+   },
+   {
+    "rep_chunk_uid": "lsn_3545310::fixed::0012",
+    "member_chunk_uids": [
+     "lsn_3545310::fixed::0012",
+     "lsn_3545310::semantic::0013",
+     "lsn_3545310::qa_turn::0018"
+    ],
+    "excerpt_id": "P02-T03"
+   },
+   {
+    "rep_chunk_uid": "lsn_3545310::fixed::0000",
+    "member_chunk_uids": [
+     "lsn_3545310::fixed::0000",
+     "lsn_3545310::semantic::0000",
+     "lsn_3545310::qa_turn::0001"
+    ],
+    "excerpt_id": "P02-T04"
+   },
+   {
+    "rep_chunk_uid": "lsn_3545310::semantic::0001",
+    "member_chunk_uids": [
+     "lsn_3545310::semantic::0001"
+    ],
+    "excerpt_id": "P02-T05"
+   }
+  ]
+ },
+ {
+  "qid": "q05",
+  "numero": 3,
+  "pergunta": "Em quais pacientes pedir escore de cálcio coronariano, e quando preferir a angiotomografia de coronárias?",
+  "trechos": [
+   {
+    "rep_chunk_uid": "lsn_3521431::fixed::0019",
+    "member_chunk_uids": [
+     "lsn_3521431::fixed::0019"
+    ],
+    "excerpt_id": "P03-T01"
+   },
+   {
+    "rep_chunk_uid": "lsn_3521431::fixed::0008",
+    "member_chunk_uids": [
+     "lsn_3521431::fixed::0008"
+    ],
+    "excerpt_id": "P03-T02"
+   },
+   {
+    "rep_chunk_uid": "lsn_3521432::fixed::0000",
+    "member_chunk_uids": [
+     "lsn_3521432::fixed::0000",
+     "lsn_3521432::semantic::0000"
+    ],
+    "excerpt_id": "P03-T03"
+   },
+   {
+    "rep_chunk_uid": "lsn_3521432::fixed::0002",
+    "member_chunk_uids": [
+     "lsn_3521432::fixed::0002",
+     "lsn_3521432::qa_turn::0003"
+    ],
+    "excerpt_id": "P03-T04"
+   },
+   {
+    "rep_chunk_uid": "lsn_3521431::fixed::0009",
+    "member_chunk_uids": [
+     "lsn_3521431::fixed::0009",
+     "lsn_3521431::semantic::0008",
+     "lsn_3521431::semantic::0007",
+     "lsn_3521431::qa_turn::0014",
+     "lsn_3521431::qa_turn::0013"
+    ],
+    "excerpt_id": "P03-T05"
+   }
+  ]
+ },
+ {
+  "qid": "q06",
+  "numero": 4,
+  "pergunta": "Como usar melatonina para desmamar um paciente usuário crônico de benzodiazepínico (ex.: Rivotril)?",
+  "trechos": [
+   {
+    "rep_chunk_uid": "lsn_5491322::semantic::0067",
+    "member_chunk_uids": [
+     "lsn_5491322::semantic::0067",
+     "lsn_5491322::fixed::0056"
+    ],
+    "excerpt_id": "P04-T01"
+   },
+   {
+    "rep_chunk_uid": "lsn_3534937::qa_turn::0054",
+    "member_chunk_uids": [
+     "lsn_3534937::qa_turn::0054"
+    ],
+    "excerpt_id": "P04-T02"
+   },
+   {
+    "rep_chunk_uid": "lsn_3534937::fixed::0054",
+    "member_chunk_uids": [
+     "lsn_3534937::fixed::0054",
+     "lsn_3534937::semantic::0052",
+     "lsn_3534937::qa_turn::0057"
+    ],
+    "excerpt_id": "P04-T03"
+   },
+   {
+    "rep_chunk_uid": "lsn_3534937::fixed::0051",
+    "member_chunk_uids": [
+     "lsn_3534937::fixed::0051",
+     "lsn_3534937::semantic::0050"
+    ],
+    "excerpt_id": "P04-T04"
+   },
+   {
+    "rep_chunk_uid": "lsn_3534937::fixed::0053",
+    "member_chunk_uids": [
+     "lsn_3534937::fixed::0053",
+     "lsn_3534937::qa_turn::0056"
+    ],
+    "excerpt_id": "P04-T05"
+   }
+  ]
+ },
+ {
+  "qid": "q15",
+  "numero": 5,
+  "pergunta": "Hormônios causam câncer? Qual é o mecanismo metabólico apontado como causa do câncer?",
+  "trechos": [
+   {
+    "rep_chunk_uid": "lsn_5127795::semantic::0001",
+    "member_chunk_uids": [
+     "lsn_5127795::semantic::0001",
+     "lsn_5127795::fixed::0002"
+    ],
+    "excerpt_id": "P05-T01"
+   },
+   {
+    "rep_chunk_uid": "lsn_5127795::fixed::0004",
+    "member_chunk_uids": [
+     "lsn_5127795::fixed::0004",
+     "lsn_5127795::semantic::0002"
+    ],
+    "excerpt_id": "P05-T02"
+   },
+   {
+    "rep_chunk_uid": "lsn_7692944::fixed::0010",
+    "member_chunk_uids": [
+     "lsn_7692944::fixed::0010",
+     "lsn_7692944::qa_turn::0013"
+    ],
+    "excerpt_id": "P05-T03"
+   },
+   {
+    "rep_chunk_uid": "lsn_7784277::fixed::0013",
+    "member_chunk_uids": [
+     "lsn_7784277::fixed::0013"
+    ],
+    "excerpt_id": "P05-T04"
+   },
+   {
+    "rep_chunk_uid": "lsn_3545563::fixed::0068",
+    "member_chunk_uids": [
+     "lsn_3545563::fixed::0068",
+     "lsn_3545563::semantic::0073",
+     "lsn_3545563::qa_turn::0105"
+    ],
+    "excerpt_id": "P05-T05"
+   },
+   {
+    "rep_chunk_uid": "lsn_5127795::qa_turn::0002",
+    "member_chunk_uids": [
+     "lsn_5127795::qa_turn::0002"
+    ],
+    "excerpt_id": "P05-T06"
+   }
+  ]
+ },
+ {
+  "qid": "q20",
+  "numero": 6,
+  "pergunta": "Entre nicotinamida, NMN, nicotinamida ribosídeo e NAD, qual precursor suplementar, e por quê?",
+  "trechos": [
+   {
+    "rep_chunk_uid": "lsn_5127790::fixed::0014",
+    "member_chunk_uids": [
+     "lsn_5127790::fixed::0014"
+    ],
+    "excerpt_id": "P06-T01"
+   },
+   {
+    "rep_chunk_uid": "lsn_3545567::fixed::0015",
+    "member_chunk_uids": [
+     "lsn_3545567::fixed::0015",
+     "lsn_3545567::qa_turn::0020"
+    ],
+    "excerpt_id": "P06-T02"
+   },
+   {
+    "rep_chunk_uid": "lsn_4435678::fixed::0017",
+    "member_chunk_uids": [
+     "lsn_4435678::fixed::0017",
+     "lsn_4435678::semantic::0017"
+    ],
+    "excerpt_id": "P06-T03"
+   },
+   {
+    "rep_chunk_uid": "lsn_4303563::fixed::0008",
+    "member_chunk_uids": [
+     "lsn_4303563::fixed::0008",
+     "lsn_4303563::semantic::0009",
+     "lsn_4303563::qa_turn::0010"
+    ],
+    "excerpt_id": "P06-T04"
+   },
+   {
+    "rep_chunk_uid": "lsn_3534881::fixed::0003",
+    "member_chunk_uids": [
+     "lsn_3534881::fixed::0003"
+    ],
+    "excerpt_id": "P06-T05"
+   },
+   {
+    "rep_chunk_uid": "lsn_8975539::fixed::0009",
+    "member_chunk_uids": [
+     "lsn_8975539::fixed::0009"
+    ],
+    "excerpt_id": "P06-T06"
+   },
+   {
+    "rep_chunk_uid": "lsn_5127790::semantic::0016",
+    "member_chunk_uids": [
+     "lsn_5127790::semantic::0016",
+     "lsn_5127790::qa_turn::0019",
+     "lsn_5127790::fixed::0013"
+    ],
+    "excerpt_id": "P06-T07"
+   },
+   {
+    "rep_chunk_uid": "lsn_5491325::fixed::0041",
+    "member_chunk_uids": [
+     "lsn_5491325::fixed::0041"
+    ],
+    "excerpt_id": "P06-T08"
+   }
+  ]
+ },
+ {
+  "qid": "q25",
+  "numero": 7,
+  "pergunta": "Faz sentido repor cálcio na osteoporose? O que significa cálcio elevado no mineralograma?",
+  "trechos": [
+   {
+    "rep_chunk_uid": "lsn_4303291::semantic::0014",
+    "member_chunk_uids": [
+     "lsn_4303291::semantic::0014"
+    ],
+    "excerpt_id": "P07-T01"
+   },
+   {
+    "rep_chunk_uid": "lsn_3545581::fixed::0010",
+    "member_chunk_uids": [
+     "lsn_3545581::fixed::0010"
+    ],
+    "excerpt_id": "P07-T02"
+   },
+   {
+    "rep_chunk_uid": "lsn_8477345::fixed::0025",
+    "member_chunk_uids": [
+     "lsn_8477345::fixed::0025"
+    ],
+    "excerpt_id": "P07-T03"
+   },
+   {
+    "rep_chunk_uid": "lsn_8477345::fixed::0024",
+    "member_chunk_uids": [
+     "lsn_8477345::fixed::0024"
+    ],
+    "excerpt_id": "P07-T04"
+   },
+   {
+    "rep_chunk_uid": "lsn_8653264::qa_turn::0025",
+    "member_chunk_uids": [
+     "lsn_8653264::qa_turn::0025"
+    ],
+    "excerpt_id": "P07-T05"
+   },
+   {
+    "rep_chunk_uid": "lsn_4303291::fixed::0012",
+    "member_chunk_uids": [
+     "lsn_4303291::fixed::0012",
+     "lsn_4303291::semantic::0015",
+     "lsn_4303291::qa_turn::0011",
+     "lsn_4303291::qa_turn::0010"
+    ],
+    "excerpt_id": "P07-T06"
+   },
+   {
+    "rep_chunk_uid": "lsn_5491325::fixed::0013",
+    "member_chunk_uids": [
+     "lsn_5491325::fixed::0013",
+     "lsn_5491325::semantic::0013"
+    ],
+    "excerpt_id": "P07-T07"
+   }
+  ]
+ }
+]

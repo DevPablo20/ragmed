@@ -1,0 +1,6541 @@
+{
+ "configs": {
+  "fixed_ctx_rerank": {
+   "strategy": "fixed",
+   "context": true,
+   "rerank": true
+  },
+  "fixed_noctx_rerank": {
+   "strategy": "fixed",
+   "context": false,
+   "rerank": true
+  },
+  "semantic_ctx_rerank": {
+   "strategy": "semantic",
+   "context": true,
+   "rerank": true
+  },
+  "qaturn_ctx_rerank": {
+   "strategy": "qa_turn",
+   "context": true,
+   "rerank": true
+  },
+  "fixed_ctx_norerank": {
+   "strategy": "fixed",
+   "context": true,
+   "rerank": false
+  }
+ },
+ "runs": {
+  "fixed_ctx_rerank": {
+   "q01": [
+    {
+     "chunk_uid": "lsn_3545308::fixed::0019",
+     "score": 0.9868331551551819,
+     "lesson_uid": "lsn_3545308"
+    },
+    {
+     "chunk_uid": "lsn_3545308::fixed::0007",
+     "score": 0.9283037185668945,
+     "lesson_uid": "lsn_3545308"
+    },
+    {
+     "chunk_uid": "lsn_3545308::fixed::0001",
+     "score": 0.16114339232444763,
+     "lesson_uid": "lsn_3545308"
+    },
+    {
+     "chunk_uid": "lsn_3545319::fixed::0007",
+     "score": 0.11150871217250824,
+     "lesson_uid": "lsn_3545319"
+    },
+    {
+     "chunk_uid": "lsn_3545308::fixed::0009",
+     "score": 0.07516386359930038,
+     "lesson_uid": "lsn_3545308"
+    },
+    {
+     "chunk_uid": "lsn_3545308::fixed::0010",
+     "score": 0.07442150264978409,
+     "lesson_uid": "lsn_3545308"
+    },
+    {
+     "chunk_uid": "lsn_3545308::fixed::0013",
+     "score": 0.07341453433036804,
+     "lesson_uid": "lsn_3545308"
+    },
+    {
+     "chunk_uid": "lsn_3545308::fixed::0000",
+     "score": 0.06824435293674469,
+     "lesson_uid": "lsn_3545308"
+    },
+    {
+     "chunk_uid": "lsn_3545308::fixed::0005",
+     "score": 0.06757599115371704,
+     "lesson_uid": "lsn_3545308"
+    },
+    {
+     "chunk_uid": "lsn_3545308::fixed::0008",
+     "score": 0.06638669222593307,
+     "lesson_uid": "lsn_3545308"
+    }
+   ],
+   "q02": [
+    {
+     "chunk_uid": "lsn_3657234::fixed::0003",
+     "score": 0.9751228094100952,
+     "lesson_uid": "lsn_3657234"
+    },
+    {
+     "chunk_uid": "lsn_7147319::fixed::0007",
+     "score": 0.9651955366134644,
+     "lesson_uid": "lsn_7147319"
+    },
+    {
+     "chunk_uid": "lsn_7147319::fixed::0006",
+     "score": 0.9121696949005127,
+     "lesson_uid": "lsn_7147319"
+    },
+    {
+     "chunk_uid": "lsn_3545567::fixed::0042",
+     "score": 0.890984058380127,
+     "lesson_uid": "lsn_3545567"
+    },
+    {
+     "chunk_uid": "lsn_3657234::fixed::0004",
+     "score": 0.740307092666626,
+     "lesson_uid": "lsn_3657234"
+    },
+    {
+     "chunk_uid": "lsn_3657234::fixed::0009",
+     "score": 0.6595094203948975,
+     "lesson_uid": "lsn_3657234"
+    },
+    {
+     "chunk_uid": "lsn_8875735::fixed::0044",
+     "score": 0.6224713325500488,
+     "lesson_uid": "lsn_8875735"
+    },
+    {
+     "chunk_uid": "lsn_3545567::fixed::0038",
+     "score": 0.5325254201889038,
+     "lesson_uid": "lsn_3545567"
+    },
+    {
+     "chunk_uid": "lsn_8875735::fixed::0043",
+     "score": 0.49452605843544006,
+     "lesson_uid": "lsn_8875735"
+    },
+    {
+     "chunk_uid": "lsn_3545327::fixed::0013",
+     "score": 0.4585093855857849,
+     "lesson_uid": "lsn_3545327"
+    }
+   ],
+   "q03": [
+    {
+     "chunk_uid": "lsn_3545310::fixed::0001",
+     "score": 0.9879941940307617,
+     "lesson_uid": "lsn_3545310"
+    },
+    {
+     "chunk_uid": "lsn_3545310::fixed::0012",
+     "score": 0.7978312373161316,
+     "lesson_uid": "lsn_3545310"
+    },
+    {
+     "chunk_uid": "lsn_3545310::fixed::0000",
+     "score": 0.6878724098205566,
+     "lesson_uid": "lsn_3545310"
+    },
+    {
+     "chunk_uid": "lsn_3545310::fixed::0002",
+     "score": 0.40022143721580505,
+     "lesson_uid": "lsn_3545310"
+    },
+    {
+     "chunk_uid": "lsn_3545310::fixed::0014",
+     "score": 0.27649977803230286,
+     "lesson_uid": "lsn_3545310"
+    },
+    {
+     "chunk_uid": "lsn_3545320::fixed::0006",
+     "score": 0.2630428373813629,
+     "lesson_uid": "lsn_3545320"
+    },
+    {
+     "chunk_uid": "lsn_3545310::fixed::0004",
+     "score": 0.21972273290157318,
+     "lesson_uid": "lsn_3545310"
+    },
+    {
+     "chunk_uid": "lsn_3545310::fixed::0013",
+     "score": 0.19772106409072876,
+     "lesson_uid": "lsn_3545310"
+    },
+    {
+     "chunk_uid": "lsn_3545310::fixed::0011",
+     "score": 0.162680983543396,
+     "lesson_uid": "lsn_3545310"
+    },
+    {
+     "chunk_uid": "lsn_3545310::fixed::0003",
+     "score": 0.1580793708562851,
+     "lesson_uid": "lsn_3545310"
+    }
+   ],
+   "q04": [
+    {
+     "chunk_uid": "lsn_7769609::fixed::0010",
+     "score": 0.6515613794326782,
+     "lesson_uid": "lsn_7769609"
+    },
+    {
+     "chunk_uid": "lsn_7769609::fixed::0000",
+     "score": 0.3767673671245575,
+     "lesson_uid": "lsn_7769609"
+    },
+    {
+     "chunk_uid": "lsn_7704869::fixed::0057",
+     "score": 0.10571358352899551,
+     "lesson_uid": "lsn_7704869"
+    },
+    {
+     "chunk_uid": "lsn_7769609::fixed::0011",
+     "score": 0.06711301952600479,
+     "lesson_uid": "lsn_7769609"
+    },
+    {
+     "chunk_uid": "lsn_7769609::fixed::0018",
+     "score": 0.03100505657494068,
+     "lesson_uid": "lsn_7769609"
+    },
+    {
+     "chunk_uid": "lsn_7769609::fixed::0003",
+     "score": 0.028599048033356667,
+     "lesson_uid": "lsn_7769609"
+    },
+    {
+     "chunk_uid": "lsn_3521381::fixed::0039",
+     "score": 0.021924985572695732,
+     "lesson_uid": "lsn_3521381"
+    },
+    {
+     "chunk_uid": "lsn_7769609::fixed::0009",
+     "score": 0.02040792442858219,
+     "lesson_uid": "lsn_7769609"
+    },
+    {
+     "chunk_uid": "lsn_7769609::fixed::0002",
+     "score": 0.016934828832745552,
+     "lesson_uid": "lsn_7769609"
+    },
+    {
+     "chunk_uid": "lsn_3521381::fixed::0038",
+     "score": 0.014810433611273766,
+     "lesson_uid": "lsn_3521381"
+    }
+   ],
+   "q05": [
+    {
+     "chunk_uid": "lsn_3521431::fixed::0009",
+     "score": 0.9896553754806519,
+     "lesson_uid": "lsn_3521431"
+    },
+    {
+     "chunk_uid": "lsn_3521432::fixed::0002",
+     "score": 0.893055260181427,
+     "lesson_uid": "lsn_3521432"
+    },
+    {
+     "chunk_uid": "lsn_3521432::fixed::0000",
+     "score": 0.8420653343200684,
+     "lesson_uid": "lsn_3521432"
+    },
+    {
+     "chunk_uid": "lsn_8653272::fixed::0033",
+     "score": 0.24453788995742798,
+     "lesson_uid": "lsn_8653272"
+    },
+    {
+     "chunk_uid": "lsn_3521432::fixed::0001",
+     "score": 0.20719094574451447,
+     "lesson_uid": "lsn_3521432"
+    },
+    {
+     "chunk_uid": "lsn_3521431::fixed::0001",
+     "score": 0.19354358315467834,
+     "lesson_uid": "lsn_3521431"
+    },
+    {
+     "chunk_uid": "lsn_8653272::fixed::0015",
+     "score": 0.18812717497348785,
+     "lesson_uid": "lsn_8653272"
+    },
+    {
+     "chunk_uid": "lsn_3521431::fixed::0007",
+     "score": 0.1639881432056427,
+     "lesson_uid": "lsn_3521431"
+    },
+    {
+     "chunk_uid": "lsn_3521424::fixed::0023",
+     "score": 0.1526590883731842,
+     "lesson_uid": "lsn_3521424"
+    },
+    {
+     "chunk_uid": "lsn_4435677::fixed::0007",
+     "score": 0.10789850354194641,
+     "lesson_uid": "lsn_4435677"
+    }
+   ],
+   "q06": [
+    {
+     "chunk_uid": "lsn_3534937::fixed::0053",
+     "score": 0.9732099175453186,
+     "lesson_uid": "lsn_3534937"
+    },
+    {
+     "chunk_uid": "lsn_3534937::fixed::0051",
+     "score": 0.9602988362312317,
+     "lesson_uid": "lsn_3534937"
+    },
+    {
+     "chunk_uid": "lsn_3534937::fixed::0054",
+     "score": 0.9106079936027527,
+     "lesson_uid": "lsn_3534937"
+    },
+    {
+     "chunk_uid": "lsn_5491322::fixed::0056",
+     "score": 0.8426247835159302,
+     "lesson_uid": "lsn_5491322"
+    },
+    {
+     "chunk_uid": "lsn_3534937::fixed::0055",
+     "score": 0.5934861302375793,
+     "lesson_uid": "lsn_3534937"
+    },
+    {
+     "chunk_uid": "lsn_3534937::fixed::0052",
+     "score": 0.4195671081542969,
+     "lesson_uid": "lsn_3534937"
+    },
+    {
+     "chunk_uid": "lsn_8975543::fixed::0004",
+     "score": 0.1580694317817688,
+     "lesson_uid": "lsn_8975543"
+    },
+    {
+     "chunk_uid": "lsn_3659233::fixed::0059",
+     "score": 0.15466345846652985,
+     "lesson_uid": "lsn_3659233"
+    },
+    {
+     "chunk_uid": "lsn_3534938::fixed::0057",
+     "score": 0.06657955795526505,
+     "lesson_uid": "lsn_3534938"
+    },
+    {
+     "chunk_uid": "lsn_3521432::fixed::0026",
+     "score": 0.050484102219343185,
+     "lesson_uid": "lsn_3521432"
+    }
+   ],
+   "q07": [
+    {
+     "chunk_uid": "lsn_8975536::fixed::0009",
+     "score": 0.9897553324699402,
+     "lesson_uid": "lsn_8975536"
+    },
+    {
+     "chunk_uid": "lsn_7704869::fixed::0021",
+     "score": 0.9516201615333557,
+     "lesson_uid": "lsn_7704869"
+    },
+    {
+     "chunk_uid": "lsn_5127791::fixed::0003",
+     "score": 0.8879214525222778,
+     "lesson_uid": "lsn_5127791"
+    },
+    {
+     "chunk_uid": "lsn_8975536::fixed::0010",
+     "score": 0.8682126402854919,
+     "lesson_uid": "lsn_8975536"
+    },
+    {
+     "chunk_uid": "lsn_7704869::fixed::0024",
+     "score": 0.5671867728233337,
+     "lesson_uid": "lsn_7704869"
+    },
+    {
+     "chunk_uid": "lsn_5127791::fixed::0005",
+     "score": 0.2509852349758148,
+     "lesson_uid": "lsn_5127791"
+    },
+    {
+     "chunk_uid": "lsn_7704869::fixed::0020",
+     "score": 0.07942372560501099,
+     "lesson_uid": "lsn_7704869"
+    },
+    {
+     "chunk_uid": "lsn_5127791::fixed::0004",
+     "score": 0.062177542597055435,
+     "lesson_uid": "lsn_5127791"
+    },
+    {
+     "chunk_uid": "lsn_7704869::fixed::0022",
+     "score": 0.06021947041153908,
+     "lesson_uid": "lsn_7704869"
+    },
+    {
+     "chunk_uid": "lsn_3534938::fixed::0047",
+     "score": 0.057708919048309326,
+     "lesson_uid": "lsn_3534938"
+    }
+   ],
+   "q08": [
+    {
+     "chunk_uid": "lsn_7769233::fixed::0010",
+     "score": 0.8118036389350891,
+     "lesson_uid": "lsn_7769233"
+    },
+    {
+     "chunk_uid": "lsn_8878383::fixed::0055",
+     "score": 0.3244794011116028,
+     "lesson_uid": "lsn_8878383"
+    },
+    {
+     "chunk_uid": "lsn_8878383::fixed::0053",
+     "score": 0.28871193528175354,
+     "lesson_uid": "lsn_8878383"
+    },
+    {
+     "chunk_uid": "lsn_7773603::fixed::0007",
+     "score": 0.271193265914917,
+     "lesson_uid": "lsn_7773603"
+    },
+    {
+     "chunk_uid": "lsn_7773600::fixed::0029",
+     "score": 0.2645494043827057,
+     "lesson_uid": "lsn_7773600"
+    },
+    {
+     "chunk_uid": "lsn_7769233::fixed::0009",
+     "score": 0.19894914329051971,
+     "lesson_uid": "lsn_7769233"
+    },
+    {
+     "chunk_uid": "lsn_7704869::fixed::0038",
+     "score": 0.18847937881946564,
+     "lesson_uid": "lsn_7704869"
+    },
+    {
+     "chunk_uid": "lsn_7769233::fixed::0025",
+     "score": 0.17107181251049042,
+     "lesson_uid": "lsn_7769233"
+    },
+    {
+     "chunk_uid": "lsn_8878383::fixed::0048",
+     "score": 0.12650524079799652,
+     "lesson_uid": "lsn_8878383"
+    },
+    {
+     "chunk_uid": "lsn_8878383::fixed::0047",
+     "score": 0.10491319000720978,
+     "lesson_uid": "lsn_8878383"
+    }
+   ],
+   "q09": [
+    {
+     "chunk_uid": "lsn_3521383::fixed::0013",
+     "score": 0.9748255610466003,
+     "lesson_uid": "lsn_3521383"
+    },
+    {
+     "chunk_uid": "lsn_7704869::fixed::0060",
+     "score": 0.8625100255012512,
+     "lesson_uid": "lsn_7704869"
+    },
+    {
+     "chunk_uid": "lsn_4435677::fixed::0021",
+     "score": 0.8152161240577698,
+     "lesson_uid": "lsn_4435677"
+    },
+    {
+     "chunk_uid": "lsn_8875735::fixed::0021",
+     "score": 0.761054277420044,
+     "lesson_uid": "lsn_8875735"
+    },
+    {
+     "chunk_uid": "lsn_3521383::fixed::0012",
+     "score": 0.47848284244537354,
+     "lesson_uid": "lsn_3521383"
+    },
+    {
+     "chunk_uid": "lsn_7784277::fixed::0010",
+     "score": 0.38789069652557373,
+     "lesson_uid": "lsn_7784277"
+    },
+    {
+     "chunk_uid": "lsn_3659237::fixed::0021",
+     "score": 0.36048445105552673,
+     "lesson_uid": "lsn_3659237"
+    },
+    {
+     "chunk_uid": "lsn_3521377::fixed::0000",
+     "score": 0.14682906866073608,
+     "lesson_uid": "lsn_3521377"
+    },
+    {
+     "chunk_uid": "lsn_6729446::fixed::0003",
+     "score": 0.13266490399837494,
+     "lesson_uid": "lsn_6729446"
+    },
+    {
+     "chunk_uid": "lsn_7692942::fixed::0020",
+     "score": 0.07319507002830505,
+     "lesson_uid": "lsn_7692942"
+    }
+   ],
+   "q10": [
+    {
+     "chunk_uid": "lsn_3521418::fixed::0009",
+     "score": 0.8944470882415771,
+     "lesson_uid": "lsn_3521418"
+    },
+    {
+     "chunk_uid": "lsn_3521417::fixed::0021",
+     "score": 0.8461571335792542,
+     "lesson_uid": "lsn_3521417"
+    },
+    {
+     "chunk_uid": "lsn_3521417::fixed::0012",
+     "score": 0.817791223526001,
+     "lesson_uid": "lsn_3521417"
+    },
+    {
+     "chunk_uid": "lsn_3521417::fixed::0014",
+     "score": 0.7963409423828125,
+     "lesson_uid": "lsn_3521417"
+    },
+    {
+     "chunk_uid": "lsn_3521418::fixed::0010",
+     "score": 0.7033448219299316,
+     "lesson_uid": "lsn_3521418"
+    },
+    {
+     "chunk_uid": "lsn_3521417::fixed::0010",
+     "score": 0.545422375202179,
+     "lesson_uid": "lsn_3521417"
+    },
+    {
+     "chunk_uid": "lsn_3521418::fixed::0016",
+     "score": 0.4176395535469055,
+     "lesson_uid": "lsn_3521418"
+    },
+    {
+     "chunk_uid": "lsn_3521417::fixed::0025",
+     "score": 0.39290279150009155,
+     "lesson_uid": "lsn_3521417"
+    },
+    {
+     "chunk_uid": "lsn_3521417::fixed::0008",
+     "score": 0.30320003628730774,
+     "lesson_uid": "lsn_3521417"
+    },
+    {
+     "chunk_uid": "lsn_3521418::fixed::0008",
+     "score": 0.29085469245910645,
+     "lesson_uid": "lsn_3521418"
+    }
+   ],
+   "q11": [
+    {
+     "chunk_uid": "lsn_4243247::fixed::0011",
+     "score": 0.8983133435249329,
+     "lesson_uid": "lsn_4243247"
+    },
+    {
+     "chunk_uid": "lsn_8881624::fixed::0009",
+     "score": 0.7720873355865479,
+     "lesson_uid": "lsn_8881624"
+    },
+    {
+     "chunk_uid": "lsn_4243247::fixed::0017",
+     "score": 0.5696152448654175,
+     "lesson_uid": "lsn_4243247"
+    },
+    {
+     "chunk_uid": "lsn_4243248::fixed::0017",
+     "score": 0.23039716482162476,
+     "lesson_uid": "lsn_4243248"
+    },
+    {
+     "chunk_uid": "lsn_8881624::fixed::0010",
+     "score": 0.20254406332969666,
+     "lesson_uid": "lsn_8881624"
+    },
+    {
+     "chunk_uid": "lsn_4243247::fixed::0013",
+     "score": 0.10531841218471527,
+     "lesson_uid": "lsn_4243247"
+    },
+    {
+     "chunk_uid": "lsn_8881624::fixed::0016",
+     "score": 0.06262312829494476,
+     "lesson_uid": "lsn_8881624"
+    },
+    {
+     "chunk_uid": "lsn_4243248::fixed::0025",
+     "score": 0.060102175921201706,
+     "lesson_uid": "lsn_4243248"
+    },
+    {
+     "chunk_uid": "lsn_4243254::fixed::0019",
+     "score": 0.05407040938735008,
+     "lesson_uid": "lsn_4243254"
+    },
+    {
+     "chunk_uid": "lsn_8881624::fixed::0060",
+     "score": 0.04983314126729965,
+     "lesson_uid": "lsn_8881624"
+    }
+   ],
+   "q12": [
+    {
+     "chunk_uid": "lsn_3659233::fixed::0044",
+     "score": 0.38190215826034546,
+     "lesson_uid": "lsn_3659233"
+    },
+    {
+     "chunk_uid": "lsn_8881620::fixed::0050",
+     "score": 0.2109491527080536,
+     "lesson_uid": "lsn_8881620"
+    },
+    {
+     "chunk_uid": "lsn_8881620::fixed::0051",
+     "score": 0.21021953225135803,
+     "lesson_uid": "lsn_8881620"
+    },
+    {
+     "chunk_uid": "lsn_3659233::fixed::0045",
+     "score": 0.20157809555530548,
+     "lesson_uid": "lsn_3659233"
+    },
+    {
+     "chunk_uid": "lsn_3659233::fixed::0040",
+     "score": 0.16566312313079834,
+     "lesson_uid": "lsn_3659233"
+    },
+    {
+     "chunk_uid": "lsn_3659233::fixed::0036",
+     "score": 0.1601543128490448,
+     "lesson_uid": "lsn_3659233"
+    },
+    {
+     "chunk_uid": "lsn_8881620::fixed::0054",
+     "score": 0.15078531205654144,
+     "lesson_uid": "lsn_8881620"
+    },
+    {
+     "chunk_uid": "lsn_8881620::fixed::0052",
+     "score": 0.13808758556842804,
+     "lesson_uid": "lsn_8881620"
+    },
+    {
+     "chunk_uid": "lsn_4303563::fixed::0017",
+     "score": 0.1078307181596756,
+     "lesson_uid": "lsn_4303563"
+    },
+    {
+     "chunk_uid": "lsn_3659233::fixed::0042",
+     "score": 0.09126968681812286,
+     "lesson_uid": "lsn_3659233"
+    }
+   ],
+   "q13": [
+    {
+     "chunk_uid": "lsn_3545582::fixed::0006",
+     "score": 0.9589567184448242,
+     "lesson_uid": "lsn_3545582"
+    },
+    {
+     "chunk_uid": "lsn_8881623::fixed::0086",
+     "score": 0.7817094922065735,
+     "lesson_uid": "lsn_8881623"
+    },
+    {
+     "chunk_uid": "lsn_3545582::fixed::0008",
+     "score": 0.478136271238327,
+     "lesson_uid": "lsn_3545582"
+    },
+    {
+     "chunk_uid": "lsn_3545582::fixed::0003",
+     "score": 0.37773510813713074,
+     "lesson_uid": "lsn_3545582"
+    },
+    {
+     "chunk_uid": "lsn_3545582::fixed::0007",
+     "score": 0.3580264449119568,
+     "lesson_uid": "lsn_3545582"
+    },
+    {
+     "chunk_uid": "lsn_8477345::fixed::0036",
+     "score": 0.19931694865226746,
+     "lesson_uid": "lsn_8477345"
+    },
+    {
+     "chunk_uid": "lsn_8881623::fixed::0022",
+     "score": 0.19254784286022186,
+     "lesson_uid": "lsn_8881623"
+    },
+    {
+     "chunk_uid": "lsn_8477347::fixed::0003",
+     "score": 0.15370595455169678,
+     "lesson_uid": "lsn_8477347"
+    },
+    {
+     "chunk_uid": "lsn_3545315::fixed::0009",
+     "score": 0.1443013697862625,
+     "lesson_uid": "lsn_3545315"
+    },
+    {
+     "chunk_uid": "lsn_8881623::fixed::0025",
+     "score": 0.1352960765361786,
+     "lesson_uid": "lsn_8881623"
+    }
+   ],
+   "q14": [
+    {
+     "chunk_uid": "lsn_3545135::fixed::0014",
+     "score": 0.25403234362602234,
+     "lesson_uid": "lsn_3545135"
+    },
+    {
+     "chunk_uid": "lsn_3545135::fixed::0015",
+     "score": 0.13176852464675903,
+     "lesson_uid": "lsn_3545135"
+    },
+    {
+     "chunk_uid": "lsn_3545135::fixed::0061",
+     "score": 0.027757976204156876,
+     "lesson_uid": "lsn_3545135"
+    },
+    {
+     "chunk_uid": "lsn_3545135::fixed::0018",
+     "score": 0.022571105509996414,
+     "lesson_uid": "lsn_3545135"
+    },
+    {
+     "chunk_uid": "lsn_4303289::fixed::0007",
+     "score": 0.008056395687162876,
+     "lesson_uid": "lsn_4303289"
+    },
+    {
+     "chunk_uid": "lsn_8878385::fixed::0055",
+     "score": 0.006595348473638296,
+     "lesson_uid": "lsn_8878385"
+    },
+    {
+     "chunk_uid": "lsn_3545135::fixed::0013",
+     "score": 0.006561662536114454,
+     "lesson_uid": "lsn_3545135"
+    },
+    {
+     "chunk_uid": "lsn_7773607::fixed::0022",
+     "score": 0.005995295476168394,
+     "lesson_uid": "lsn_7773607"
+    },
+    {
+     "chunk_uid": "lsn_3521377::fixed::0020",
+     "score": 0.004568871110677719,
+     "lesson_uid": "lsn_3521377"
+    },
+    {
+     "chunk_uid": "lsn_3545135::fixed::0028",
+     "score": 0.00434116180986166,
+     "lesson_uid": "lsn_3545135"
+    }
+   ],
+   "q15": [
+    {
+     "chunk_uid": "lsn_3545563::fixed::0068",
+     "score": 0.9825910925865173,
+     "lesson_uid": "lsn_3545563"
+    },
+    {
+     "chunk_uid": "lsn_7692944::fixed::0010",
+     "score": 0.9770224094390869,
+     "lesson_uid": "lsn_7692944"
+    },
+    {
+     "chunk_uid": "lsn_5127795::fixed::0004",
+     "score": 0.9746442437171936,
+     "lesson_uid": "lsn_5127795"
+    },
+    {
+     "chunk_uid": "lsn_5127795::fixed::0002",
+     "score": 0.969200074672699,
+     "lesson_uid": "lsn_5127795"
+    },
+    {
+     "chunk_uid": "lsn_7780471::fixed::0017",
+     "score": 0.9684513211250305,
+     "lesson_uid": "lsn_7780471"
+    },
+    {
+     "chunk_uid": "lsn_5127795::fixed::0016",
+     "score": 0.9520576000213623,
+     "lesson_uid": "lsn_5127795"
+    },
+    {
+     "chunk_uid": "lsn_7784277::fixed::0013",
+     "score": 0.9517717957496643,
+     "lesson_uid": "lsn_7784277"
+    },
+    {
+     "chunk_uid": "lsn_7780466::fixed::0022",
+     "score": 0.8976224660873413,
+     "lesson_uid": "lsn_7780466"
+    },
+    {
+     "chunk_uid": "lsn_7692944::fixed::0008",
+     "score": 0.8868961334228516,
+     "lesson_uid": "lsn_7692944"
+    },
+    {
+     "chunk_uid": "lsn_5127795::fixed::0003",
+     "score": 0.8636497259140015,
+     "lesson_uid": "lsn_5127795"
+    }
+   ],
+   "q16": [
+    {
+     "chunk_uid": "lsn_8878382::fixed::0044",
+     "score": 0.9912900924682617,
+     "lesson_uid": "lsn_8878382"
+    },
+    {
+     "chunk_uid": "lsn_8878382::fixed::0043",
+     "score": 0.9223644137382507,
+     "lesson_uid": "lsn_8878382"
+    },
+    {
+     "chunk_uid": "lsn_8878382::fixed::0041",
+     "score": 0.1474245935678482,
+     "lesson_uid": "lsn_8878382"
+    },
+    {
+     "chunk_uid": "lsn_8878382::fixed::0034",
+     "score": 0.1044163778424263,
+     "lesson_uid": "lsn_8878382"
+    },
+    {
+     "chunk_uid": "lsn_8878382::fixed::0035",
+     "score": 0.07214542478322983,
+     "lesson_uid": "lsn_8878382"
+    },
+    {
+     "chunk_uid": "lsn_7773608::fixed::0012",
+     "score": 0.049516595900058746,
+     "lesson_uid": "lsn_7773608"
+    },
+    {
+     "chunk_uid": "lsn_8878383::fixed::0041",
+     "score": 0.04925736039876938,
+     "lesson_uid": "lsn_8878383"
+    },
+    {
+     "chunk_uid": "lsn_8878382::fixed::0050",
+     "score": 0.04103293642401695,
+     "lesson_uid": "lsn_8878382"
+    },
+    {
+     "chunk_uid": "lsn_8878382::fixed::0026",
+     "score": 0.022077322006225586,
+     "lesson_uid": "lsn_8878382"
+    },
+    {
+     "chunk_uid": "lsn_4303289::fixed::0004",
+     "score": 0.014577466994524002,
+     "lesson_uid": "lsn_4303289"
+    }
+   ],
+   "q17": [
+    {
+     "chunk_uid": "lsn_4435674::fixed::0024",
+     "score": 0.8216876983642578,
+     "lesson_uid": "lsn_4435674"
+    },
+    {
+     "chunk_uid": "lsn_7704862::fixed::0027",
+     "score": 0.8015320301055908,
+     "lesson_uid": "lsn_7704862"
+    },
+    {
+     "chunk_uid": "lsn_8878383::fixed::0023",
+     "score": 0.7905131578445435,
+     "lesson_uid": "lsn_8878383"
+    },
+    {
+     "chunk_uid": "lsn_4435674::fixed::0023",
+     "score": 0.6978222131729126,
+     "lesson_uid": "lsn_4435674"
+    },
+    {
+     "chunk_uid": "lsn_7704862::fixed::0025",
+     "score": 0.5786072611808777,
+     "lesson_uid": "lsn_7704862"
+    },
+    {
+     "chunk_uid": "lsn_3517825::fixed::0031",
+     "score": 0.42965736985206604,
+     "lesson_uid": "lsn_3517825"
+    },
+    {
+     "chunk_uid": "lsn_4435674::fixed::0035",
+     "score": 0.4098016917705536,
+     "lesson_uid": "lsn_4435674"
+    },
+    {
+     "chunk_uid": "lsn_4435674::fixed::0025",
+     "score": 0.3546195328235626,
+     "lesson_uid": "lsn_4435674"
+    },
+    {
+     "chunk_uid": "lsn_3534880::fixed::0050",
+     "score": 0.27596214413642883,
+     "lesson_uid": "lsn_3534880"
+    },
+    {
+     "chunk_uid": "lsn_3521091::fixed::0016",
+     "score": 0.23752065002918243,
+     "lesson_uid": "lsn_3521091"
+    }
+   ],
+   "q18": [
+    {
+     "chunk_uid": "lsn_3521314::fixed::0001",
+     "score": 0.66250079870224,
+     "lesson_uid": "lsn_3521314"
+    },
+    {
+     "chunk_uid": "lsn_3521314::fixed::0004",
+     "score": 0.5581455826759338,
+     "lesson_uid": "lsn_3521314"
+    },
+    {
+     "chunk_uid": "lsn_3521314::fixed::0000",
+     "score": 0.347729355096817,
+     "lesson_uid": "lsn_3521314"
+    },
+    {
+     "chunk_uid": "lsn_3520786::fixed::0014",
+     "score": 0.1168573796749115,
+     "lesson_uid": "lsn_3520786"
+    },
+    {
+     "chunk_uid": "lsn_3520786::fixed::0003",
+     "score": 0.11294052749872208,
+     "lesson_uid": "lsn_3520786"
+    },
+    {
+     "chunk_uid": "lsn_3520786::fixed::0008",
+     "score": 0.09360472857952118,
+     "lesson_uid": "lsn_3520786"
+    },
+    {
+     "chunk_uid": "lsn_3521314::fixed::0002",
+     "score": 0.08765684068202972,
+     "lesson_uid": "lsn_3521314"
+    },
+    {
+     "chunk_uid": "lsn_3520786::fixed::0013",
+     "score": 0.04470740631222725,
+     "lesson_uid": "lsn_3520786"
+    },
+    {
+     "chunk_uid": "lsn_3521314::fixed::0003",
+     "score": 0.03953666612505913,
+     "lesson_uid": "lsn_3521314"
+    },
+    {
+     "chunk_uid": "lsn_3521314::fixed::0012",
+     "score": 0.03145568445324898,
+     "lesson_uid": "lsn_3521314"
+    }
+   ],
+   "q19": [
+    {
+     "chunk_uid": "lsn_7780460::fixed::0005",
+     "score": 0.9924225211143494,
+     "lesson_uid": "lsn_7780460"
+    },
+    {
+     "chunk_uid": "lsn_7780460::fixed::0004",
+     "score": 0.5281205773353577,
+     "lesson_uid": "lsn_7780460"
+    },
+    {
+     "chunk_uid": "lsn_7780460::fixed::0001",
+     "score": 0.2098928987979889,
+     "lesson_uid": "lsn_7780460"
+    },
+    {
+     "chunk_uid": "lsn_7780460::fixed::0000",
+     "score": 0.12250685691833496,
+     "lesson_uid": "lsn_7780460"
+    },
+    {
+     "chunk_uid": "lsn_7780460::fixed::0003",
+     "score": 0.0638439878821373,
+     "lesson_uid": "lsn_7780460"
+    },
+    {
+     "chunk_uid": "lsn_7780460::fixed::0002",
+     "score": 0.05952325835824013,
+     "lesson_uid": "lsn_7780460"
+    },
+    {
+     "chunk_uid": "lsn_7780460::fixed::0015",
+     "score": 0.02712073363363743,
+     "lesson_uid": "lsn_7780460"
+    },
+    {
+     "chunk_uid": "lsn_7780460::fixed::0006",
+     "score": 0.021334243938326836,
+     "lesson_uid": "lsn_7780460"
+    },
+    {
+     "chunk_uid": "lsn_5491325::fixed::0004",
+     "score": 0.015592312440276146,
+     "lesson_uid": "lsn_5491325"
+    },
+    {
+     "chunk_uid": "lsn_5491323::fixed::0007",
+     "score": 0.006121733691543341,
+     "lesson_uid": "lsn_5491323"
+    }
+   ],
+   "q20": [
+    {
+     "chunk_uid": "lsn_4303563::fixed::0008",
+     "score": 0.9846628904342651,
+     "lesson_uid": "lsn_4303563"
+    },
+    {
+     "chunk_uid": "lsn_4435678::fixed::0017",
+     "score": 0.9429916739463806,
+     "lesson_uid": "lsn_4435678"
+    },
+    {
+     "chunk_uid": "lsn_3545567::fixed::0015",
+     "score": 0.8732181191444397,
+     "lesson_uid": "lsn_3545567"
+    },
+    {
+     "chunk_uid": "lsn_8975539::fixed::0009",
+     "score": 0.8495205640792847,
+     "lesson_uid": "lsn_8975539"
+    },
+    {
+     "chunk_uid": "lsn_3545567::fixed::0048",
+     "score": 0.8347152471542358,
+     "lesson_uid": "lsn_3545567"
+    },
+    {
+     "chunk_uid": "lsn_5491325::fixed::0041",
+     "score": 0.8190350532531738,
+     "lesson_uid": "lsn_5491325"
+    },
+    {
+     "chunk_uid": "lsn_3534881::fixed::0003",
+     "score": 0.817614734172821,
+     "lesson_uid": "lsn_3534881"
+    },
+    {
+     "chunk_uid": "lsn_7769609::fixed::0027",
+     "score": 0.7736429572105408,
+     "lesson_uid": "lsn_7769609"
+    },
+    {
+     "chunk_uid": "lsn_5127790::fixed::0015",
+     "score": 0.7451550960540771,
+     "lesson_uid": "lsn_5127790"
+    },
+    {
+     "chunk_uid": "lsn_5491325::fixed::0031",
+     "score": 0.5608773231506348,
+     "lesson_uid": "lsn_5491325"
+    }
+   ],
+   "q21": [
+    {
+     "chunk_uid": "lsn_3659356::fixed::0011",
+     "score": 0.9853124022483826,
+     "lesson_uid": "lsn_3659356"
+    },
+    {
+     "chunk_uid": "lsn_3659356::fixed::0010",
+     "score": 0.952021062374115,
+     "lesson_uid": "lsn_3659356"
+    },
+    {
+     "chunk_uid": "lsn_3659356::fixed::0017",
+     "score": 0.9348409175872803,
+     "lesson_uid": "lsn_3659356"
+    },
+    {
+     "chunk_uid": "lsn_8975536::fixed::0022",
+     "score": 0.9302847385406494,
+     "lesson_uid": "lsn_8975536"
+    },
+    {
+     "chunk_uid": "lsn_7769233::fixed::0011",
+     "score": 0.9009358286857605,
+     "lesson_uid": "lsn_7769233"
+    },
+    {
+     "chunk_uid": "lsn_8881622::fixed::0009",
+     "score": 0.8811008930206299,
+     "lesson_uid": "lsn_8881622"
+    },
+    {
+     "chunk_uid": "lsn_8881622::fixed::0012",
+     "score": 0.8569533824920654,
+     "lesson_uid": "lsn_8881622"
+    },
+    {
+     "chunk_uid": "lsn_7769233::fixed::0016",
+     "score": 0.8105733394622803,
+     "lesson_uid": "lsn_7769233"
+    },
+    {
+     "chunk_uid": "lsn_7769233::fixed::0014",
+     "score": 0.7731953263282776,
+     "lesson_uid": "lsn_7769233"
+    },
+    {
+     "chunk_uid": "lsn_3659356::fixed::0013",
+     "score": 0.7363448143005371,
+     "lesson_uid": "lsn_3659356"
+    }
+   ],
+   "q22": [
+    {
+     "chunk_uid": "lsn_8653279::fixed::0017",
+     "score": 0.8098171353340149,
+     "lesson_uid": "lsn_8653279"
+    },
+    {
+     "chunk_uid": "lsn_3545564::fixed::0000",
+     "score": 0.5769760012626648,
+     "lesson_uid": "lsn_3545564"
+    },
+    {
+     "chunk_uid": "lsn_7692944::fixed::0007",
+     "score": 0.45372474193573,
+     "lesson_uid": "lsn_7692944"
+    },
+    {
+     "chunk_uid": "lsn_7784276::fixed::0041",
+     "score": 0.4473840892314911,
+     "lesson_uid": "lsn_7784276"
+    },
+    {
+     "chunk_uid": "lsn_8875734::fixed::0012",
+     "score": 0.3864985704421997,
+     "lesson_uid": "lsn_8875734"
+    },
+    {
+     "chunk_uid": "lsn_8875734::fixed::0011",
+     "score": 0.37669914960861206,
+     "lesson_uid": "lsn_8875734"
+    },
+    {
+     "chunk_uid": "lsn_7780466::fixed::0019",
+     "score": 0.3241536021232605,
+     "lesson_uid": "lsn_7780466"
+    },
+    {
+     "chunk_uid": "lsn_7780466::fixed::0021",
+     "score": 0.3063433766365051,
+     "lesson_uid": "lsn_7780466"
+    },
+    {
+     "chunk_uid": "lsn_7692944::fixed::0006",
+     "score": 0.2887153923511505,
+     "lesson_uid": "lsn_7692944"
+    },
+    {
+     "chunk_uid": "lsn_7780466::fixed::0008",
+     "score": 0.26048025488853455,
+     "lesson_uid": "lsn_7780466"
+    }
+   ],
+   "q23": [
+    {
+     "chunk_uid": "lsn_7147321::fixed::0002",
+     "score": 0.9981229901313782,
+     "lesson_uid": "lsn_7147321"
+    },
+    {
+     "chunk_uid": "lsn_7769576::fixed::0010",
+     "score": 0.746583104133606,
+     "lesson_uid": "lsn_7769576"
+    },
+    {
+     "chunk_uid": "lsn_3545567::fixed::0006",
+     "score": 0.4453918933868408,
+     "lesson_uid": "lsn_3545567"
+    },
+    {
+     "chunk_uid": "lsn_7147321::fixed::0003",
+     "score": 0.413951575756073,
+     "lesson_uid": "lsn_7147321"
+    },
+    {
+     "chunk_uid": "lsn_3545567::fixed::0002",
+     "score": 0.4079413414001465,
+     "lesson_uid": "lsn_3545567"
+    },
+    {
+     "chunk_uid": "lsn_7147321::fixed::0007",
+     "score": 0.34460341930389404,
+     "lesson_uid": "lsn_7147321"
+    },
+    {
+     "chunk_uid": "lsn_7147321::fixed::0000",
+     "score": 0.31886476278305054,
+     "lesson_uid": "lsn_7147321"
+    },
+    {
+     "chunk_uid": "lsn_7769576::fixed::0011",
+     "score": 0.3130897879600525,
+     "lesson_uid": "lsn_7769576"
+    },
+    {
+     "chunk_uid": "lsn_8653266::fixed::0022",
+     "score": 0.2088320553302765,
+     "lesson_uid": "lsn_8653266"
+    },
+    {
+     "chunk_uid": "lsn_7147318::fixed::0006",
+     "score": 0.19819091260433197,
+     "lesson_uid": "lsn_7147318"
+    }
+   ],
+   "q24": [
+    {
+     "chunk_uid": "lsn_7704859::fixed::0041",
+     "score": 0.998195469379425,
+     "lesson_uid": "lsn_7704859"
+    },
+    {
+     "chunk_uid": "lsn_7147322::fixed::0029",
+     "score": 0.9617961645126343,
+     "lesson_uid": "lsn_7147322"
+    },
+    {
+     "chunk_uid": "lsn_7704863::fixed::0012",
+     "score": 0.7668485045433044,
+     "lesson_uid": "lsn_7704863"
+    },
+    {
+     "chunk_uid": "lsn_3545320::fixed::0013",
+     "score": 0.7364398837089539,
+     "lesson_uid": "lsn_3545320"
+    },
+    {
+     "chunk_uid": "lsn_4435678::fixed::0023",
+     "score": 0.6274128556251526,
+     "lesson_uid": "lsn_4435678"
+    },
+    {
+     "chunk_uid": "lsn_3545320::fixed::0010",
+     "score": 0.5562892556190491,
+     "lesson_uid": "lsn_3545320"
+    },
+    {
+     "chunk_uid": "lsn_4303563::fixed::0012",
+     "score": 0.5251696109771729,
+     "lesson_uid": "lsn_4303563"
+    },
+    {
+     "chunk_uid": "lsn_7784278::fixed::0030",
+     "score": 0.4219224750995636,
+     "lesson_uid": "lsn_7784278"
+    },
+    {
+     "chunk_uid": "lsn_7704859::fixed::0016",
+     "score": 0.4203726351261139,
+     "lesson_uid": "lsn_7704859"
+    },
+    {
+     "chunk_uid": "lsn_3545320::fixed::0018",
+     "score": 0.3668557107448578,
+     "lesson_uid": "lsn_3545320"
+    }
+   ],
+   "q25": [
+    {
+     "chunk_uid": "lsn_4303291::fixed::0012",
+     "score": 0.9735090732574463,
+     "lesson_uid": "lsn_4303291"
+    },
+    {
+     "chunk_uid": "lsn_8477345::fixed::0024",
+     "score": 0.9381515979766846,
+     "lesson_uid": "lsn_8477345"
+    },
+    {
+     "chunk_uid": "lsn_5491325::fixed::0013",
+     "score": 0.8975871205329895,
+     "lesson_uid": "lsn_5491325"
+    },
+    {
+     "chunk_uid": "lsn_4303291::fixed::0005",
+     "score": 0.8493854403495789,
+     "lesson_uid": "lsn_4303291"
+    },
+    {
+     "chunk_uid": "lsn_8477345::fixed::0025",
+     "score": 0.8390911221504211,
+     "lesson_uid": "lsn_8477345"
+    },
+    {
+     "chunk_uid": "lsn_7692934::fixed::0013",
+     "score": 0.8318638205528259,
+     "lesson_uid": "lsn_7692934"
+    },
+    {
+     "chunk_uid": "lsn_8653264::fixed::0021",
+     "score": 0.7565196752548218,
+     "lesson_uid": "lsn_8653264"
+    },
+    {
+     "chunk_uid": "lsn_3545581::fixed::0009",
+     "score": 0.6854508519172668,
+     "lesson_uid": "lsn_3545581"
+    },
+    {
+     "chunk_uid": "lsn_3545581::fixed::0010",
+     "score": 0.6506338119506836,
+     "lesson_uid": "lsn_3545581"
+    },
+    {
+     "chunk_uid": "lsn_4303291::fixed::0013",
+     "score": 0.5806756019592285,
+     "lesson_uid": "lsn_4303291"
+    }
+   ]
+  },
+  "fixed_noctx_rerank": {
+   "q01": [
+    {
+     "chunk_uid": "lsn_3545308::fixed::0019",
+     "score": 0.9885442852973938,
+     "lesson_uid": "lsn_3545308"
+    },
+    {
+     "chunk_uid": "lsn_3545308::fixed::0007",
+     "score": 0.8829618096351624,
+     "lesson_uid": "lsn_3545308"
+    },
+    {
+     "chunk_uid": "lsn_3545308::fixed::0001",
+     "score": 0.21390777826309204,
+     "lesson_uid": "lsn_3545308"
+    },
+    {
+     "chunk_uid": "lsn_3545319::fixed::0007",
+     "score": 0.11999139189720154,
+     "lesson_uid": "lsn_3545319"
+    },
+    {
+     "chunk_uid": "lsn_3545308::fixed::0006",
+     "score": 0.1048835813999176,
+     "lesson_uid": "lsn_3545308"
+    },
+    {
+     "chunk_uid": "lsn_3545308::fixed::0003",
+     "score": 0.061124905943870544,
+     "lesson_uid": "lsn_3545308"
+    },
+    {
+     "chunk_uid": "lsn_3545308::fixed::0000",
+     "score": 0.04367072507739067,
+     "lesson_uid": "lsn_3545308"
+    },
+    {
+     "chunk_uid": "lsn_3545318::fixed::0012",
+     "score": 0.04127277061343193,
+     "lesson_uid": "lsn_3545318"
+    },
+    {
+     "chunk_uid": "lsn_3545308::fixed::0009",
+     "score": 0.0334976390004158,
+     "lesson_uid": "lsn_3545308"
+    },
+    {
+     "chunk_uid": "lsn_3545308::fixed::0005",
+     "score": 0.02781594544649124,
+     "lesson_uid": "lsn_3545308"
+    }
+   ],
+   "q02": [
+    {
+     "chunk_uid": "lsn_3657234::fixed::0003",
+     "score": 0.9736294150352478,
+     "lesson_uid": "lsn_3657234"
+    },
+    {
+     "chunk_uid": "lsn_7147319::fixed::0007",
+     "score": 0.9386565089225769,
+     "lesson_uid": "lsn_7147319"
+    },
+    {
+     "chunk_uid": "lsn_7147319::fixed::0006",
+     "score": 0.9262795448303223,
+     "lesson_uid": "lsn_7147319"
+    },
+    {
+     "chunk_uid": "lsn_3545567::fixed::0042",
+     "score": 0.8963615894317627,
+     "lesson_uid": "lsn_3545567"
+    },
+    {
+     "chunk_uid": "lsn_8875735::fixed::0043",
+     "score": 0.504618227481842,
+     "lesson_uid": "lsn_8875735"
+    },
+    {
+     "chunk_uid": "lsn_8875735::fixed::0044",
+     "score": 0.501409649848938,
+     "lesson_uid": "lsn_8875735"
+    },
+    {
+     "chunk_uid": "lsn_7147322::fixed::0006",
+     "score": 0.4970450699329376,
+     "lesson_uid": "lsn_7147322"
+    },
+    {
+     "chunk_uid": "lsn_3657234::fixed::0004",
+     "score": 0.49589309096336365,
+     "lesson_uid": "lsn_3657234"
+    },
+    {
+     "chunk_uid": "lsn_3545567::fixed::0038",
+     "score": 0.4784253239631653,
+     "lesson_uid": "lsn_3545567"
+    },
+    {
+     "chunk_uid": "lsn_8653274::fixed::0017",
+     "score": 0.37048912048339844,
+     "lesson_uid": "lsn_8653274"
+    }
+   ],
+   "q03": [
+    {
+     "chunk_uid": "lsn_3545310::fixed::0001",
+     "score": 0.9808562397956848,
+     "lesson_uid": "lsn_3545310"
+    },
+    {
+     "chunk_uid": "lsn_3545310::fixed::0000",
+     "score": 0.7443686723709106,
+     "lesson_uid": "lsn_3545310"
+    },
+    {
+     "chunk_uid": "lsn_3545320::fixed::0006",
+     "score": 0.1438433974981308,
+     "lesson_uid": "lsn_3545320"
+    },
+    {
+     "chunk_uid": "lsn_3545310::fixed::0003",
+     "score": 0.11919008940458298,
+     "lesson_uid": "lsn_3545310"
+    },
+    {
+     "chunk_uid": "lsn_3545319::fixed::0011",
+     "score": 0.10239963978528976,
+     "lesson_uid": "lsn_3545319"
+    },
+    {
+     "chunk_uid": "lsn_3545326::fixed::0007",
+     "score": 0.036273710429668427,
+     "lesson_uid": "lsn_3545326"
+    },
+    {
+     "chunk_uid": "lsn_3545310::fixed::0012",
+     "score": 0.032170750200748444,
+     "lesson_uid": "lsn_3545310"
+    },
+    {
+     "chunk_uid": "lsn_3545308::fixed::0019",
+     "score": 0.030058525502681732,
+     "lesson_uid": "lsn_3545308"
+    },
+    {
+     "chunk_uid": "lsn_3545308::fixed::0013",
+     "score": 0.01906031183898449,
+     "lesson_uid": "lsn_3545308"
+    },
+    {
+     "chunk_uid": "lsn_3545308::fixed::0007",
+     "score": 0.014492740854620934,
+     "lesson_uid": "lsn_3545308"
+    }
+   ],
+   "q04": [
+    {
+     "chunk_uid": "lsn_7769609::fixed::0010",
+     "score": 0.5382692813873291,
+     "lesson_uid": "lsn_7769609"
+    },
+    {
+     "chunk_uid": "lsn_7769609::fixed::0000",
+     "score": 0.29852771759033203,
+     "lesson_uid": "lsn_7769609"
+    },
+    {
+     "chunk_uid": "lsn_7704869::fixed::0057",
+     "score": 0.05130096897482872,
+     "lesson_uid": "lsn_7704869"
+    },
+    {
+     "chunk_uid": "lsn_7769609::fixed::0009",
+     "score": 0.02416163496673107,
+     "lesson_uid": "lsn_7769609"
+    },
+    {
+     "chunk_uid": "lsn_3521381::fixed::0038",
+     "score": 0.016517793759703636,
+     "lesson_uid": "lsn_3521381"
+    },
+    {
+     "chunk_uid": "lsn_3521381::fixed::0039",
+     "score": 0.013128286227583885,
+     "lesson_uid": "lsn_3521381"
+    },
+    {
+     "chunk_uid": "lsn_6729438::fixed::0000",
+     "score": 0.007733869832009077,
+     "lesson_uid": "lsn_6729438"
+    },
+    {
+     "chunk_uid": "lsn_7147321::fixed::0006",
+     "score": 0.006871648598462343,
+     "lesson_uid": "lsn_7147321"
+    },
+    {
+     "chunk_uid": "lsn_3521383::fixed::0005",
+     "score": 0.0036220382899045944,
+     "lesson_uid": "lsn_3521383"
+    },
+    {
+     "chunk_uid": "lsn_3545136::fixed::0002",
+     "score": 0.0033623131457716227,
+     "lesson_uid": "lsn_3545136"
+    }
+   ],
+   "q05": [
+    {
+     "chunk_uid": "lsn_3521431::fixed::0009",
+     "score": 0.9928190112113953,
+     "lesson_uid": "lsn_3521431"
+    },
+    {
+     "chunk_uid": "lsn_3521431::fixed::0008",
+     "score": 0.8918401002883911,
+     "lesson_uid": "lsn_3521431"
+    },
+    {
+     "chunk_uid": "lsn_3521432::fixed::0002",
+     "score": 0.8629059195518494,
+     "lesson_uid": "lsn_3521432"
+    },
+    {
+     "chunk_uid": "lsn_3521432::fixed::0000",
+     "score": 0.7818341851234436,
+     "lesson_uid": "lsn_3521432"
+    },
+    {
+     "chunk_uid": "lsn_8653272::fixed::0033",
+     "score": 0.29412245750427246,
+     "lesson_uid": "lsn_8653272"
+    },
+    {
+     "chunk_uid": "lsn_3521432::fixed::0001",
+     "score": 0.25774285197257996,
+     "lesson_uid": "lsn_3521432"
+    },
+    {
+     "chunk_uid": "lsn_3521431::fixed::0001",
+     "score": 0.21038325130939484,
+     "lesson_uid": "lsn_3521431"
+    },
+    {
+     "chunk_uid": "lsn_8653272::fixed::0015",
+     "score": 0.14930203557014465,
+     "lesson_uid": "lsn_8653272"
+    },
+    {
+     "chunk_uid": "lsn_3521424::fixed::0023",
+     "score": 0.13218359649181366,
+     "lesson_uid": "lsn_3521424"
+    },
+    {
+     "chunk_uid": "lsn_3521431::fixed::0007",
+     "score": 0.08749285340309143,
+     "lesson_uid": "lsn_3521431"
+    }
+   ],
+   "q06": [
+    {
+     "chunk_uid": "lsn_3534937::fixed::0053",
+     "score": 0.9879379868507385,
+     "lesson_uid": "lsn_3534937"
+    },
+    {
+     "chunk_uid": "lsn_3534937::fixed::0051",
+     "score": 0.956230878829956,
+     "lesson_uid": "lsn_3534937"
+    },
+    {
+     "chunk_uid": "lsn_3534937::fixed::0054",
+     "score": 0.9006589651107788,
+     "lesson_uid": "lsn_3534937"
+    },
+    {
+     "chunk_uid": "lsn_5491322::fixed::0056",
+     "score": 0.7770281434059143,
+     "lesson_uid": "lsn_5491322"
+    },
+    {
+     "chunk_uid": "lsn_3534937::fixed::0055",
+     "score": 0.6768010854721069,
+     "lesson_uid": "lsn_3534937"
+    },
+    {
+     "chunk_uid": "lsn_3534937::fixed::0052",
+     "score": 0.4764474332332611,
+     "lesson_uid": "lsn_3534937"
+    },
+    {
+     "chunk_uid": "lsn_3534937::fixed::0050",
+     "score": 0.28050360083580017,
+     "lesson_uid": "lsn_3534937"
+    },
+    {
+     "chunk_uid": "lsn_8975543::fixed::0004",
+     "score": 0.21886441111564636,
+     "lesson_uid": "lsn_8975543"
+    },
+    {
+     "chunk_uid": "lsn_3659233::fixed::0059",
+     "score": 0.08021599054336548,
+     "lesson_uid": "lsn_3659233"
+    },
+    {
+     "chunk_uid": "lsn_3534938::fixed::0057",
+     "score": 0.06467191874980927,
+     "lesson_uid": "lsn_3534938"
+    }
+   ],
+   "q07": [
+    {
+     "chunk_uid": "lsn_8975536::fixed::0009",
+     "score": 0.992138683795929,
+     "lesson_uid": "lsn_8975536"
+    },
+    {
+     "chunk_uid": "lsn_7704869::fixed::0021",
+     "score": 0.9604129791259766,
+     "lesson_uid": "lsn_7704869"
+    },
+    {
+     "chunk_uid": "lsn_8975536::fixed::0010",
+     "score": 0.8906459808349609,
+     "lesson_uid": "lsn_8975536"
+    },
+    {
+     "chunk_uid": "lsn_5127791::fixed::0003",
+     "score": 0.8706063032150269,
+     "lesson_uid": "lsn_5127791"
+    },
+    {
+     "chunk_uid": "lsn_7704869::fixed::0024",
+     "score": 0.6298102736473083,
+     "lesson_uid": "lsn_7704869"
+    },
+    {
+     "chunk_uid": "lsn_5127791::fixed::0005",
+     "score": 0.20245638489723206,
+     "lesson_uid": "lsn_5127791"
+    },
+    {
+     "chunk_uid": "lsn_7704869::fixed::0020",
+     "score": 0.1552828997373581,
+     "lesson_uid": "lsn_7704869"
+    },
+    {
+     "chunk_uid": "lsn_7704869::fixed::0019",
+     "score": 0.1251688301563263,
+     "lesson_uid": "lsn_7704869"
+    },
+    {
+     "chunk_uid": "lsn_5127791::fixed::0004",
+     "score": 0.08640643954277039,
+     "lesson_uid": "lsn_5127791"
+    },
+    {
+     "chunk_uid": "lsn_8975536::fixed::0006",
+     "score": 0.08070503175258636,
+     "lesson_uid": "lsn_8975536"
+    }
+   ],
+   "q08": [
+    {
+     "chunk_uid": "lsn_7769233::fixed::0010",
+     "score": 0.7235479950904846,
+     "lesson_uid": "lsn_7769233"
+    },
+    {
+     "chunk_uid": "lsn_7769233::fixed::0009",
+     "score": 0.524193525314331,
+     "lesson_uid": "lsn_7769233"
+    },
+    {
+     "chunk_uid": "lsn_8878383::fixed::0055",
+     "score": 0.399025022983551,
+     "lesson_uid": "lsn_8878383"
+    },
+    {
+     "chunk_uid": "lsn_7773600::fixed::0029",
+     "score": 0.2758748531341553,
+     "lesson_uid": "lsn_7773600"
+    },
+    {
+     "chunk_uid": "lsn_8878383::fixed::0053",
+     "score": 0.23034407198429108,
+     "lesson_uid": "lsn_8878383"
+    },
+    {
+     "chunk_uid": "lsn_7773603::fixed::0007",
+     "score": 0.19521962106227875,
+     "lesson_uid": "lsn_7773603"
+    },
+    {
+     "chunk_uid": "lsn_7704869::fixed::0038",
+     "score": 0.19032089412212372,
+     "lesson_uid": "lsn_7704869"
+    },
+    {
+     "chunk_uid": "lsn_8878383::fixed::0047",
+     "score": 0.12908917665481567,
+     "lesson_uid": "lsn_8878383"
+    },
+    {
+     "chunk_uid": "lsn_8878383::fixed::0052",
+     "score": 0.12397758662700653,
+     "lesson_uid": "lsn_8878383"
+    },
+    {
+     "chunk_uid": "lsn_7769233::fixed::0025",
+     "score": 0.11720219254493713,
+     "lesson_uid": "lsn_7769233"
+    }
+   ],
+   "q09": [
+    {
+     "chunk_uid": "lsn_3521383::fixed::0013",
+     "score": 0.9919312596321106,
+     "lesson_uid": "lsn_3521383"
+    },
+    {
+     "chunk_uid": "lsn_7704869::fixed::0060",
+     "score": 0.8612563014030457,
+     "lesson_uid": "lsn_7704869"
+    },
+    {
+     "chunk_uid": "lsn_4435677::fixed::0021",
+     "score": 0.7427298426628113,
+     "lesson_uid": "lsn_4435677"
+    },
+    {
+     "chunk_uid": "lsn_8875735::fixed::0021",
+     "score": 0.6531920433044434,
+     "lesson_uid": "lsn_8875735"
+    },
+    {
+     "chunk_uid": "lsn_7784277::fixed::0010",
+     "score": 0.3746616244316101,
+     "lesson_uid": "lsn_7784277"
+    },
+    {
+     "chunk_uid": "lsn_3521383::fixed::0012",
+     "score": 0.34321755170822144,
+     "lesson_uid": "lsn_3521383"
+    },
+    {
+     "chunk_uid": "lsn_3659237::fixed::0021",
+     "score": 0.3246884047985077,
+     "lesson_uid": "lsn_3659237"
+    },
+    {
+     "chunk_uid": "lsn_6729446::fixed::0003",
+     "score": 0.2141876071691513,
+     "lesson_uid": "lsn_6729446"
+    },
+    {
+     "chunk_uid": "lsn_3521377::fixed::0000",
+     "score": 0.21255134046077728,
+     "lesson_uid": "lsn_3521377"
+    },
+    {
+     "chunk_uid": "lsn_8653278::fixed::0019",
+     "score": 0.11425535380840302,
+     "lesson_uid": "lsn_8653278"
+    }
+   ],
+   "q10": [
+    {
+     "chunk_uid": "lsn_3521418::fixed::0009",
+     "score": 0.9266058206558228,
+     "lesson_uid": "lsn_3521418"
+    },
+    {
+     "chunk_uid": "lsn_3521418::fixed::0010",
+     "score": 0.7910000681877136,
+     "lesson_uid": "lsn_3521418"
+    },
+    {
+     "chunk_uid": "lsn_3521417::fixed::0012",
+     "score": 0.5730284452438354,
+     "lesson_uid": "lsn_3521417"
+    },
+    {
+     "chunk_uid": "lsn_3521418::fixed::0016",
+     "score": 0.5376012921333313,
+     "lesson_uid": "lsn_3521418"
+    },
+    {
+     "chunk_uid": "lsn_3521417::fixed::0021",
+     "score": 0.521357536315918,
+     "lesson_uid": "lsn_3521417"
+    },
+    {
+     "chunk_uid": "lsn_3521418::fixed::0002",
+     "score": 0.4392789602279663,
+     "lesson_uid": "lsn_3521418"
+    },
+    {
+     "chunk_uid": "lsn_3521417::fixed::0014",
+     "score": 0.3759484589099884,
+     "lesson_uid": "lsn_3521417"
+    },
+    {
+     "chunk_uid": "lsn_3521417::fixed::0010",
+     "score": 0.359101802110672,
+     "lesson_uid": "lsn_3521417"
+    },
+    {
+     "chunk_uid": "lsn_3521418::fixed::0008",
+     "score": 0.34143197536468506,
+     "lesson_uid": "lsn_3521418"
+    },
+    {
+     "chunk_uid": "lsn_3521413::fixed::0074",
+     "score": 0.32843610644340515,
+     "lesson_uid": "lsn_3521413"
+    }
+   ],
+   "q11": [
+    {
+     "chunk_uid": "lsn_4243247::fixed::0011",
+     "score": 0.916575014591217,
+     "lesson_uid": "lsn_4243247"
+    },
+    {
+     "chunk_uid": "lsn_8881624::fixed::0009",
+     "score": 0.7681726813316345,
+     "lesson_uid": "lsn_8881624"
+    },
+    {
+     "chunk_uid": "lsn_4243247::fixed::0017",
+     "score": 0.5620808601379395,
+     "lesson_uid": "lsn_4243247"
+    },
+    {
+     "chunk_uid": "lsn_8881624::fixed::0010",
+     "score": 0.17463983595371246,
+     "lesson_uid": "lsn_8881624"
+    },
+    {
+     "chunk_uid": "lsn_4243248::fixed::0017",
+     "score": 0.14888092875480652,
+     "lesson_uid": "lsn_4243248"
+    },
+    {
+     "chunk_uid": "lsn_4243247::fixed::0013",
+     "score": 0.1054818406701088,
+     "lesson_uid": "lsn_4243247"
+    },
+    {
+     "chunk_uid": "lsn_4243247::fixed::0002",
+     "score": 0.06966688483953476,
+     "lesson_uid": "lsn_4243247"
+    },
+    {
+     "chunk_uid": "lsn_4243254::fixed::0019",
+     "score": 0.057906147092580795,
+     "lesson_uid": "lsn_4243254"
+    },
+    {
+     "chunk_uid": "lsn_4243247::fixed::0004",
+     "score": 0.05621588975191116,
+     "lesson_uid": "lsn_4243247"
+    },
+    {
+     "chunk_uid": "lsn_4243254::fixed::0023",
+     "score": 0.05578029155731201,
+     "lesson_uid": "lsn_4243254"
+    }
+   ],
+   "q12": [
+    {
+     "chunk_uid": "lsn_3659233::fixed::0044",
+     "score": 0.533535361289978,
+     "lesson_uid": "lsn_3659233"
+    },
+    {
+     "chunk_uid": "lsn_7773603::fixed::0010",
+     "score": 0.29437965154647827,
+     "lesson_uid": "lsn_7773603"
+    },
+    {
+     "chunk_uid": "lsn_3659233::fixed::0036",
+     "score": 0.21952515840530396,
+     "lesson_uid": "lsn_3659233"
+    },
+    {
+     "chunk_uid": "lsn_8881620::fixed::0050",
+     "score": 0.17946802079677582,
+     "lesson_uid": "lsn_8881620"
+    },
+    {
+     "chunk_uid": "lsn_4303563::fixed::0017",
+     "score": 0.12611451745033264,
+     "lesson_uid": "lsn_4303563"
+    },
+    {
+     "chunk_uid": "lsn_3659233::fixed::0040",
+     "score": 0.11786695569753647,
+     "lesson_uid": "lsn_3659233"
+    },
+    {
+     "chunk_uid": "lsn_3534881::fixed::0042",
+     "score": 0.11094556003808975,
+     "lesson_uid": "lsn_3534881"
+    },
+    {
+     "chunk_uid": "lsn_8881620::fixed::0051",
+     "score": 0.1089230328798294,
+     "lesson_uid": "lsn_8881620"
+    },
+    {
+     "chunk_uid": "lsn_7769231::fixed::0010",
+     "score": 0.09829499572515488,
+     "lesson_uid": "lsn_7769231"
+    },
+    {
+     "chunk_uid": "lsn_8881620::fixed::0054",
+     "score": 0.0943974107503891,
+     "lesson_uid": "lsn_8881620"
+    }
+   ],
+   "q13": [
+    {
+     "chunk_uid": "lsn_3545582::fixed::0006",
+     "score": 0.9617829918861389,
+     "lesson_uid": "lsn_3545582"
+    },
+    {
+     "chunk_uid": "lsn_8881623::fixed::0086",
+     "score": 0.816026508808136,
+     "lesson_uid": "lsn_8881623"
+    },
+    {
+     "chunk_uid": "lsn_3545582::fixed::0008",
+     "score": 0.4726913273334503,
+     "lesson_uid": "lsn_3545582"
+    },
+    {
+     "chunk_uid": "lsn_3545582::fixed::0003",
+     "score": 0.32532405853271484,
+     "lesson_uid": "lsn_3545582"
+    },
+    {
+     "chunk_uid": "lsn_5491325::fixed::0026",
+     "score": 0.2941947877407074,
+     "lesson_uid": "lsn_5491325"
+    },
+    {
+     "chunk_uid": "lsn_3545582::fixed::0007",
+     "score": 0.2864018678665161,
+     "lesson_uid": "lsn_3545582"
+    },
+    {
+     "chunk_uid": "lsn_3545315::fixed::0009",
+     "score": 0.24531376361846924,
+     "lesson_uid": "lsn_3545315"
+    },
+    {
+     "chunk_uid": "lsn_8477347::fixed::0003",
+     "score": 0.18268609046936035,
+     "lesson_uid": "lsn_8477347"
+    },
+    {
+     "chunk_uid": "lsn_8477345::fixed::0036",
+     "score": 0.17679449915885925,
+     "lesson_uid": "lsn_8477345"
+    },
+    {
+     "chunk_uid": "lsn_8881623::fixed::0085",
+     "score": 0.15439774096012115,
+     "lesson_uid": "lsn_8881623"
+    }
+   ],
+   "q14": [
+    {
+     "chunk_uid": "lsn_3545135::fixed::0014",
+     "score": 0.4306846559047699,
+     "lesson_uid": "lsn_3545135"
+    },
+    {
+     "chunk_uid": "lsn_3545135::fixed::0015",
+     "score": 0.29647862911224365,
+     "lesson_uid": "lsn_3545135"
+    },
+    {
+     "chunk_uid": "lsn_3545135::fixed::0061",
+     "score": 0.0347243957221508,
+     "lesson_uid": "lsn_3545135"
+    },
+    {
+     "chunk_uid": "lsn_3545135::fixed::0018",
+     "score": 0.03247591480612755,
+     "lesson_uid": "lsn_3545135"
+    },
+    {
+     "chunk_uid": "lsn_3545135::fixed::0013",
+     "score": 0.009183109737932682,
+     "lesson_uid": "lsn_3545135"
+    },
+    {
+     "chunk_uid": "lsn_8653282::fixed::0011",
+     "score": 0.00898491870611906,
+     "lesson_uid": "lsn_8653282"
+    },
+    {
+     "chunk_uid": "lsn_7773607::fixed::0022",
+     "score": 0.00795908086001873,
+     "lesson_uid": "lsn_7773607"
+    },
+    {
+     "chunk_uid": "lsn_8878385::fixed::0055",
+     "score": 0.0070978794246912,
+     "lesson_uid": "lsn_8878385"
+    },
+    {
+     "chunk_uid": "lsn_3545135::fixed::0028",
+     "score": 0.0066155558452010155,
+     "lesson_uid": "lsn_3545135"
+    },
+    {
+     "chunk_uid": "lsn_3545135::fixed::0020",
+     "score": 0.006445381324738264,
+     "lesson_uid": "lsn_3545135"
+    }
+   ],
+   "q15": [
+    {
+     "chunk_uid": "lsn_3545563::fixed::0068",
+     "score": 0.9773126840591431,
+     "lesson_uid": "lsn_3545563"
+    },
+    {
+     "chunk_uid": "lsn_7692944::fixed::0010",
+     "score": 0.9708003401756287,
+     "lesson_uid": "lsn_7692944"
+    },
+    {
+     "chunk_uid": "lsn_7784277::fixed::0013",
+     "score": 0.963954746723175,
+     "lesson_uid": "lsn_7784277"
+    },
+    {
+     "chunk_uid": "lsn_5127795::fixed::0002",
+     "score": 0.9627758264541626,
+     "lesson_uid": "lsn_5127795"
+    },
+    {
+     "chunk_uid": "lsn_5127795::fixed::0016",
+     "score": 0.9552398920059204,
+     "lesson_uid": "lsn_5127795"
+    },
+    {
+     "chunk_uid": "lsn_5127795::fixed::0004",
+     "score": 0.9488527774810791,
+     "lesson_uid": "lsn_5127795"
+    },
+    {
+     "chunk_uid": "lsn_7780471::fixed::0017",
+     "score": 0.9230507612228394,
+     "lesson_uid": "lsn_7780471"
+    },
+    {
+     "chunk_uid": "lsn_8875734::fixed::0013",
+     "score": 0.9078195095062256,
+     "lesson_uid": "lsn_8875734"
+    },
+    {
+     "chunk_uid": "lsn_5127795::fixed::0011",
+     "score": 0.8707703351974487,
+     "lesson_uid": "lsn_5127795"
+    },
+    {
+     "chunk_uid": "lsn_7692944::fixed::0008",
+     "score": 0.8691880106925964,
+     "lesson_uid": "lsn_7692944"
+    }
+   ],
+   "q16": [
+    {
+     "chunk_uid": "lsn_8878382::fixed::0044",
+     "score": 0.98524010181427,
+     "lesson_uid": "lsn_8878382"
+    },
+    {
+     "chunk_uid": "lsn_8878382::fixed::0043",
+     "score": 0.9651815295219421,
+     "lesson_uid": "lsn_8878382"
+    },
+    {
+     "chunk_uid": "lsn_8878382::fixed::0034",
+     "score": 0.21247467398643494,
+     "lesson_uid": "lsn_8878382"
+    },
+    {
+     "chunk_uid": "lsn_8878382::fixed::0041",
+     "score": 0.19557461142539978,
+     "lesson_uid": "lsn_8878382"
+    },
+    {
+     "chunk_uid": "lsn_8878382::fixed::0035",
+     "score": 0.07347454130649567,
+     "lesson_uid": "lsn_8878382"
+    },
+    {
+     "chunk_uid": "lsn_8878382::fixed::0050",
+     "score": 0.06927631795406342,
+     "lesson_uid": "lsn_8878382"
+    },
+    {
+     "chunk_uid": "lsn_8878383::fixed::0020",
+     "score": 0.050175830721855164,
+     "lesson_uid": "lsn_8878383"
+    },
+    {
+     "chunk_uid": "lsn_7773608::fixed::0012",
+     "score": 0.045855361968278885,
+     "lesson_uid": "lsn_7773608"
+    },
+    {
+     "chunk_uid": "lsn_8878383::fixed::0041",
+     "score": 0.03592013195157051,
+     "lesson_uid": "lsn_8878383"
+    },
+    {
+     "chunk_uid": "lsn_8878382::fixed::0036",
+     "score": 0.030331823974847794,
+     "lesson_uid": "lsn_8878382"
+    }
+   ],
+   "q17": [
+    {
+     "chunk_uid": "lsn_4435674::fixed::0024",
+     "score": 0.8700697422027588,
+     "lesson_uid": "lsn_4435674"
+    },
+    {
+     "chunk_uid": "lsn_7704862::fixed::0027",
+     "score": 0.7965496182441711,
+     "lesson_uid": "lsn_7704862"
+    },
+    {
+     "chunk_uid": "lsn_8878383::fixed::0022",
+     "score": 0.7244356274604797,
+     "lesson_uid": "lsn_8878383"
+    },
+    {
+     "chunk_uid": "lsn_8878383::fixed::0023",
+     "score": 0.7234334945678711,
+     "lesson_uid": "lsn_8878383"
+    },
+    {
+     "chunk_uid": "lsn_7704862::fixed::0025",
+     "score": 0.6457569599151611,
+     "lesson_uid": "lsn_7704862"
+    },
+    {
+     "chunk_uid": "lsn_4435674::fixed::0023",
+     "score": 0.5936633944511414,
+     "lesson_uid": "lsn_4435674"
+    },
+    {
+     "chunk_uid": "lsn_4435674::fixed::0035",
+     "score": 0.3808715343475342,
+     "lesson_uid": "lsn_4435674"
+    },
+    {
+     "chunk_uid": "lsn_4435674::fixed::0025",
+     "score": 0.361637145280838,
+     "lesson_uid": "lsn_4435674"
+    },
+    {
+     "chunk_uid": "lsn_3517825::fixed::0031",
+     "score": 0.3550686538219452,
+     "lesson_uid": "lsn_3517825"
+    },
+    {
+     "chunk_uid": "lsn_3517825::fixed::0023",
+     "score": 0.24798429012298584,
+     "lesson_uid": "lsn_3517825"
+    }
+   ],
+   "q18": [
+    {
+     "chunk_uid": "lsn_3521314::fixed::0001",
+     "score": 0.7337620854377747,
+     "lesson_uid": "lsn_3521314"
+    },
+    {
+     "chunk_uid": "lsn_3521314::fixed::0000",
+     "score": 0.7039973735809326,
+     "lesson_uid": "lsn_3521314"
+    },
+    {
+     "chunk_uid": "lsn_3521314::fixed::0004",
+     "score": 0.5771762728691101,
+     "lesson_uid": "lsn_3521314"
+    },
+    {
+     "chunk_uid": "lsn_3521314::fixed::0002",
+     "score": 0.1285306215286255,
+     "lesson_uid": "lsn_3521314"
+    },
+    {
+     "chunk_uid": "lsn_3520786::fixed::0003",
+     "score": 0.07174890488386154,
+     "lesson_uid": "lsn_3520786"
+    },
+    {
+     "chunk_uid": "lsn_3520786::fixed::0014",
+     "score": 0.059032294899225235,
+     "lesson_uid": "lsn_3520786"
+    },
+    {
+     "chunk_uid": "lsn_3521314::fixed::0003",
+     "score": 0.05903047323226929,
+     "lesson_uid": "lsn_3521314"
+    },
+    {
+     "chunk_uid": "lsn_3520786::fixed::0008",
+     "score": 0.043421704322099686,
+     "lesson_uid": "lsn_3520786"
+    },
+    {
+     "chunk_uid": "lsn_8653260::fixed::0020",
+     "score": 0.040384355932474136,
+     "lesson_uid": "lsn_8653260"
+    },
+    {
+     "chunk_uid": "lsn_3521314::fixed::0005",
+     "score": 0.02725283056497574,
+     "lesson_uid": "lsn_3521314"
+    }
+   ],
+   "q19": [
+    {
+     "chunk_uid": "lsn_7780460::fixed::0005",
+     "score": 0.9804750084877014,
+     "lesson_uid": "lsn_7780460"
+    },
+    {
+     "chunk_uid": "lsn_7780460::fixed::0004",
+     "score": 0.5143499970436096,
+     "lesson_uid": "lsn_7780460"
+    },
+    {
+     "chunk_uid": "lsn_7780460::fixed::0001",
+     "score": 0.2760467231273651,
+     "lesson_uid": "lsn_7780460"
+    },
+    {
+     "chunk_uid": "lsn_7780460::fixed::0000",
+     "score": 0.1487293392419815,
+     "lesson_uid": "lsn_7780460"
+    },
+    {
+     "chunk_uid": "lsn_7780460::fixed::0015",
+     "score": 0.0361136756837368,
+     "lesson_uid": "lsn_7780460"
+    },
+    {
+     "chunk_uid": "lsn_7780460::fixed::0002",
+     "score": 0.025485144928097725,
+     "lesson_uid": "lsn_7780460"
+    },
+    {
+     "chunk_uid": "lsn_7780460::fixed::0006",
+     "score": 0.013051698915660381,
+     "lesson_uid": "lsn_7780460"
+    },
+    {
+     "chunk_uid": "lsn_8975536::fixed::0031",
+     "score": 0.011154469102621078,
+     "lesson_uid": "lsn_8975536"
+    },
+    {
+     "chunk_uid": "lsn_5491325::fixed::0004",
+     "score": 0.010106397792696953,
+     "lesson_uid": "lsn_5491325"
+    },
+    {
+     "chunk_uid": "lsn_5491323::fixed::0007",
+     "score": 0.007058981340378523,
+     "lesson_uid": "lsn_5491323"
+    }
+   ],
+   "q20": [
+    {
+     "chunk_uid": "lsn_4303563::fixed::0008",
+     "score": 0.9836400151252747,
+     "lesson_uid": "lsn_4303563"
+    },
+    {
+     "chunk_uid": "lsn_4435678::fixed::0017",
+     "score": 0.9304274320602417,
+     "lesson_uid": "lsn_4435678"
+    },
+    {
+     "chunk_uid": "lsn_8975539::fixed::0009",
+     "score": 0.9244878888130188,
+     "lesson_uid": "lsn_8975539"
+    },
+    {
+     "chunk_uid": "lsn_3534881::fixed::0003",
+     "score": 0.906442403793335,
+     "lesson_uid": "lsn_3534881"
+    },
+    {
+     "chunk_uid": "lsn_3545567::fixed::0015",
+     "score": 0.8913190364837646,
+     "lesson_uid": "lsn_3545567"
+    },
+    {
+     "chunk_uid": "lsn_3545567::fixed::0048",
+     "score": 0.8446141481399536,
+     "lesson_uid": "lsn_3545567"
+    },
+    {
+     "chunk_uid": "lsn_5491325::fixed::0041",
+     "score": 0.8422433137893677,
+     "lesson_uid": "lsn_5491325"
+    },
+    {
+     "chunk_uid": "lsn_5127790::fixed::0013",
+     "score": 0.7965173125267029,
+     "lesson_uid": "lsn_5127790"
+    },
+    {
+     "chunk_uid": "lsn_7769609::fixed::0027",
+     "score": 0.7679761648178101,
+     "lesson_uid": "lsn_7769609"
+    },
+    {
+     "chunk_uid": "lsn_5127790::fixed::0015",
+     "score": 0.7231450080871582,
+     "lesson_uid": "lsn_5127790"
+    }
+   ],
+   "q21": [
+    {
+     "chunk_uid": "lsn_3659356::fixed::0011",
+     "score": 0.9901137351989746,
+     "lesson_uid": "lsn_3659356"
+    },
+    {
+     "chunk_uid": "lsn_3659356::fixed::0010",
+     "score": 0.9615355134010315,
+     "lesson_uid": "lsn_3659356"
+    },
+    {
+     "chunk_uid": "lsn_8975536::fixed::0022",
+     "score": 0.9391934275627136,
+     "lesson_uid": "lsn_8975536"
+    },
+    {
+     "chunk_uid": "lsn_3659356::fixed::0017",
+     "score": 0.9295048117637634,
+     "lesson_uid": "lsn_3659356"
+    },
+    {
+     "chunk_uid": "lsn_8881622::fixed::0009",
+     "score": 0.9068149924278259,
+     "lesson_uid": "lsn_8881622"
+    },
+    {
+     "chunk_uid": "lsn_7769233::fixed::0011",
+     "score": 0.8969129323959351,
+     "lesson_uid": "lsn_7769233"
+    },
+    {
+     "chunk_uid": "lsn_8881622::fixed::0011",
+     "score": 0.8853651285171509,
+     "lesson_uid": "lsn_8881622"
+    },
+    {
+     "chunk_uid": "lsn_8881622::fixed::0012",
+     "score": 0.8364129662513733,
+     "lesson_uid": "lsn_8881622"
+    },
+    {
+     "chunk_uid": "lsn_3659356::fixed::0013",
+     "score": 0.7137348055839539,
+     "lesson_uid": "lsn_3659356"
+    },
+    {
+     "chunk_uid": "lsn_8881622::fixed::0010",
+     "score": 0.6301993131637573,
+     "lesson_uid": "lsn_8881622"
+    }
+   ],
+   "q22": [
+    {
+     "chunk_uid": "lsn_7784276::fixed::0041",
+     "score": 0.7046971917152405,
+     "lesson_uid": "lsn_7784276"
+    },
+    {
+     "chunk_uid": "lsn_8875734::fixed::0011",
+     "score": 0.5408336520195007,
+     "lesson_uid": "lsn_8875734"
+    },
+    {
+     "chunk_uid": "lsn_7692944::fixed::0007",
+     "score": 0.530480682849884,
+     "lesson_uid": "lsn_7692944"
+    },
+    {
+     "chunk_uid": "lsn_8875734::fixed::0012",
+     "score": 0.5059167146682739,
+     "lesson_uid": "lsn_8875734"
+    },
+    {
+     "chunk_uid": "lsn_5127791::fixed::0007",
+     "score": 0.45775675773620605,
+     "lesson_uid": "lsn_5127791"
+    },
+    {
+     "chunk_uid": "lsn_3545564::fixed::0000",
+     "score": 0.4482475221157074,
+     "lesson_uid": "lsn_3545564"
+    },
+    {
+     "chunk_uid": "lsn_8653279::fixed::0017",
+     "score": 0.3585158884525299,
+     "lesson_uid": "lsn_8653279"
+    },
+    {
+     "chunk_uid": "lsn_5127795::fixed::0002",
+     "score": 0.26569950580596924,
+     "lesson_uid": "lsn_5127795"
+    },
+    {
+     "chunk_uid": "lsn_7780466::fixed::0019",
+     "score": 0.25864723324775696,
+     "lesson_uid": "lsn_7780466"
+    },
+    {
+     "chunk_uid": "lsn_7784277::fixed::0006",
+     "score": 0.22604770958423615,
+     "lesson_uid": "lsn_7784277"
+    }
+   ],
+   "q23": [
+    {
+     "chunk_uid": "lsn_7147321::fixed::0002",
+     "score": 0.9970921277999878,
+     "lesson_uid": "lsn_7147321"
+    },
+    {
+     "chunk_uid": "lsn_7769576::fixed::0010",
+     "score": 0.7600944638252258,
+     "lesson_uid": "lsn_7769576"
+    },
+    {
+     "chunk_uid": "lsn_3545567::fixed::0002",
+     "score": 0.45206740498542786,
+     "lesson_uid": "lsn_3545567"
+    },
+    {
+     "chunk_uid": "lsn_7147321::fixed::0000",
+     "score": 0.3958554267883301,
+     "lesson_uid": "lsn_7147321"
+    },
+    {
+     "chunk_uid": "lsn_7147321::fixed::0007",
+     "score": 0.3899516463279724,
+     "lesson_uid": "lsn_7147321"
+    },
+    {
+     "chunk_uid": "lsn_8653266::fixed::0022",
+     "score": 0.38498297333717346,
+     "lesson_uid": "lsn_8653266"
+    },
+    {
+     "chunk_uid": "lsn_7147321::fixed::0003",
+     "score": 0.382558137178421,
+     "lesson_uid": "lsn_7147321"
+    },
+    {
+     "chunk_uid": "lsn_3545567::fixed::0006",
+     "score": 0.3556763529777527,
+     "lesson_uid": "lsn_3545567"
+    },
+    {
+     "chunk_uid": "lsn_7769576::fixed::0011",
+     "score": 0.3040968179702759,
+     "lesson_uid": "lsn_7769576"
+    },
+    {
+     "chunk_uid": "lsn_5127791::fixed::0013",
+     "score": 0.24798011779785156,
+     "lesson_uid": "lsn_5127791"
+    }
+   ],
+   "q24": [
+    {
+     "chunk_uid": "lsn_7704859::fixed::0041",
+     "score": 0.9982688426971436,
+     "lesson_uid": "lsn_7704859"
+    },
+    {
+     "chunk_uid": "lsn_7147322::fixed::0029",
+     "score": 0.9774553775787354,
+     "lesson_uid": "lsn_7147322"
+    },
+    {
+     "chunk_uid": "lsn_4435678::fixed::0023",
+     "score": 0.8630455732345581,
+     "lesson_uid": "lsn_4435678"
+    },
+    {
+     "chunk_uid": "lsn_7704863::fixed::0012",
+     "score": 0.8274746537208557,
+     "lesson_uid": "lsn_7704863"
+    },
+    {
+     "chunk_uid": "lsn_3545320::fixed::0018",
+     "score": 0.574028491973877,
+     "lesson_uid": "lsn_3545320"
+    },
+    {
+     "chunk_uid": "lsn_3545320::fixed::0010",
+     "score": 0.5513630509376526,
+     "lesson_uid": "lsn_3545320"
+    },
+    {
+     "chunk_uid": "lsn_3545320::fixed::0013",
+     "score": 0.5324289798736572,
+     "lesson_uid": "lsn_3545320"
+    },
+    {
+     "chunk_uid": "lsn_7704859::fixed::0016",
+     "score": 0.49139827489852905,
+     "lesson_uid": "lsn_7704859"
+    },
+    {
+     "chunk_uid": "lsn_4303563::fixed::0012",
+     "score": 0.49122679233551025,
+     "lesson_uid": "lsn_4303563"
+    },
+    {
+     "chunk_uid": "lsn_7784278::fixed::0030",
+     "score": 0.4856387972831726,
+     "lesson_uid": "lsn_7784278"
+    }
+   ],
+   "q25": [
+    {
+     "chunk_uid": "lsn_4303291::fixed::0012",
+     "score": 0.9733573794364929,
+     "lesson_uid": "lsn_4303291"
+    },
+    {
+     "chunk_uid": "lsn_8477345::fixed::0024",
+     "score": 0.9604654312133789,
+     "lesson_uid": "lsn_8477345"
+    },
+    {
+     "chunk_uid": "lsn_5491325::fixed::0013",
+     "score": 0.956564724445343,
+     "lesson_uid": "lsn_5491325"
+    },
+    {
+     "chunk_uid": "lsn_8653264::fixed::0021",
+     "score": 0.917594850063324,
+     "lesson_uid": "lsn_8653264"
+    },
+    {
+     "chunk_uid": "lsn_4303291::fixed::0005",
+     "score": 0.8974798917770386,
+     "lesson_uid": "lsn_4303291"
+    },
+    {
+     "chunk_uid": "lsn_8477345::fixed::0025",
+     "score": 0.8614822626113892,
+     "lesson_uid": "lsn_8477345"
+    },
+    {
+     "chunk_uid": "lsn_7692934::fixed::0013",
+     "score": 0.8182032704353333,
+     "lesson_uid": "lsn_7692934"
+    },
+    {
+     "chunk_uid": "lsn_3545581::fixed::0008",
+     "score": 0.741454541683197,
+     "lesson_uid": "lsn_3545581"
+    },
+    {
+     "chunk_uid": "lsn_8653264::fixed::0022",
+     "score": 0.7201723456382751,
+     "lesson_uid": "lsn_8653264"
+    },
+    {
+     "chunk_uid": "lsn_3545581::fixed::0010",
+     "score": 0.6761029958724976,
+     "lesson_uid": "lsn_3545581"
+    }
+   ]
+  },
+  "semantic_ctx_rerank": {
+   "q01": [
+    {
+     "chunk_uid": "lsn_3545308::semantic::0017",
+     "score": 0.9896148443222046,
+     "lesson_uid": "lsn_3545308"
+    },
+    {
+     "chunk_uid": "lsn_3545308::semantic::0007",
+     "score": 0.6278365254402161,
+     "lesson_uid": "lsn_3545308"
+    },
+    {
+     "chunk_uid": "lsn_3545308::semantic::0001",
+     "score": 0.0954415574669838,
+     "lesson_uid": "lsn_3545308"
+    },
+    {
+     "chunk_uid": "lsn_3545308::semantic::0008",
+     "score": 0.06638669222593307,
+     "lesson_uid": "lsn_3545308"
+    },
+    {
+     "chunk_uid": "lsn_3545308::semantic::0005",
+     "score": 0.0590432770550251,
+     "lesson_uid": "lsn_3545308"
+    },
+    {
+     "chunk_uid": "lsn_3545308::semantic::0012",
+     "score": 0.04316612705588341,
+     "lesson_uid": "lsn_3545308"
+    },
+    {
+     "chunk_uid": "lsn_3545308::semantic::0002",
+     "score": 0.04064471274614334,
+     "lesson_uid": "lsn_3545308"
+    },
+    {
+     "chunk_uid": "lsn_3545308::semantic::0000",
+     "score": 0.035662755370140076,
+     "lesson_uid": "lsn_3545308"
+    },
+    {
+     "chunk_uid": "lsn_8881624::semantic::0001",
+     "score": 0.031036632135510445,
+     "lesson_uid": "lsn_8881624"
+    },
+    {
+     "chunk_uid": "lsn_3545319::semantic::0007",
+     "score": 0.03098042495548725,
+     "lesson_uid": "lsn_3545319"
+    }
+   ],
+   "q02": [
+    {
+     "chunk_uid": "lsn_3657234::semantic::0004",
+     "score": 0.9766547679901123,
+     "lesson_uid": "lsn_3657234"
+    },
+    {
+     "chunk_uid": "lsn_7147319::semantic::0007",
+     "score": 0.951685905456543,
+     "lesson_uid": "lsn_7147319"
+    },
+    {
+     "chunk_uid": "lsn_7147319::semantic::0008",
+     "score": 0.909783124923706,
+     "lesson_uid": "lsn_7147319"
+    },
+    {
+     "chunk_uid": "lsn_3657234::semantic::0005",
+     "score": 0.8770712614059448,
+     "lesson_uid": "lsn_3657234"
+    },
+    {
+     "chunk_uid": "lsn_3545567::semantic::0050",
+     "score": 0.8467721343040466,
+     "lesson_uid": "lsn_3545567"
+    },
+    {
+     "chunk_uid": "lsn_8875735::semantic::0014",
+     "score": 0.7673768401145935,
+     "lesson_uid": "lsn_8875735"
+    },
+    {
+     "chunk_uid": "lsn_3545327::semantic::0014",
+     "score": 0.5374348759651184,
+     "lesson_uid": "lsn_3545327"
+    },
+    {
+     "chunk_uid": "lsn_7147322::semantic::0006",
+     "score": 0.5275260806083679,
+     "lesson_uid": "lsn_7147322"
+    },
+    {
+     "chunk_uid": "lsn_3657234::semantic::0009",
+     "score": 0.4913543462753296,
+     "lesson_uid": "lsn_3657234"
+    },
+    {
+     "chunk_uid": "lsn_7147319::semantic::0009",
+     "score": 0.3106726408004761,
+     "lesson_uid": "lsn_7147319"
+    }
+   ],
+   "q03": [
+    {
+     "chunk_uid": "lsn_3545310::semantic::0000",
+     "score": 0.6878724098205566,
+     "lesson_uid": "lsn_3545310"
+    },
+    {
+     "chunk_uid": "lsn_3545310::semantic::0013",
+     "score": 0.6687145233154297,
+     "lesson_uid": "lsn_3545310"
+    },
+    {
+     "chunk_uid": "lsn_3545310::semantic::0001",
+     "score": 0.6351068615913391,
+     "lesson_uid": "lsn_3545310"
+    },
+    {
+     "chunk_uid": "lsn_3545310::semantic::0012",
+     "score": 0.3772835433483124,
+     "lesson_uid": "lsn_3545310"
+    },
+    {
+     "chunk_uid": "lsn_3545310::semantic::0015",
+     "score": 0.23345111310482025,
+     "lesson_uid": "lsn_3545310"
+    },
+    {
+     "chunk_uid": "lsn_3545310::semantic::0003",
+     "score": 0.20596441626548767,
+     "lesson_uid": "lsn_3545310"
+    },
+    {
+     "chunk_uid": "lsn_3545310::semantic::0014",
+     "score": 0.17735664546489716,
+     "lesson_uid": "lsn_3545310"
+    },
+    {
+     "chunk_uid": "lsn_3545310::semantic::0011",
+     "score": 0.1759820133447647,
+     "lesson_uid": "lsn_3545310"
+    },
+    {
+     "chunk_uid": "lsn_3545308::semantic::0017",
+     "score": 0.11507368087768555,
+     "lesson_uid": "lsn_3545308"
+    },
+    {
+     "chunk_uid": "lsn_3545310::semantic::0005",
+     "score": 0.0881258174777031,
+     "lesson_uid": "lsn_3545310"
+    }
+   ],
+   "q04": [
+    {
+     "chunk_uid": "lsn_7769609::semantic::0009",
+     "score": 0.5499880909919739,
+     "lesson_uid": "lsn_7769609"
+    },
+    {
+     "chunk_uid": "lsn_7769609::semantic::0000",
+     "score": 0.387367308139801,
+     "lesson_uid": "lsn_7769609"
+    },
+    {
+     "chunk_uid": "lsn_7769609::semantic::0010",
+     "score": 0.183586984872818,
+     "lesson_uid": "lsn_7769609"
+    },
+    {
+     "chunk_uid": "lsn_7769609::semantic::0022",
+     "score": 0.0903031975030899,
+     "lesson_uid": "lsn_7769609"
+    },
+    {
+     "chunk_uid": "lsn_7769609::semantic::0020",
+     "score": 0.05194989591836929,
+     "lesson_uid": "lsn_7769609"
+    },
+    {
+     "chunk_uid": "lsn_7769609::semantic::0025",
+     "score": 0.0412488617002964,
+     "lesson_uid": "lsn_7769609"
+    },
+    {
+     "chunk_uid": "lsn_8653277::semantic::0021",
+     "score": 0.01695285551249981,
+     "lesson_uid": "lsn_8653277"
+    },
+    {
+     "chunk_uid": "lsn_7147321::semantic::0002",
+     "score": 0.007976561784744263,
+     "lesson_uid": "lsn_7147321"
+    },
+    {
+     "chunk_uid": "lsn_3521375::semantic::0043",
+     "score": 0.0068074860610067844,
+     "lesson_uid": "lsn_3521375"
+    },
+    {
+     "chunk_uid": "lsn_8653277::semantic::0005",
+     "score": 0.0055700624361634254,
+     "lesson_uid": "lsn_8653277"
+    }
+   ],
+   "q05": [
+    {
+     "chunk_uid": "lsn_3521431::semantic::0008",
+     "score": 0.9728201627731323,
+     "lesson_uid": "lsn_3521431"
+    },
+    {
+     "chunk_uid": "lsn_3521431::semantic::0007",
+     "score": 0.9500717520713806,
+     "lesson_uid": "lsn_3521431"
+    },
+    {
+     "chunk_uid": "lsn_3521432::semantic::0000",
+     "score": 0.8420653343200684,
+     "lesson_uid": "lsn_3521432"
+    },
+    {
+     "chunk_uid": "lsn_3521432::semantic::0001",
+     "score": 0.7329936623573303,
+     "lesson_uid": "lsn_3521432"
+    },
+    {
+     "chunk_uid": "lsn_8653272::semantic::0037",
+     "score": 0.37570610642433167,
+     "lesson_uid": "lsn_8653272"
+    },
+    {
+     "chunk_uid": "lsn_8653272::semantic::0015",
+     "score": 0.22859220206737518,
+     "lesson_uid": "lsn_8653272"
+    },
+    {
+     "chunk_uid": "lsn_3521424::semantic::0022",
+     "score": 0.2068123072385788,
+     "lesson_uid": "lsn_3521424"
+    },
+    {
+     "chunk_uid": "lsn_3521431::semantic::0006",
+     "score": 0.15942974388599396,
+     "lesson_uid": "lsn_3521431"
+    },
+    {
+     "chunk_uid": "lsn_4435677::semantic::0007",
+     "score": 0.13121271133422852,
+     "lesson_uid": "lsn_4435677"
+    },
+    {
+     "chunk_uid": "lsn_3521431::semantic::0005",
+     "score": 0.11837773770093918,
+     "lesson_uid": "lsn_3521431"
+    }
+   ],
+   "q06": [
+    {
+     "chunk_uid": "lsn_3534937::semantic::0052",
+     "score": 0.9884101152420044,
+     "lesson_uid": "lsn_3534937"
+    },
+    {
+     "chunk_uid": "lsn_3534937::semantic::0050",
+     "score": 0.9602988362312317,
+     "lesson_uid": "lsn_3534937"
+    },
+    {
+     "chunk_uid": "lsn_5491322::semantic::0067",
+     "score": 0.7266549468040466,
+     "lesson_uid": "lsn_5491322"
+    },
+    {
+     "chunk_uid": "lsn_3534937::semantic::0053",
+     "score": 0.4872352182865143,
+     "lesson_uid": "lsn_3534937"
+    },
+    {
+     "chunk_uid": "lsn_3534937::semantic::0051",
+     "score": 0.35067984461784363,
+     "lesson_uid": "lsn_3534937"
+    },
+    {
+     "chunk_uid": "lsn_5491257::semantic::0032",
+     "score": 0.2719975411891937,
+     "lesson_uid": "lsn_5491257"
+    },
+    {
+     "chunk_uid": "lsn_3659233::semantic::0063",
+     "score": 0.20392745733261108,
+     "lesson_uid": "lsn_3659233"
+    },
+    {
+     "chunk_uid": "lsn_3521432::semantic::0027",
+     "score": 0.06333151459693909,
+     "lesson_uid": "lsn_3521432"
+    },
+    {
+     "chunk_uid": "lsn_3534937::semantic::0008",
+     "score": 0.06226077303290367,
+     "lesson_uid": "lsn_3534937"
+    },
+    {
+     "chunk_uid": "lsn_4303563::semantic::0004",
+     "score": 0.054790742695331573,
+     "lesson_uid": "lsn_4303563"
+    }
+   ],
+   "q07": [
+    {
+     "chunk_uid": "lsn_8975536::semantic::0011",
+     "score": 0.83404541015625,
+     "lesson_uid": "lsn_8975536"
+    },
+    {
+     "chunk_uid": "lsn_5127791::semantic::0004",
+     "score": 0.469260573387146,
+     "lesson_uid": "lsn_5127791"
+    },
+    {
+     "chunk_uid": "lsn_7704869::semantic::0020",
+     "score": 0.3863707482814789,
+     "lesson_uid": "lsn_7704869"
+    },
+    {
+     "chunk_uid": "lsn_7704869::semantic::0019",
+     "score": 0.31320294737815857,
+     "lesson_uid": "lsn_7704869"
+    },
+    {
+     "chunk_uid": "lsn_7704869::semantic::0021",
+     "score": 0.1248224675655365,
+     "lesson_uid": "lsn_7704869"
+    },
+    {
+     "chunk_uid": "lsn_5127791::semantic::0007",
+     "score": 0.09876452386379242,
+     "lesson_uid": "lsn_5127791"
+    },
+    {
+     "chunk_uid": "lsn_8975536::semantic::0006",
+     "score": 0.09490154683589935,
+     "lesson_uid": "lsn_8975536"
+    },
+    {
+     "chunk_uid": "lsn_3534938::semantic::0040",
+     "score": 0.09271043539047241,
+     "lesson_uid": "lsn_3534938"
+    },
+    {
+     "chunk_uid": "lsn_5127791::semantic::0002",
+     "score": 0.05289246141910553,
+     "lesson_uid": "lsn_5127791"
+    },
+    {
+     "chunk_uid": "lsn_7147321::semantic::0003",
+     "score": 0.04142940416932106,
+     "lesson_uid": "lsn_7147321"
+    }
+   ],
+   "q08": [
+    {
+     "chunk_uid": "lsn_8878383::semantic::0049",
+     "score": 0.24763041734695435,
+     "lesson_uid": "lsn_8878383"
+    },
+    {
+     "chunk_uid": "lsn_7704869::semantic::0041",
+     "score": 0.18873825669288635,
+     "lesson_uid": "lsn_7704869"
+    },
+    {
+     "chunk_uid": "lsn_8878383::semantic::0052",
+     "score": 0.12976735830307007,
+     "lesson_uid": "lsn_8878383"
+    },
+    {
+     "chunk_uid": "lsn_8878383::semantic::0045",
+     "score": 0.1054994985461235,
+     "lesson_uid": "lsn_8878383"
+    },
+    {
+     "chunk_uid": "lsn_8881622::semantic::0010",
+     "score": 0.10535755008459091,
+     "lesson_uid": "lsn_8881622"
+    },
+    {
+     "chunk_uid": "lsn_7773600::semantic::0023",
+     "score": 0.10507217794656754,
+     "lesson_uid": "lsn_7773600"
+    },
+    {
+     "chunk_uid": "lsn_8965510::semantic::0038",
+     "score": 0.10243303328752518,
+     "lesson_uid": "lsn_8965510"
+    },
+    {
+     "chunk_uid": "lsn_7773600::semantic::0025",
+     "score": 0.09855594485998154,
+     "lesson_uid": "lsn_7773600"
+    },
+    {
+     "chunk_uid": "lsn_7769233::semantic::0010",
+     "score": 0.08176612108945847,
+     "lesson_uid": "lsn_7769233"
+    },
+    {
+     "chunk_uid": "lsn_8975540::semantic::0017",
+     "score": 0.07145122438669205,
+     "lesson_uid": "lsn_8975540"
+    }
+   ],
+   "q09": [
+    {
+     "chunk_uid": "lsn_3521383::semantic::0013",
+     "score": 0.9753913879394531,
+     "lesson_uid": "lsn_3521383"
+    },
+    {
+     "chunk_uid": "lsn_7704869::semantic::0064",
+     "score": 0.914671003818512,
+     "lesson_uid": "lsn_7704869"
+    },
+    {
+     "chunk_uid": "lsn_4435677::semantic::0022",
+     "score": 0.6768885254859924,
+     "lesson_uid": "lsn_4435677"
+    },
+    {
+     "chunk_uid": "lsn_3659237::semantic::0022",
+     "score": 0.5572778582572937,
+     "lesson_uid": "lsn_3659237"
+    },
+    {
+     "chunk_uid": "lsn_8875735::semantic::0017",
+     "score": 0.3779999315738678,
+     "lesson_uid": "lsn_8875735"
+    },
+    {
+     "chunk_uid": "lsn_3521377::semantic::0000",
+     "score": 0.14787732064723969,
+     "lesson_uid": "lsn_3521377"
+    },
+    {
+     "chunk_uid": "lsn_3521383::semantic::0012",
+     "score": 0.134487122297287,
+     "lesson_uid": "lsn_3521383"
+    },
+    {
+     "chunk_uid": "lsn_8653268::semantic::0019",
+     "score": 0.11572843790054321,
+     "lesson_uid": "lsn_8653268"
+    },
+    {
+     "chunk_uid": "lsn_4435677::semantic::0011",
+     "score": 0.10846364498138428,
+     "lesson_uid": "lsn_4435677"
+    },
+    {
+     "chunk_uid": "lsn_5791317::semantic::0017",
+     "score": 0.09855348616838455,
+     "lesson_uid": "lsn_5791317"
+    }
+   ],
+   "q10": [
+    {
+     "chunk_uid": "lsn_3521417::semantic::0021",
+     "score": 0.8563781976699829,
+     "lesson_uid": "lsn_3521417"
+    },
+    {
+     "chunk_uid": "lsn_3521417::semantic::0035",
+     "score": 0.8527885675430298,
+     "lesson_uid": "lsn_3521417"
+    },
+    {
+     "chunk_uid": "lsn_3521417::semantic::0013",
+     "score": 0.8233574032783508,
+     "lesson_uid": "lsn_3521417"
+    },
+    {
+     "chunk_uid": "lsn_3521417::semantic::0011",
+     "score": 0.8150336742401123,
+     "lesson_uid": "lsn_3521417"
+    },
+    {
+     "chunk_uid": "lsn_3521417::semantic::0025",
+     "score": 0.6327833533287048,
+     "lesson_uid": "lsn_3521417"
+    },
+    {
+     "chunk_uid": "lsn_3521418::semantic::0007",
+     "score": 0.47651439905166626,
+     "lesson_uid": "lsn_3521418"
+    },
+    {
+     "chunk_uid": "lsn_3521418::semantic::0012",
+     "score": 0.4176395535469055,
+     "lesson_uid": "lsn_3521418"
+    },
+    {
+     "chunk_uid": "lsn_3521418::semantic::0002",
+     "score": 0.3690875768661499,
+     "lesson_uid": "lsn_3521418"
+    },
+    {
+     "chunk_uid": "lsn_3521417::semantic::0012",
+     "score": 0.3418349623680115,
+     "lesson_uid": "lsn_3521417"
+    },
+    {
+     "chunk_uid": "lsn_3521417::semantic::0007",
+     "score": 0.26273980736732483,
+     "lesson_uid": "lsn_3521417"
+    }
+   ],
+   "q11": [
+    {
+     "chunk_uid": "lsn_4243247::semantic::0008",
+     "score": 0.8958869576454163,
+     "lesson_uid": "lsn_4243247"
+    },
+    {
+     "chunk_uid": "lsn_8881624::semantic::0008",
+     "score": 0.8748058676719666,
+     "lesson_uid": "lsn_8881624"
+    },
+    {
+     "chunk_uid": "lsn_4243247::semantic::0015",
+     "score": 0.7275899052619934,
+     "lesson_uid": "lsn_4243247"
+    },
+    {
+     "chunk_uid": "lsn_4243248::semantic::0020",
+     "score": 0.10826776176691055,
+     "lesson_uid": "lsn_4243248"
+    },
+    {
+     "chunk_uid": "lsn_4243247::semantic::0010",
+     "score": 0.09497452527284622,
+     "lesson_uid": "lsn_4243247"
+    },
+    {
+     "chunk_uid": "lsn_8881624::semantic::0078",
+     "score": 0.08311083912849426,
+     "lesson_uid": "lsn_8881624"
+    },
+    {
+     "chunk_uid": "lsn_4243247::semantic::0018",
+     "score": 0.08209265023469925,
+     "lesson_uid": "lsn_4243247"
+    },
+    {
+     "chunk_uid": "lsn_4243247::semantic::0001",
+     "score": 0.07609765231609344,
+     "lesson_uid": "lsn_4243247"
+    },
+    {
+     "chunk_uid": "lsn_8881624::semantic::0012",
+     "score": 0.04862034693360329,
+     "lesson_uid": "lsn_8881624"
+    },
+    {
+     "chunk_uid": "lsn_4243247::semantic::0006",
+     "score": 0.04051733389496803,
+     "lesson_uid": "lsn_4243247"
+    }
+   ],
+   "q12": [
+    {
+     "chunk_uid": "lsn_3659233::semantic::0048",
+     "score": 0.8009926080703735,
+     "lesson_uid": "lsn_3659233"
+    },
+    {
+     "chunk_uid": "lsn_8881620::semantic::0047",
+     "score": 0.366341233253479,
+     "lesson_uid": "lsn_8881620"
+    },
+    {
+     "chunk_uid": "lsn_3659233::semantic::0040",
+     "score": 0.24285325407981873,
+     "lesson_uid": "lsn_3659233"
+    },
+    {
+     "chunk_uid": "lsn_8881620::semantic::0046",
+     "score": 0.19587527215480804,
+     "lesson_uid": "lsn_8881620"
+    },
+    {
+     "chunk_uid": "lsn_8881620::semantic::0049",
+     "score": 0.148339182138443,
+     "lesson_uid": "lsn_8881620"
+    },
+    {
+     "chunk_uid": "lsn_3659233::semantic::0047",
+     "score": 0.1402590572834015,
+     "lesson_uid": "lsn_3659233"
+    },
+    {
+     "chunk_uid": "lsn_3659233::semantic::0043",
+     "score": 0.11185820400714874,
+     "lesson_uid": "lsn_3659233"
+    },
+    {
+     "chunk_uid": "lsn_3659233::semantic::0045",
+     "score": 0.10795752704143524,
+     "lesson_uid": "lsn_3659233"
+    },
+    {
+     "chunk_uid": "lsn_4303563::semantic::0018",
+     "score": 0.1073732003569603,
+     "lesson_uid": "lsn_4303563"
+    },
+    {
+     "chunk_uid": "lsn_8881620::semantic::0036",
+     "score": 0.10736332833766937,
+     "lesson_uid": "lsn_8881620"
+    }
+   ],
+   "q13": [
+    {
+     "chunk_uid": "lsn_3545582::semantic::0004",
+     "score": 0.6992875933647156,
+     "lesson_uid": "lsn_3545582"
+    },
+    {
+     "chunk_uid": "lsn_3545582::semantic::0007",
+     "score": 0.5381928086280823,
+     "lesson_uid": "lsn_3545582"
+    },
+    {
+     "chunk_uid": "lsn_7769609::semantic::0032",
+     "score": 0.48173999786376953,
+     "lesson_uid": "lsn_7769609"
+    },
+    {
+     "chunk_uid": "lsn_8881623::semantic::0019",
+     "score": 0.18734587728977203,
+     "lesson_uid": "lsn_8881623"
+    },
+    {
+     "chunk_uid": "lsn_3545582::semantic::0002",
+     "score": 0.17735332250595093,
+     "lesson_uid": "lsn_3545582"
+    },
+    {
+     "chunk_uid": "lsn_3545582::semantic::0003",
+     "score": 0.17034250497817993,
+     "lesson_uid": "lsn_3545582"
+    },
+    {
+     "chunk_uid": "lsn_8881623::semantic::0012",
+     "score": 0.13845491409301758,
+     "lesson_uid": "lsn_8881623"
+    },
+    {
+     "chunk_uid": "lsn_8477345::semantic::0014",
+     "score": 0.13519597053527832,
+     "lesson_uid": "lsn_8477345"
+    },
+    {
+     "chunk_uid": "lsn_4303291::semantic::0023",
+     "score": 0.12369326502084732,
+     "lesson_uid": "lsn_4303291"
+    },
+    {
+     "chunk_uid": "lsn_8477347::semantic::0003",
+     "score": 0.12257452309131622,
+     "lesson_uid": "lsn_8477347"
+    }
+   ],
+   "q14": [
+    {
+     "chunk_uid": "lsn_3545135::semantic::0055",
+     "score": 0.055431824177503586,
+     "lesson_uid": "lsn_3545135"
+    },
+    {
+     "chunk_uid": "lsn_3545135::semantic::0010",
+     "score": 0.022283319383859634,
+     "lesson_uid": "lsn_3545135"
+    },
+    {
+     "chunk_uid": "lsn_7773606::semantic::0009",
+     "score": 0.0050396486185491085,
+     "lesson_uid": "lsn_7773606"
+    },
+    {
+     "chunk_uid": "lsn_7773607::semantic::0020",
+     "score": 0.004460271913558245,
+     "lesson_uid": "lsn_7773607"
+    },
+    {
+     "chunk_uid": "lsn_3545135::semantic::0022",
+     "score": 0.0039017030503600836,
+     "lesson_uid": "lsn_3545135"
+    },
+    {
+     "chunk_uid": "lsn_3545135::semantic::0015",
+     "score": 0.003854630747810006,
+     "lesson_uid": "lsn_3545135"
+    },
+    {
+     "chunk_uid": "lsn_3545135::semantic::0009",
+     "score": 0.0036048393230885267,
+     "lesson_uid": "lsn_3545135"
+    },
+    {
+     "chunk_uid": "lsn_8653282::semantic::0015",
+     "score": 0.002680065343156457,
+     "lesson_uid": "lsn_8653282"
+    },
+    {
+     "chunk_uid": "lsn_3545136::semantic::0032",
+     "score": 0.002628906862810254,
+     "lesson_uid": "lsn_3545136"
+    },
+    {
+     "chunk_uid": "lsn_7773607::semantic::0031",
+     "score": 0.002080337842926383,
+     "lesson_uid": "lsn_7773607"
+    }
+   ],
+   "q15": [
+    {
+     "chunk_uid": "lsn_5127795::semantic::0001",
+     "score": 0.9807003736495972,
+     "lesson_uid": "lsn_5127795"
+    },
+    {
+     "chunk_uid": "lsn_3545563::semantic::0073",
+     "score": 0.9737889766693115,
+     "lesson_uid": "lsn_3545563"
+    },
+    {
+     "chunk_uid": "lsn_5127795::semantic::0002",
+     "score": 0.9734768867492676,
+     "lesson_uid": "lsn_5127795"
+    },
+    {
+     "chunk_uid": "lsn_7784277::semantic::0012",
+     "score": 0.947053074836731,
+     "lesson_uid": "lsn_7784277"
+    },
+    {
+     "chunk_uid": "lsn_7780471::semantic::0017",
+     "score": 0.9445701837539673,
+     "lesson_uid": "lsn_7780471"
+    },
+    {
+     "chunk_uid": "lsn_7692944::semantic::0008",
+     "score": 0.9313056468963623,
+     "lesson_uid": "lsn_7692944"
+    },
+    {
+     "chunk_uid": "lsn_5127795::semantic::0011",
+     "score": 0.898771345615387,
+     "lesson_uid": "lsn_5127795"
+    },
+    {
+     "chunk_uid": "lsn_7780466::semantic::0003",
+     "score": 0.8927706480026245,
+     "lesson_uid": "lsn_7780466"
+    },
+    {
+     "chunk_uid": "lsn_8875734::semantic::0012",
+     "score": 0.8556463718414307,
+     "lesson_uid": "lsn_8875734"
+    },
+    {
+     "chunk_uid": "lsn_8653279::semantic::0017",
+     "score": 0.8190972208976746,
+     "lesson_uid": "lsn_8653279"
+    }
+   ],
+   "q16": [
+    {
+     "chunk_uid": "lsn_8878382::semantic::0040",
+     "score": 0.9838861227035522,
+     "lesson_uid": "lsn_8878382"
+    },
+    {
+     "chunk_uid": "lsn_8878382::semantic::0038",
+     "score": 0.34961971640586853,
+     "lesson_uid": "lsn_8878382"
+    },
+    {
+     "chunk_uid": "lsn_8878382::semantic::0030",
+     "score": 0.09940925985574722,
+     "lesson_uid": "lsn_8878382"
+    },
+    {
+     "chunk_uid": "lsn_8878382::semantic::0031",
+     "score": 0.05868545547127724,
+     "lesson_uid": "lsn_8878382"
+    },
+    {
+     "chunk_uid": "lsn_8878382::semantic::0022",
+     "score": 0.045484963804483414,
+     "lesson_uid": "lsn_8878382"
+    },
+    {
+     "chunk_uid": "lsn_8878382::semantic::0044",
+     "score": 0.03875718638300896,
+     "lesson_uid": "lsn_8878382"
+    },
+    {
+     "chunk_uid": "lsn_8878383::semantic::0019",
+     "score": 0.03676709160208702,
+     "lesson_uid": "lsn_8878383"
+    },
+    {
+     "chunk_uid": "lsn_8878383::semantic::0041",
+     "score": 0.02700337953865528,
+     "lesson_uid": "lsn_8878383"
+    },
+    {
+     "chunk_uid": "lsn_8875735::semantic::0031",
+     "score": 0.024809885770082474,
+     "lesson_uid": "lsn_8875735"
+    },
+    {
+     "chunk_uid": "lsn_8878382::semantic::0023",
+     "score": 0.013071904890239239,
+     "lesson_uid": "lsn_8878382"
+    }
+   ],
+   "q17": [
+    {
+     "chunk_uid": "lsn_4435674::semantic::0022",
+     "score": 0.9352018237113953,
+     "lesson_uid": "lsn_4435674"
+    },
+    {
+     "chunk_uid": "lsn_7704862::semantic::0028",
+     "score": 0.8557182550430298,
+     "lesson_uid": "lsn_7704862"
+    },
+    {
+     "chunk_uid": "lsn_7704862::semantic::0024",
+     "score": 0.8070462346076965,
+     "lesson_uid": "lsn_7704862"
+    },
+    {
+     "chunk_uid": "lsn_8878383::semantic::0021",
+     "score": 0.8030343055725098,
+     "lesson_uid": "lsn_8878383"
+    },
+    {
+     "chunk_uid": "lsn_4435674::semantic::0033",
+     "score": 0.6496212482452393,
+     "lesson_uid": "lsn_4435674"
+    },
+    {
+     "chunk_uid": "lsn_3517825::semantic::0035",
+     "score": 0.5252813100814819,
+     "lesson_uid": "lsn_3517825"
+    },
+    {
+     "chunk_uid": "lsn_8878383::semantic::0020",
+     "score": 0.3483828008174896,
+     "lesson_uid": "lsn_8878383"
+    },
+    {
+     "chunk_uid": "lsn_4435674::semantic::0023",
+     "score": 0.32486799359321594,
+     "lesson_uid": "lsn_4435674"
+    },
+    {
+     "chunk_uid": "lsn_3521091::semantic::0017",
+     "score": 0.2231929749250412,
+     "lesson_uid": "lsn_3521091"
+    },
+    {
+     "chunk_uid": "lsn_3521416::semantic::0005",
+     "score": 0.19660072028636932,
+     "lesson_uid": "lsn_3521416"
+    }
+   ],
+   "q18": [
+    {
+     "chunk_uid": "lsn_3521314::semantic::0000",
+     "score": 0.347729355096817,
+     "lesson_uid": "lsn_3521314"
+    },
+    {
+     "chunk_uid": "lsn_3521314::semantic::0004",
+     "score": 0.30626899003982544,
+     "lesson_uid": "lsn_3521314"
+    },
+    {
+     "chunk_uid": "lsn_3520786::semantic::0011",
+     "score": 0.10075938701629639,
+     "lesson_uid": "lsn_3520786"
+    },
+    {
+     "chunk_uid": "lsn_3521314::semantic::0002",
+     "score": 0.07542786747217178,
+     "lesson_uid": "lsn_3521314"
+    },
+    {
+     "chunk_uid": "lsn_3520786::semantic::0002",
+     "score": 0.06100155785679817,
+     "lesson_uid": "lsn_3520786"
+    },
+    {
+     "chunk_uid": "lsn_3521314::semantic::0011",
+     "score": 0.03145568445324898,
+     "lesson_uid": "lsn_3521314"
+    },
+    {
+     "chunk_uid": "lsn_3520786::semantic::0010",
+     "score": 0.026162050664424896,
+     "lesson_uid": "lsn_3520786"
+    },
+    {
+     "chunk_uid": "lsn_3520786::semantic::0004",
+     "score": 0.015980958938598633,
+     "lesson_uid": "lsn_3520786"
+    },
+    {
+     "chunk_uid": "lsn_3534880::semantic::0032",
+     "score": 0.014840589836239815,
+     "lesson_uid": "lsn_3534880"
+    },
+    {
+     "chunk_uid": "lsn_3517825::semantic::0021",
+     "score": 0.011752534657716751,
+     "lesson_uid": "lsn_3517825"
+    }
+   ],
+   "q19": [
+    {
+     "chunk_uid": "lsn_7780460::semantic::0003",
+     "score": 0.9987612962722778,
+     "lesson_uid": "lsn_7780460"
+    },
+    {
+     "chunk_uid": "lsn_7780460::semantic::0004",
+     "score": 0.5406139492988586,
+     "lesson_uid": "lsn_7780460"
+    },
+    {
+     "chunk_uid": "lsn_7780460::semantic::0001",
+     "score": 0.25137922167778015,
+     "lesson_uid": "lsn_7780460"
+    },
+    {
+     "chunk_uid": "lsn_7780460::semantic::0002",
+     "score": 0.09534213691949844,
+     "lesson_uid": "lsn_7780460"
+    },
+    {
+     "chunk_uid": "lsn_7780460::semantic::0016",
+     "score": 0.0637432187795639,
+     "lesson_uid": "lsn_7780460"
+    },
+    {
+     "chunk_uid": "lsn_7780460::semantic::0017",
+     "score": 0.024132730439305305,
+     "lesson_uid": "lsn_7780460"
+    },
+    {
+     "chunk_uid": "lsn_5491325::semantic::0003",
+     "score": 0.013543355278670788,
+     "lesson_uid": "lsn_5491325"
+    },
+    {
+     "chunk_uid": "lsn_7780460::semantic::0000",
+     "score": 0.010951862670481205,
+     "lesson_uid": "lsn_7780460"
+    },
+    {
+     "chunk_uid": "lsn_5491323::semantic::0008",
+     "score": 0.00805310346186161,
+     "lesson_uid": "lsn_5491323"
+    },
+    {
+     "chunk_uid": "lsn_5127789::semantic::0002",
+     "score": 0.007225850597023964,
+     "lesson_uid": "lsn_5127789"
+    }
+   ],
+   "q20": [
+    {
+     "chunk_uid": "lsn_4303563::semantic::0009",
+     "score": 0.9915345311164856,
+     "lesson_uid": "lsn_4303563"
+    },
+    {
+     "chunk_uid": "lsn_5127790::semantic::0016",
+     "score": 0.945408821105957,
+     "lesson_uid": "lsn_5127790"
+    },
+    {
+     "chunk_uid": "lsn_4435678::semantic::0017",
+     "score": 0.9249493479728699,
+     "lesson_uid": "lsn_4435678"
+    },
+    {
+     "chunk_uid": "lsn_3545567::semantic::0020",
+     "score": 0.9246484041213989,
+     "lesson_uid": "lsn_3545567"
+    },
+    {
+     "chunk_uid": "lsn_5491325::semantic::0047",
+     "score": 0.8343963027000427,
+     "lesson_uid": "lsn_5491325"
+    },
+    {
+     "chunk_uid": "lsn_3534881::semantic::0004",
+     "score": 0.8244836926460266,
+     "lesson_uid": "lsn_3534881"
+    },
+    {
+     "chunk_uid": "lsn_8975539::semantic::0010",
+     "score": 0.772922694683075,
+     "lesson_uid": "lsn_8975539"
+    },
+    {
+     "chunk_uid": "lsn_3545567::semantic::0058",
+     "score": 0.7520368099212646,
+     "lesson_uid": "lsn_3545567"
+    },
+    {
+     "chunk_uid": "lsn_7769609::semantic::0031",
+     "score": 0.6872972846031189,
+     "lesson_uid": "lsn_7769609"
+    },
+    {
+     "chunk_uid": "lsn_5127790::semantic::0017",
+     "score": 0.6468726396560669,
+     "lesson_uid": "lsn_5127790"
+    }
+   ],
+   "q21": [
+    {
+     "chunk_uid": "lsn_3659356::semantic::0011",
+     "score": 0.9275335669517517,
+     "lesson_uid": "lsn_3659356"
+    },
+    {
+     "chunk_uid": "lsn_3659356::semantic::0013",
+     "score": 0.9170368313789368,
+     "lesson_uid": "lsn_3659356"
+    },
+    {
+     "chunk_uid": "lsn_8881622::semantic::0008",
+     "score": 0.8408990502357483,
+     "lesson_uid": "lsn_8881622"
+    },
+    {
+     "chunk_uid": "lsn_8975536::semantic::0026",
+     "score": 0.7895985245704651,
+     "lesson_uid": "lsn_8975536"
+    },
+    {
+     "chunk_uid": "lsn_7769233::semantic::0018",
+     "score": 0.7805708050727844,
+     "lesson_uid": "lsn_7769233"
+    },
+    {
+     "chunk_uid": "lsn_3659356::semantic::0017",
+     "score": 0.7787855863571167,
+     "lesson_uid": "lsn_3659356"
+    },
+    {
+     "chunk_uid": "lsn_7769233::semantic::0011",
+     "score": 0.7453638911247253,
+     "lesson_uid": "lsn_7769233"
+    },
+    {
+     "chunk_uid": "lsn_7769233::semantic::0009",
+     "score": 0.7419683337211609,
+     "lesson_uid": "lsn_7769233"
+    },
+    {
+     "chunk_uid": "lsn_7769233::semantic::0015",
+     "score": 0.6124768853187561,
+     "lesson_uid": "lsn_7769233"
+    },
+    {
+     "chunk_uid": "lsn_8881622::semantic::0005",
+     "score": 0.5649414658546448,
+     "lesson_uid": "lsn_8881622"
+    }
+   ],
+   "q22": [
+    {
+     "chunk_uid": "lsn_3545564::semantic::0000",
+     "score": 0.6096713542938232,
+     "lesson_uid": "lsn_3545564"
+    },
+    {
+     "chunk_uid": "lsn_7692944::semantic::0009",
+     "score": 0.5647871494293213,
+     "lesson_uid": "lsn_7692944"
+    },
+    {
+     "chunk_uid": "lsn_5127791::semantic::0010",
+     "score": 0.5113412737846375,
+     "lesson_uid": "lsn_5127791"
+    },
+    {
+     "chunk_uid": "lsn_7784276::semantic::0043",
+     "score": 0.4921049475669861,
+     "lesson_uid": "lsn_7784276"
+    },
+    {
+     "chunk_uid": "lsn_7692944::semantic::0008",
+     "score": 0.44651710987091064,
+     "lesson_uid": "lsn_7692944"
+    },
+    {
+     "chunk_uid": "lsn_7780466::semantic::0003",
+     "score": 0.37126514315605164,
+     "lesson_uid": "lsn_7780466"
+    },
+    {
+     "chunk_uid": "lsn_7780466::semantic::0023",
+     "score": 0.32020050287246704,
+     "lesson_uid": "lsn_7780466"
+    },
+    {
+     "chunk_uid": "lsn_7780466::semantic::0021",
+     "score": 0.30191296339035034,
+     "lesson_uid": "lsn_7780466"
+    },
+    {
+     "chunk_uid": "lsn_5127795::semantic::0011",
+     "score": 0.23974794149398804,
+     "lesson_uid": "lsn_5127795"
+    },
+    {
+     "chunk_uid": "lsn_8875734::semantic::0010",
+     "score": 0.2264437973499298,
+     "lesson_uid": "lsn_8875734"
+    }
+   ],
+   "q23": [
+    {
+     "chunk_uid": "lsn_7147321::semantic::0003",
+     "score": 0.9988821148872375,
+     "lesson_uid": "lsn_7147321"
+    },
+    {
+     "chunk_uid": "lsn_7147321::semantic::0017",
+     "score": 0.9666163325309753,
+     "lesson_uid": "lsn_7147321"
+    },
+    {
+     "chunk_uid": "lsn_7147321::semantic::0001",
+     "score": 0.7691020965576172,
+     "lesson_uid": "lsn_7147321"
+    },
+    {
+     "chunk_uid": "lsn_7769576::semantic::0009",
+     "score": 0.5589509606361389,
+     "lesson_uid": "lsn_7769576"
+    },
+    {
+     "chunk_uid": "lsn_3545567::semantic::0007",
+     "score": 0.5098876953125,
+     "lesson_uid": "lsn_3545567"
+    },
+    {
+     "chunk_uid": "lsn_3545567::semantic::0002",
+     "score": 0.3948498070240021,
+     "lesson_uid": "lsn_3545567"
+    },
+    {
+     "chunk_uid": "lsn_7147321::semantic::0004",
+     "score": 0.2566739320755005,
+     "lesson_uid": "lsn_7147321"
+    },
+    {
+     "chunk_uid": "lsn_7769576::semantic::0010",
+     "score": 0.25069594383239746,
+     "lesson_uid": "lsn_7769576"
+    },
+    {
+     "chunk_uid": "lsn_3545567::semantic::0004",
+     "score": 0.23425108194351196,
+     "lesson_uid": "lsn_3545567"
+    },
+    {
+     "chunk_uid": "lsn_8875733::semantic::0021",
+     "score": 0.22009654343128204,
+     "lesson_uid": "lsn_8875733"
+    }
+   ],
+   "q24": [
+    {
+     "chunk_uid": "lsn_7704859::semantic::0046",
+     "score": 0.9990782737731934,
+     "lesson_uid": "lsn_7704859"
+    },
+    {
+     "chunk_uid": "lsn_7147322::semantic::0030",
+     "score": 0.8995562791824341,
+     "lesson_uid": "lsn_7147322"
+    },
+    {
+     "chunk_uid": "lsn_4435678::semantic::0023",
+     "score": 0.6865658760070801,
+     "lesson_uid": "lsn_4435678"
+    },
+    {
+     "chunk_uid": "lsn_3545320::semantic::0007",
+     "score": 0.6032124757766724,
+     "lesson_uid": "lsn_3545320"
+    },
+    {
+     "chunk_uid": "lsn_7704863::semantic::0011",
+     "score": 0.48671528697013855,
+     "lesson_uid": "lsn_7704863"
+    },
+    {
+     "chunk_uid": "lsn_7784278::semantic::0034",
+     "score": 0.46955734491348267,
+     "lesson_uid": "lsn_7784278"
+    },
+    {
+     "chunk_uid": "lsn_7704863::semantic::0015",
+     "score": 0.3123968243598938,
+     "lesson_uid": "lsn_7704863"
+    },
+    {
+     "chunk_uid": "lsn_5491325::semantic::0019",
+     "score": 0.24390809237957,
+     "lesson_uid": "lsn_5491325"
+    },
+    {
+     "chunk_uid": "lsn_3545320::semantic::0009",
+     "score": 0.24120904505252838,
+     "lesson_uid": "lsn_3545320"
+    },
+    {
+     "chunk_uid": "lsn_3545326::semantic::0007",
+     "score": 0.2263374924659729,
+     "lesson_uid": "lsn_3545326"
+    }
+   ],
+   "q25": [
+    {
+     "chunk_uid": "lsn_4303291::semantic::0015",
+     "score": 0.9628746509552002,
+     "lesson_uid": "lsn_4303291"
+    },
+    {
+     "chunk_uid": "lsn_4303291::semantic::0014",
+     "score": 0.9136526584625244,
+     "lesson_uid": "lsn_4303291"
+    },
+    {
+     "chunk_uid": "lsn_5491325::semantic::0013",
+     "score": 0.9009058475494385,
+     "lesson_uid": "lsn_5491325"
+    },
+    {
+     "chunk_uid": "lsn_8477345::semantic::0025",
+     "score": 0.8812054395675659,
+     "lesson_uid": "lsn_8477345"
+    },
+    {
+     "chunk_uid": "lsn_8477345::semantic::0024",
+     "score": 0.8495885729789734,
+     "lesson_uid": "lsn_8477345"
+    },
+    {
+     "chunk_uid": "lsn_8653264::semantic::0023",
+     "score": 0.8291672468185425,
+     "lesson_uid": "lsn_8653264"
+    },
+    {
+     "chunk_uid": "lsn_8653264::semantic::0054",
+     "score": 0.8266009092330933,
+     "lesson_uid": "lsn_8653264"
+    },
+    {
+     "chunk_uid": "lsn_3545581::semantic::0011",
+     "score": 0.8102884888648987,
+     "lesson_uid": "lsn_3545581"
+    },
+    {
+     "chunk_uid": "lsn_4303291::semantic::0006",
+     "score": 0.7898011803627014,
+     "lesson_uid": "lsn_4303291"
+    },
+    {
+     "chunk_uid": "lsn_3545581::semantic::0010",
+     "score": 0.7485749125480652,
+     "lesson_uid": "lsn_3545581"
+    }
+   ]
+  },
+  "qaturn_ctx_rerank": {
+   "q01": [
+    {
+     "chunk_uid": "lsn_3545308::qa_turn::0027",
+     "score": 0.9868331551551819,
+     "lesson_uid": "lsn_3545308"
+    },
+    {
+     "chunk_uid": "lsn_3545308::qa_turn::0011",
+     "score": 0.8259878754615784,
+     "lesson_uid": "lsn_3545308"
+    },
+    {
+     "chunk_uid": "lsn_3545308::qa_turn::0010",
+     "score": 0.3377740681171417,
+     "lesson_uid": "lsn_3545308"
+    },
+    {
+     "chunk_uid": "lsn_3545308::qa_turn::0002",
+     "score": 0.24843622744083405,
+     "lesson_uid": "lsn_3545308"
+    },
+    {
+     "chunk_uid": "lsn_3545319::qa_turn::0010",
+     "score": 0.17443615198135376,
+     "lesson_uid": "lsn_3545319"
+    },
+    {
+     "chunk_uid": "lsn_3545308::qa_turn::0009",
+     "score": 0.08479585498571396,
+     "lesson_uid": "lsn_3545308"
+    },
+    {
+     "chunk_uid": "lsn_3545308::qa_turn::0013",
+     "score": 0.0747884213924408,
+     "lesson_uid": "lsn_3545308"
+    },
+    {
+     "chunk_uid": "lsn_3545308::qa_turn::0008",
+     "score": 0.05249400436878204,
+     "lesson_uid": "lsn_3545308"
+    },
+    {
+     "chunk_uid": "lsn_3545308::qa_turn::0021",
+     "score": 0.05209442228078842,
+     "lesson_uid": "lsn_3545308"
+    },
+    {
+     "chunk_uid": "lsn_3545308::qa_turn::0019",
+     "score": 0.05157714709639549,
+     "lesson_uid": "lsn_3545308"
+    }
+   ],
+   "q02": [
+    {
+     "chunk_uid": "lsn_3657234::qa_turn::0005",
+     "score": 0.9699697494506836,
+     "lesson_uid": "lsn_3657234"
+    },
+    {
+     "chunk_uid": "lsn_7147319::qa_turn::0007",
+     "score": 0.9342843890190125,
+     "lesson_uid": "lsn_7147319"
+    },
+    {
+     "chunk_uid": "lsn_3545567::qa_turn::0052",
+     "score": 0.8751424551010132,
+     "lesson_uid": "lsn_3545567"
+    },
+    {
+     "chunk_uid": "lsn_3657234::qa_turn::0014",
+     "score": 0.8374881744384766,
+     "lesson_uid": "lsn_3657234"
+    },
+    {
+     "chunk_uid": "lsn_7147319::qa_turn::0006",
+     "score": 0.8313540816307068,
+     "lesson_uid": "lsn_7147319"
+    },
+    {
+     "chunk_uid": "lsn_3657234::qa_turn::0006",
+     "score": 0.7634667754173279,
+     "lesson_uid": "lsn_3657234"
+    },
+    {
+     "chunk_uid": "lsn_3545567::qa_turn::0047",
+     "score": 0.7318894267082214,
+     "lesson_uid": "lsn_3545567"
+    },
+    {
+     "chunk_uid": "lsn_3545327::qa_turn::0020",
+     "score": 0.4222124516963959,
+     "lesson_uid": "lsn_3545327"
+    },
+    {
+     "chunk_uid": "lsn_8875735::qa_turn::0045",
+     "score": 0.3347730040550232,
+     "lesson_uid": "lsn_8875735"
+    },
+    {
+     "chunk_uid": "lsn_8875735::qa_turn::0036",
+     "score": 0.29830852150917053,
+     "lesson_uid": "lsn_8875735"
+    }
+   ],
+   "q03": [
+    {
+     "chunk_uid": "lsn_3545310::qa_turn::0002",
+     "score": 0.9741573333740234,
+     "lesson_uid": "lsn_3545310"
+    },
+    {
+     "chunk_uid": "lsn_3545310::qa_turn::0001",
+     "score": 0.7440581321716309,
+     "lesson_uid": "lsn_3545310"
+    },
+    {
+     "chunk_uid": "lsn_3545310::qa_turn::0018",
+     "score": 0.7009742856025696,
+     "lesson_uid": "lsn_3545310"
+    },
+    {
+     "chunk_uid": "lsn_3545310::qa_turn::0003",
+     "score": 0.6965895891189575,
+     "lesson_uid": "lsn_3545310"
+    },
+    {
+     "chunk_uid": "lsn_3545310::qa_turn::0000",
+     "score": 0.6411383748054504,
+     "lesson_uid": "lsn_3545310"
+    },
+    {
+     "chunk_uid": "lsn_3545310::qa_turn::0021",
+     "score": 0.300449013710022,
+     "lesson_uid": "lsn_3545310"
+    },
+    {
+     "chunk_uid": "lsn_3545310::qa_turn::0020",
+     "score": 0.2857784032821655,
+     "lesson_uid": "lsn_3545310"
+    },
+    {
+     "chunk_uid": "lsn_3545310::qa_turn::0023",
+     "score": 0.22536249458789825,
+     "lesson_uid": "lsn_3545310"
+    },
+    {
+     "chunk_uid": "lsn_3545310::qa_turn::0007",
+     "score": 0.17877215147018433,
+     "lesson_uid": "lsn_3545310"
+    },
+    {
+     "chunk_uid": "lsn_3545319::qa_turn::0016",
+     "score": 0.17538559436798096,
+     "lesson_uid": "lsn_3545319"
+    }
+   ],
+   "q04": [
+    {
+     "chunk_uid": "lsn_7769609::qa_turn::0013",
+     "score": 0.5729451775550842,
+     "lesson_uid": "lsn_7769609"
+    },
+    {
+     "chunk_uid": "lsn_7769609::qa_turn::0000",
+     "score": 0.39462709426879883,
+     "lesson_uid": "lsn_7769609"
+    },
+    {
+     "chunk_uid": "lsn_7704869::qa_turn::0074",
+     "score": 0.22167636454105377,
+     "lesson_uid": "lsn_7704869"
+    },
+    {
+     "chunk_uid": "lsn_7769609::qa_turn::0026",
+     "score": 0.13511301577091217,
+     "lesson_uid": "lsn_7769609"
+    },
+    {
+     "chunk_uid": "lsn_7769609::qa_turn::0014",
+     "score": 0.09893257915973663,
+     "lesson_uid": "lsn_7769609"
+    },
+    {
+     "chunk_uid": "lsn_7769609::qa_turn::0024",
+     "score": 0.05438906326889992,
+     "lesson_uid": "lsn_7769609"
+    },
+    {
+     "chunk_uid": "lsn_7769609::qa_turn::0012",
+     "score": 0.03138870745897293,
+     "lesson_uid": "lsn_7769609"
+    },
+    {
+     "chunk_uid": "lsn_7769609::qa_turn::0011",
+     "score": 0.023604068905115128,
+     "lesson_uid": "lsn_7769609"
+    },
+    {
+     "chunk_uid": "lsn_7769609::qa_turn::0004",
+     "score": 0.022752879187464714,
+     "lesson_uid": "lsn_7769609"
+    },
+    {
+     "chunk_uid": "lsn_8878389::qa_turn::0035",
+     "score": 0.005881046410650015,
+     "lesson_uid": "lsn_8878389"
+    }
+   ],
+   "q05": [
+    {
+     "chunk_uid": "lsn_3521431::qa_turn::0014",
+     "score": 0.98262619972229,
+     "lesson_uid": "lsn_3521431"
+    },
+    {
+     "chunk_uid": "lsn_3521431::qa_turn::0013",
+     "score": 0.974220335483551,
+     "lesson_uid": "lsn_3521431"
+    },
+    {
+     "chunk_uid": "lsn_3521432::qa_turn::0003",
+     "score": 0.9051264524459839,
+     "lesson_uid": "lsn_3521432"
+    },
+    {
+     "chunk_uid": "lsn_3521432::qa_turn::0000",
+     "score": 0.7057049870491028,
+     "lesson_uid": "lsn_3521432"
+    },
+    {
+     "chunk_uid": "lsn_3521432::qa_turn::0002",
+     "score": 0.45418480038642883,
+     "lesson_uid": "lsn_3521432"
+    },
+    {
+     "chunk_uid": "lsn_8653272::qa_turn::0037",
+     "score": 0.33033785223960876,
+     "lesson_uid": "lsn_8653272"
+    },
+    {
+     "chunk_uid": "lsn_3521424::qa_turn::0022",
+     "score": 0.266278475522995,
+     "lesson_uid": "lsn_3521424"
+    },
+    {
+     "chunk_uid": "lsn_8653272::qa_turn::0016",
+     "score": 0.2657698392868042,
+     "lesson_uid": "lsn_8653272"
+    },
+    {
+     "chunk_uid": "lsn_3521431::qa_turn::0011",
+     "score": 0.1540171504020691,
+     "lesson_uid": "lsn_3521431"
+    },
+    {
+     "chunk_uid": "lsn_3521431::qa_turn::0002",
+     "score": 0.1540069282054901,
+     "lesson_uid": "lsn_3521431"
+    }
+   ],
+   "q06": [
+    {
+     "chunk_uid": "lsn_3534937::qa_turn::0056",
+     "score": 0.9915607571601868,
+     "lesson_uid": "lsn_3534937"
+    },
+    {
+     "chunk_uid": "lsn_3534937::qa_turn::0054",
+     "score": 0.9770171642303467,
+     "lesson_uid": "lsn_3534937"
+    },
+    {
+     "chunk_uid": "lsn_3534937::qa_turn::0057",
+     "score": 0.7500655055046082,
+     "lesson_uid": "lsn_3534937"
+    },
+    {
+     "chunk_uid": "lsn_3534937::qa_turn::0059",
+     "score": 0.6582646369934082,
+     "lesson_uid": "lsn_3534937"
+    },
+    {
+     "chunk_uid": "lsn_5491322::qa_turn::0074",
+     "score": 0.5545675158500671,
+     "lesson_uid": "lsn_5491322"
+    },
+    {
+     "chunk_uid": "lsn_3534937::qa_turn::0053",
+     "score": 0.3358781933784485,
+     "lesson_uid": "lsn_3534937"
+    },
+    {
+     "chunk_uid": "lsn_3534937::qa_turn::0058",
+     "score": 0.19637657701969147,
+     "lesson_uid": "lsn_3534937"
+    },
+    {
+     "chunk_uid": "lsn_3534937::qa_turn::0055",
+     "score": 0.18712134659290314,
+     "lesson_uid": "lsn_3534937"
+    },
+    {
+     "chunk_uid": "lsn_8975543::qa_turn::0004",
+     "score": 0.16004766523838043,
+     "lesson_uid": "lsn_8975543"
+    },
+    {
+     "chunk_uid": "lsn_3659233::qa_turn::0073",
+     "score": 0.09545356780290604,
+     "lesson_uid": "lsn_3659233"
+    }
+   ],
+   "q07": [
+    {
+     "chunk_uid": "lsn_8975536::qa_turn::0012",
+     "score": 0.9938358664512634,
+     "lesson_uid": "lsn_8975536"
+    },
+    {
+     "chunk_uid": "lsn_8975536::qa_turn::0013",
+     "score": 0.7241892218589783,
+     "lesson_uid": "lsn_8975536"
+    },
+    {
+     "chunk_uid": "lsn_8975536::qa_turn::0011",
+     "score": 0.6659653782844543,
+     "lesson_uid": "lsn_8975536"
+    },
+    {
+     "chunk_uid": "lsn_5127791::qa_turn::0005",
+     "score": 0.42825642228126526,
+     "lesson_uid": "lsn_5127791"
+    },
+    {
+     "chunk_uid": "lsn_7704869::qa_turn::0026",
+     "score": 0.39848971366882324,
+     "lesson_uid": "lsn_7704869"
+    },
+    {
+     "chunk_uid": "lsn_5127791::qa_turn::0007",
+     "score": 0.377728134393692,
+     "lesson_uid": "lsn_5127791"
+    },
+    {
+     "chunk_uid": "lsn_7704869::qa_turn::0025",
+     "score": 0.2800736129283905,
+     "lesson_uid": "lsn_7704869"
+    },
+    {
+     "chunk_uid": "lsn_7704869::qa_turn::0030",
+     "score": 0.205467090010643,
+     "lesson_uid": "lsn_7704869"
+    },
+    {
+     "chunk_uid": "lsn_8881623::qa_turn::0029",
+     "score": 0.11173681169748306,
+     "lesson_uid": "lsn_8881623"
+    },
+    {
+     "chunk_uid": "lsn_5127791::qa_turn::0006",
+     "score": 0.10067281126976013,
+     "lesson_uid": "lsn_5127791"
+    }
+   ],
+   "q08": [
+    {
+     "chunk_uid": "lsn_7769233::qa_turn::0011",
+     "score": 0.5470673441886902,
+     "lesson_uid": "lsn_7769233"
+    },
+    {
+     "chunk_uid": "lsn_7769233::qa_turn::0012",
+     "score": 0.4744351804256439,
+     "lesson_uid": "lsn_7769233"
+    },
+    {
+     "chunk_uid": "lsn_8878383::qa_turn::0065",
+     "score": 0.25425517559051514,
+     "lesson_uid": "lsn_8878383"
+    },
+    {
+     "chunk_uid": "lsn_8878383::qa_turn::0068",
+     "score": 0.21909074485301971,
+     "lesson_uid": "lsn_8878383"
+    },
+    {
+     "chunk_uid": "lsn_8878383::qa_turn::0059",
+     "score": 0.20168863236904144,
+     "lesson_uid": "lsn_8878383"
+    },
+    {
+     "chunk_uid": "lsn_7704869::qa_turn::0048",
+     "score": 0.20157897472381592,
+     "lesson_uid": "lsn_7704869"
+    },
+    {
+     "chunk_uid": "lsn_7769233::qa_turn::0030",
+     "score": 0.17107181251049042,
+     "lesson_uid": "lsn_7769233"
+    },
+    {
+     "chunk_uid": "lsn_7769233::qa_turn::0001",
+     "score": 0.1391611546278,
+     "lesson_uid": "lsn_7769233"
+    },
+    {
+     "chunk_uid": "lsn_7773603::qa_turn::0007",
+     "score": 0.1092945858836174,
+     "lesson_uid": "lsn_7773603"
+    },
+    {
+     "chunk_uid": "lsn_8975545::qa_turn::0006",
+     "score": 0.09991513937711716,
+     "lesson_uid": "lsn_8975545"
+    }
+   ],
+   "q09": [
+    {
+     "chunk_uid": "lsn_3521383::qa_turn::0021",
+     "score": 0.9957863688468933,
+     "lesson_uid": "lsn_3521383"
+    },
+    {
+     "chunk_uid": "lsn_3521383::qa_turn::0018",
+     "score": 0.8624011874198914,
+     "lesson_uid": "lsn_3521383"
+    },
+    {
+     "chunk_uid": "lsn_7704869::qa_turn::0077",
+     "score": 0.7442078590393066,
+     "lesson_uid": "lsn_7704869"
+    },
+    {
+     "chunk_uid": "lsn_4435677::qa_turn::0027",
+     "score": 0.7127662897109985,
+     "lesson_uid": "lsn_4435677"
+    },
+    {
+     "chunk_uid": "lsn_8875735::qa_turn::0025",
+     "score": 0.6016002893447876,
+     "lesson_uid": "lsn_8875735"
+    },
+    {
+     "chunk_uid": "lsn_7692936::qa_turn::0001",
+     "score": 0.17851373553276062,
+     "lesson_uid": "lsn_7692936"
+    },
+    {
+     "chunk_uid": "lsn_3521383::qa_turn::0020",
+     "score": 0.1754918396472931,
+     "lesson_uid": "lsn_3521383"
+    },
+    {
+     "chunk_uid": "lsn_3521377::qa_turn::0000",
+     "score": 0.14371652901172638,
+     "lesson_uid": "lsn_3521377"
+    },
+    {
+     "chunk_uid": "lsn_3521383::qa_turn::0019",
+     "score": 0.11500877887010574,
+     "lesson_uid": "lsn_3521383"
+    },
+    {
+     "chunk_uid": "lsn_3659246::qa_turn::0006",
+     "score": 0.11396245658397675,
+     "lesson_uid": "lsn_3659246"
+    }
+   ],
+   "q10": [
+    {
+     "chunk_uid": "lsn_3521417::qa_turn::0015",
+     "score": 0.9237878322601318,
+     "lesson_uid": "lsn_3521417"
+    },
+    {
+     "chunk_uid": "lsn_3521418::qa_turn::0008",
+     "score": 0.9225373268127441,
+     "lesson_uid": "lsn_3521418"
+    },
+    {
+     "chunk_uid": "lsn_3521417::qa_turn::0041",
+     "score": 0.9099010229110718,
+     "lesson_uid": "lsn_3521417"
+    },
+    {
+     "chunk_uid": "lsn_3521417::qa_turn::0024",
+     "score": 0.8864663243293762,
+     "lesson_uid": "lsn_3521417"
+    },
+    {
+     "chunk_uid": "lsn_3521417::qa_turn::0013",
+     "score": 0.8438138961791992,
+     "lesson_uid": "lsn_3521417"
+    },
+    {
+     "chunk_uid": "lsn_3521417::qa_turn::0030",
+     "score": 0.7229235172271729,
+     "lesson_uid": "lsn_3521417"
+    },
+    {
+     "chunk_uid": "lsn_3521418::qa_turn::0015",
+     "score": 0.6458751559257507,
+     "lesson_uid": "lsn_3521418"
+    },
+    {
+     "chunk_uid": "lsn_3521417::qa_turn::0012",
+     "score": 0.6423618793487549,
+     "lesson_uid": "lsn_3521417"
+    },
+    {
+     "chunk_uid": "lsn_3521417::qa_turn::0008",
+     "score": 0.3377651274204254,
+     "lesson_uid": "lsn_3521417"
+    },
+    {
+     "chunk_uid": "lsn_3521417::qa_turn::0014",
+     "score": 0.29320597648620605,
+     "lesson_uid": "lsn_3521417"
+    }
+   ],
+   "q11": [
+    {
+     "chunk_uid": "lsn_4243247::qa_turn::0011",
+     "score": 0.899835467338562,
+     "lesson_uid": "lsn_4243247"
+    },
+    {
+     "chunk_uid": "lsn_8881624::qa_turn::0011",
+     "score": 0.7938134074211121,
+     "lesson_uid": "lsn_8881624"
+    },
+    {
+     "chunk_uid": "lsn_4243247::qa_turn::0018",
+     "score": 0.5098288059234619,
+     "lesson_uid": "lsn_4243247"
+    },
+    {
+     "chunk_uid": "lsn_8881624::qa_turn::0012",
+     "score": 0.27261531352996826,
+     "lesson_uid": "lsn_8881624"
+    },
+    {
+     "chunk_uid": "lsn_4243248::qa_turn::0021",
+     "score": 0.13693858683109283,
+     "lesson_uid": "lsn_4243248"
+    },
+    {
+     "chunk_uid": "lsn_4243247::qa_turn::0014",
+     "score": 0.1057397872209549,
+     "lesson_uid": "lsn_4243247"
+    },
+    {
+     "chunk_uid": "lsn_8881624::qa_turn::0087",
+     "score": 0.08311083912849426,
+     "lesson_uid": "lsn_8881624"
+    },
+    {
+     "chunk_uid": "lsn_4243247::qa_turn::0021",
+     "score": 0.054451245814561844,
+     "lesson_uid": "lsn_4243247"
+    },
+    {
+     "chunk_uid": "lsn_8881624::qa_turn::0025",
+     "score": 0.0538383424282074,
+     "lesson_uid": "lsn_8881624"
+    },
+    {
+     "chunk_uid": "lsn_8881624::qa_turn::0005",
+     "score": 0.05147014185786247,
+     "lesson_uid": "lsn_8881624"
+    }
+   ],
+   "q12": [
+    {
+     "chunk_uid": "lsn_3659233::qa_turn::0055",
+     "score": 0.8026090860366821,
+     "lesson_uid": "lsn_3659233"
+    },
+    {
+     "chunk_uid": "lsn_8881620::qa_turn::0055",
+     "score": 0.2960588037967682,
+     "lesson_uid": "lsn_8881620"
+    },
+    {
+     "chunk_uid": "lsn_3659233::qa_turn::0054",
+     "score": 0.20312581956386566,
+     "lesson_uid": "lsn_3659233"
+    },
+    {
+     "chunk_uid": "lsn_3659233::qa_turn::0045",
+     "score": 0.19606998562812805,
+     "lesson_uid": "lsn_3659233"
+    },
+    {
+     "chunk_uid": "lsn_7773603::qa_turn::0012",
+     "score": 0.15381386876106262,
+     "lesson_uid": "lsn_7773603"
+    },
+    {
+     "chunk_uid": "lsn_8881620::qa_turn::0042",
+     "score": 0.12195390462875366,
+     "lesson_uid": "lsn_8881620"
+    },
+    {
+     "chunk_uid": "lsn_8881620::qa_turn::0056",
+     "score": 0.11953160911798477,
+     "lesson_uid": "lsn_8881620"
+    },
+    {
+     "chunk_uid": "lsn_3659233::qa_turn::0052",
+     "score": 0.11115313321352005,
+     "lesson_uid": "lsn_3659233"
+    },
+    {
+     "chunk_uid": "lsn_4303563::qa_turn::0019",
+     "score": 0.09450234472751617,
+     "lesson_uid": "lsn_4303563"
+    },
+    {
+     "chunk_uid": "lsn_3659233::qa_turn::0049",
+     "score": 0.08652765303850174,
+     "lesson_uid": "lsn_3659233"
+    }
+   ],
+   "q13": [
+    {
+     "chunk_uid": "lsn_3545582::qa_turn::0011",
+     "score": 0.9505720138549805,
+     "lesson_uid": "lsn_3545582"
+    },
+    {
+     "chunk_uid": "lsn_8881623::qa_turn::0102",
+     "score": 0.8430297374725342,
+     "lesson_uid": "lsn_8881623"
+    },
+    {
+     "chunk_uid": "lsn_3545582::qa_turn::0010",
+     "score": 0.6385380029678345,
+     "lesson_uid": "lsn_3545582"
+    },
+    {
+     "chunk_uid": "lsn_8477347::qa_turn::0003",
+     "score": 0.40809357166290283,
+     "lesson_uid": "lsn_8477347"
+    },
+    {
+     "chunk_uid": "lsn_3545582::qa_turn::0009",
+     "score": 0.33914291858673096,
+     "lesson_uid": "lsn_3545582"
+    },
+    {
+     "chunk_uid": "lsn_8881623::qa_turn::0014",
+     "score": 0.3300785422325134,
+     "lesson_uid": "lsn_8881623"
+    },
+    {
+     "chunk_uid": "lsn_8477345::qa_turn::0041",
+     "score": 0.32994839549064636,
+     "lesson_uid": "lsn_8477345"
+    },
+    {
+     "chunk_uid": "lsn_3545582::qa_turn::0014",
+     "score": 0.20446144044399261,
+     "lesson_uid": "lsn_3545582"
+    },
+    {
+     "chunk_uid": "lsn_3545582::qa_turn::0005",
+     "score": 0.18147525191307068,
+     "lesson_uid": "lsn_3545582"
+    },
+    {
+     "chunk_uid": "lsn_7769233::qa_turn::0027",
+     "score": 0.11838464438915253,
+     "lesson_uid": "lsn_7769233"
+    }
+   ],
+   "q14": [
+    {
+     "chunk_uid": "lsn_3545135::qa_turn::0018",
+     "score": 0.4117816686630249,
+     "lesson_uid": "lsn_3545135"
+    },
+    {
+     "chunk_uid": "lsn_3545135::qa_turn::0019",
+     "score": 0.196368008852005,
+     "lesson_uid": "lsn_3545135"
+    },
+    {
+     "chunk_uid": "lsn_8878383::qa_turn::0018",
+     "score": 0.04080637916922569,
+     "lesson_uid": "lsn_8878383"
+    },
+    {
+     "chunk_uid": "lsn_3545135::qa_turn::0081",
+     "score": 0.03015959821641445,
+     "lesson_uid": "lsn_3545135"
+    },
+    {
+     "chunk_uid": "lsn_3545140::qa_turn::0001",
+     "score": 0.013895392417907715,
+     "lesson_uid": "lsn_3545140"
+    },
+    {
+     "chunk_uid": "lsn_8878385::qa_turn::0061",
+     "score": 0.00952413585036993,
+     "lesson_uid": "lsn_8878385"
+    },
+    {
+     "chunk_uid": "lsn_3545135::qa_turn::0025",
+     "score": 0.007907841354608536,
+     "lesson_uid": "lsn_3545135"
+    },
+    {
+     "chunk_uid": "lsn_3545135::qa_turn::0020",
+     "score": 0.00544733414426446,
+     "lesson_uid": "lsn_3545135"
+    },
+    {
+     "chunk_uid": "lsn_3521377::qa_turn::0031",
+     "score": 0.005347109399735928,
+     "lesson_uid": "lsn_3521377"
+    },
+    {
+     "chunk_uid": "lsn_7773606::qa_turn::0008",
+     "score": 0.0042771585285663605,
+     "lesson_uid": "lsn_7773606"
+    }
+   ],
+   "q15": [
+    {
+     "chunk_uid": "lsn_7692944::qa_turn::0013",
+     "score": 0.9922637939453125,
+     "lesson_uid": "lsn_7692944"
+    },
+    {
+     "chunk_uid": "lsn_5127795::qa_turn::0002",
+     "score": 0.968203604221344,
+     "lesson_uid": "lsn_5127795"
+    },
+    {
+     "chunk_uid": "lsn_3545563::qa_turn::0105",
+     "score": 0.9678406715393066,
+     "lesson_uid": "lsn_3545563"
+    },
+    {
+     "chunk_uid": "lsn_5127795::qa_turn::0019",
+     "score": 0.9642944931983948,
+     "lesson_uid": "lsn_5127795"
+    },
+    {
+     "chunk_uid": "lsn_7780471::qa_turn::0013",
+     "score": 0.9379813075065613,
+     "lesson_uid": "lsn_7780471"
+    },
+    {
+     "chunk_uid": "lsn_5127795::qa_turn::0005",
+     "score": 0.9268590211868286,
+     "lesson_uid": "lsn_5127795"
+    },
+    {
+     "chunk_uid": "lsn_7784277::qa_turn::0016",
+     "score": 0.9043254852294922,
+     "lesson_uid": "lsn_7784277"
+    },
+    {
+     "chunk_uid": "lsn_5127795::qa_turn::0003",
+     "score": 0.903296947479248,
+     "lesson_uid": "lsn_5127795"
+    },
+    {
+     "chunk_uid": "lsn_5127795::qa_turn::0014",
+     "score": 0.8927386403083801,
+     "lesson_uid": "lsn_5127795"
+    },
+    {
+     "chunk_uid": "lsn_7780471::qa_turn::0015",
+     "score": 0.8708773851394653,
+     "lesson_uid": "lsn_7780471"
+    }
+   ],
+   "q16": [
+    {
+     "chunk_uid": "lsn_8878382::qa_turn::0050",
+     "score": 0.997711181640625,
+     "lesson_uid": "lsn_8878382"
+    },
+    {
+     "chunk_uid": "lsn_8878382::qa_turn::0051",
+     "score": 0.9832791090011597,
+     "lesson_uid": "lsn_8878382"
+    },
+    {
+     "chunk_uid": "lsn_8878382::qa_turn::0048",
+     "score": 0.41641104221343994,
+     "lesson_uid": "lsn_8878382"
+    },
+    {
+     "chunk_uid": "lsn_8878382::qa_turn::0038",
+     "score": 0.15354377031326294,
+     "lesson_uid": "lsn_8878382"
+    },
+    {
+     "chunk_uid": "lsn_7773608::qa_turn::0011",
+     "score": 0.07137245684862137,
+     "lesson_uid": "lsn_7773608"
+    },
+    {
+     "chunk_uid": "lsn_8878382::qa_turn::0059",
+     "score": 0.050624750554561615,
+     "lesson_uid": "lsn_8878382"
+    },
+    {
+     "chunk_uid": "lsn_8878382::qa_turn::0047",
+     "score": 0.04238573834300041,
+     "lesson_uid": "lsn_8878382"
+    },
+    {
+     "chunk_uid": "lsn_8878382::qa_turn::0039",
+     "score": 0.04038494825363159,
+     "lesson_uid": "lsn_8878382"
+    },
+    {
+     "chunk_uid": "lsn_8878382::qa_turn::0030",
+     "score": 0.032815996557474136,
+     "lesson_uid": "lsn_8878382"
+    },
+    {
+     "chunk_uid": "lsn_8878383::qa_turn::0051",
+     "score": 0.027396880090236664,
+     "lesson_uid": "lsn_8878383"
+    }
+   ],
+   "q17": [
+    {
+     "chunk_uid": "lsn_4435674::qa_turn::0032",
+     "score": 0.8792102336883545,
+     "lesson_uid": "lsn_4435674"
+    },
+    {
+     "chunk_uid": "lsn_7704862::qa_turn::0035",
+     "score": 0.8716047406196594,
+     "lesson_uid": "lsn_7704862"
+    },
+    {
+     "chunk_uid": "lsn_4435674::qa_turn::0048",
+     "score": 0.4234313666820526,
+     "lesson_uid": "lsn_4435674"
+    },
+    {
+     "chunk_uid": "lsn_7704862::qa_turn::0031",
+     "score": 0.35016199946403503,
+     "lesson_uid": "lsn_7704862"
+    },
+    {
+     "chunk_uid": "lsn_3659246::qa_turn::0016",
+     "score": 0.29415163397789,
+     "lesson_uid": "lsn_3659246"
+    },
+    {
+     "chunk_uid": "lsn_3517825::qa_turn::0049",
+     "score": 0.25208839774131775,
+     "lesson_uid": "lsn_3517825"
+    },
+    {
+     "chunk_uid": "lsn_3517825::qa_turn::0036",
+     "score": 0.24865195155143738,
+     "lesson_uid": "lsn_3517825"
+    },
+    {
+     "chunk_uid": "lsn_8878383::qa_turn::0027",
+     "score": 0.19854360818862915,
+     "lesson_uid": "lsn_8878383"
+    },
+    {
+     "chunk_uid": "lsn_3521091::qa_turn::0015",
+     "score": 0.1731863170862198,
+     "lesson_uid": "lsn_3521091"
+    },
+    {
+     "chunk_uid": "lsn_4435674::qa_turn::0033",
+     "score": 0.1516512930393219,
+     "lesson_uid": "lsn_4435674"
+    }
+   ],
+   "q18": [
+    {
+     "chunk_uid": "lsn_3521314::qa_turn::0001",
+     "score": 0.9175432324409485,
+     "lesson_uid": "lsn_3521314"
+    },
+    {
+     "chunk_uid": "lsn_3521314::qa_turn::0004",
+     "score": 0.40706300735473633,
+     "lesson_uid": "lsn_3521314"
+    },
+    {
+     "chunk_uid": "lsn_3521314::qa_turn::0000",
+     "score": 0.36429107189178467,
+     "lesson_uid": "lsn_3521314"
+    },
+    {
+     "chunk_uid": "lsn_3520786::qa_turn::0004",
+     "score": 0.11437272280454636,
+     "lesson_uid": "lsn_3520786"
+    },
+    {
+     "chunk_uid": "lsn_3520786::qa_turn::0009",
+     "score": 0.06808176636695862,
+     "lesson_uid": "lsn_3520786"
+    },
+    {
+     "chunk_uid": "lsn_3521314::qa_turn::0005",
+     "score": 0.05704038217663765,
+     "lesson_uid": "lsn_3521314"
+    },
+    {
+     "chunk_uid": "lsn_3521314::qa_turn::0002",
+     "score": 0.026217559352517128,
+     "lesson_uid": "lsn_3521314"
+    },
+    {
+     "chunk_uid": "lsn_3534880::qa_turn::0036",
+     "score": 0.024582505226135254,
+     "lesson_uid": "lsn_3534880"
+    },
+    {
+     "chunk_uid": "lsn_8653261::qa_turn::0008",
+     "score": 0.018797030672430992,
+     "lesson_uid": "lsn_8653261"
+    },
+    {
+     "chunk_uid": "lsn_3517825::qa_turn::0032",
+     "score": 0.015204021707177162,
+     "lesson_uid": "lsn_3517825"
+    }
+   ],
+   "q19": [
+    {
+     "chunk_uid": "lsn_7780460::qa_turn::0004",
+     "score": 0.8926907777786255,
+     "lesson_uid": "lsn_7780460"
+    },
+    {
+     "chunk_uid": "lsn_7780460::qa_turn::0000",
+     "score": 0.12250685691833496,
+     "lesson_uid": "lsn_7780460"
+    },
+    {
+     "chunk_uid": "lsn_7780460::qa_turn::0003",
+     "score": 0.0824623703956604,
+     "lesson_uid": "lsn_7780460"
+    },
+    {
+     "chunk_uid": "lsn_7780460::qa_turn::0001",
+     "score": 0.03590595722198486,
+     "lesson_uid": "lsn_7780460"
+    },
+    {
+     "chunk_uid": "lsn_7780460::qa_turn::0016",
+     "score": 0.027246106415987015,
+     "lesson_uid": "lsn_7780460"
+    },
+    {
+     "chunk_uid": "lsn_7780460::qa_turn::0002",
+     "score": 0.01826954446732998,
+     "lesson_uid": "lsn_7780460"
+    },
+    {
+     "chunk_uid": "lsn_7780460::qa_turn::0015",
+     "score": 0.013923438265919685,
+     "lesson_uid": "lsn_7780460"
+    },
+    {
+     "chunk_uid": "lsn_7780460::qa_turn::0005",
+     "score": 0.01119723729789257,
+     "lesson_uid": "lsn_7780460"
+    },
+    {
+     "chunk_uid": "lsn_5491323::qa_turn::0009",
+     "score": 0.006821298506110907,
+     "lesson_uid": "lsn_5491323"
+    },
+    {
+     "chunk_uid": "lsn_8975536::qa_turn::0035",
+     "score": 0.0053325616754591465,
+     "lesson_uid": "lsn_8975536"
+    }
+   ],
+   "q20": [
+    {
+     "chunk_uid": "lsn_4303563::qa_turn::0010",
+     "score": 0.9886124730110168,
+     "lesson_uid": "lsn_4303563"
+    },
+    {
+     "chunk_uid": "lsn_5127790::qa_turn::0019",
+     "score": 0.9652928113937378,
+     "lesson_uid": "lsn_5127790"
+    },
+    {
+     "chunk_uid": "lsn_3545567::qa_turn::0020",
+     "score": 0.9213362336158752,
+     "lesson_uid": "lsn_3545567"
+    },
+    {
+     "chunk_uid": "lsn_3545567::qa_turn::0060",
+     "score": 0.920663595199585,
+     "lesson_uid": "lsn_3545567"
+    },
+    {
+     "chunk_uid": "lsn_3534881::qa_turn::0004",
+     "score": 0.9112595319747925,
+     "lesson_uid": "lsn_3534881"
+    },
+    {
+     "chunk_uid": "lsn_7769609::qa_turn::0035",
+     "score": 0.9032238125801086,
+     "lesson_uid": "lsn_7769609"
+    },
+    {
+     "chunk_uid": "lsn_5491325::qa_turn::0049",
+     "score": 0.8956806063652039,
+     "lesson_uid": "lsn_5491325"
+    },
+    {
+     "chunk_uid": "lsn_4435678::qa_turn::0018",
+     "score": 0.646070659160614,
+     "lesson_uid": "lsn_4435678"
+    },
+    {
+     "chunk_uid": "lsn_5127790::qa_turn::0020",
+     "score": 0.5975210070610046,
+     "lesson_uid": "lsn_5127790"
+    },
+    {
+     "chunk_uid": "lsn_8975539::qa_turn::0009",
+     "score": 0.4618557393550873,
+     "lesson_uid": "lsn_8975539"
+    }
+   ],
+   "q21": [
+    {
+     "chunk_uid": "lsn_3659356::qa_turn::0013",
+     "score": 0.9854785203933716,
+     "lesson_uid": "lsn_3659356"
+    },
+    {
+     "chunk_uid": "lsn_3659356::qa_turn::0012",
+     "score": 0.9510449171066284,
+     "lesson_uid": "lsn_3659356"
+    },
+    {
+     "chunk_uid": "lsn_8881622::qa_turn::0010",
+     "score": 0.9454059600830078,
+     "lesson_uid": "lsn_8881622"
+    },
+    {
+     "chunk_uid": "lsn_8975536::qa_turn::0026",
+     "score": 0.9336583018302917,
+     "lesson_uid": "lsn_8975536"
+    },
+    {
+     "chunk_uid": "lsn_7769233::qa_turn::0013",
+     "score": 0.9041814804077148,
+     "lesson_uid": "lsn_7769233"
+    },
+    {
+     "chunk_uid": "lsn_3659356::qa_turn::0020",
+     "score": 0.890494167804718,
+     "lesson_uid": "lsn_3659356"
+    },
+    {
+     "chunk_uid": "lsn_7769233::qa_turn::0017",
+     "score": 0.8858081698417664,
+     "lesson_uid": "lsn_7769233"
+    },
+    {
+     "chunk_uid": "lsn_8881622::qa_turn::0011",
+     "score": 0.8562679290771484,
+     "lesson_uid": "lsn_8881622"
+    },
+    {
+     "chunk_uid": "lsn_3659356::qa_turn::0014",
+     "score": 0.8038596510887146,
+     "lesson_uid": "lsn_3659356"
+    },
+    {
+     "chunk_uid": "lsn_3659356::qa_turn::0021",
+     "score": 0.7371020913124084,
+     "lesson_uid": "lsn_3659356"
+    }
+   ],
+   "q22": [
+    {
+     "chunk_uid": "lsn_3545564::qa_turn::0000",
+     "score": 0.5908190011978149,
+     "lesson_uid": "lsn_3545564"
+    },
+    {
+     "chunk_uid": "lsn_7780466::qa_turn::0028",
+     "score": 0.5675029158592224,
+     "lesson_uid": "lsn_7780466"
+    },
+    {
+     "chunk_uid": "lsn_7784276::qa_turn::0045",
+     "score": 0.5458975434303284,
+     "lesson_uid": "lsn_7784276"
+    },
+    {
+     "chunk_uid": "lsn_8875734::qa_turn::0012",
+     "score": 0.5121259093284607,
+     "lesson_uid": "lsn_8875734"
+    },
+    {
+     "chunk_uid": "lsn_5127791::qa_turn::0010",
+     "score": 0.470010906457901,
+     "lesson_uid": "lsn_5127791"
+    },
+    {
+     "chunk_uid": "lsn_8653279::qa_turn::0024",
+     "score": 0.3609849810600281,
+     "lesson_uid": "lsn_8653279"
+    },
+    {
+     "chunk_uid": "lsn_7692944::qa_turn::0008",
+     "score": 0.3394203782081604,
+     "lesson_uid": "lsn_7692944"
+    },
+    {
+     "chunk_uid": "lsn_5127795::qa_turn::0002",
+     "score": 0.2817954123020172,
+     "lesson_uid": "lsn_5127795"
+    },
+    {
+     "chunk_uid": "lsn_7780466::qa_turn::0024",
+     "score": 0.2764101028442383,
+     "lesson_uid": "lsn_7780466"
+    },
+    {
+     "chunk_uid": "lsn_7780466::qa_turn::0004",
+     "score": 0.23059234023094177,
+     "lesson_uid": "lsn_7780466"
+    }
+   ],
+   "q23": [
+    {
+     "chunk_uid": "lsn_7147321::qa_turn::0002",
+     "score": 0.9969907999038696,
+     "lesson_uid": "lsn_7147321"
+    },
+    {
+     "chunk_uid": "lsn_3545567::qa_turn::0008",
+     "score": 0.48557329177856445,
+     "lesson_uid": "lsn_3545567"
+    },
+    {
+     "chunk_uid": "lsn_7769576::qa_turn::0011",
+     "score": 0.4782019853591919,
+     "lesson_uid": "lsn_7769576"
+    },
+    {
+     "chunk_uid": "lsn_7147321::qa_turn::0003",
+     "score": 0.42617011070251465,
+     "lesson_uid": "lsn_7147321"
+    },
+    {
+     "chunk_uid": "lsn_8653266::qa_turn::0028",
+     "score": 0.33538129925727844,
+     "lesson_uid": "lsn_8653266"
+    },
+    {
+     "chunk_uid": "lsn_7769576::qa_turn::0013",
+     "score": 0.32920029759407043,
+     "lesson_uid": "lsn_7769576"
+    },
+    {
+     "chunk_uid": "lsn_7147321::qa_turn::0000",
+     "score": 0.31886476278305054,
+     "lesson_uid": "lsn_7147321"
+    },
+    {
+     "chunk_uid": "lsn_7784276::qa_turn::0046",
+     "score": 0.24908354878425598,
+     "lesson_uid": "lsn_7784276"
+    },
+    {
+     "chunk_uid": "lsn_3545567::qa_turn::0004",
+     "score": 0.24872297048568726,
+     "lesson_uid": "lsn_3545567"
+    },
+    {
+     "chunk_uid": "lsn_6729438::qa_turn::0007",
+     "score": 0.21262653172016144,
+     "lesson_uid": "lsn_6729438"
+    }
+   ],
+   "q24": [
+    {
+     "chunk_uid": "lsn_7704859::qa_turn::0049",
+     "score": 0.9975433349609375,
+     "lesson_uid": "lsn_7704859"
+    },
+    {
+     "chunk_uid": "lsn_7147322::qa_turn::0033",
+     "score": 0.9751620292663574,
+     "lesson_uid": "lsn_7147322"
+    },
+    {
+     "chunk_uid": "lsn_7704863::qa_turn::0013",
+     "score": 0.8486380577087402,
+     "lesson_uid": "lsn_7704863"
+    },
+    {
+     "chunk_uid": "lsn_7704859::qa_turn::0050",
+     "score": 0.72471022605896,
+     "lesson_uid": "lsn_7704859"
+    },
+    {
+     "chunk_uid": "lsn_7784278::qa_turn::0037",
+     "score": 0.4831582009792328,
+     "lesson_uid": "lsn_7784278"
+    },
+    {
+     "chunk_uid": "lsn_7704859::qa_turn::0017",
+     "score": 0.4516838788986206,
+     "lesson_uid": "lsn_7704859"
+    },
+    {
+     "chunk_uid": "lsn_3545320::qa_turn::0020",
+     "score": 0.4481593072414398,
+     "lesson_uid": "lsn_3545320"
+    },
+    {
+     "chunk_uid": "lsn_3545320::qa_turn::0016",
+     "score": 0.44549280405044556,
+     "lesson_uid": "lsn_3545320"
+    },
+    {
+     "chunk_uid": "lsn_4303563::qa_turn::0014",
+     "score": 0.42665982246398926,
+     "lesson_uid": "lsn_4303563"
+    },
+    {
+     "chunk_uid": "lsn_7704863::qa_turn::0015",
+     "score": 0.4024364650249481,
+     "lesson_uid": "lsn_7704863"
+    }
+   ],
+   "q25": [
+    {
+     "chunk_uid": "lsn_4303291::qa_turn::0011",
+     "score": 0.9952676296234131,
+     "lesson_uid": "lsn_4303291"
+    },
+    {
+     "chunk_uid": "lsn_4303291::qa_turn::0010",
+     "score": 0.9319782853126526,
+     "lesson_uid": "lsn_4303291"
+    },
+    {
+     "chunk_uid": "lsn_8653264::qa_turn::0025",
+     "score": 0.9264460802078247,
+     "lesson_uid": "lsn_8653264"
+    },
+    {
+     "chunk_uid": "lsn_8477345::qa_turn::0027",
+     "score": 0.8929079174995422,
+     "lesson_uid": "lsn_8477345"
+    },
+    {
+     "chunk_uid": "lsn_8477345::qa_turn::0026",
+     "score": 0.8489686250686646,
+     "lesson_uid": "lsn_8477345"
+    },
+    {
+     "chunk_uid": "lsn_5491325::qa_turn::0015",
+     "score": 0.8247791528701782,
+     "lesson_uid": "lsn_5491325"
+    },
+    {
+     "chunk_uid": "lsn_7692934::qa_turn::0018",
+     "score": 0.7761826515197754,
+     "lesson_uid": "lsn_7692934"
+    },
+    {
+     "chunk_uid": "lsn_3545581::qa_turn::0016",
+     "score": 0.7722640037536621,
+     "lesson_uid": "lsn_3545581"
+    },
+    {
+     "chunk_uid": "lsn_8477345::qa_turn::0028",
+     "score": 0.7574514150619507,
+     "lesson_uid": "lsn_8477345"
+    },
+    {
+     "chunk_uid": "lsn_5491325::qa_turn::0021",
+     "score": 0.7289360761642456,
+     "lesson_uid": "lsn_5491325"
+    }
+   ]
+  },
+  "fixed_ctx_norerank": {
+   "q01": [
+    {
+     "chunk_uid": "lsn_3545308::fixed::0007",
+     "score": 0.03252247488101534,
+     "lesson_uid": "lsn_3545308"
+    },
+    {
+     "chunk_uid": "lsn_3545308::fixed::0019",
+     "score": 0.03252247488101534,
+     "lesson_uid": "lsn_3545308"
+    },
+    {
+     "chunk_uid": "lsn_3545308::fixed::0006",
+     "score": 0.03125763125763126,
+     "lesson_uid": "lsn_3545308"
+    },
+    {
+     "chunk_uid": "lsn_3545308::fixed::0001",
+     "score": 0.03125763125763126,
+     "lesson_uid": "lsn_3545308"
+    },
+    {
+     "chunk_uid": "lsn_3545308::fixed::0009",
+     "score": 0.030330882352941176,
+     "lesson_uid": "lsn_3545308"
+    },
+    {
+     "chunk_uid": "lsn_3545308::fixed::0010",
+     "score": 0.029850746268656716,
+     "lesson_uid": "lsn_3545308"
+    },
+    {
+     "chunk_uid": "lsn_3545308::fixed::0000",
+     "score": 0.02964426877470356,
+     "lesson_uid": "lsn_3545308"
+    },
+    {
+     "chunk_uid": "lsn_3545308::fixed::0002",
+     "score": 0.02904040404040404,
+     "lesson_uid": "lsn_3545308"
+    },
+    {
+     "chunk_uid": "lsn_3545308::fixed::0003",
+     "score": 0.028991596638655463,
+     "lesson_uid": "lsn_3545308"
+    },
+    {
+     "chunk_uid": "lsn_3545308::fixed::0008",
+     "score": 0.028381642512077296,
+     "lesson_uid": "lsn_3545308"
+    }
+   ],
+   "q02": [
+    {
+     "chunk_uid": "lsn_3545567::fixed::0042",
+     "score": 0.03252247488101534,
+     "lesson_uid": "lsn_3545567"
+    },
+    {
+     "chunk_uid": "lsn_3657234::fixed::0003",
+     "score": 0.032266458495966696,
+     "lesson_uid": "lsn_3657234"
+    },
+    {
+     "chunk_uid": "lsn_7147319::fixed::0007",
+     "score": 0.031754032258064516,
+     "lesson_uid": "lsn_7147319"
+    },
+    {
+     "chunk_uid": "lsn_7147319::fixed::0006",
+     "score": 0.030798389007344232,
+     "lesson_uid": "lsn_7147319"
+    },
+    {
+     "chunk_uid": "lsn_3657234::fixed::0004",
+     "score": 0.030303030303030304,
+     "lesson_uid": "lsn_3657234"
+    },
+    {
+     "chunk_uid": "lsn_3545567::fixed::0039",
+     "score": 0.029138513513513514,
+     "lesson_uid": "lsn_3545567"
+    },
+    {
+     "chunk_uid": "lsn_3545567::fixed::0038",
+     "score": 0.028438886647841874,
+     "lesson_uid": "lsn_3545567"
+    },
+    {
+     "chunk_uid": "lsn_3657234::fixed::0006",
+     "score": 0.027205882352941177,
+     "lesson_uid": "lsn_3657234"
+    },
+    {
+     "chunk_uid": "lsn_3545327::fixed::0013",
+     "score": 0.02694394213381555,
+     "lesson_uid": "lsn_3545327"
+    },
+    {
+     "chunk_uid": "lsn_8875735::fixed::0043",
+     "score": 0.026875901875901876,
+     "lesson_uid": "lsn_8875735"
+    }
+   ],
+   "q03": [
+    {
+     "chunk_uid": "lsn_3545310::fixed::0001",
+     "score": 0.03252247488101534,
+     "lesson_uid": "lsn_3545310"
+    },
+    {
+     "chunk_uid": "lsn_3545310::fixed::0000",
+     "score": 0.032018442622950824,
+     "lesson_uid": "lsn_3545310"
+    },
+    {
+     "chunk_uid": "lsn_3545310::fixed::0012",
+     "score": 0.03149801587301587,
+     "lesson_uid": "lsn_3545310"
+    },
+    {
+     "chunk_uid": "lsn_3545310::fixed::0011",
+     "score": 0.03076923076923077,
+     "lesson_uid": "lsn_3545310"
+    },
+    {
+     "chunk_uid": "lsn_3545310::fixed::0002",
+     "score": 0.029957522915269395,
+     "lesson_uid": "lsn_3545310"
+    },
+    {
+     "chunk_uid": "lsn_3545310::fixed::0003",
+     "score": 0.029857397504456328,
+     "lesson_uid": "lsn_3545310"
+    },
+    {
+     "chunk_uid": "lsn_3545310::fixed::0013",
+     "score": 0.029631255487269532,
+     "lesson_uid": "lsn_3545310"
+    },
+    {
+     "chunk_uid": "lsn_3545310::fixed::0014",
+     "score": 0.02928692699490662,
+     "lesson_uid": "lsn_3545310"
+    },
+    {
+     "chunk_uid": "lsn_3545310::fixed::0015",
+     "score": 0.027046783625730993,
+     "lesson_uid": "lsn_3545310"
+    },
+    {
+     "chunk_uid": "lsn_3545310::fixed::0004",
+     "score": 0.025278219395866455,
+     "lesson_uid": "lsn_3545310"
+    }
+   ],
+   "q04": [
+    {
+     "chunk_uid": "lsn_7769609::fixed::0000",
+     "score": 0.03252247488101534,
+     "lesson_uid": "lsn_7769609"
+    },
+    {
+     "chunk_uid": "lsn_3521375::fixed::0038",
+     "score": 0.02871794871794872,
+     "lesson_uid": "lsn_3521375"
+    },
+    {
+     "chunk_uid": "lsn_7704869::fixed::0057",
+     "score": 0.028693528693528692,
+     "lesson_uid": "lsn_7704869"
+    },
+    {
+     "chunk_uid": "lsn_7147321::fixed::0001",
+     "score": 0.027222222222222224,
+     "lesson_uid": "lsn_7147321"
+    },
+    {
+     "chunk_uid": "lsn_7769609::fixed::0009",
+     "score": 0.02371967654986523,
+     "lesson_uid": "lsn_7769609"
+    },
+    {
+     "chunk_uid": "lsn_3521377::fixed::0000",
+     "score": 0.01639344262295082,
+     "lesson_uid": "lsn_3521377"
+    },
+    {
+     "chunk_uid": "lsn_7769609::fixed::0018",
+     "score": 0.016129032258064516,
+     "lesson_uid": "lsn_7769609"
+    },
+    {
+     "chunk_uid": "lsn_8878385::fixed::0044",
+     "score": 0.015873015873015872,
+     "lesson_uid": "lsn_8878385"
+    },
+    {
+     "chunk_uid": "lsn_5127795::fixed::0003",
+     "score": 0.015625,
+     "lesson_uid": "lsn_5127795"
+    },
+    {
+     "chunk_uid": "lsn_7769609::fixed::0002",
+     "score": 0.015625,
+     "lesson_uid": "lsn_7769609"
+    }
+   ],
+   "q05": [
+    {
+     "chunk_uid": "lsn_3521431::fixed::0009",
+     "score": 0.03278688524590164,
+     "lesson_uid": "lsn_3521431"
+    },
+    {
+     "chunk_uid": "lsn_3521432::fixed::0002",
+     "score": 0.03149801587301587,
+     "lesson_uid": "lsn_3521432"
+    },
+    {
+     "chunk_uid": "lsn_3521432::fixed::0000",
+     "score": 0.03149801587301587,
+     "lesson_uid": "lsn_3521432"
+    },
+    {
+     "chunk_uid": "lsn_3521431::fixed::0008",
+     "score": 0.03128054740957967,
+     "lesson_uid": "lsn_3521431"
+    },
+    {
+     "chunk_uid": "lsn_3521432::fixed::0001",
+     "score": 0.030536130536130537,
+     "lesson_uid": "lsn_3521432"
+    },
+    {
+     "chunk_uid": "lsn_8653272::fixed::0015",
+     "score": 0.029418126757516764,
+     "lesson_uid": "lsn_8653272"
+    },
+    {
+     "chunk_uid": "lsn_7704860::fixed::0003",
+     "score": 0.02821939586645469,
+     "lesson_uid": "lsn_7704860"
+    },
+    {
+     "chunk_uid": "lsn_3521431::fixed::0007",
+     "score": 0.028205128205128206,
+     "lesson_uid": "lsn_3521431"
+    },
+    {
+     "chunk_uid": "lsn_3521431::fixed::0015",
+     "score": 0.025694893341952164,
+     "lesson_uid": "lsn_3521431"
+    },
+    {
+     "chunk_uid": "lsn_7773603::fixed::0009",
+     "score": 0.02345679012345679,
+     "lesson_uid": "lsn_7773603"
+    }
+   ],
+   "q06": [
+    {
+     "chunk_uid": "lsn_3534937::fixed::0053",
+     "score": 0.03177805800756621,
+     "lesson_uid": "lsn_3534937"
+    },
+    {
+     "chunk_uid": "lsn_5491322::fixed::0056",
+     "score": 0.031754032258064516,
+     "lesson_uid": "lsn_5491322"
+    },
+    {
+     "chunk_uid": "lsn_3534937::fixed::0054",
+     "score": 0.031754032258064516,
+     "lesson_uid": "lsn_3534937"
+    },
+    {
+     "chunk_uid": "lsn_3534937::fixed::0051",
+     "score": 0.031544957774465976,
+     "lesson_uid": "lsn_3534937"
+    },
+    {
+     "chunk_uid": "lsn_3534937::fixed::0050",
+     "score": 0.03125763125763126,
+     "lesson_uid": "lsn_3534937"
+    },
+    {
+     "chunk_uid": "lsn_3534937::fixed::0052",
+     "score": 0.031024531024531024,
+     "lesson_uid": "lsn_3534937"
+    },
+    {
+     "chunk_uid": "lsn_8975543::fixed::0004",
+     "score": 0.02919863597612958,
+     "lesson_uid": "lsn_8975543"
+    },
+    {
+     "chunk_uid": "lsn_8881622::fixed::0025",
+     "score": 0.028438886647841874,
+     "lesson_uid": "lsn_8881622"
+    },
+    {
+     "chunk_uid": "lsn_3521432::fixed::0026",
+     "score": 0.027417840375586856,
+     "lesson_uid": "lsn_3521432"
+    },
+    {
+     "chunk_uid": "lsn_8878390::fixed::0034",
+     "score": 0.025807525807525808,
+     "lesson_uid": "lsn_8878390"
+    }
+   ],
+   "q07": [
+    {
+     "chunk_uid": "lsn_8975536::fixed::0009",
+     "score": 0.03278688524590164,
+     "lesson_uid": "lsn_8975536"
+    },
+    {
+     "chunk_uid": "lsn_7704869::fixed::0021",
+     "score": 0.03225806451612903,
+     "lesson_uid": "lsn_7704869"
+    },
+    {
+     "chunk_uid": "lsn_5127791::fixed::0003",
+     "score": 0.03125763125763126,
+     "lesson_uid": "lsn_5127791"
+    },
+    {
+     "chunk_uid": "lsn_8975536::fixed::0010",
+     "score": 0.03125763125763126,
+     "lesson_uid": "lsn_8975536"
+    },
+    {
+     "chunk_uid": "lsn_7704869::fixed::0024",
+     "score": 0.029850746268656716,
+     "lesson_uid": "lsn_7704869"
+    },
+    {
+     "chunk_uid": "lsn_5127791::fixed::0002",
+     "score": 0.029513888888888888,
+     "lesson_uid": "lsn_5127791"
+    },
+    {
+     "chunk_uid": "lsn_7704869::fixed::0020",
+     "score": 0.028309409888357256,
+     "lesson_uid": "lsn_7704869"
+    },
+    {
+     "chunk_uid": "lsn_5127791::fixed::0004",
+     "score": 0.027820121951219513,
+     "lesson_uid": "lsn_5127791"
+    },
+    {
+     "chunk_uid": "lsn_8881623::fixed::0026",
+     "score": 0.027526395173453996,
+     "lesson_uid": "lsn_8881623"
+    },
+    {
+     "chunk_uid": "lsn_3521383::fixed::0022",
+     "score": 0.027364110201042444,
+     "lesson_uid": "lsn_3521383"
+    }
+   ],
+   "q08": [
+    {
+     "chunk_uid": "lsn_7769233::fixed::0010",
+     "score": 0.032266458495966696,
+     "lesson_uid": "lsn_7769233"
+    },
+    {
+     "chunk_uid": "lsn_7769233::fixed::0024",
+     "score": 0.02886002886002886,
+     "lesson_uid": "lsn_7769233"
+    },
+    {
+     "chunk_uid": "lsn_7769233::fixed::0025",
+     "score": 0.02877846790890269,
+     "lesson_uid": "lsn_7769233"
+    },
+    {
+     "chunk_uid": "lsn_7769233::fixed::0009",
+     "score": 0.026878868258178604,
+     "lesson_uid": "lsn_7769233"
+    },
+    {
+     "chunk_uid": "lsn_7773603::fixed::0007",
+     "score": 0.026785714285714288,
+     "lesson_uid": "lsn_7773603"
+    },
+    {
+     "chunk_uid": "lsn_8878383::fixed::0055",
+     "score": 0.02541827541827542,
+     "lesson_uid": "lsn_8878383"
+    },
+    {
+     "chunk_uid": "lsn_7704869::fixed::0037",
+     "score": 0.02488425925925926,
+     "lesson_uid": "lsn_7704869"
+    },
+    {
+     "chunk_uid": "lsn_7773600::fixed::0026",
+     "score": 0.02375,
+     "lesson_uid": "lsn_7773600"
+    },
+    {
+     "chunk_uid": "lsn_8878383::fixed::0047",
+     "score": 0.023614523614523618,
+     "lesson_uid": "lsn_8878383"
+    },
+    {
+     "chunk_uid": "lsn_3545592::fixed::0031",
+     "score": 0.02204457364341085,
+     "lesson_uid": "lsn_3545592"
+    }
+   ],
+   "q09": [
+    {
+     "chunk_uid": "lsn_3521383::fixed::0013",
+     "score": 0.03252247488101534,
+     "lesson_uid": "lsn_3521383"
+    },
+    {
+     "chunk_uid": "lsn_4435677::fixed::0021",
+     "score": 0.029857397504456328,
+     "lesson_uid": "lsn_4435677"
+    },
+    {
+     "chunk_uid": "lsn_3521383::fixed::0012",
+     "score": 0.02976190476190476,
+     "lesson_uid": "lsn_3521383"
+    },
+    {
+     "chunk_uid": "lsn_3521381::fixed::0016",
+     "score": 0.028381642512077296,
+     "lesson_uid": "lsn_3521381"
+    },
+    {
+     "chunk_uid": "lsn_7704869::fixed::0060",
+     "score": 0.028298204527712725,
+     "lesson_uid": "lsn_7704869"
+    },
+    {
+     "chunk_uid": "lsn_5491327::fixed::0018",
+     "score": 0.026356857985087564,
+     "lesson_uid": "lsn_5491327"
+    },
+    {
+     "chunk_uid": "lsn_7784277::fixed::0011",
+     "score": 0.026151315789473682,
+     "lesson_uid": "lsn_7784277"
+    },
+    {
+     "chunk_uid": "lsn_8875735::fixed::0021",
+     "score": 0.02603648424543947,
+     "lesson_uid": "lsn_8875735"
+    },
+    {
+     "chunk_uid": "lsn_3521381::fixed::0013",
+     "score": 0.025278219395866455,
+     "lesson_uid": "lsn_3521381"
+    },
+    {
+     "chunk_uid": "lsn_5127795::fixed::0014",
+     "score": 0.02513105149552883,
+     "lesson_uid": "lsn_5127795"
+    }
+   ],
+   "q10": [
+    {
+     "chunk_uid": "lsn_3521418::fixed::0004",
+     "score": 0.032018442622950824,
+     "lesson_uid": "lsn_3521418"
+    },
+    {
+     "chunk_uid": "lsn_3521418::fixed::0002",
+     "score": 0.031754032258064516,
+     "lesson_uid": "lsn_3521418"
+    },
+    {
+     "chunk_uid": "lsn_3521418::fixed::0009",
+     "score": 0.03047794966520434,
+     "lesson_uid": "lsn_3521418"
+    },
+    {
+     "chunk_uid": "lsn_3521418::fixed::0016",
+     "score": 0.030017921146953404,
+     "lesson_uid": "lsn_3521418"
+    },
+    {
+     "chunk_uid": "lsn_3521417::fixed::0021",
+     "score": 0.029631255487269532,
+     "lesson_uid": "lsn_3521417"
+    },
+    {
+     "chunk_uid": "lsn_3521418::fixed::0008",
+     "score": 0.028373015873015873,
+     "lesson_uid": "lsn_3521418"
+    },
+    {
+     "chunk_uid": "lsn_3521418::fixed::0015",
+     "score": 0.02819138376017471,
+     "lesson_uid": "lsn_3521418"
+    },
+    {
+     "chunk_uid": "lsn_3521418::fixed::0018",
+     "score": 0.02803921568627451,
+     "lesson_uid": "lsn_3521418"
+    },
+    {
+     "chunk_uid": "lsn_3521418::fixed::0019",
+     "score": 0.027984344422700584,
+     "lesson_uid": "lsn_3521418"
+    },
+    {
+     "chunk_uid": "lsn_3521418::fixed::0010",
+     "score": 0.02749719416386083,
+     "lesson_uid": "lsn_3521418"
+    }
+   ],
+   "q11": [
+    {
+     "chunk_uid": "lsn_8881624::fixed::0009",
+     "score": 0.032018442622950824,
+     "lesson_uid": "lsn_8881624"
+    },
+    {
+     "chunk_uid": "lsn_4243247::fixed::0017",
+     "score": 0.03200204813108039,
+     "lesson_uid": "lsn_4243247"
+    },
+    {
+     "chunk_uid": "lsn_4243248::fixed::0017",
+     "score": 0.031099324975891997,
+     "lesson_uid": "lsn_4243248"
+    },
+    {
+     "chunk_uid": "lsn_4243247::fixed::0011",
+     "score": 0.031009615384615385,
+     "lesson_uid": "lsn_4243247"
+    },
+    {
+     "chunk_uid": "lsn_8881624::fixed::0010",
+     "score": 0.029083245521601686,
+     "lesson_uid": "lsn_8881624"
+    },
+    {
+     "chunk_uid": "lsn_5491329::fixed::0009",
+     "score": 0.026992753623188405,
+     "lesson_uid": "lsn_5491329"
+    },
+    {
+     "chunk_uid": "lsn_4243247::fixed::0031",
+     "score": 0.026709401709401708,
+     "lesson_uid": "lsn_4243247"
+    },
+    {
+     "chunk_uid": "lsn_8881624::fixed::0016",
+     "score": 0.026200135226504394,
+     "lesson_uid": "lsn_8881624"
+    },
+    {
+     "chunk_uid": "lsn_4243247::fixed::0012",
+     "score": 0.02482636323333826,
+     "lesson_uid": "lsn_4243247"
+    },
+    {
+     "chunk_uid": "lsn_3521419::fixed::0002",
+     "score": 0.024501173708920188,
+     "lesson_uid": "lsn_3521419"
+    }
+   ],
+   "q12": [
+    {
+     "chunk_uid": "lsn_3659233::fixed::0044",
+     "score": 0.03278688524590164,
+     "lesson_uid": "lsn_3659233"
+    },
+    {
+     "chunk_uid": "lsn_3659233::fixed::0042",
+     "score": 0.03036576949620428,
+     "lesson_uid": "lsn_3659233"
+    },
+    {
+     "chunk_uid": "lsn_3659233::fixed::0036",
+     "score": 0.03007688828584351,
+     "lesson_uid": "lsn_3659233"
+    },
+    {
+     "chunk_uid": "lsn_8881620::fixed::0051",
+     "score": 0.029709507042253523,
+     "lesson_uid": "lsn_8881620"
+    },
+    {
+     "chunk_uid": "lsn_3534881::fixed::0041",
+     "score": 0.029411764705882353,
+     "lesson_uid": "lsn_3534881"
+    },
+    {
+     "chunk_uid": "lsn_3659233::fixed::0045",
+     "score": 0.028949545078577336,
+     "lesson_uid": "lsn_3659233"
+    },
+    {
+     "chunk_uid": "lsn_8881620::fixed::0050",
+     "score": 0.02862400327131466,
+     "lesson_uid": "lsn_8881620"
+    },
+    {
+     "chunk_uid": "lsn_3659233::fixed::0040",
+     "score": 0.028531243721117136,
+     "lesson_uid": "lsn_3659233"
+    },
+    {
+     "chunk_uid": "lsn_3517826::fixed::0021",
+     "score": 0.02817460317460317,
+     "lesson_uid": "lsn_3517826"
+    },
+    {
+     "chunk_uid": "lsn_3659356::fixed::0038",
+     "score": 0.02625418060200669,
+     "lesson_uid": "lsn_3659356"
+    }
+   ],
+   "q13": [
+    {
+     "chunk_uid": "lsn_3545582::fixed::0006",
+     "score": 0.03278688524590164,
+     "lesson_uid": "lsn_3545582"
+    },
+    {
+     "chunk_uid": "lsn_8477345::fixed::0038",
+     "score": 0.03021353930031804,
+     "lesson_uid": "lsn_8477345"
+    },
+    {
+     "chunk_uid": "lsn_8881623::fixed::0086",
+     "score": 0.029571646010002173,
+     "lesson_uid": "lsn_8881623"
+    },
+    {
+     "chunk_uid": "lsn_8881623::fixed::0085",
+     "score": 0.02946236559139785,
+     "lesson_uid": "lsn_8881623"
+    },
+    {
+     "chunk_uid": "lsn_5491325::fixed::0029",
+     "score": 0.0288981288981289,
+     "lesson_uid": "lsn_5491325"
+    },
+    {
+     "chunk_uid": "lsn_3545582::fixed::0005",
+     "score": 0.02821869488536155,
+     "lesson_uid": "lsn_3545582"
+    },
+    {
+     "chunk_uid": "lsn_8477345::fixed::0036",
+     "score": 0.02813852813852814,
+     "lesson_uid": "lsn_8477345"
+    },
+    {
+     "chunk_uid": "lsn_8477347::fixed::0003",
+     "score": 0.027242401779095628,
+     "lesson_uid": "lsn_8477347"
+    },
+    {
+     "chunk_uid": "lsn_3545582::fixed::0007",
+     "score": 0.0264957264957265,
+     "lesson_uid": "lsn_3545582"
+    },
+    {
+     "chunk_uid": "lsn_3545315::fixed::0009",
+     "score": 0.025252525252525252,
+     "lesson_uid": "lsn_3545315"
+    }
+   ],
+   "q14": [
+    {
+     "chunk_uid": "lsn_3545135::fixed::0014",
+     "score": 0.032018442622950824,
+     "lesson_uid": "lsn_3545135"
+    },
+    {
+     "chunk_uid": "lsn_3545135::fixed::0028",
+     "score": 0.02871794871794872,
+     "lesson_uid": "lsn_3545135"
+    },
+    {
+     "chunk_uid": "lsn_3545135::fixed::0061",
+     "score": 0.028438886647841874,
+     "lesson_uid": "lsn_3545135"
+    },
+    {
+     "chunk_uid": "lsn_8878385::fixed::0055",
+     "score": 0.01639344262295082,
+     "lesson_uid": "lsn_8878385"
+    },
+    {
+     "chunk_uid": "lsn_3545135::fixed::0015",
+     "score": 0.016129032258064516,
+     "lesson_uid": "lsn_3545135"
+    },
+    {
+     "chunk_uid": "lsn_8878385::fixed::0056",
+     "score": 0.016129032258064516,
+     "lesson_uid": "lsn_8878385"
+    },
+    {
+     "chunk_uid": "lsn_3545135::fixed::0013",
+     "score": 0.015873015873015872,
+     "lesson_uid": "lsn_3545135"
+    },
+    {
+     "chunk_uid": "lsn_3545135::fixed::0018",
+     "score": 0.015873015873015872,
+     "lesson_uid": "lsn_3545135"
+    },
+    {
+     "chunk_uid": "lsn_3545136::fixed::0015",
+     "score": 0.015625,
+     "lesson_uid": "lsn_3545136"
+    },
+    {
+     "chunk_uid": "lsn_7769576::fixed::0033",
+     "score": 0.015384615384615385,
+     "lesson_uid": "lsn_7769576"
+    }
+   ],
+   "q15": [
+    {
+     "chunk_uid": "lsn_5127795::fixed::0002",
+     "score": 0.03252247488101534,
+     "lesson_uid": "lsn_5127795"
+    },
+    {
+     "chunk_uid": "lsn_5127795::fixed::0004",
+     "score": 0.03200204813108039,
+     "lesson_uid": "lsn_5127795"
+    },
+    {
+     "chunk_uid": "lsn_7784277::fixed::0013",
+     "score": 0.03007688828584351,
+     "lesson_uid": "lsn_7784277"
+    },
+    {
+     "chunk_uid": "lsn_7692944::fixed::0010",
+     "score": 0.03007688828584351,
+     "lesson_uid": "lsn_7692944"
+    },
+    {
+     "chunk_uid": "lsn_3545563::fixed::0068",
+     "score": 0.029906956136464335,
+     "lesson_uid": "lsn_3545563"
+    },
+    {
+     "chunk_uid": "lsn_7780471::fixed::0017",
+     "score": 0.02967032967032967,
+     "lesson_uid": "lsn_7780471"
+    },
+    {
+     "chunk_uid": "lsn_5127795::fixed::0001",
+     "score": 0.02821939586645469,
+     "lesson_uid": "lsn_5127795"
+    },
+    {
+     "chunk_uid": "lsn_7692944::fixed::0007",
+     "score": 0.02803921568627451,
+     "lesson_uid": "lsn_7692944"
+    },
+    {
+     "chunk_uid": "lsn_5127795::fixed::0000",
+     "score": 0.02728937728937729,
+     "lesson_uid": "lsn_5127795"
+    },
+    {
+     "chunk_uid": "lsn_7147322::fixed::0034",
+     "score": 0.025937081659973226,
+     "lesson_uid": "lsn_7147322"
+    }
+   ],
+   "q16": [
+    {
+     "chunk_uid": "lsn_8878382::fixed::0044",
+     "score": 0.032266458495966696,
+     "lesson_uid": "lsn_8878382"
+    },
+    {
+     "chunk_uid": "lsn_8878382::fixed::0034",
+     "score": 0.032266458495966696,
+     "lesson_uid": "lsn_8878382"
+    },
+    {
+     "chunk_uid": "lsn_8878382::fixed::0043",
+     "score": 0.03128054740957967,
+     "lesson_uid": "lsn_8878382"
+    },
+    {
+     "chunk_uid": "lsn_8878382::fixed::0041",
+     "score": 0.03128054740957967,
+     "lesson_uid": "lsn_8878382"
+    },
+    {
+     "chunk_uid": "lsn_8878382::fixed::0035",
+     "score": 0.031009615384615385,
+     "lesson_uid": "lsn_8878382"
+    },
+    {
+     "chunk_uid": "lsn_8878382::fixed::0045",
+     "score": 0.027912386121341344,
+     "lesson_uid": "lsn_8878382"
+    },
+    {
+     "chunk_uid": "lsn_8878383::fixed::0041",
+     "score": 0.025793650793650792,
+     "lesson_uid": "lsn_8878383"
+    },
+    {
+     "chunk_uid": "lsn_8878382::fixed::0040",
+     "score": 0.024806892453951276,
+     "lesson_uid": "lsn_8878382"
+    },
+    {
+     "chunk_uid": "lsn_8878383::fixed::0013",
+     "score": 0.02429667519181586,
+     "lesson_uid": "lsn_8878383"
+    },
+    {
+     "chunk_uid": "lsn_7773602::fixed::0002",
+     "score": 0.024185517143263623,
+     "lesson_uid": "lsn_7773602"
+    }
+   ],
+   "q17": [
+    {
+     "chunk_uid": "lsn_4435674::fixed::0024",
+     "score": 0.03278688524590164,
+     "lesson_uid": "lsn_4435674"
+    },
+    {
+     "chunk_uid": "lsn_4435674::fixed::0025",
+     "score": 0.031746031746031744,
+     "lesson_uid": "lsn_4435674"
+    },
+    {
+     "chunk_uid": "lsn_3521091::fixed::0016",
+     "score": 0.03128054740957967,
+     "lesson_uid": "lsn_3521091"
+    },
+    {
+     "chunk_uid": "lsn_4435674::fixed::0023",
+     "score": 0.029083245521601686,
+     "lesson_uid": "lsn_4435674"
+    },
+    {
+     "chunk_uid": "lsn_7704862::fixed::0025",
+     "score": 0.028790389395194696,
+     "lesson_uid": "lsn_7704862"
+    },
+    {
+     "chunk_uid": "lsn_3521091::fixed::0014",
+     "score": 0.02871794871794872,
+     "lesson_uid": "lsn_3521091"
+    },
+    {
+     "chunk_uid": "lsn_7704862::fixed::0027",
+     "score": 0.027809742999616416,
+     "lesson_uid": "lsn_7704862"
+    },
+    {
+     "chunk_uid": "lsn_8878383::fixed::0022",
+     "score": 0.02684684684684685,
+     "lesson_uid": "lsn_8878383"
+    },
+    {
+     "chunk_uid": "lsn_3521091::fixed::0015",
+     "score": 0.02661064425770308,
+     "lesson_uid": "lsn_3521091"
+    },
+    {
+     "chunk_uid": "lsn_5491257::fixed::0019",
+     "score": 0.02513105149552883,
+     "lesson_uid": "lsn_5491257"
+    }
+   ],
+   "q18": [
+    {
+     "chunk_uid": "lsn_3521314::fixed::0004",
+     "score": 0.032266458495966696,
+     "lesson_uid": "lsn_3521314"
+    },
+    {
+     "chunk_uid": "lsn_3521314::fixed::0000",
+     "score": 0.03225806451612903,
+     "lesson_uid": "lsn_3521314"
+    },
+    {
+     "chunk_uid": "lsn_3521314::fixed::0001",
+     "score": 0.032018442622950824,
+     "lesson_uid": "lsn_3521314"
+    },
+    {
+     "chunk_uid": "lsn_3521314::fixed::0002",
+     "score": 0.03055037313432836,
+     "lesson_uid": "lsn_3521314"
+    },
+    {
+     "chunk_uid": "lsn_3521314::fixed::0003",
+     "score": 0.030536130536130537,
+     "lesson_uid": "lsn_3521314"
+    },
+    {
+     "chunk_uid": "lsn_3520786::fixed::0008",
+     "score": 0.028577260665441927,
+     "lesson_uid": "lsn_3520786"
+    },
+    {
+     "chunk_uid": "lsn_3520786::fixed::0014",
+     "score": 0.026754075124025514,
+     "lesson_uid": "lsn_3520786"
+    },
+    {
+     "chunk_uid": "lsn_3521314::fixed::0012",
+     "score": 0.025516795865633074,
+     "lesson_uid": "lsn_3521314"
+    },
+    {
+     "chunk_uid": "lsn_3521325::fixed::0013",
+     "score": 0.02507351803126451,
+     "lesson_uid": "lsn_3521325"
+    },
+    {
+     "chunk_uid": "lsn_7692938::fixed::0002",
+     "score": 0.02475171886936593,
+     "lesson_uid": "lsn_7692938"
+    }
+   ],
+   "q19": [
+    {
+     "chunk_uid": "lsn_7780460::fixed::0004",
+     "score": 0.03278688524590164,
+     "lesson_uid": "lsn_7780460"
+    },
+    {
+     "chunk_uid": "lsn_7780460::fixed::0005",
+     "score": 0.0304147465437788,
+     "lesson_uid": "lsn_7780460"
+    },
+    {
+     "chunk_uid": "lsn_5491325::fixed::0004",
+     "score": 0.029418126757516764,
+     "lesson_uid": "lsn_5491325"
+    },
+    {
+     "chunk_uid": "lsn_7769231::fixed::0003",
+     "score": 0.025206087507926443,
+     "lesson_uid": "lsn_7769231"
+    },
+    {
+     "chunk_uid": "lsn_3659356::fixed::0019",
+     "score": 0.024722804914593947,
+     "lesson_uid": "lsn_3659356"
+    },
+    {
+     "chunk_uid": "lsn_7704859::fixed::0017",
+     "score": 0.02191142191142191,
+     "lesson_uid": "lsn_7704859"
+    },
+    {
+     "chunk_uid": "lsn_7692934::fixed::0000",
+     "score": 0.016129032258064516,
+     "lesson_uid": "lsn_7692934"
+    },
+    {
+     "chunk_uid": "lsn_7780460::fixed::0001",
+     "score": 0.015873015873015872,
+     "lesson_uid": "lsn_7780460"
+    },
+    {
+     "chunk_uid": "lsn_7773605::fixed::0013",
+     "score": 0.015873015873015872,
+     "lesson_uid": "lsn_7773605"
+    },
+    {
+     "chunk_uid": "lsn_7780460::fixed::0000",
+     "score": 0.015625,
+     "lesson_uid": "lsn_7780460"
+    }
+   ],
+   "q20": [
+    {
+     "chunk_uid": "lsn_5491325::fixed::0041",
+     "score": 0.032266458495966696,
+     "lesson_uid": "lsn_5491325"
+    },
+    {
+     "chunk_uid": "lsn_5127790::fixed::0014",
+     "score": 0.032018442622950824,
+     "lesson_uid": "lsn_5127790"
+    },
+    {
+     "chunk_uid": "lsn_3534881::fixed::0003",
+     "score": 0.0315136476426799,
+     "lesson_uid": "lsn_3534881"
+    },
+    {
+     "chunk_uid": "lsn_5127790::fixed::0013",
+     "score": 0.031024531024531024,
+     "lesson_uid": "lsn_5127790"
+    },
+    {
+     "chunk_uid": "lsn_4435678::fixed::0017",
+     "score": 0.0304147465437788,
+     "lesson_uid": "lsn_4435678"
+    },
+    {
+     "chunk_uid": "lsn_8975539::fixed::0009",
+     "score": 0.030090497737556562,
+     "lesson_uid": "lsn_8975539"
+    },
+    {
+     "chunk_uid": "lsn_7692940::fixed::0039",
+     "score": 0.029138513513513514,
+     "lesson_uid": "lsn_7692940"
+    },
+    {
+     "chunk_uid": "lsn_4303563::fixed::0008",
+     "score": 0.028991596638655463,
+     "lesson_uid": "lsn_4303563"
+    },
+    {
+     "chunk_uid": "lsn_5127790::fixed::0000",
+     "score": 0.028381642512077296,
+     "lesson_uid": "lsn_5127790"
+    },
+    {
+     "chunk_uid": "lsn_3545567::fixed::0048",
+     "score": 0.02819138376017471,
+     "lesson_uid": "lsn_3545567"
+    }
+   ],
+   "q21": [
+    {
+     "chunk_uid": "lsn_3659356::fixed::0011",
+     "score": 0.032266458495966696,
+     "lesson_uid": "lsn_3659356"
+    },
+    {
+     "chunk_uid": "lsn_8881622::fixed::0009",
+     "score": 0.032018442622950824,
+     "lesson_uid": "lsn_8881622"
+    },
+    {
+     "chunk_uid": "lsn_3659356::fixed::0010",
+     "score": 0.03200204813108039,
+     "lesson_uid": "lsn_3659356"
+    },
+    {
+     "chunk_uid": "lsn_7769233::fixed::0016",
+     "score": 0.030330882352941176,
+     "lesson_uid": "lsn_7769233"
+    },
+    {
+     "chunk_uid": "lsn_8881622::fixed::0011",
+     "score": 0.02964254577157803,
+     "lesson_uid": "lsn_8881622"
+    },
+    {
+     "chunk_uid": "lsn_3659356::fixed::0009",
+     "score": 0.029418126757516764,
+     "lesson_uid": "lsn_3659356"
+    },
+    {
+     "chunk_uid": "lsn_7769233::fixed::0013",
+     "score": 0.028850145288501453,
+     "lesson_uid": "lsn_7769233"
+    },
+    {
+     "chunk_uid": "lsn_7769233::fixed::0014",
+     "score": 0.028371628371628373,
+     "lesson_uid": "lsn_7769233"
+    },
+    {
+     "chunk_uid": "lsn_8975536::fixed::0022",
+     "score": 0.02817460317460317,
+     "lesson_uid": "lsn_8975536"
+    },
+    {
+     "chunk_uid": "lsn_3659356::fixed::0017",
+     "score": 0.02797339593114241,
+     "lesson_uid": "lsn_3659356"
+    }
+   ],
+   "q22": [
+    {
+     "chunk_uid": "lsn_8653279::fixed::0017",
+     "score": 0.03128054740957967,
+     "lesson_uid": "lsn_8653279"
+    },
+    {
+     "chunk_uid": "lsn_8875734::fixed::0012",
+     "score": 0.029726775956284153,
+     "lesson_uid": "lsn_8875734"
+    },
+    {
+     "chunk_uid": "lsn_7784277::fixed::0006",
+     "score": 0.02946912242686891,
+     "lesson_uid": "lsn_7784277"
+    },
+    {
+     "chunk_uid": "lsn_7784276::fixed::0039",
+     "score": 0.029418126757516764,
+     "lesson_uid": "lsn_7784276"
+    },
+    {
+     "chunk_uid": "lsn_7692944::fixed::0009",
+     "score": 0.029411764705882353,
+     "lesson_uid": "lsn_7692944"
+    },
+    {
+     "chunk_uid": "lsn_7692944::fixed::0011",
+     "score": 0.028958333333333336,
+     "lesson_uid": "lsn_7692944"
+    },
+    {
+     "chunk_uid": "lsn_5127791::fixed::0007",
+     "score": 0.02815814850530376,
+     "lesson_uid": "lsn_5127791"
+    },
+    {
+     "chunk_uid": "lsn_7780466::fixed::0021",
+     "score": 0.027443609022556388,
+     "lesson_uid": "lsn_7780466"
+    },
+    {
+     "chunk_uid": "lsn_5127795::fixed::0002",
+     "score": 0.02699859747545582,
+     "lesson_uid": "lsn_5127795"
+    },
+    {
+     "chunk_uid": "lsn_7780466::fixed::0019",
+     "score": 0.026356857985087564,
+     "lesson_uid": "lsn_7780466"
+    }
+   ],
+   "q23": [
+    {
+     "chunk_uid": "lsn_7147321::fixed::0002",
+     "score": 0.032266458495966696,
+     "lesson_uid": "lsn_7147321"
+    },
+    {
+     "chunk_uid": "lsn_3545567::fixed::0001",
+     "score": 0.03177805800756621,
+     "lesson_uid": "lsn_3545567"
+    },
+    {
+     "chunk_uid": "lsn_7147321::fixed::0000",
+     "score": 0.02900988017658188,
+     "lesson_uid": "lsn_7147321"
+    },
+    {
+     "chunk_uid": "lsn_7769576::fixed::0010",
+     "score": 0.02803379416282642,
+     "lesson_uid": "lsn_7769576"
+    },
+    {
+     "chunk_uid": "lsn_3545567::fixed::0002",
+     "score": 0.02792120864410021,
+     "lesson_uid": "lsn_3545567"
+    },
+    {
+     "chunk_uid": "lsn_8653266::fixed::0028",
+     "score": 0.026333789329685362,
+     "lesson_uid": "lsn_8653266"
+    },
+    {
+     "chunk_uid": "lsn_8653266::fixed::0027",
+     "score": 0.023752012882447666,
+     "lesson_uid": "lsn_8653266"
+    },
+    {
+     "chunk_uid": "lsn_5127791::fixed::0016",
+     "score": 0.023063200815494393,
+     "lesson_uid": "lsn_5127791"
+    },
+    {
+     "chunk_uid": "lsn_7780466::fixed::0009",
+     "score": 0.022510822510822513,
+     "lesson_uid": "lsn_7780466"
+    },
+    {
+     "chunk_uid": "lsn_6729438::fixed::0007",
+     "score": 0.02149425287356322,
+     "lesson_uid": "lsn_6729438"
+    }
+   ],
+   "q24": [
+    {
+     "chunk_uid": "lsn_7704859::fixed::0041",
+     "score": 0.03278688524590164,
+     "lesson_uid": "lsn_7704859"
+    },
+    {
+     "chunk_uid": "lsn_7147322::fixed::0029",
+     "score": 0.03200204813108039,
+     "lesson_uid": "lsn_7147322"
+    },
+    {
+     "chunk_uid": "lsn_3545320::fixed::0011",
+     "score": 0.03055037313432836,
+     "lesson_uid": "lsn_3545320"
+    },
+    {
+     "chunk_uid": "lsn_7784278::fixed::0030",
+     "score": 0.030090497737556562,
+     "lesson_uid": "lsn_7784278"
+    },
+    {
+     "chunk_uid": "lsn_3545320::fixed::0010",
+     "score": 0.02964254577157803,
+     "lesson_uid": "lsn_3545320"
+    },
+    {
+     "chunk_uid": "lsn_7784278::fixed::0033",
+     "score": 0.029418126757516764,
+     "lesson_uid": "lsn_7784278"
+    },
+    {
+     "chunk_uid": "lsn_3545320::fixed::0012",
+     "score": 0.029236022193768675,
+     "lesson_uid": "lsn_3545320"
+    },
+    {
+     "chunk_uid": "lsn_7704863::fixed::0012",
+     "score": 0.02817460317460317,
+     "lesson_uid": "lsn_7704863"
+    },
+    {
+     "chunk_uid": "lsn_7704863::fixed::0013",
+     "score": 0.027972027972027972,
+     "lesson_uid": "lsn_7704863"
+    },
+    {
+     "chunk_uid": "lsn_3517826::fixed::0012",
+     "score": 0.027783137179239824,
+     "lesson_uid": "lsn_3517826"
+    }
+   ],
+   "q25": [
+    {
+     "chunk_uid": "lsn_4303291::fixed::0012",
+     "score": 0.03252247488101534,
+     "lesson_uid": "lsn_4303291"
+    },
+    {
+     "chunk_uid": "lsn_5491325::fixed::0013",
+     "score": 0.031754032258064516,
+     "lesson_uid": "lsn_5491325"
+    },
+    {
+     "chunk_uid": "lsn_3545581::fixed::0010",
+     "score": 0.03057889822595705,
+     "lesson_uid": "lsn_3545581"
+    },
+    {
+     "chunk_uid": "lsn_8477345::fixed::0024",
+     "score": 0.03036576949620428,
+     "lesson_uid": "lsn_8477345"
+    },
+    {
+     "chunk_uid": "lsn_4303291::fixed::0011",
+     "score": 0.030309988518943745,
+     "lesson_uid": "lsn_4303291"
+    },
+    {
+     "chunk_uid": "lsn_7692934::fixed::0013",
+     "score": 0.03007688828584351,
+     "lesson_uid": "lsn_7692934"
+    },
+    {
+     "chunk_uid": "lsn_8477345::fixed::0025",
+     "score": 0.029551337359792925,
+     "lesson_uid": "lsn_8477345"
+    },
+    {
+     "chunk_uid": "lsn_8653264::fixed::0021",
+     "score": 0.02946912242686891,
+     "lesson_uid": "lsn_8653264"
+    },
+    {
+     "chunk_uid": "lsn_4303290::fixed::0030",
+     "score": 0.02904040404040404,
+     "lesson_uid": "lsn_4303290"
+    },
+    {
+     "chunk_uid": "lsn_3545581::fixed::0009",
+     "score": 0.02819138376017471,
+     "lesson_uid": "lsn_3545581"
+    }
+   ]
+  }
+ }
+}

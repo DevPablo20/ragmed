@@ -30,6 +30,7 @@ from functools import lru_cache
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+from build_index import bm25_dirname, embeddings_table  # noqa: E402
 from db import ROOT, connect  # noqa: E402
 
 EMBED_MODEL = "BAAI/bge-m3"
@@ -56,13 +57,13 @@ def _reranker():
                         max_length=512)
 
 
-@lru_cache(maxsize=4)
-def _bm25(strategy: str):
+@lru_cache(maxsize=8)
+def _bm25(strategy: str, context: bool = True):
     """(retriever, uids) — o mapeamento indice->uid e nosso, nao do bm25s."""
     import json
 
     import bm25s
-    path = ROOT / "indexes" / f"bm25_{strategy}"
+    path = ROOT / "indexes" / bm25_dirname(strategy, context)
     if not path.exists():
         raise SystemExit(f"indice BM25 ausente: {path} - rode build_index.py")
     uids = json.loads((path / "chunk_uids.json").read_text(encoding="utf-8"))
@@ -92,11 +93,11 @@ def _allowed(con, strategy: str, course: str | None, subject: str | None,
 
 
 def dense_search(con, query: str, strategy: str, n: int,
-                 allowed: set[str] | None) -> list[str]:
+                 allowed: set[str] | None, context: bool = True) -> list[str]:
     vec = _embedder().encode([query], normalize_embeddings=True)[0].tolist()
-    sql = """
+    sql = f"""
         SELECT e.chunk_uid
-        FROM chunk_embeddings e JOIN chunks c USING (chunk_uid)
+        FROM {embeddings_table(context)} e JOIN chunks c USING (chunk_uid)
         WHERE c.strategy = ?
         ORDER BY array_cosine_similarity(e.embedding, ?::FLOAT[1024]) DESC
         LIMIT ?
@@ -109,9 +110,9 @@ def dense_search(con, query: str, strategy: str, n: int,
 
 
 def bm25_search(query: str, strategy: str, n: int,
-                allowed: set[str] | None) -> list[str]:
+                allowed: set[str] | None, context: bool = True) -> list[str]:
     import bm25s
-    retriever, uids = _bm25(strategy)
+    retriever, uids = _bm25(strategy, context)
     tokens = bm25s.tokenize([query], stopwords="pt", show_progress=False)
     limite = min(n if allowed is None else n * 8, len(uids))
     idx, _ = retriever.retrieve(tokens, k=limite, show_progress=False)
@@ -132,11 +133,12 @@ def rrf(*rankings: list[str], k: int = RRF_K) -> list[tuple[str, float]]:
 def search(con, query: str, strategy: str = "fixed", top_k: int = TOP_K,
            rerank: bool = True, course: str | None = None,
            subject: str | None = None, instructor: str | None = None,
-           explain: bool = False) -> list[dict]:
+           explain: bool = False, context: bool = True) -> list[dict]:
+    """context=False busca e reranqueia so pelo texto, sem o prefixo curso/aula."""
     allowed = _allowed(con, strategy, course, subject, instructor)
 
-    densos = dense_search(con, query, strategy, CANDIDATE_K, allowed)
-    lexicais = bm25_search(query, strategy, CANDIDATE_K, allowed)
+    densos = dense_search(con, query, strategy, CANDIDATE_K, allowed, context)
+    lexicais = bm25_search(query, strategy, CANDIDATE_K, allowed, context)
     fundidos = rrf(densos, lexicais)[:CANDIDATE_K]
     if not fundidos:
         return []
@@ -151,7 +153,8 @@ def search(con, query: str, strategy: str = "fixed", top_k: int = TOP_K,
     }
 
     if rerank:
-        pares = [(query, meta[u]["text_with_context"]) for u in uids]
+        campo = "text_with_context" if context else "text"
+        pares = [(query, meta[u][campo]) for u in uids]
         scores = _reranker().predict(pares, show_progress_bar=False)
         ordem = sorted(zip(uids, scores), key=lambda kv: -kv[1])[:top_k]
     else:
@@ -182,13 +185,16 @@ def main() -> None:
     ap.add_argument("--no-rerank", action="store_true")
     ap.add_argument("--course"), ap.add_argument("--subject")
     ap.add_argument("--instructor")
+    ap.add_argument("--no-context", action="store_true",
+                    help="usa os indices montados sem o prefixo curso/aula")
     ap.add_argument("--explain", action="store_true",
                     help="mostra a posicao em cada lista antes da fusao")
     args = ap.parse_args()
 
     con = connect(read_only=True)
     hits = search(con, args.query, args.strategy, args.top_k, not args.no_rerank,
-                  args.course, args.subject, args.instructor, args.explain)
+                  args.course, args.subject, args.instructor, args.explain,
+                  not args.no_context)
     print(f'"{args.query}"  ({args.strategy}, '
           f'{"com" if not args.no_rerank else "sem"} rerank)\n')
     for h in hits:

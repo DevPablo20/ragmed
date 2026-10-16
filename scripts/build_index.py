@@ -26,7 +26,9 @@ DuckDB a persistencia dele ainda e experimental — seria mais peca movel sem ga
 
 O texto indexado inclui o prefixo contextual (curso/aula/assunto). E o que faz um
 trecho que diz apenas "a dose costuma ser de 100 a 200" continuar recuperavel por
-uma pergunta sobre testosterona.
+uma pergunta sobre testosterona. Com --no-context os indices sao montados so com
+o texto (tabela chunk_embeddings_noctx, indexes/bm25_<estrategia>_noctx), para
+a Etapa 6 medir se o prefixo ajuda ou atrapalha.
 """
 
 from __future__ import annotations
@@ -44,9 +46,18 @@ EMBED_MODEL = "BAAI/bge-m3"
 INDEX_DIR = ROOT / "indexes"
 
 
-def load_chunks(con, strategy: str) -> list[dict]:
+def embeddings_table(context: bool) -> str:
+    return "chunk_embeddings" if context else "chunk_embeddings_noctx"
+
+
+def bm25_dirname(strategy: str, context: bool) -> str:
+    return f"bm25_{strategy}" if context else f"bm25_{strategy}_noctx"
+
+
+def load_chunks(con, strategy: str, context: bool = True) -> list[dict]:
+    col = "text_with_context" if context else "text"
     rows = con.execute(
-        "SELECT chunk_uid, text_with_context FROM v_chunk_corpus WHERE strategy = ? "
+        f"SELECT chunk_uid, {col} AS doc FROM v_chunk_corpus WHERE strategy = ? "
         "ORDER BY chunk_uid", [strategy]
     ).df().to_dict("records")
     if not rows:
@@ -54,7 +65,7 @@ def load_chunks(con, strategy: str) -> list[dict]:
     return rows
 
 
-def build_dense(con, rows: list[dict], strategy: str) -> None:
+def build_dense(con, rows: list[dict], strategy: str, context: bool = True) -> None:
     from sentence_transformers import SentenceTransformer
     import torch
 
@@ -64,34 +75,35 @@ def build_dense(con, rows: list[dict], strategy: str) -> None:
     print(f"  carregando {EMBED_MODEL} em {dev}...")
     model = SentenceTransformer(EMBED_MODEL, device=dev)
 
-    textos = [r["text_with_context"] for r in rows]
+    textos = [r["doc"] for r in rows]
     print(f"  embeddando {len(textos)} chunks...")
     vecs = model.encode(textos, normalize_embeddings=True, batch_size=32,
                         show_progress_bar=True, convert_to_numpy=True)
 
     now = datetime.now()
     uids = [r["chunk_uid"] for r in rows]
+    tabela = embeddings_table(context)
     con.execute(
-        "DELETE FROM chunk_embeddings WHERE chunk_uid IN "
+        f"DELETE FROM {tabela} WHERE chunk_uid IN "
         "(SELECT chunk_uid FROM chunks WHERE strategy = ?)", [strategy]
     )
     con.executemany(
-        "INSERT INTO chunk_embeddings (chunk_uid, embedding, model, created_at) "
+        f"INSERT INTO {tabela} (chunk_uid, embedding, model, created_at) "
         "VALUES (?, ?, ?, ?)",
         [[u, v.tolist(), EMBED_MODEL, now] for u, v in zip(uids, vecs)],
     )
     print(f"  {len(uids)} vetores de {vecs.shape[1]} dimensoes gravados")
 
 
-def build_bm25(rows: list[dict], strategy: str) -> None:
+def build_bm25(rows: list[dict], strategy: str, context: bool = True) -> None:
     import bm25s
 
-    dest = INDEX_DIR / f"bm25_{strategy}"
+    dest = INDEX_DIR / bm25_dirname(strategy, context)
     if dest.exists():
         shutil.rmtree(dest)
     dest.parent.mkdir(parents=True, exist_ok=True)
 
-    corpus = [r["text_with_context"] for r in rows]
+    corpus = [r["doc"] for r in rows]
     # stopwords em portugues: sem isso "de", "que", "para" dominam o score
     tokens = bm25s.tokenize(corpus, stopwords="pt", show_progress=False)
     retriever = bm25s.BM25()
@@ -115,22 +127,26 @@ def main() -> None:
                     choices=["fixed", "semantic", "qa_turn"])
     ap.add_argument("--skip-dense", action="store_true")
     ap.add_argument("--skip-bm25", action="store_true")
+    ap.add_argument("--no-context", action="store_true",
+                    help="indexa so o texto, sem o prefixo curso/aula")
     args = ap.parse_args()
 
     con = connect()
     init(con)
-    rows = load_chunks(con, args.strategy)
-    print(f"estrategia {args.strategy}: {len(rows)} chunks")
+    ctx = not args.no_context
+    rows = load_chunks(con, args.strategy, ctx)
+    print(f"estrategia {args.strategy} ({'com' if ctx else 'sem'} prefixo): "
+          f"{len(rows)} chunks")
 
     if not args.skip_bm25:
         print("\nBM25:")
-        build_bm25(rows, args.strategy)
+        build_bm25(rows, args.strategy, ctx)
     if not args.skip_dense:
         print("\ndenso:")
-        build_dense(con, rows, args.strategy)
+        build_dense(con, rows, args.strategy, ctx)
 
     n = con.execute(
-        "SELECT count(*) FROM chunk_embeddings e JOIN chunks c USING (chunk_uid) "
+        f"SELECT count(*) FROM {embeddings_table(ctx)} e JOIN chunks c USING (chunk_uid) "
         "WHERE c.strategy = ?", [args.strategy]
     ).fetchone()[0]
     print(f"\nindice pronto: {n} chunks com vetor")

@@ -201,6 +201,17 @@ CREATE TABLE IF NOT EXISTS chunk_embeddings (
     created_at      TIMESTAMP NOT NULL
 );
 
+-- Mesmos chunks, embeddados SEM o prefixo contextual. Existe para a Etapa 6
+-- medir "com x sem prefixo": numa pergunta de teste o prefixo empurrou a aula
+-- certa do 1o para o 5o lugar (ver ESTADO_ATUAL.md). Tabela a parte porque a
+-- chave e o mesmo chunk_uid.
+CREATE TABLE IF NOT EXISTS chunk_embeddings_noctx (
+    chunk_uid       VARCHAR PRIMARY KEY,
+    embedding       FLOAT[1024] NOT NULL,
+    model           VARCHAR NOT NULL,
+    created_at      TIMESTAMP NOT NULL
+);
+
 -- Append-only: o estado de cada curso/aula em cada execucao. E o que permite
 -- ver renomeacao e reordenacao ao longo do tempo.
 CREATE TABLE IF NOT EXISTS course_snapshots (
