@@ -1,0 +1,448 @@
+[
+  {
+    "id": "q01",
+    "pergunta": "Qual comorbidade está mais associada à disfunção erétil, e por que a disfunção erétil progressiva deve levar a uma investigação cardiovascular?",
+    "tipo": "mecanismo",
+    "lesson_uid": "lsn_3545308",
+    "course_title": "Avançado de Saúde do homem",
+    "lesson_title": "Aula 03: Disfunção Erétil - Dr. Fernando Muniz",
+    "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/3545308",
+    "strategy": "fixed",
+    "evidence_chunk_indices": [
+      7
+    ],
+    "related_lesson_uids": [],
+    "nota": "",
+    "resposta_medico": null,
+    "aula_responde": null
+  },
+  {
+    "id": "q02",
+    "pergunta": "Como converter a dose de testosterona em gel para a dose em implante hormonal, no homem e na mulher?",
+    "tipo": "dose",
+    "lesson_uid": "lsn_3657234",
+    "course_title": "Avançado de Saúde do homem",
+    "lesson_title": "Aula 16: Implantes Hormonais II - Dr. Alexandre Duarte",
+    "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/3657234",
+    "strategy": "fixed",
+    "evidence_chunk_indices": [
+      3,
+      4
+    ],
+    "related_lesson_uids": [
+      "lsn_7147319",
+      "lsn_3545327"
+    ],
+    "nota": "",
+    "resposta_medico": null,
+    "aula_responde": null
+  },
+  {
+    "id": "q03",
+    "pergunta": "Quais nutracêuticos, e em que doses, podem ser usados no tratamento da ejaculação precoce?",
+    "tipo": "dose",
+    "lesson_uid": "lsn_3545310",
+    "course_title": "Avançado de Saúde do homem",
+    "lesson_title": "Aula 04: Ejaculação Precoce - Dr. Fernando Muniz",
+    "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/3545310",
+    "strategy": "fixed",
+    "evidence_chunk_indices": [
+      1
+    ],
+    "related_lesson_uids": [],
+    "nota": "",
+    "resposta_medico": null,
+    "aula_responde": null
+  },
+  {
+    "id": "q04",
+    "pergunta": "Na hiperprolactinemia, qual é a causa mais comum na visão metabólica e qual o papel da cabergolina?",
+    "tipo": "conduta",
+    "lesson_uid": "lsn_7769609",
+    "course_title": "Avançado de Infertilidade e Tratamento Pré Gestação",
+    "lesson_title": "Aula 04 - Hiperprolactinemia | Dr Alexandre Duarte",
+    "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/7769609",
+    "strategy": "fixed",
+    "evidence_chunk_indices": [
+      11
+    ],
+    "related_lesson_uids": [],
+    "nota": "",
+    "resposta_medico": null,
+    "aula_responde": null
+  },
+  {
+    "id": "q05",
+    "pergunta": "Em quais pacientes pedir escore de cálcio coronariano, e quando preferir a angiotomografia de coronárias?",
+    "tipo": "conduta",
+    "lesson_uid": "lsn_3521431",
+    "course_title": "Avançado de Cardiologia",
+    "lesson_title": "Aula 04: Fatores de Risco Genético Para Estatina Miopatia e Mialgias",
+    "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/3521431",
+    "strategy": "fixed",
+    "evidence_chunk_indices": [
+      8,
+      19
+    ],
+    "related_lesson_uids": [],
+    "nota": "O título da aula (estatina e miopatia) não indica este tema.",
+    "resposta_medico": null,
+    "aula_responde": null
+  },
+  {
+    "id": "q06",
+    "pergunta": "Como usar melatonina para desmamar um paciente usuário crônico de benzodiazepínico (ex.: Rivotril)?",
+    "tipo": "conduta",
+    "lesson_uid": "lsn_3534937",
+    "course_title": "Avançado de Neurotransmissores",
+    "lesson_title": "Aula 02 | Azul de Metileno",
+    "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/3534937",
+    "strategy": "fixed",
+    "evidence_chunk_indices": [
+      53,
+      54
+    ],
+    "related_lesson_uids": [],
+    "nota": "O título da aula (azul de metileno) não indica este tema.",
+    "resposta_medico": null,
+    "aula_responde": null
+  },
+  {
+    "id": "q07",
+    "pergunta": "Qual o sódio sérico mínimo para iniciar reposição de vasopressina, e o que fazer antes se ele estiver abaixo?",
+    "tipo": "conduta",
+    "lesson_uid": "lsn_8975536",
+    "course_title": "Avançado de Peptídeos",
+    "lesson_title": "Aula 03 - Peptideos Classicos",
+    "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/8975536",
+    "strategy": "fixed",
+    "evidence_chunk_indices": [
+      9
+    ],
+    "related_lesson_uids": [
+      "lsn_3534938"
+    ],
+    "nota": "",
+    "resposta_medico": null,
+    "aula_responde": null
+  },
+  {
+    "id": "q08",
+    "pergunta": "Como ajustar a dose de vitamina D oral durante uma infecção aguda, e por qual mecanismo isso ajuda?",
+    "tipo": "dose",
+    "lesson_uid": "lsn_7769233",
+    "course_title": "Avançado de Doenças Autoimunes",
+    "lesson_title": "Aula 02 - Imunidade e vit D",
+    "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/7769233",
+    "strategy": "fixed",
+    "evidence_chunk_indices": [
+      9
+    ],
+    "related_lesson_uids": [],
+    "nota": "",
+    "resposta_medico": null,
+    "aula_responde": null
+  },
+  {
+    "id": "q09",
+    "pergunta": "Qual é o valor saudável de fibrinogênio e o que fazer quando ele está alto num paciente já desinflamado?",
+    "tipo": "exame",
+    "lesson_uid": "lsn_3521383",
+    "course_title": "Avançado de Análise de Exames Laboratoriais e DNA",
+    "lesson_title": "Aula 5: Polimorfismos Genéticos I",
+    "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/3521383",
+    "strategy": "fixed",
+    "evidence_chunk_indices": [
+      13
+    ],
+    "related_lesson_uids": [],
+    "nota": "",
+    "resposta_medico": null,
+    "aula_responde": null
+  },
+  {
+    "id": "q10",
+    "pergunta": "Como interpretar o percentual de sensibilidade a cada droga no teste de células tumorais circulantes (RGCC / Onconomics)?",
+    "tipo": "exame",
+    "lesson_uid": "lsn_3521418",
+    "course_title": "Avançado de Oncologia + OmicScreen",
+    "lesson_title": "Aula 04 | O Exame de Biopsia Líquida",
+    "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/3521418",
+    "strategy": "fixed",
+    "evidence_chunk_indices": [
+      9,
+      10
+    ],
+    "related_lesson_uids": [
+      "lsn_3521417"
+    ],
+    "nota": "",
+    "resposta_medico": null,
+    "aula_responde": null
+  },
+  {
+    "id": "q11",
+    "pergunta": "Qual a diferença entre termografia diagnóstica e propedêutica, e em que regiões a termografia tem desempenho fraco?",
+    "tipo": "exame",
+    "lesson_uid": "lsn_4243247",
+    "course_title": "Avançado de Termografia",
+    "lesson_title": "Dia 1 - Parte 1",
+    "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/4243247",
+    "strategy": "fixed",
+    "evidence_chunk_indices": [
+      11,
+      13
+    ],
+    "related_lesson_uids": [],
+    "nota": "",
+    "resposta_medico": null,
+    "aula_responde": null
+  },
+  {
+    "id": "q12",
+    "pergunta": "Como iniciar e escalonar adaptógenos (rodiola, alcaçuz etc.) no tratamento do eixo do cortisol?",
+    "tipo": "dose",
+    "lesson_uid": "lsn_3659233",
+    "course_title": "Avançado de Tríade Energética",
+    "lesson_title": "Aula 1 | Cortisol",
+    "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/3659233",
+    "strategy": "fixed",
+    "evidence_chunk_indices": [
+      44
+    ],
+    "related_lesson_uids": [],
+    "nota": "",
+    "resposta_medico": null,
+    "aula_responde": null
+  },
+  {
+    "id": "q13",
+    "pergunta": "Qual a dose e o tempo de infusão de fosfato de potássio endovenoso na deficiência moderada de fósforo?",
+    "tipo": "dose",
+    "lesson_uid": "lsn_3545582",
+    "course_title": "Avançado de Vitaminas, Minerais e Terapias Endovenosas",
+    "lesson_title": "Aula 03: Avançado de Vitaminas, Minerais e Terapias Endovenosas",
+    "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/3545582",
+    "strategy": "fixed",
+    "evidence_chunk_indices": [
+      6
+    ],
+    "related_lesson_uids": [],
+    "nota": "",
+    "resposta_medico": null,
+    "aula_responde": null
+  },
+  {
+    "id": "q14",
+    "pergunta": "Quando suspeitar de esofagite eosinofílica e como confirmar o diagnóstico?",
+    "tipo": "conduta",
+    "lesson_uid": "lsn_3545135",
+    "course_title": "Avançado de Saúde Digestiva e Disbiose",
+    "lesson_title": "Aula 01: Avançado Saúde Digestiva e Disbiose",
+    "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/3545135",
+    "strategy": "fixed",
+    "evidence_chunk_indices": [
+      15
+    ],
+    "related_lesson_uids": [],
+    "nota": "",
+    "resposta_medico": null,
+    "aula_responde": null
+  },
+  {
+    "id": "q15",
+    "pergunta": "Hormônios causam câncer? Qual é o mecanismo metabólico apontado como causa do câncer?",
+    "tipo": "mecanismo",
+    "lesson_uid": "lsn_3545563",
+    "course_title": "Avançado de Saúde da Mulher",
+    "lesson_title": "Aula 1: Avançado de Saúde da Mulher",
+    "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/3545563",
+    "strategy": "fixed",
+    "evidence_chunk_indices": [
+      68
+    ],
+    "related_lesson_uids": [
+      "lsn_8653279"
+    ],
+    "nota": "",
+    "resposta_medico": null,
+    "aula_responde": null
+  },
+  {
+    "id": "q16",
+    "pergunta": "Quais são as contraindicações ao aleitamento materno?",
+    "tipo": "conduta",
+    "lesson_uid": "lsn_8878382",
+    "course_title": "Avançado Pediatria Metabólica",
+    "lesson_title": "Aula 1 - Curso_Avançado_PediatriaMetabolica_DraAdrielle",
+    "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/8878382",
+    "strategy": "fixed",
+    "evidence_chunk_indices": [
+      43
+    ],
+    "related_lesson_uids": [],
+    "nota": "",
+    "resposta_medico": null,
+    "aula_responde": null
+  },
+  {
+    "id": "q17",
+    "pergunta": "Quais percentuais de macronutrientes definem uma dieta low carb e uma dieta cetogênica?",
+    "tipo": "fato",
+    "lesson_uid": "lsn_4435674",
+    "course_title": "Avançado de Emagrecimento Saudável",
+    "lesson_title": "Dia 1 - Parte 2",
+    "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/4435674",
+    "strategy": "fixed",
+    "evidence_chunk_indices": [
+      23,
+      24
+    ],
+    "related_lesson_uids": [],
+    "nota": "",
+    "resposta_medico": null,
+    "aula_responde": null
+  },
+  {
+    "id": "q18",
+    "pergunta": "O que é a classificação NOVA de alimentos e o que mudou na nova rotulagem nutricional brasileira?",
+    "tipo": "fato",
+    "lesson_uid": "lsn_3521314",
+    "course_title": "Avançado de Nutrição Metabólica",
+    "lesson_title": "Aula 06: Decifrando Alimentos Ultra-processados",
+    "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/3521314",
+    "strategy": "fixed",
+    "evidence_chunk_indices": [
+      0,
+      5
+    ],
+    "related_lesson_uids": [],
+    "nota": "",
+    "resposta_medico": null,
+    "aula_responde": null
+  },
+  {
+    "id": "q19",
+    "pergunta": "O que é a troca plasmática terapêutica (plasmaférese) e para quais indicações ela é liberada no Brasil?",
+    "tipo": "fato",
+    "lesson_uid": "lsn_7780460",
+    "course_title": "Review Congresso Internacional de Metabologia (MMI) 2024",
+    "lesson_title": "Aula 01 - Plasmaferese",
+    "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/7780460",
+    "strategy": "fixed",
+    "evidence_chunk_indices": [
+      4
+    ],
+    "related_lesson_uids": [],
+    "nota": "",
+    "resposta_medico": null,
+    "aula_responde": null
+  },
+  {
+    "id": "q20",
+    "pergunta": "Entre nicotinamida, NMN, nicotinamida ribosídeo e NAD, qual precursor suplementar, e por quê?",
+    "tipo": "conduta",
+    "lesson_uid": "lsn_5127790",
+    "course_title": "Review Congresso Internacional de Metabologia (MMI) 2025",
+    "lesson_title": "Aula 02: NAD, A Chave Para A Longevidade",
+    "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/5127790",
+    "strategy": "fixed",
+    "evidence_chunk_indices": [
+      13
+    ],
+    "related_lesson_uids": [
+      "lsn_7769609"
+    ],
+    "nota": "",
+    "resposta_medico": null,
+    "aula_responde": null
+  },
+  {
+    "id": "q21",
+    "pergunta": "Por que pacientes com preenchimento de PMMA podem desenvolver hipercalcemia, e qual o papel da vitamina D nisso?",
+    "tipo": "mecanismo",
+    "lesson_uid": "lsn_3659356",
+    "course_title": "Tratamento Metabólico da Hipercalcemia",
+    "lesson_title": "Tratando Complicações e Orientações de Conduta",
+    "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/3659356",
+    "strategy": "fixed",
+    "evidence_chunk_indices": [
+      10
+    ],
+    "related_lesson_uids": [
+      "lsn_7769233"
+    ],
+    "nota": "",
+    "resposta_medico": null,
+    "aula_responde": null
+  },
+  {
+    "id": "q22",
+    "pergunta": "Qual metabólito do estrogênio está associado a câncer de mama e endometriose, e qual o papel do CYP1B1 e do anticoncepcional oral?",
+    "tipo": "mecanismo",
+    "lesson_uid": "lsn_8653279",
+    "course_title": "Imersão em Fisiologia do Metabolismo Humano | 2026 | 20º Edição",
+    "lesson_title": "Aula 17: Estrogênios e Lipedema | Dr. Alexandre Duarte",
+    "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/8653279",
+    "strategy": "fixed",
+    "evidence_chunk_indices": [
+      17
+    ],
+    "related_lesson_uids": [],
+    "nota": "",
+    "resposta_medico": null,
+    "aula_responde": null
+  },
+  {
+    "id": "q23",
+    "pergunta": "Qual dose de progesterona é necessária na síndrome dos ovários policísticos e como progredir até ela?",
+    "tipo": "dose",
+    "lesson_uid": "lsn_7147321",
+    "course_title": "Pós-Graduação Medicina Metabólica - Super Módulo 2",
+    "lesson_title": "03 - Aula SOP",
+    "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/7147321",
+    "strategy": "fixed",
+    "evidence_chunk_indices": [
+      2
+    ],
+    "related_lesson_uids": [],
+    "nota": "",
+    "resposta_medico": null,
+    "aula_responde": null
+  },
+  {
+    "id": "q24",
+    "pergunta": "Qual a dose inicial e a dose máxima de nandrolona em idosos com sarcopenia ou osteoporose?",
+    "tipo": "dose",
+    "lesson_uid": "lsn_7704859",
+    "course_title": "Pós-Graduação Medicina Metabólica - Super Módulo 3",
+    "lesson_title": "AULA 03 - Anabolizantes",
+    "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/7704859",
+    "strategy": "fixed",
+    "evidence_chunk_indices": [
+      41
+    ],
+    "related_lesson_uids": [],
+    "nota": "",
+    "resposta_medico": null,
+    "aula_responde": null
+  },
+  {
+    "id": "q25",
+    "pergunta": "Faz sentido repor cálcio na osteoporose? O que significa cálcio elevado no mineralograma?",
+    "tipo": "conduta",
+    "lesson_uid": "lsn_8477345",
+    "course_title": "Intensivo de Terapias Injetáveis",
+    "lesson_title": "Terapias Injetáveis - Parte 01",
+    "lesson_url": "https://ead.avantgardecollege.com.br/area/conteudo/aula/8477345",
+    "strategy": "fixed",
+    "evidence_chunk_indices": [
+      24,
+      25
+    ],
+    "related_lesson_uids": [],
+    "nota": "",
+    "resposta_medico": null,
+    "aula_responde": null
+  }
+]
