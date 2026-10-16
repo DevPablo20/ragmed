@@ -21,7 +21,8 @@
       "Bash(rm -f /tmp/claude-1000/-var-www-rag-hugo-ragmed/0bcbbe37-0569-4376-bcdf-c9a57187c05b/scratchpad/ro.duckdb)",
       "Bash(cp ragmed.duckdb /tmp/claude-1000/-var-www-rag-hugo-ragmed/ea556036-0a0e-4ed2-8828-76805b78023b/scratchpad/ro2.duckdb)",
       "Bash(rm -f /tmp/claude-1000/-var-www-rag-hugo-ragmed/ea556036-0a0e-4ed2-8828-76805b78023b/scratchpad/ro2.duckdb)",
-      "Bash(ls -la && echo \"--- scripts ---\" && ls -la scripts/ 2>/dev/null && echo \"--- env check \\(main\\) ---\" && ls -la /var/www/rag_hugo/ragmed/.env 2>&1 | head -3)"
+      "Bash(ls -la && echo \"--- scripts ---\" && ls -la scripts/ 2>/dev/null && echo \"--- env check \\(main\\) ---\" && ls -la /var/www/rag_hugo/ragmed/.env 2>&1 | head -3)",
+      "Bash(timeout 900 ~/.pyenv/versions/medrag/bin/python -c ' *)"
     ]
   }
 }

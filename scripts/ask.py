@@ -55,6 +55,31 @@ def montar_contexto(hits: list[dict]) -> str:
     return "\n\n---\n\n".join(partes)
 
 
+def imprimir_fontes(hits: list[dict]) -> None:
+    """Agrupa por aula, mas lista TODOS os [n] que apontam para ela.
+
+    Deduplicar por lesson_uid guardando so o primeiro rank quebrava o contrato de
+    citacao, e de forma invisivel: numa resposta real o modelo citou [5], [7] e
+    [10] — tres chunks da MESMA aula — e o bloco mostrava so o [5]. Quem
+    procurasse [7] nao achava numero nenhum, embora a URL estivesse ali sob outro
+    rotulo. Citacao que o leitor nao consegue resolver nao e citacao verificavel,
+    que e a razao de ser deste projeto.
+    """
+    print("\n" + "─" * 78 + "\nFONTES\n")
+    por_aula: dict[str, list[dict]] = {}
+    for h in hits:
+        por_aula.setdefault(h["lesson_uid"], []).append(h)
+    # dict preserva ordem de insercao, entao as aulas saem na ordem do ranking.
+    for grupo in por_aula.values():
+        h = grupo[0]
+        ns = " ".join(f"[{x['rank']}]" for x in grupo)
+        print(f"  {ns} {h['lesson_title']}")
+        print(f"      {h['course_title']}")
+        print(f"      {h['lesson_url']}")
+    print("\nTranscrições automáticas de aula — confira na fonte antes de usar "
+          "clinicamente.")
+
+
 def perguntar(con, pergunta: str, top_k: int = 10, **filtros) -> dict:
     hits = search(con, pergunta, top_k=top_k, **filtros)
     if not hits:
@@ -96,17 +121,7 @@ def main() -> None:
 
     print(r["resposta"])
     if r["hits"]:
-        print("\n" + "─" * 78 + "\nFONTES\n")
-        vistos = set()
-        for h in r["hits"]:
-            if h["lesson_uid"] in vistos:
-                continue
-            vistos.add(h["lesson_uid"])
-            print(f"  [{h['rank']}] {h['lesson_title']}")
-            print(f"      {h['course_title']}")
-            print(f"      {h['lesson_url']}")
-        print("\nTranscrições automáticas de aula — confira na fonte antes de usar "
-              "clinicamente.")
+        imprimir_fontes(r["hits"])
     con.close()
 
 

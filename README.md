@@ -369,9 +369,10 @@ prefixo contextual dos chunks bem mais informativo.
 | domínio `business` — marketing, vendas, gestão | 16 |
 | cópia de outra aula | 4 |
 
-**Pipeline.** Chunking e busca híbrida prontos e verificados; a geração
-(`ask.py`) está escrita mas ainda não foi validada ponta a ponta. Faltam o
-enriquecimento por LLM e a régua de avaliação — ver
+**Pipeline.** Chunking, busca híbrida e geração prontos e **validados ponta a
+ponta** (2026-08-24): a resposta cita aulas conferíveis, sinaliza os erros de
+transcrição em vez de repeti-los, e recusa pergunta fora do corpus em vez de
+inventar. Faltam o enriquecimento por LLM e a régua de avaliação — ver
 [METODOLOGIA.md § 7](METODOLOGIA.md#7-como-avaliar-e-iterar) e `ESTADO_ATUAL.md`.
 
 ---

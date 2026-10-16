@@ -533,7 +533,9 @@ maior parte do ganho — situar o trecho na aula. É o que faz um trecho que diz
 apenas "a dose costuma ser de 100 a 200" continuar recuperável por uma pergunta
 sobre testosterona.
 
-Fica em coluna separada justamente para dar para medir com e sem.
+Fica em coluna separada justamente para dar para medir com e sem — e essa
+separação já se pagou: a seção 7 traz a primeira medição, e ela **contraria** o
+argumento deste parágrafo. Leia as duas.
 
 ### 6.2 Os dois índices erram de formas diferentes
 
@@ -612,6 +614,17 @@ curso, aula e instrutor, e instrui o modelo a:
 dos `lesson_url` do banco, sobre os chunks efetivamente recuperados. Um modelo
 não tem como alucinar uma URL que ele nunca escreveu.
 
+**E todo `[n]` precisa resolver.** A primeira versão do `FONTES` agrupava por
+`lesson_uid` guardando só o primeiro rank de cada aula — e quebrava de forma
+invisível: numa resposta real o modelo citou [5], [7] e [10], três chunks da
+*mesma* aula, e o bloco mostrava só o [5]. A URL estava lá, sob outro rótulo, mas
+quem procurasse [7] não achava número nenhum.
+
+A lição generaliza: **uma URL correta não basta se o leitor não consegue chegar
+até ela pelo caminho que a resposta indicou.** Citação irresolvível é citação não
+verificável. `imprimir_fontes()` agora lista todos os rótulos por aula:
+`[5] [7] [10] Aula 03: Disfunção Erétil`.
+
 `llm.py` centraliza o cliente Anthropic e trata duas particularidades do Opus 5:
 
 1. **O *thinking* vem ligado por padrão** e divide o teto de `max_tokens` com o
@@ -630,16 +643,104 @@ não tem como alucinar uma URL que ele nunca escreveu.
 ### O que já dá para afirmar, e o que não
 
 **Dá:** a recuperação funciona para a pergunta-teste — o chunk de rank 1 é a Aula
-16 de Implantes Hormonais do curso "Avançado de Saúde do homem", com URL real.
+16 de Implantes Hormonais do curso "Avançado de Saúde do homem", com URL real. E
+a geração faz o que o prompt pede: numa pergunta sobre disfunção erétil, o modelo
+sinalizou os erros de ASR, declarou explicitamente o que os trechos não cobriam, e
+descartou sozinho os trechos de infertilidade por serem outro problema clínico.
 
 **Não dá:** dizer qual das três estratégias de chunking é melhor, nem quanto o
 prefixo contextual e o rerank contribuem. Isso é olhômetro até existir régua.
+
+### Uma evidência de que o prefixo contextual pode estar prejudicando
+
+A seção 6.1 argumenta que o prefixo "captura a maior parte do ganho" de graça.
+A primeira medição contra uma pergunta real põe isso em dúvida.
+
+Para *"quais as principais causas da impotência sexual e quais os tratamentos"*,
+o cosseno de cada chunk recuperado contra a pergunta, com e sem o prefixo:
+
+| rank | aula | cos(q, texto) | cos(q, prefixo+texto) | delta |
+|---|---|---|---|---|
+| 7 | **Disfunção Erétil** | 0,5753 | 0,5682 | **−0,0072** |
+| 5 | **Disfunção Erétil** | 0,5611 | 0,5730 | +0,0119 |
+| 10 | **Disfunção Erétil** | 0,5426 | 0,5307 | **−0,0119** |
+| 1 | Fisiologia Causas Tratamento | 0,4798 | 0,5283 | **+0,0485** |
+| 6 | Espermatogênese | 0,4909 | 0,5344 | **+0,0435** |
+| 2 | Fisiologia Causas Tratamento | 0,5260 | 0,5537 | +0,0277 |
+
+A única aula certa é a única que o prefixo prejudica; todo chunk fora do alvo
+ganha. **Ordenando só pelo texto, os três chunks da aula certa seriam 1º, 2º e
+3º** — com prefixo caíram para 5º, 7º e 10º.
+
+O mecanismo está visível nos prefixos: a pergunta traz "causas" e "tratamentos",
+e o curso errado se chama *"Avançado de Infertilidade e **Tratamento** Pré
+Gestação"*, com a aula *"Fisiologia **Causas Tratamento**"*. O prefixo, que
+deveria **situar** o trecho, virou ímã de palavra-chave — e vale para todos os
+chunks daquele curso, independentemente do conteúdo. É uma falha previsível em
+retrospecto: metadado repetido em milhares de chunks compete com o conteúdo
+deles.
+
+**Os limites desta medição, para não virar conclusão:** é *uma* pergunta, e só a
+metade densa — não o pipeline completo com BM25, RRF e reranker. No BM25 o efeito
+tende a ser pior, porque "tratamento" e "causas" são tokens exatos no prefixo.
+
+Isso não condena o prefixo. Faz duas coisas: eleva a comparação "com × sem
+prefixo" de formalidade a **pergunta em aberto**, e sugere inverter a ordem das
+etapas 5 e 6 — enriquecer o prefixo antes de saber se ele ajuda é gastar US$ 8,25
+para talvez amplificar o problema.
+
+Vale registrar por que a coluna `context_prefix` foi separada de `text` lá atrás:
+foi exatamente para permitir esta medição. A decisão de projeto pagou antes de a
+régua existir.
 
 Um aviso que este projeto já pagou para aprender: **não julgue um chunk pelo
 começo.** Chunks têm ~366 palavras, e um recorte de 200 caracteres esconde a
 informação — já levou a condenar erroneamente a qualidade da busca e a acusar o
 reranker sem motivo. Por isso `search.py` mostra o início **e** o fim de cada
 trecho.
+
+### Um sinal de confiança que caiu no colo
+
+O controle negativo — *"como configurar um roteador Cisco?"* — passou: o modelo
+recusou. Mas fez algo mais interessante que recusar. Encontrou a única
+coincidência lexical do corpus, um "router de glicemia" (que é um monitor
+contínuo de 14 dias), e **explicou por que não servia**. Não a ignorou em
+silêncio, nem a usou como ponte para fabricar uma resposta.
+
+Isso levantou uma pergunta mensurável: dá para saber que a pergunta está fora do
+corpus **antes** de chamar o modelo? Em 22 perguntas — 12 respondíveis pelo
+corpus, 10 claramente fora — usando o maior score de rerank do top-10:
+
+| classe | n | menor | maior |
+|---|---|---|---|
+| **dentro** do corpus | 12 | 0,5763 | 0,9937 |
+| **fora** do corpus | 10 | 0,00005 | 0,0077 |
+
+Separação de **75×, sem sobreposição**. Faz sentido: o cross-encoder lê pergunta
+e trecho juntos e pontua a *relação* entre os dois — é a única etapa do pipeline
+que pode dizer "isto não tem nada a ver". BM25 e busca densa sempre devolvem os
+10 menos ruins, porque só sabem ordenar.
+
+Duas ressalvas que a medição impõe:
+
+- **Só vale com rerank ligado.** Os scores de RRF ficam todos em ~0,016–0,03 e
+  não separam nada. São posições, não relevância.
+- **A hipótese concorrente foi medida e caiu.** Parecia plausível que uma
+  pergunta fora do corpus fizesse a recuperação se espalhar por muitas aulas.
+  Não: a pergunta da testosterona (dentro) espalhou por 8 aulas e 6 cursos,
+  igual à do Cisco (fora, 8 e 7). Dispersão não separa; score separa. Vale como
+  lembrete de que a explicação plausível e a explicação certa não são a mesma —
+  o mesmo erro da seção 2.5, em outra roupa.
+
+**Por que isso não virou um portão em `ask.py`.** Seria fácil recusar sem chamar
+o modelo quando o score fica abaixo de ~0,05, e classificaria certo nas 22
+perguntas. Mas a economia é irrelevante num uso de estudo, e o custo é real: a
+recusa do modelo foi *mais informativa* que qualquer mensagem enlatada — foi ela
+que apontou o "router de glicemia". Trocar uma resposta que raciocina por uma
+constante, para economizar centavos, é o tipo de otimização que piora o produto.
+
+O lugar certo deste número é a régua: **confiança por pergunta**, gravada ao lado
+de recall e MRR.
 
 ### A régua planejada (Etapa 6 — ainda não construída)
 
