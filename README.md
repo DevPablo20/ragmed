@@ -7,6 +7,12 @@ verificável**.
 Os metadados vivem num banco DuckDB; cada transcrição é um `.txt` nomeado pelo
 identificador da aula.
 
+**Em produção**, o corpus é publicado num projeto Supabase (Postgres, São Paulo)
+e consultado de dentro do **claude.ai** por um conector MCP: você pergunta num
+chat comum e o Claude busca nas aulas e responde citando aula e link. O DuckDB
+local continua sendo a fonte de verdade; o Supabase é uma cópia publicada. Ver
+[Produção](#produção-supabase--claudeai).
+
 O **como** está aqui. O **porquê** de cada escolha está em
 [METODOLOGIA.md](METODOLOGIA.md), junto com o dicionário de dados completo.
 
@@ -20,6 +26,7 @@ data/
 ├── local_lessons.json     identidade das 20 aulas que nunca estiveram na vitrine
 ├── matched_map.json       procedência histórica (só arquivo, nada depende dele)
 ├── manifest.csv/.parquet  export de v_corpus, regenerado a cada sync
+├── eval/                  régua da Etapa 6: perguntas, resultados, teste do médico
 └── reports/               relatórios gerados (perfil do corpus)
 scripts/
 ├── db.py                  esquema (DDL + views) e conexão
@@ -34,7 +41,14 @@ scripts/
 ├── search.py              busca híbrida: BM25 + denso, RRF, rerank
 ├── ask.py                 busca + geração com citação da fonte
 ├── llm.py                 cliente Anthropic compartilhado
+├── eval_retrieval.py      compara configurações de busca (Etapa 6)
+├── build_judging_set.py   monta o teste de relevância para o médico
+├── judging_sheet.py       planilha desse teste, com tutorial
+├── publish_supabase.py    DuckDB → Supabase (produção)
 └── queries.sql            consultas prontas
+supabase/
+├── migrations/            schema de produção: tabelas rag_*, BM25 em SQL
+└── functions/ragmed-mcp/  conector MCP (Edge Function) usado pelo claude.ai
 ```
 
 Tudo roda com o Python do ambiente `medrag`:
@@ -45,7 +59,82 @@ alias pyr=~/.pyenv/versions/medrag/bin/python
 
 ---
 
-## Perguntar ao corpus
+## Produção (Supabase + claude.ai)
+
+```
+claude.ai (chat) ──conector MCP──▶ Edge Function ragmed-mcp ──rpc──▶ Postgres (Supabase, sa-east-1)
+                 token no caminho     3 ferramentas                   buscar_trechos: BM25 sobre
+                                                                       índice invertido, ~80 ms
+```
+
+O conector dá ao Claude três ferramentas — `buscar_trechos_das_aulas`,
+`ler_contexto` (trechos vizinhos) e `listar_cursos` — e leva junto as regras de
+resposta validadas no `ask.py`: só os trechos, citação `[n]`, bloco FONTES por
+aula com link, sinalizar erro de transcrição, dizer quando as aulas não cobrem.
+
+**Sem embeddings em produção.** O `bge-m3` não roda no Supabase, e a medição
+mostrou que não precisa: só a busca lexical acerta a aula em 96% das 25 perguntas
+no top-5 e em 100% no top-10, e a ferramenta entrega 15 trechos — quem escolhe o
+melhor é o próprio Claude. Detalhes em [METODOLOGIA.md § 8](METODOLOGIA.md#8-produção).
+
+**Custo.** Só o Supabase (plano Pro). Ler os trechos e escrever a resposta
+consome a assinatura do claude.ai de quem pergunta; a API da Anthropic não é
+usada em produção.
+
+### Variáveis no `.env`
+
+| variável | para quê |
+|---|---|
+| `SUPABASE_PROJECT_REF` | id do projeto (aparece na URL do painel) |
+| `SUPABASE_DB_URL` | string do **Session pooler** — a "Direct connection" é só IPv6 |
+| `MCP_TOKEN` | segredo do conector; também cadastrado como secret da função |
+| `MCP_CONNECTOR_URL` | endereço que vai no claude.ai. **Trate como senha**: quem tem, lê as aulas |
+| `ANTHROPIC_API_KEY` | só para o `ask.py` local; produção não usa |
+
+### Atualizar com aulas novas (3 vezes ao ano)
+
+1. Rode o [ciclo normal](#o-ciclo-normal) até a curadoria.
+2. Regere os chunks e publique:
+
+```bash
+pyr scripts/build_chunks.py --all
+pyr scripts/publish_supabase.py --dry-run   # confere as contagens
+pyr scripts/publish_supabase.py             # ~10 s, numa transação
+```
+
+O `publish_supabase.py` substitui o corpus inteiro: ou o novo entra completo, ou
+o antigo fica intacto. Não precisa de GPU nem de `build_index.py` — esses só
+servem à busca local e à avaliação. O conector não muda.
+
+3. Faça uma pergunta sobre uma aula nova no claude.ai.
+
+### Mudar o schema ou o conector
+
+```bash
+npx supabase db push --db-url "$SUPABASE_DB_URL"                    # migrations novas
+npx supabase functions deploy ragmed-mcp --no-verify-jwt --use-api  # código do conector
+```
+
+O `--no-verify-jwt` é obrigatório: o claude.ai não envia JWT do Supabase, e a
+proteção é o token no caminho (`supabase/config.toml` já registra isso).
+
+**Trocar o token** (se o endereço vazar): gere outro, atualize `MCP_TOKEN` e
+`MCP_CONNECTOR_URL` no `.env`, rode
+`npx supabase secrets set --env-file <arquivo só com MCP_TOKEN>`, e todos
+reconfiguram o conector.
+
+### Configurar o conector no claude.ai
+
+Configurações › Conectores › **Adicionar conector personalizado**. Nome: `Aulas`.
+URL: o valor de `MCP_CONNECTOR_URL`. No primeiro uso o Claude pede permissão para
+a ferramenta — "permitir sempre".
+
+---
+
+## Perguntar ao corpus (local)
+
+Para desenvolvimento e avaliação nesta máquina. Em produção, pergunta-se no
+claude.ai.
 
 ```bash
 pyr scripts/search.py "qual a dose de reposição de testosterona em implante?"
@@ -187,7 +276,8 @@ veredito é seu: registre em `data/curation.json` e rode `load_curation.py`.
 
 ```bash
 pyr scripts/build_chunks.py --all
-pyr scripts/build_index.py --strategy fixed
+pyr scripts/build_index.py --strategy fixed   # busca local e avaliação
+pyr scripts/publish_supabase.py               # produção
 ```
 
 ---
@@ -369,11 +459,11 @@ prefixo contextual dos chunks bem mais informativo.
 | domínio `business` — marketing, vendas, gestão | 16 |
 | cópia de outra aula | 4 |
 
-**Pipeline.** Chunking, busca híbrida e geração prontos e **validados ponta a
-ponta** (2026-08-24): a resposta cita aulas conferíveis, sinaliza os erros de
-transcrição em vez de repeti-los, e recusa pergunta fora do corpus em vez de
-inventar. Faltam o enriquecimento por LLM e a régua de avaliação — ver
-[METODOLOGIA.md § 7](METODOLOGIA.md#7-como-avaliar-e-iterar) e `ESTADO_ATUAL.md`.
+**Pipeline.** Chunking, busca e geração validados ponta a ponta (2026-08-24);
+régua de avaliação construída e configuração escolhida (2026-10-16); **em
+produção** no Supabase com conector para o claude.ai (2026-10-19). O
+enriquecimento por LLM foi adiado — não é necessário para produção. Ver
+[METODOLOGIA.md § 7–8](METODOLOGIA.md#7-como-avaliar-e-iterar) e `ESTADO_ATUAL.md`.
 
 ---
 

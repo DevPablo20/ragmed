@@ -358,6 +358,23 @@ Escrita por `build_index.py`.
 
 Guardados no próprio DuckDB, sem vector store separado — ver seção 6.3.
 
+`chunk_embeddings_noctx` tem o mesmo formato, com os chunks embeddados **sem** o
+prefixo contextual (`build_index.py --no-context`). Existe para a comparação
+"com × sem prefixo" da Etapa 6; a busca local usa com `search.py --no-context`.
+
+### Produção — tabelas `rag_*` no Supabase
+
+Cópia publicada por `publish_supabase.py`, não fonte de verdade. Schema em
+`supabase/migrations/`.
+
+| tabela | o que guarda |
+|---|---|
+| `rag_courses`, `rag_lessons` | só o que a citação precisa: título, URL, instrutor |
+| `rag_chunks` | trechos da estratégia `fixed`, com id inteiro e a coluna gerada `fts` (tsvector em português sem acento, prefixo + texto) |
+| `rag_lexemes` | cada termo do corpus e em quantos trechos aparece (`df`) |
+| `rag_postings` | índice invertido: termo → trecho → frequência (`tf`) |
+| `rag_corpus_stats` | uma linha: nº de trechos, tamanho médio, quando publicou |
+
 ### `course_snapshots` / `lesson_snapshots` — append-only
 
 O estado de cada curso/aula em cada execução: `(run_id, uid)` como chave, mais
@@ -648,8 +665,9 @@ a geração faz o que o prompt pede: numa pergunta sobre disfunção erétil, o 
 sinalizou os erros de ASR, declarou explicitamente o que os trechos não cobriam, e
 descartou sozinho os trechos de infertilidade por serem outro problema clínico.
 
-**Não dá:** dizer qual das três estratégias de chunking é melhor, nem quanto o
-prefixo contextual e o rerank contribuem. Isso é olhômetro até existir régua.
+**Não dava** (em agosto): dizer qual das três estratégias de chunking é melhor,
+nem quanto o prefixo contextual e o rerank contribuem. A régua de outubro
+respondeu — ver "A régua construída", abaixo.
 
 ### Uma evidência de que o prefixo contextual pode estar prejudicando
 
@@ -742,37 +760,75 @@ constante, para economizar centavos, é o tipo de otimização que piora o produ
 O lugar certo deste número é a régua: **confiança por pergunta**, gravada ao lado
 de recall e MRR.
 
-### A régua planejada (Etapa 6 — ainda não construída)
+### A régua construída (Etapa 6, 2026-10-16)
 
-Três tabelas, a acrescentar em `db.py`:
+O plano previa ~100 perguntas geradas por LLM e tabelas `eval_*` no banco. O que
+foi construído é menor e mais barato, e ficou em arquivos versionados em
+`data/eval/` em vez de tabelas — com 25 perguntas, um JSON é mais fácil de ler,
+revisar e diferenciar no git do que três tabelas.
 
-| tabela | uma linha por | colunas centrais |
-|---|---|---|
-| `eval_questions` | pergunta | `question`, `expected_lesson_uid`, dificuldade, origem, quem validou |
-| `eval_runs` | configuração testada | o JSON da config (estratégia, prefixo on/off, rerank on/off, k) |
-| `eval_results` | (pergunta × run) | posição do esperado, `hit@k`, *reciprocal rank* |
+**As perguntas.** 25, uma por aula, em 23 cursos, escritas lendo os trechos da
+própria aula: cada uma tem a aula-fonte, as aulas relacionadas (outras que também
+cobrem o tema) e os chunks onde a resposta foi conferida
+(`perguntas_treino.json`). Duas foram escolhidas porque o tema **não aparece no
+título** da aula — o escore de cálcio dentro de "Estatina e Miopatia", o desmame
+de benzodiazepínico dentro de "Azul de Metileno".
 
-`build_eval_set.py` gera ~100 candidatas: amostra chunks estratificados por curso
-e pede ao LLM uma pergunta **respondível apenas por aquele trecho**. Você valida
-num relatório Markdown — descartar uma pergunta ruim leva segundos, e **sem essa
-passagem humana a régua não vale nada**: uma régua gerada e avaliada pela mesma
-família de modelo mede a coerência dela consigo mesma, não a qualidade da busca.
+**O viés que isso carrega:** quem escreve a pergunta depois de ler a aula repete o
+vocabulário dela. Isso favorece a busca lexical e torna a régua otimista. Vale
+como comparação *entre configurações*, não como número absoluto de qualidade.
 
-`eval_retrieval.py` roda cada configuração e mede:
+**Régua automática** — a aula certa (ou uma relacionada) aparece no topo?
 
-| métrica | responde |
-|---|---|
-| **recall@k** | a aula certa apareceu entre as k primeiras? |
-| **MRR** | em que posição, em média? (1/posição — penaliza forte cair do 1º para o 3º) |
-| **nDCG@10** | quão bem ordenado está o top-10, dando mais peso ao topo |
+| configuração | acerto@1 | acerto@5 | MRR@10 |
+|---|---|---|---|
+| **fixed + prefixo + rerank** | **92%** | 96% | **0,945** |
+| fixed sem prefixo + rerank | 88% | 92% | 0,911 |
+| qa_turn + prefixo + rerank | 84% | 96% | 0,890 |
+| semantic + prefixo + rerank | 80% | 92% | 0,854 |
+| fixed + prefixo, sem rerank | 80% | 100% | 0,878 |
 
-As três comparações que importam:
+Três leituras:
 
-- chunk `fixed` × `semantic` × `qa_turn`;
-- com × sem prefixo contextual;
-- denso puro × híbrido × híbrido + rerank.
+- **O prefixo não atrapalhou.** O caso do "ímã de palavra-chave" acima era real,
+  mas não generalizou: nas 25 perguntas, tirar o prefixo piora um pouco. A
+  suspeita foi testada e caiu — é para isso que a régua existe.
+- **O rerank melhora o topo, não a cobertura.** Sobe o acerto@1 de 80% para 92%,
+  mas sem ele a aula certa já está no top-5 em 100%.
+- **`fixed` venceu `semantic` e `qa_turn`.** O chunking mais simples ganhou.
 
-Aí a escolha vira experimento medido, não preferência.
+**Régua do médico — o teste que não voltou.** Para julgar *trechos* e não só
+aulas, montou-se um teste de relevância por *pooling* (o método do TREC): as 5
+configurações rodam, o top-3 de cada uma é unido, chunks de estratégias
+diferentes que se sobrepõem em ≥ 60% viram um trecho só, e a ordem é embaralhada
+para não induzir a nota. Resultado: 7 perguntas, 40 trechos, ~1 h de leitura,
+numa planilha com tutorial para quem não é de tecnologia
+(`build_judging_set.py`, `judging_sheet.py`). O médico não devolveu a planilha
+preenchida. A escolha da configuração ficou com a régua automática, e o
+`eval_retrieval.py --grades` está pronto para quando houver notas.
+
+Uma lição de produto, não de técnica: o orçamento de tempo do avaliador é o
+limite real. O primeiro desenho tinha 139 trechos (~3 h) e teve de ser cortado
+para caber em 1 h — e mesmo assim não foi feito.
+
+### A medição que mudou a arquitetura de produção
+
+Com o produto definido — o médico pergunta no claude.ai, sem servidor — surgiu a
+questão: o `bge-m3` precisa de GPU, e o Supabase não roda esse modelo. Quanto se
+perde sem ele? Cada metade do híbrido, sozinha:
+
+| busca | @1 | @5 | @10 | @20 |
+|---|---|---|---|---|
+| só lexical (BM25) | 80% | **100%** | 100% | 100% |
+| só densa (bge-m3) | 64% | 88% | 96% | 100% |
+| híbrida, sem rerank | 80% | 100% | 100% | 100% |
+
+A busca lexical sozinha alcança a aula certa em todas as 25 perguntas até o
+top-5, e o rerank — a única etapa que ainda melhorava o topo — pode ser feito
+pelo próprio Claude no chat, lendo os candidatos. Com o viés da régua em mente
+(ela favorece o lexical), a decisão foi dispensar os embeddings em produção e
+compensar entregando mais trechos (15) e deixando o Claude buscar de novo com
+outras palavras quando o resultado vier fraco.
 
 ### A ordem, e por que ela mudou
 
@@ -784,7 +840,16 @@ pediu um MVP para testar.
 Então: pipeline ponta a ponta primeiro, régua depois, comparação por último. É
 mudança de sequência, não de convicção.
 
-### Enriquecimento (Etapa 5 — ainda não construído)
+### Enriquecimento (Etapa 5 — adiado)
+
+**Status em 2026-10-19:** adiado, sem prejuízo para a produção. Dos dois ganhos
+abaixo, o prefixo já se mostrou útil sem enriquecimento, e o filtro por assunto é
+um extra. Se for retomado: o modelo do plano (`claude-opus-5`) ficou para trás —
+para resumir aulas um modelo menor da família atual deve bastar, e o custo
+precisa ser reestimado. Como produção não usa embeddings, enriquecer não exige
+recalcular vetores, só regerar os chunks e republicar.
+
+O plano original, para referência:
 
 `enrich_lessons.py` preenche `subject`, `topics[]` e `summary` nas 206 aulas, via
 Batch API (metade do preço, e é trabalho sem pressa de latência) com saída
@@ -804,3 +869,87 @@ Apagar `ragmed.duckdb` e rodar a sequência completa da seção 5 reproduz o mes
 estado. Já passou duas vezes neste projeto, e a intenção é que continue passando
 — é o que garante que o banco seja de fato derivado, e que o conhecimento esteja
 nos arquivos versionados, não em algo que alguém digitou uma vez.
+
+---
+
+## 8. Produção
+
+### O produto
+
+O médico usa o RAG **dentro do claude.ai**, num chat comum. Sem servidor para
+manter, sem app próprio, sem API paga à parte: um conector personalizado (MCP)
+aponta para uma Edge Function no Supabase, que consulta o Postgres do mesmo
+projeto. Quem lê os trechos e escreve a resposta é o Claude da assinatura dele.
+
+```
+claude.ai ──MCP (Streamable HTTP, JSON)──▶ Edge Function ragmed-mcp ──▶ Postgres
+                                               │                          rag_courses
+                                               │ token no caminho         rag_lessons
+                                               │ verify_jwt desligado     rag_chunks (fts)
+                                               └ regras de resposta       rag_lexemes / rag_postings
+```
+
+### BM25 em SQL — e por que não `ts_rank`
+
+O Postgres tem busca textual nativa, mas o `ts_rank` não conhece a **raridade**
+de um termo: "dose" e "tratamento", presentes em centenas de trechos, pesariam
+tanto quanto "nandrolona". O BM25 pondera por IDF, e foi ele que mediu 100% no
+top-5. Então a função `buscar_trechos` implementa a fórmula do BM25 (k1 = 1,5,
+b = 0,75, IDF de Lucene — os padrões do `bm25s` usado localmente), sobre uma
+configuração de busca em português **sem acento**, porque a transcrição erra
+acento com frequência ("hipotenção", "progestional"). A pergunta vira um OR de
+termos: exigir todos (AND) quase nunca casa numa fala transcrita.
+
+**O índice invertido veio de uma medição de lentidão.** A primeira versão abria
+o vetor de termos de cada candidato para achar a frequência — e numa pergunta
+comum, lexemas como "pod" (poder) e "ser" aparecem em ~5.800 dos 6.556 trechos.
+A busca levava **4,3 s dentro do banco**. Com uma tabela `rag_postings` (termo →
+trecho → frequência, ~880 mil linhas, ids inteiros para caber no plano), montada
+na publicação, pontuar vira uma junção por chave: **~80 ms**, mesma qualidade.
+
+Medido no Supabase com as 25 perguntas: aula certa em 76% no 1º lugar, 96% no
+top-5, **100% no top-10**. Quase idêntico ao BM25 local — as diferenças vêm do
+stemming do Postgres, que o `bm25s` não faz.
+
+### Publicação
+
+`publish_supabase.py` substitui o corpus inteiro numa transação e recalcula as
+estatísticas do BM25 (`rag_refresh_stats`). Com ~6,5 mil trechos são ~10 s, e
+substituir tudo é mais simples e mais seguro do que calcular diferenças numa
+atualização que acontece 3 vezes por ano. O DuckDB continua a fonte da verdade.
+
+### Segurança
+
+As transcrições são material pago dos cursos. Por isso:
+
+- **RLS ligado e sem policy** em todas as tabelas `rag_*`, e `execute` revogado
+  de `anon`/`authenticated` nas funções. A chave pública do projeto não lê nada.
+- **O endereço do conector é o segredo.** O claude.ai não envia JWT do Supabase,
+  então a função roda com `verify_jwt = false` e confere um token de 43
+  caracteres no caminho (comparação em tempo constante). Sem token, ou token
+  errado: 404, como se a função não existisse.
+
+É proteção de "senha compartilhada", suficiente para um ou dois usuários. Para
+mais gente, o passo seguinte seria OAuth no conector.
+
+### O que se perdeu ao sair do pipeline local
+
+**O score do reranker**, que separava perguntas dentro e fora do corpus com 75×
+de folga (§ 7). O BM25 sempre devolve *algo* — para "roteador Cisco", trechos
+sobre "ducto cístico". A recusa agora depende só do Claude, orientado pelas
+regras que vão na descrição da ferramenta. No teste de agosto ele recusou bem;
+é o ponto a observar no uso real.
+
+### Armadilhas da implantação
+
+- **A região do projeto não muda depois de criado**, e a tela de criação pode
+  oferecer só "Americas" e escolher sozinha (caiu em Oregon). A CLI aceita a
+  região exata: `npx supabase projects create ... --region sa-east-1`. Sair do
+  Canadá para São Paulo baixou a ida e volta de 192 ms para 26 ms.
+- **A "Direct connection" do Supabase é só IPv6** no plano básico; de uma rede
+  IPv4 use a string do **Session pooler**.
+- **Um `.env` sem quebra de linha final** fez um `echo >>` grudar o token novo
+  na linha anterior, e o primeiro deploy subiu com token vazio — que, pelo
+  desenho, respondia 404 a tudo. Falha segura, mas vale abrir o `.env` num editor
+  em vez de anexar às cegas.
+

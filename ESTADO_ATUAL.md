@@ -1,7 +1,8 @@
 # Estado atual — retomada em nova sessão
 
-Última atualização: 2026-08-23. Leia junto com o plano completo em
-`/home/pablo/.claude/plans/elabore-um-plano-de-staged-crane.md`.
+Última atualização: 2026-10-19. **O RAG está em produção.** O plano original
+(`~/.claude/plans/elabore-um-plano-de-staged-crane.md`) não existe mais; o que
+ele continha está neste arquivo, no `README.md` e no `METODOLOGIA.md`.
 
 ## Onde paramos
 
@@ -11,10 +12,49 @@
 ✓ Etapa 2  Chunking                 3 estratégias: fixed 6.556 · semantic 6.921 · qa_turn 7.974
 ✓ Etapa 3  Índice + busca híbrida   BM25 + denso → RRF k=60 → rerank → top 10
 ✓ Etapa 4  Geração                  MVP validado ponta a ponta em 2026-08-24
-✗ Etapa 5  Enriquecimento por LLM   ~US$ 8,25, Batch API + claude-opus-5
-✗ Etapa 6  Régua de avaliação       eval_questions / eval_runs / eval_results
-✓ Docs     README + METODOLOGIA.md  dicionário de dados e passo a passo para estudo
+✓ Etapa 6  Régua de avaliação       25 perguntas, 5 configurações; vence fixed+prefixo+rerank
+– Etapa 5  Enriquecimento por LLM   adiado: não é necessário para produção
+✓ Produção Supabase + claude.ai     projeto Ragmed-sp (sa-east-1), conector MCP, 2026-10-19
 ```
+
+## Produção (2026-10-19)
+
+O médico pergunta num chat do **claude.ai**; um conector personalizado (MCP)
+chama a Edge Function `ragmed-mcp`, que busca no Postgres do Supabase e devolve
+15 trechos com curso, aula e link, junto com as regras de resposta. O Claude da
+assinatura dele escreve a resposta. Sem servidor, sem API paga.
+
+- **Projeto:** `Ragmed-sp`, ref `ttnafqswdmgxqfuhrhqy`, região `sa-east-1`, plano Pro.
+- **Busca:** BM25 em SQL sobre índice invertido (`rag_postings`), sem embeddings.
+  Medido com as 25 perguntas: aula certa em 96% no top-5 e **100% no top-10**;
+  ~80 ms no banco, 0,35–0,66 s pelo conector.
+- **Segurança:** tabelas com RLS e sem policy; o endereço do conector carrega um
+  token secreto (`MCP_TOKEN`), sem ele a função responde 404.
+- **Atualização (3x/ano):** ciclo normal → `build_chunks.py --all` →
+  `publish_supabase.py`. Passo a passo no `README.md`, seção Produção.
+
+Testado em 2026-10-19 pelo claude.ai: o conector sincroniza, as 3 ferramentas
+respondem e a resposta sai no formato pedido (citação `[n]`, FONTES por aula com
+link, erro de transcrição sinalizado).
+
+## Etapa 6 (2026-10-16)
+
+Régua automática — a aula certa aparece no topo? — com 25 perguntas escritas a
+partir das aulas (`data/eval/perguntas_treino.json`):
+
+| configuração | acerto@1 | acerto@5 |
+|---|---|---|
+| **fixed + prefixo + rerank** | **92%** | 96% |
+| fixed sem prefixo + rerank | 88% | 92% |
+| qa_turn + prefixo + rerank | 84% | 96% |
+| semantic + prefixo + rerank | 80% | 92% |
+| fixed + prefixo, sem rerank | 80% | 100% |
+| só BM25 (base da produção) | 80% | 100% |
+
+A suspeita de que o prefixo atrapalha (seção abaixo) **não generalizou**. O
+teste de relevância para o médico (`data/eval/avaliacao_trechos.xlsx`, 40 trechos,
+~1 h) foi enviado e não voltou preenchido; a decisão ficou com a régua
+automática. Se as notas vierem: `eval_retrieval.py --grades <planilha>`.
 
 ## Etapa 4 validada (2026-08-24)
 
@@ -116,7 +156,8 @@ Confirme com:
 ~/.pyenv/versions/medrag/bin/python scripts/llm.py   # count_tokens e gratuito
 ```
 
-Deve imprimir `credencial OK`. Isso destrava as Etapas 4, 5 e 6 de uma vez.
+Deve imprimir `credencial OK`. Desde a produção, a chave só serve ao `ask.py`
+local — o claude.ai usa a assinatura de quem pergunta.
 
 ## Comandos do pipeline
 
@@ -136,57 +177,30 @@ $PY scripts/build_chunks.py --all
 $PY scripts/build_index.py --strategy fixed
 $PY scripts/search.py "sua pergunta" -k 5 --explain
 $PY scripts/ask.py "sua pergunta"          # precisa do .env
+
+# avaliação
+$PY scripts/eval_retrieval.py              # régua automática
+$PY scripts/build_judging_set.py           # remonta o teste do médico
+
+# produção
+$PY scripts/publish_supabase.py            # DuckDB → Supabase
+npx supabase functions deploy ragmed-mcp --no-verify-jwt --use-api
 ```
 
-## Próximos passos, em ordem
+## Próximos passos
 
-1. ~~**Validar a Etapa 4**~~ — **fechada**, incluindo o controle negativo. Os dois
-   critérios do plano passaram: citação verificável (depois da correção do
-   `FONTES`) e recusa em vez de invenção.
-
-   **Decisão em aberto, de produto e não de código:** vale pôr um portão em
-   `ask.py` que recusa sem chamar o modelo quando o maior score de rerank fica
-   abaixo de ~0,05? A medição acima diz que classificaria certo nas 22 perguntas
-   testadas. Mas o argumento contra é forte: no teste do Cisco, **a recusa do
-   modelo foi melhor do que qualquer mensagem enlatada seria** — ele achou o
-   "router de glicemia" e explicou por que não servia. Um portão teria matado
-   isso. E a economia é irrelevante: ~US$ 0,10 por pergunta fora do corpus, num
-   uso de estudo.
-
-   Recomendação: **não pôr o portão.** Em vez disso, exibir o score como sinal de
-   confiança e gravá-lo na Etapa 6. Se um dia o `ask.py` for exposto a um volume
-   maior de perguntas, a decisão se reabre com dados melhores.
-
-2. **Etapa 6 antes da Etapa 5** — inversão recomendada, e o motivo é o achado do
-   prefixo acima. O plano põe o enriquecimento primeiro porque ele deixa o
-   prefixo contextual "bem mais informativo", com `Assunto:` preenchido. Mas se o
-   prefixo estiver **prejudicando** a recuperação, enriquecê-lo aumenta o
-   problema em vez de resolvê-lo — e são US$ 8,25 gastos para piorar. Construir a
-   régua primeiro custa centavos e responde a pergunta antes de o dinheiro ser
-   gasto.
-
-   `build_eval_set.py` (~100 perguntas com aula-fonte anotada, validadas por
-   humano) e `eval_retrieval.py` (recall@k, MRR, nDCG@10). Comparar as três
-   estratégias de chunking, **com × sem prefixo contextual** (agora a comparação
-   mais urgente das três), e denso × híbrido × híbrido+rerank.
-
-3. **Etapa 5** — `enrich_lessons.py`: Batch API + `claude-opus-5` +
-   `output_config.format` com JSON Schema → preenche `subject`, `topics[]`,
-   `summary` nas 206 aulas. Revisar 10 antes de soltar o lote. Depois
-   reconstruir os chunks.
-
-   Vale notar que `subject` tem **dois** usos independentes: o prefixo contextual
-   (sob suspeita) e o pré-filtro `--subject` do `search.py` (que não depende do
-   prefixo e continua valendo). Mesmo que a régua condene o prefixo, o
-   enriquecimento ainda se paga pelo segundo uso.
-4. ~~**Docs**~~ — feito em 2026-08-23: `README.md` reescrito como manual de
-   operação do pipeline completo, e `METODOLOGIA.md` com o porquê de cada
-   escolha, a linha do tempo com os erros do caminho e o dicionário de dados
-   coluna a coluna.
-
-   Não conferido ainda: a Etapa 6 do `METODOLOGIA.md` descreve as tabelas
-   `eval_*` como planejadas — elas ainda não existem em `db.py`. Quando forem
-   criadas, o dicionário precisa ganhar a seção correspondente.
+1. **Observar o uso real.** O ponto fraco conhecido: sem o score do reranker, a
+   recusa de pergunta fora do corpus depende só do Claude (o BM25 sempre devolve
+   algum trecho). Se ele começar a forçar resposta com trechos fracos, endurecer
+   as regras em `supabase/functions/ragmed-mcp/index.ts` — vale na hora para
+   todos, sem reconfigurar o conector.
+2. **Perguntas reais do médico** viram a próxima rodada da régua: elas não têm o
+   viés de vocabulário das 25 atuais, que favorece a busca lexical.
+3. **Etapa 5, se fizer falta** — resumos e assunto por aula (filtro por assunto,
+   uma ferramenta "quais aulas falam de X"). Reestimar custo com um modelo atual;
+   não exige recalcular vetores, só regerar chunks e republicar.
+4. **Se a busca lexical mostrar limite** com perguntas parafraseadas: embeddings
+   por API numa Edge Function, medidos contra a mesma régua antes de trocar.
 
 ## Armadilhas já encontradas (não repetir)
 
@@ -208,6 +222,14 @@ $PY scripts/ask.py "sua pergunta"          # precisa do .env
   vieram de 5 aulas — uma delas com 3. Qualquer agregação por `lesson_uid` na
   saída precisa preservar todos os `[n]`, senão a citação deixa de resolver. Foi
   exatamente o bug do `FONTES`.
+- **Região do Supabase só na criação.** A tela pode oferecer só "Americas" e
+  escolher sozinha; use `npx supabase projects create ... --region sa-east-1`.
+- **Supabase "Direct connection" é IPv6.** Use a string do Session pooler.
+- **`.env` sem quebra de linha final** + `echo >>` = variável grudada na linha
+  anterior. Edite o `.env` num editor.
+- **`git filter-branch` apaga o arquivo da pasta** quando ele deixa de ser
+  rastreado no commit reescrito — foi assim que o `ragmed.duckdb` sumiu e teve
+  de ser restaurado do backup. Copie antes.
 - **O `-k` importa mais do que parece.** Nesse mesmo teste, toda a substância da
   resposta veio dos ranks 5, 7 e 10. Com `-k 5` a resposta teria degradado muito.
   Não baixe o `-k` sem medir.
