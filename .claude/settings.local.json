@@ -14,7 +14,15 @@
       "Bash(~/.pyenv/versions/medrag/bin/python scripts/load_snapshot.py data/snapshots/20260822T000000.json)",
       "Bash(~/.pyenv/versions/medrag/bin/python scripts/migrate_to_ids.py)",
       "Bash(~/.pyenv/versions/medrag/bin/python scripts/sync_transcripts.py)",
-      "Bash(ls -lat ~/Downloads/snapshot_*.json /tmp/snapshot_*.json 2>/dev/null | head -5 || echo \"nao encontrado em ~/Downloads nem /tmp\"; find ~ -maxdepth 3 -name 'snapshot_2026*.json' -newermt '-10 minutes' 2>/dev/null | head)"
+      "Bash(ls -lat ~/Downloads/snapshot_*.json /tmp/snapshot_*.json 2>/dev/null | head -5 || echo \"nao encontrado em ~/Downloads nem /tmp\"; find ~ -maxdepth 3 -name 'snapshot_2026*.json' -newermt '-10 minutes' 2>/dev/null | head)",
+      "Bash(~/.pyenv/versions/medrag/bin/python -)",
+      "Bash(~/.pyenv/versions/medrag/bin/python scripts/profile_corpus.py)",
+      "Bash(cp ragmed.duckdb /tmp/claude-1000/-var-www-rag-hugo-ragmed/0bcbbe37-0569-4376-bcdf-c9a57187c05b/scratchpad/ro.duckdb)",
+      "Bash(rm -f /tmp/claude-1000/-var-www-rag-hugo-ragmed/0bcbbe37-0569-4376-bcdf-c9a57187c05b/scratchpad/ro.duckdb)",
+      "Bash(cp ragmed.duckdb /tmp/claude-1000/-var-www-rag-hugo-ragmed/ea556036-0a0e-4ed2-8828-76805b78023b/scratchpad/ro2.duckdb)",
+      "Bash(rm -f /tmp/claude-1000/-var-www-rag-hugo-ragmed/ea556036-0a0e-4ed2-8828-76805b78023b/scratchpad/ro2.duckdb)",
+      "Bash(ls -la && echo \"--- scripts ---\" && ls -la scripts/ 2>/dev/null && echo \"--- env check \\(main\\) ---\" && ls -la /var/www/rag_hugo/ragmed/.env 2>&1 | head -3)",
+      "Bash(timeout 900 ~/.pyenv/versions/medrag/bin/python -c ' *)"
     ]
   }
 }
